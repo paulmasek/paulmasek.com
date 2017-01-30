@@ -1,3 +1,36 @@
 <section>
-  {{> section-hero skills.introduction}}
+  {{> section-hero introduction}}
+
+  <div class="">
+    <h3>{{main-skills.title}}</h3>
+    <ul class="">
+{{#each main-skills.skills}}
+      <li class="">
+        <h4>{{title}} - <span class="">{{sub-title}}</span></h4>
+        {{{content}}}
+      </li>
+{{/each}}
+    </ul>
+  </div>
+  <div class="">
+    <div class="">
+      <h3>{{workflow.title}}</h3>
+      <ul class="">
+      {{#each workflow.skills}}
+        <li class="">
+            <h4>{{title}}</h4>
+            {{{content}}}
+        </li>
+      {{/each}}
+      </ul>
+    </div>
+    <div class="">
+      <h3>{{software.title}}</h3>
+      <ul class="">
+      {{#each software.skills}}
+        <li class="">{{title}}</li>
+      {{/each}}
+      </ul>
+    </div>
+  </div>
 </section>
