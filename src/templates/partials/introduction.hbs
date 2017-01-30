@@ -1,0 +1,14 @@
+<section>
+  <h1>
+    <span>{{global.title}}</span>
+    <span class="">{{introduction.tagline}}</span>
+  </h1>
+  <ul class="">
+{{#each global.navigation}}
+    <li class="">
+      <a class="" href="{{link}}">{{text}}</a>
+    </li>
+{{/each}}
+  </ul>
+  <div style="background-image: url('{{introduction.background.src}}')">{{introduction.background.alt}}</div>
+</section>

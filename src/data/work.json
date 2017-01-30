@@ -1,0 +1,10 @@
+{
+  "introduction": {
+    "title": "Work",
+    "content": "<p>Where I’ve worked and my experience.</p><p><a href=\"\">Need my CV? Download here.</a></p>",
+    "background": {
+      "src": "assets/images/",
+      "alt": ""
+    }
+  }
+}

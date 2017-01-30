@@ -1,0 +1,22 @@
+{
+  "name": "paul-masek",
+  "title": "Paul Masek",
+  "navigation": [
+    {
+      "text": "About",
+      "link": "about"
+    },
+    {
+      "text": "Work",
+      "link": "work"
+    },
+    {
+      "text": "Skills",
+      "link": "skills"
+    },
+    {
+      "text": "Contact",
+      "link": "contact"
+    }
+  ]
+}
