@@ -56,28 +56,31 @@
   font-size: 1rem;
 }
 
-@mixin h2 {
+@mixin h2($color: $orange) {
   @include bold;
   @include h2-size;
-  color: $orange;
+  color: $color;
   display: block;
 }
 
-@mixin h3 {
+@mixin h3($color: $orange) {
   @include bold;
   @include h3-size;
-  color: $orange;
+  color: $color;
   display: block;
 }
 
-@mixin h4 {
+@mixin h3-alt {
+  @include h3($black);
+}
+
+@mixin h4($color: $orange) {
   @include bold;
   @include h4-size;
-  color: $orange;
+  color: $color;
   display: block;
 }
 
 @mixin h4-alt {
-  @include h4;
-  color: $black;
+  @include h4($black);
 }

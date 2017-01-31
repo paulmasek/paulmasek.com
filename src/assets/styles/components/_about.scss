@@ -4,4 +4,11 @@
   &__inner {
     @include section-inner;
   }
+
+  &__profile-pic {
+    border-radius: 50%;
+    max-width: 200px;
+    min-width: 100px;
+    width: percentage(120 / (320 - 24 * 2));
+  }
 }

@@ -1,17 +1,17 @@
-<div class="">
+<div class="timeline">
   {{> contracting}}
   {{> remote freelancing.remote}}
   <div class="">
-    <strong>{{freelancing.start-date}}</strong>
-    <h3>{{freelancing.start-title}}</h3>
+    <strong class="heading-three">{{freelancing.start-date}}</strong>
+    <h3 class="heading-two">{{freelancing.start-title}}</h3>
   </div>
   <div>
     {{#each perm}}
     <div class="">
-      <strong>{{period}}</strong>
-      <h3>{{company}}</h3>
+      <strong class="heading-three">{{period}}</strong>
+      <h3 class="heading-three">{{company}}</h3>
       <img alt="{{company}} logo" src="{{logo.src}}" />
-      <strong>{{role}}</strong>
+      <strong class="heading-three-alt">{{role}}</strong>
       <div class="">
         {{{introduction}}}
       </div>

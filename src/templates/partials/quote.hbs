@@ -1,5 +1,7 @@
-<img alt="{{name}}" src="{{profile-pic.src}}" />
-<blockquote>
-  {{{content}}}
-</blockquote>
-<span class="">{{name}}, {{role}} {{#if company}} at {{company}}{{/if}}</span>
+<div class="quote">
+  <img alt="{{name}}" class="quote__profile-pic" src="{{profile-pic.src}}" />
+  <blockquote class="quote__quote">
+    {{{content}}}
+  </blockquote>
+  <span class="quote__attribution">{{name}}, {{role}} {{#if company}} at {{company}}{{/if}}</span>
+</div>

@@ -23,7 +23,8 @@ a {
 
 p,
 ol,
-ul {
+ul,
+img {
   margin-bottom: 1.3em;
 }
 
@@ -37,6 +38,10 @@ ul {
 
 .heading-three {
   @include h3;
+}
+
+.heading-three-alt {
+  @include h3-alt;
 }
 
 .heading-four {
