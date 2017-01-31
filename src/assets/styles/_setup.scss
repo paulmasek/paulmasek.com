@@ -1,3 +1,63 @@
 html {
   @include body-font;
 }
+
+a {
+  color: $orange;
+}
+
+.branding {
+  @include bold;
+  color: $orange;
+  display: inline-block;
+  text-decoration: none;
+
+  &--minimal {
+    letter-spacing: -.1em;
+
+    .branding__full-part {
+      @include v-hidden;
+    }
+  }
+}
+
+p,
+ol,
+ul {
+  margin-bottom: 1.3em;
+}
+
+.no-break {
+  margin-bottom: 0;
+}
+
+.heading-two {
+  @include h2;
+}
+
+.heading-three {
+  @include h3;
+}
+
+.heading-four {
+  @include h4;
+}
+
+.heading-four-alt {
+  @include h4-alt;
+}
+
+.hero-background {
+  background-color: $black;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+  height: calc(100% + 8px);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 8px);
+  z-index: -2;
+}

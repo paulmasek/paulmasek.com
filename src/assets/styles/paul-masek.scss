@@ -1,5 +1,15 @@
+@import "mixins";
 @import "reset";
 @import "variables";
-@import "grid";
 @import "typography";
 @import "setup";
+@import "components/grid";
+@import "components/header";
+@import "components/footer";
+@import "components/primary-navigation";
+@import "components/introduction";
+@import "components/about";
+@import "components/skills";
+@import "components/work";
+@import "components/contact";
+@import "components/section-hero";

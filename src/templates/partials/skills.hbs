@@ -1,12 +1,12 @@
-<section>
+<section class="skills">
   {{> section-hero introduction}}
-  <div class="container">
+  <div class="container skills__inner">
     <div class="">
-      <h3>{{main-skills.title}}</h3>
+      <h3 class="heading-three">{{main-skills.title}}</h3>
       <ul class="">
   {{#each main-skills.skills}}
         <li class="">
-          <h4>{{title}} - <span class="">{{sub-title}}</span></h4>
+          <h4 class="heading-four">{{title}}<span class="heading-four-alt skills__main-secondary"> - {{sub-title}}</span></h4>
           {{{content}}}
         </li>
   {{/each}}
@@ -16,11 +16,11 @@
     <div class="">
 
       <div class="">
-        <h3>{{workflow.title}}</h3>
+        <h3 class="heading-three">{{workflow.title}}</h3>
         <ul class="">
         {{#each workflow.skills}}
           <li class="">
-              <h4>{{title}}</h4>
+              <h4 class="heading-four-alt">{{title}}</h4>
               {{{content}}}
           </li>
         {{/each}}
@@ -28,7 +28,7 @@
       </div>
 
       <div class="">
-        <h3>{{software.title}}</h3>
+        <h3 class="heading-three">{{software.title}}</h3>
         <ul class="">
         {{#each software.skills}}
           <li class="">{{title}}</li>

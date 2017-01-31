@@ -1,0 +1,5 @@
+.work {
+  &__inner {
+    @include section-inner;
+  }
+}

@@ -1,0 +1,9 @@
+.skills {
+  &__main-secondary {
+    display: inline;
+  }
+
+  &__inner {
+    @include section-inner;
+  }
+}

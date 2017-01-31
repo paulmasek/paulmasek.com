@@ -1,0 +1,17 @@
+.main-header {
+  background-color: $white;
+  box-shadow: 0 5px 20px 3px rgba(0,0,0,0.04);
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__branding {
+    @include header-branding-size;
+    position: relative;
+    top: 8px;
+  }
+}

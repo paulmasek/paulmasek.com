@@ -1,12 +1,15 @@
-<header>
+<header class="main-header">
   <div class="container">
-    <strong class="">Paul Masek</strong>
-    <ul class="">
-  {{#each global.navigation}}
-      <li class="">
-        <a class="" href="{{link}}">{{text}}</a>
-      </li>
-  {{/each}}
-    </ul>
+    <a class="main-header__branding branding branding--minimal" href="#top">P<span class="branding__full-part">aul</span> M<span class="branding__full-part">asek</span>
+    </a>
+    <nav class="primary-navigation">
+      <ul class="primary-navigation-list">
+    {{#each global.navigation}}
+        <li class="primary-navigation__item">
+          <a class="primary-navigation__link" href="{{link}}">{{text}}</a>
+        </li>
+    {{/each}}
+      </ul>
+    </nav>
   </div>
 </header>

@@ -1,0 +1,13 @@
+.primary-navigation {
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+
+  &__item {
+    display: inline;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

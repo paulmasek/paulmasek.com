@@ -1,16 +1,18 @@
-<section>
-  <div class="container">
-    <h1>
-      <span>{{global.title}}</span>
-      <span class="">{{tagline}}</span>
-    </h1>
-    <ul class="">
-  {{#each global.navigation}}
-      <li class="">
-        <a class="" href="{{link}}">{{text}}</a>
-      </li>
-  {{/each}}
-    </ul>
-    <div style="background-image: url('{{background.src}}')">{{background.alt}}</div>
+<section class="introduction">
+  <div class="container introduction__container">
+    <div class="introduction__content">
+      <h1 class="introduction__heading">
+        <span class="introduction__heading-name">{{global.title}}</span>
+        <span class="introduction__heading-role">{{introduction.tagline}}</span>
+      </h1>
+      <ul class="introduction__navigation">
+    {{#each global.navigation}}
+        <li class="introduction__navigation-item">
+          <a class="introduction__navigation-link" href="{{link}}">{{text}}</a>
+        </li>
+    {{/each}}
+      </ul>
+    </div>
   </div>
+  <div class="hero-background" style="background-image: url('{{introduction.background.src}}')">{{introduction.background.alt}}</div>
 </section>

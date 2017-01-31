@@ -24,6 +24,60 @@
 }
 
 @mixin base-size {
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 1.3;
+  // font-size: 24px;
+}
+
+@mixin header-branding-size {
+  font-size: 30px;
+
+  // font-size: 36px;
+  // line-height: 42px;
+}
+
+@mixin footer-size {
+  font-size: 14px;
+}
+
+@mixin h2-size {
+  font-size: 26px;
+  //36px;
+  margin-bottom: 18px;
+  // font-size: 36px;
+}
+
+@mixin h3-size {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+@mixin h4-size {
+  font-size: 1rem;
+}
+
+@mixin h2 {
+  @include bold;
+  @include h2-size;
+  color: $orange;
+  display: block;
+}
+
+@mixin h3 {
+  @include bold;
+  @include h3-size;
+  color: $orange;
+  display: block;
+}
+
+@mixin h4 {
+  @include bold;
+  @include h4-size;
+  color: $orange;
+  display: block;
+}
+
+@mixin h4-alt {
+  @include h4;
+  color: $black;
 }

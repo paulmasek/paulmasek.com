@@ -1,0 +1,11 @@
+.main-footer {
+  @include footer-size;
+  background: rgba($black , .04);
+  overflow: hidden;
+  padding-top: 18px;
+  text-align: center;
+
+  &__back-to-top {
+    display: block;
+  }
+}
