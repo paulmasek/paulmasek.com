@@ -1,0 +1,29 @@
+@mixin body-font {
+  @include regular;
+  @include base-size;
+  color: $off-black;
+}
+
+@mixin regular {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+@mixin regular-italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin bold {
+  font-weight: 700;
+}
+
+@mixin bold-italic {
+  font-style: italic;
+  font-weight: 700;
+}
+
+@mixin base-size {
+  font-size: 24px;
+  line-height: 29px;
+}
