@@ -1,14 +1,16 @@
 <section>
-  <h1>
-    <span>{{global.title}}</span>
-    <span class="">{{tagline}}</span>
-  </h1>
-  <ul class="">
-{{#each global.navigation}}
-    <li class="">
-      <a class="" href="{{link}}">{{text}}</a>
-    </li>
-{{/each}}
-  </ul>
-  <div style="background-image: url('{{background.src}}')">{{background.alt}}</div>
+  <div class="container">
+    <h1>
+      <span>{{global.title}}</span>
+      <span class="">{{tagline}}</span>
+    </h1>
+    <ul class="">
+  {{#each global.navigation}}
+      <li class="">
+        <a class="" href="{{link}}">{{text}}</a>
+      </li>
+  {{/each}}
+    </ul>
+    <div style="background-image: url('{{background.src}}')">{{background.alt}}</div>
+  </div>
 </section>

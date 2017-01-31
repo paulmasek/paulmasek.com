@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{global.title}}</title>
-    <link href="/assets/css/{{global.name}}.css" rel="stylesheet">
-  </head>
-  <body>
-    {{> introduction introduction}}
-    {{> about about}}
-    {{> skills skills}}
-    {{> work work}}
-    {{> contact contact}}
-    {{> footer footer}}
-    <script src="assets/js/{{global.name}}.js"></script>
-  </body>
-</html>
+---
+layout: default.hbs
+title: Home
+description: This is the home page.
+---
+{{> introduction introduction}}
+{{> about about}}
+{{> skills skills}}
+{{> work work}}
+{{> contact contact}}
