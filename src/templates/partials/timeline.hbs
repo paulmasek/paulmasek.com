@@ -1,0 +1,26 @@
+<div class="">
+  {{> contracting}}
+  {{> remote freelancing.remote}}
+  <div class="">
+    <strong>{{freelancing.start-date}}</strong>
+    <h3>{{freelancing.start-title}}</h3>
+  </div>
+  <div>
+    {{#each perm}}
+    <div class="">
+      <strong>{{period}}</strong>
+      <h3>{{company}}</h3>
+      <img alt="{{company}} logo" src="{{logo.src}}" />
+      <strong>{{role}}</strong>
+      <div class="">
+        {{{introduction}}}
+      </div>
+      <ul class="">
+      {{#each responsibilities}}
+        <li class="">{{{content}}}</li>
+      {{/each}}
+      </ul>
+    </div>
+    {{/each}}
+  </div>
+</div>

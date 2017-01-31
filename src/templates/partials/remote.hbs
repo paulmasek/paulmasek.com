@@ -1,0 +1,19 @@
+<div class="">
+  <strong>{{period}}</strong>
+  <h3>{{title}}</h3>
+  <div class="">
+    {{introduction}}
+  </div>
+  <ul class="">
+    {{#each companies}}
+    <li class="">
+      <a class="" href="{{url}}">
+        <img alt="{{name}}" class="" src="{{logo.src}}" />
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+  {{#if quote}}
+    {{>quote quote}}
+  {{/if}}
+</div>

@@ -1,0 +1,20 @@
+{{#each freelancing.contracting}}
+<div class="">
+  <strong>{{year}}</strong>
+  {{#each contracts}}
+    <h3>{{company}}</h3>
+    <img alt="{{company}} logo" src="{{logo.src}}" />
+    {{{content}}}
+    {{#if preview}}
+    <div class="">
+      {{#each preview.images}}
+        <img alt="{{alt}}" src="{{src}}" />
+      {{/each}}
+    </div>
+    {{/if}}
+    {{#if quote}}
+      {{>quote quote}}
+    {{/if}}
+  {{/each}}
+</div>
+{{/each}}
