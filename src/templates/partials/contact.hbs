@@ -1,6 +1,19 @@
 <section class="contact">
   {{> section-hero introduction}}
   <div class="container contact__inner">
-
+    <form action="" method="">
+      <div class="form-row">
+        <label class="form-label" for="name">Name</label>
+        <input class="text-input" id="name" name="name" required type="text" />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="email">Email</label>
+        <input class="text-input" id="email" name="email" required type="email" />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="text-input" id="message" name="message" required rows="10"></textarea>
+      </div>
+    </form>
   </div>
 </section>

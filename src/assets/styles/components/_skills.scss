@@ -1,3 +1,15 @@
+@mixin section-break($color: $border-orange) {
+  border-bottom: 1px solid $color;
+  padding-bottom: 14px;
+  margin-bottom: 34px;
+}
+
+@mixin remove-section-break {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .skills {
   &__main-secondary {
     display: inline;
@@ -5,5 +17,29 @@
 
   &__inner {
     @include section-inner;
+  }
+
+  &__set {
+    @include section-break;
+
+    &:last-of-type {
+      @include remove-section-break;
+    }
+  }
+
+  &__main {
+    @include section-break;
+
+    &:last-of-type {
+      @include remove-section-break;
+    }
+  }
+
+  &__secondary {
+    padding-bottom: 14px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
   }
 }

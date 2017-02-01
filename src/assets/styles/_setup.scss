@@ -24,7 +24,9 @@ a {
 p,
 ol,
 ul,
-img {
+form,
+img,
+.form-row {
   margin-bottom: 1.3em;
 }
 
@@ -65,4 +67,20 @@ img {
   transform: translate(-50%, -50%);
   width: calc(100% + 8px);
   z-index: -2;
+}
+
+.form-label {
+  @include h4;
+  margin-bottom: 6px;
+}
+
+.text-input {
+  @include small-size;
+  background-color: $white;
+  border: 1px solid rgba($black, .1);
+  border-radius: 0;
+  display: block;
+  padding: 11px 13px;
+  width: 100%;
+  appearance: none;
 }

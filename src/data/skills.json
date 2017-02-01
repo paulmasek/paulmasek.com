@@ -3,12 +3,12 @@
     "title": "Skills",
     "content": "<p>I’m always learning new things, but here are a selection the languages, libraries and tools I’ve got experience with.</p>",
     "background": {
-      "src": "assets/images/",
+      "src": "assets/images/content/skills-hero.jpg",
       "alt": ""
     }
   },
   "main-skills": {
-    "title": "All the big names",
+    "title": "The main ones",
     "skills": [
       {
         "title": "HTML",

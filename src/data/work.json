@@ -3,7 +3,7 @@
     "title": "Work",
     "content": "<p class=\"no-break\">Where I’ve worked and my experience.</p><p><a href=\"\">Need my CV? Download here.</a></p>",
     "background": {
-      "src": "assets/images/",
+      "src": "assets/images/content/work-hero.jpg",
       "alt": ""
     }
   },

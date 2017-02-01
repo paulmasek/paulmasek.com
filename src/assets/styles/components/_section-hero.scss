@@ -1,9 +1,13 @@
 .section-hero {
   @include bold;
   @include section-inner;
+  align-items: center;
   background-color: $white;
   color: $white;
+  flex-direction: row;
+  display: flex;
   overflow: hidden;
+  min-height: 234.375px;
   position: relative;
   text-align: center;
   z-index: 1;

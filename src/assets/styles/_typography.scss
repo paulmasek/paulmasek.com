@@ -36,8 +36,12 @@
   // line-height: 42px;
 }
 
-@mixin footer-size {
+@mixin small-size {
   font-size: 14px;
+}
+
+@mixin footer-size {
+  @include small-size;
 }
 
 @mixin h2-size {
