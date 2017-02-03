@@ -1,3 +1,105 @@
 .timeline {
   text-align: center;
+
+  &__segment {
+    padding-bottom: 20px + 70px + 20px;
+  }
+
+  &__period-title {
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  &__period-title-line {
+    height: 40px;
+  }
+
+  &__contracting-logo {
+    margin-bottom: 14px;
+    width: 120px;
+  }
+
+  &__contracting-header {
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    display: flex;
+    padding-bottom: 50px + 20px;
+    margin-bottom: $double-lh;
+  }
+
+  &__contracting-title {
+    width: 100%;
+  }
+
+  &__content-item {
+    @include section-break;
+
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.line-segment {
+  position: relative;
+
+  &__line {
+    display: block;
+    position: absolute;
+
+    &--horizontal {
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      .line-segment__part {
+        background-color: $border-orange;
+        height: 1px;
+        width: 50%;
+      }
+
+      .line-segment__part-left {
+        left: 0;
+      }
+
+      .line-segment__part-right {
+        right: 0;
+      }
+    }
+
+    &--vertical {
+      background-color: $border-orange;
+      left: 50%;
+      margin-left: -.5px;
+      bottom: 0;
+      width: 1px;
+    }
+
+    &--grey {
+      &.line-segment__line--vertical,
+      &.line-segment__line--horizontal .line-segment__part {
+        background-color: $border-grey;
+      }
+
+    }
+
+    &--header-vertical {
+      bottom: 20px;
+      height: 50px;
+    }
+
+    &--after-contract {
+      bottom: 20px;
+      height: 70px;
+    }
+
+
+  }
+
+  &__part {
+    display: block;
+    position: absolute;
+  }
 }

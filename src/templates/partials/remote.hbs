@@ -1,19 +1,17 @@
 <div class="">
   <strong class="heading-three">{{period}}</strong>
-  <h3 class="heading-three">{{title}}</h3>
-  <div class="">
-    {{{introduction}}}
-  </div>
-  <ul class="">
-    {{#each companies}}
-    <li class="">
-      <a class="" href="{{url}}">
-        <img alt="{{name}}" class="" src="{{logo.src}}" />
-      </a>
-    </li>
+  <div class="timeline__segment line-segment">
+    <h3 class="heading-three">{{title}}</h3>
+    {{#each modules}}
+      <div class="timeline__content-item {{#if @last }}timeline__content-item--last{{/if}} line-segment">
+        {{> ( lookup . 'module') data}}
+        {{#unless @last}}
+          {{>line-segment grey=true horizontal=true}}
+        {{else}}
+          {{>line-segment horizontal=true}}
+        {{/unless}}
+      </div>
     {{/each}}
-  </ul>
-  {{#if quote}}
-    {{>quote quote}}
-  {{/if}}
+    {{>line-segment vertical=true class="line-segment__line--after-contract"}}
+  </div>
 </div>

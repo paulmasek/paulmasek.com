@@ -26,7 +26,9 @@ ol,
 ul,
 form,
 img,
-.form-row {
+.form-row,
+.quote,
+.quote__attribution {
   margin-bottom: 1.3em;
 }
 
@@ -77,7 +79,7 @@ img,
 .text-input {
   @include small-size;
   background-color: $white;
-  border: 1px solid rgba($black, .1);
+  border: 1px solid $border-grey;
   border-radius: 0;
   display: block;
   padding: 11px 13px;

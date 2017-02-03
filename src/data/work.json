@@ -21,16 +21,26 @@
                 "src": "assets/images/radley-yeldar-logo.svg",
                 "alt": ""
               },
-              "content": "<p>Developed a series of responsive front-end builds for large international clients. Though my contract was initially for one month to work on a single project, I was asked on multiple occasions to extend my contract – and ended up working on four projects in total over three months.</p><p>The builds often included complex elements such as advanced Parallax and JS heavy interfaces. Whilst following the company's internal build processes, I was also able to gain further experience with Grunt, BEM and Susy.</p>",
-              "quote": {
-                "name": "Megan Willis",
-                "role": "Project Manager",
-                "profile-pic": {
-                  "src": "assets/images/megan-willis.jpg",
-                  "alt": ""
+              "modules": [
+                {
+                  "module": "timeline-content",
+                  "data": {
+                      "content": "<p>Developed a series of responsive front-end builds for large international clients. Though my contract was initially for one month to work on a single project, I was asked on multiple occasions to extend my contract – and ended up working on four projects in total over three months.</p><p>The builds often included complex elements such as advanced Parallax and JS heavy interfaces. Whilst following the company's internal build processes, I was also able to gain further experience with Grunt, BEM and Susy.</p>"
+                  }
                 },
-                "content": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation. A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project</p>"
-              }
+                {
+                  "module": "timeline-quote",
+                  "data": {
+                    "name": "Megan Willis",
+                    "role": "Project Manager",
+                    "profile-pic": {
+                      "src": "assets/images/megan-willis.jpg",
+                      "alt": ""
+                    },
+                    "content": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation. A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project</p>"
+                  }
+                }
+              ]
             },
             {
               "company": "Zone",
@@ -38,7 +48,14 @@
                 "src": "assets/images/zone-logo.svg",
                 "alt": ""
               },
-              "content": "<p>I was contracted to work on-site at Zone, where I worked on a several large corporate websites adding additional responsive templates and functionality.</p><p>With these projects I got exposure to ASP templates and Gitflow, and gained further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p>"
+              "modules": [
+                {
+                  "module": "timeline-content",
+                  "data": {
+                      "content": "<p>I was contracted to work on-site at Zone, where I worked on a several large corporate websites adding additional responsive templates and functionality.</p><p>With these projects I got exposure to ASP templates and Gitflow, and gained further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p>"
+                  }
+                }
+              ]
             },
             {
               "company": "Digirati",
@@ -46,16 +63,26 @@
                 "src": "assets/images/digirati-logo.png",
                 "alt": ""
               },
-              "content": "<p>I was contracted to work on-site at Zone, where I worked on a several large corporate websites adding additional responsive templates and functionality.</p><p>With these projects I got exposure to ASP templates and Gitflow, and gained further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p>",
-              "preview": {
-                "url": false,
-                "images": [
-                  {
-                    "src": "assets/images/",
-                    "alt": ""
+              "modules" : [
+                {
+                  "module": "timeline-content",
+                  "data": {
+                    "content": "<p>I was contracted to work on-site at Zone, where I worked on a several large corporate websites adding additional responsive templates and functionality.</p><p>With these projects I got exposure to ASP templates and Gitflow, and gained further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p>"
                   }
-                ]
-              }
+                },
+                {
+                  "module": "timeline-preview",
+                  "data": {
+                    "url": false,
+                    "images": [
+                      {
+                        "src": "assets/images/",
+                        "alt": ""
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
         }
@@ -63,51 +90,66 @@
       "remote": {
         "period": "2014-2015",
         "title": "Freelancing remotely with various digital agencies",
-        "introduction": "<p>In 2014 & 2015 I worked remote for various small digital agencies and a couple of startups. This more often than not involved building from start to finish medium sized websites powered by Wordpress.</p>",
-        "companies": [
+        "modules": [
           {
-            "name": "borne™",
-            "logo": {
-              "src": "assets/images/borne-logo.svg",
-              "alt": ""
-            },
-            "url": "https://www.weareborne.com/"
+            "module": "timeline-content",
+            "data": {
+              "content": "<p>In 2014 & 2015 I worked remote for various small digital agencies and a couple of startups. This more often than not involved building from start to finish medium sized websites powered by Wordpress.</p>"
+            }
           },
           {
-            "name": "Rubber Cheese",
-            "logo": {
-              "src": "assets/images/rubber-cheese-logo.jpg",
-              "alt": ""
-            },
-            "url": "http://www.rubbercheese.com/"
+            "module": "timeline-company-grid",
+            "data": {
+              "companies": [
+                {
+                  "name": "borne™",
+                  "logo": {
+                    "src": "assets/images/borne-logo.svg",
+                    "alt": ""
+                  },
+                  "url": "https://www.weareborne.com/"
+                },
+                {
+                  "name": "Rubber Cheese",
+                  "logo": {
+                    "src": "assets/images/rubber-cheese-logo.jpg",
+                    "alt": ""
+                  },
+                  "url": "http://www.rubbercheese.com/"
+                },
+                {
+                  "name": "StudioAura",
+                  "logo": {
+                    "src": "assets/images/studio-aura-logo.svg",
+                    "alt": ""
+                  },
+                  "url": "http://www.studioaura.com/"
+                },
+                {
+                  "name": "Spork Digital",
+                  "logo": {
+                    "src": "assets/images/spork-logo.svg",
+                    "alt": ""
+                  },
+                  "url": "http://spork.digital"
+                }
+              ]
+            }
           },
           {
-            "name": "StudioAura",
-            "logo": {
-              "src": "assets/images/studio-aura-logo.svg",
-              "alt": ""
-            },
-            "url": "http://www.studioaura.com/"
-          },
-          {
-            "name": "Spork Digital",
-            "logo": {
-              "src": "assets/images/spork-logo.svg",
-              "alt": ""
-            },
-            "url": "http://spork.digital"
+            "module": "timeline-quote",
+            "data": {
+              "name": "Kelly Molson",
+              "role": "Managing Director",
+              "company": "Rubber Cheese",
+              "profile-pic": {
+                "src": "assets/images/kelly-molson.jpg",
+                "alt": ""
+              },
+              "content": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation. A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project</p>"
+            }
           }
-        ],
-        "quote": {
-          "name": "Kelly Molson",
-          "role": "Managing Director",
-          "company": "Rubber Cheese",
-          "profile-pic": {
-            "src": "assets/images/kelly-molson.jpg",
-            "alt": ""
-          },
-          "content": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation. A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project</p>"
-        }
+        ]
       }
     },
     "perm": [

@@ -4,6 +4,18 @@
 }
 
 @mixin section-inner {
-  padding-bottom: 36px;
+  padding-bottom: $double-lh;
   padding-top: 56px;
+}
+
+@mixin section-break($color: $border-orange) {
+  // border-bottom: 1px solid $color;
+  padding-bottom: $single-lh;
+  margin-bottom: $double-lh-header;
+}
+
+@mixin remove-section-break {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }

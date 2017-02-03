@@ -1,20 +1,30 @@
 {{#each freelancing.contracting}}
 <div class="">
-  <strong class="heading-three">{{year}}</strong>
+  <strong class="heading-three timeline__period-title line-segment">
+    {{year}}
+    {{>line-segment vertical=true class="timeline__period-title-line"}}
+  </strong>
   {{#each contracts}}
-    <h3 class="heading-three">{{company}}</h3>
-    <img alt="{{company}} logo" src="{{logo.src}}" />
-    {{{content}}}
-    {{#if preview}}
-    <div class="">
-      {{#each preview.images}}
-        <img alt="{{alt}}" src="{{src}}" />
+    <div class="timeline__segment line-segment">
+      <div class="timeline__contracting-header line-segment">
+        <h3 class="heading-three timeline__contracting-title">{{company}}</h3>
+        <img alt="{{company}} logo" class="timeline__contracting-logo" src="{{logo.src}}" />
+        {{>line-segment vertical=true class="line-segment__line--header-vertical"}}
+        {{>line-segment horizontal=true class="line-segment__line--header-h"}}
+      </div>
+      {{#each modules}}
+        <div class="timeline__content-item {{#if @last }}timeline__content-item--last{{/if}} line-segment">
+          {{> ( lookup . 'module') data}}
+
+          {{#unless @last}}
+            {{>line-segment grey=true horizontal=true}}
+          {{else}}
+            {{>line-segment horizontal=true}}
+          {{/unless}}
+        </div>
       {{/each}}
+      {{>line-segment vertical=true class="line-segment__line--after-contract"}}
     </div>
-    {{/if}}
-    {{#if quote}}
-      {{>quote quote}}
-    {{/if}}
   {{/each}}
 </div>
 {{/each}}
