@@ -15,17 +15,25 @@
   }
 
   &__contracting-logo {
-    margin-bottom: 14px;
-    width: 120px;
+    margin-bottom: 10px;
+    width: 100px;
   }
 
-  &__contracting-header {
+  &__perm-logo {
+    margin-bottom: 10px;
+    width: 50px;
+  }
+
+  &__header {
     align-items: center;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     display: flex;
-    padding-bottom: 50px + 20px;
-    margin-bottom: $double-lh;
+
+    &--contracting {
+      padding-bottom: 50px + 20px;
+      margin-bottom: $double-lh;
+    }
   }
 
   &__contracting-title {
@@ -35,9 +43,47 @@
   &__content-item {
     @include section-break;
 
+    &--no-border {
+      padding-bottom: 0;
+      margin-bottom: 34px;
+    }
+
     &--last {
       margin-bottom: 0;
     }
+
+    &--last-timeline-item {
+      padding-bottom: 0;
+    }
+  }
+
+  &__major-change {
+    padding-bottom: 70px;
+  }
+
+  &__perm-period {
+    padding-bottom: 50px + 20px;
+  }
+
+  &__perm {
+    padding-bottom: 20px + 70px + 20px;
+
+    &--last {
+      padding-bottom: 0;
+    }
+  }
+
+  &__major-change-title,
+  &__perm-title {
+    margin-bottom: 0;
+  }
+
+  &__perm-role {
+    text-align: center;
+  }
+
+  &__perm-content {
+    text-align: left;
   }
 }
 
@@ -82,7 +128,6 @@
       &.line-segment__line--horizontal .line-segment__part {
         background-color: $border-grey;
       }
-
     }
 
     &--header-vertical {
@@ -95,7 +140,14 @@
       height: 70px;
     }
 
+    &--started-freelancing {
+      height: 70px;
+    }
 
+    &--perm-period {
+      bottom: 20px;
+      height: 50px;
+    }
   }
 
   &__part {

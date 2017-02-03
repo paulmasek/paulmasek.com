@@ -1,7 +1,7 @@
 <section class="skills">
-  {{> section-hero introduction}}
+  {{> section-hero introduction class="skills"}}
   <div class="container skills__inner">
-    <div class="skills__main">
+    <div class="skills__main line-segment">
       <h3 class="heading-three">{{main-skills.title}}</h3>
       <ul class="">
   {{#each main-skills.skills}}
@@ -11,10 +11,9 @@
         </li>
   {{/each}}
       </ul>
+      {{>line-segment horizontal=true}}
     </div>
-
     <div class="">
-
       <div class="skills__secondary">
         <h3 class="heading-three">{{workflow.title}}</h3>
         <ul class="">
@@ -26,7 +25,6 @@
         {{/each}}
         </ul>
       </div>
-
       <div class="skills__secondary">
         <h3 class="heading-three">{{software.title}}</h3>
         <ul class="">
@@ -35,7 +33,6 @@
         {{/each}}
         </ul>
       </div>
-
     </div>
   </div>
 </section>

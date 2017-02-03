@@ -69,18 +69,6 @@
                   "data": {
                     "content": "<p>I was contracted to work on-site at Zone, where I worked on a several large corporate websites adding additional responsive templates and functionality.</p><p>With these projects I got exposure to ASP templates and Gitflow, and gained further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p>"
                   }
-                },
-                {
-                  "module": "timeline-preview",
-                  "data": {
-                    "url": false,
-                    "images": [
-                      {
-                        "src": "assets/images/",
-                        "alt": ""
-                      }
-                    ]
-                  }
                 }
               ]
             }
@@ -93,6 +81,7 @@
         "modules": [
           {
             "module": "timeline-content",
+            "no-border": true,
             "data": {
               "content": "<p>In 2014 & 2015 I worked remote for various small digital agencies and a couple of startups. This more often than not involved building from start to finish medium sized websites powered by Wordpress.</p>"
             }

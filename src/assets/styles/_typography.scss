@@ -60,6 +60,12 @@
   font-size: 1rem;
 }
 
+@mixin small-bold {
+  @include bold;
+  color: $orange;
+  font-size: 14px;
+}
+
 @mixin h2($color: $orange) {
   @include bold;
   @include h2-size;

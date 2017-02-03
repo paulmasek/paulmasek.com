@@ -6,16 +6,15 @@
   </strong>
   {{#each contracts}}
     <div class="timeline__segment line-segment">
-      <div class="timeline__contracting-header line-segment">
+      <div class="timeline__header timeline__header--contracting line-segment">
         <h3 class="heading-three timeline__contracting-title">{{company}}</h3>
         <img alt="{{company}} logo" class="timeline__contracting-logo" src="{{logo.src}}" />
         {{>line-segment vertical=true class="line-segment__line--header-vertical"}}
         {{>line-segment horizontal=true class="line-segment__line--header-h"}}
       </div>
       {{#each modules}}
-        <div class="timeline__content-item {{#if @last }}timeline__content-item--last{{/if}} line-segment">
+        <div class="timeline__content-item line-segment{{#if @last}} timeline__content-item--last{{/if}}">
           {{> ( lookup . 'module') data}}
-
           {{#unless @last}}
             {{>line-segment grey=true horizontal=true}}
           {{else}}

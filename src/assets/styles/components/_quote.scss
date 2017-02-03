@@ -1,13 +1,40 @@
 .quote {
   &__profile-pic {
     border-radius: 50%;
+    width:100px;
   }
 
   &__quote {
+    p {
+      &:first-of-type:before,
+      &:last-of-type:after {
+        color: $orange;
+        display: inline-block;
+        font-family: Times;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 24px;
+        position: relative;
+        top: 3px;
+      }
 
+      &:first-of-type:before {
+        content: '\201C\0020';
+        margin-right: 4px;
+      }
+
+      &:last-of-type:after {
+        content: '\0020\201D';
+        margin-left: 4px;
+      }
+    }
   }
 
   &__attribution {
-    @include h4;
+    @include small-bold;
+  }
+
+  &__attribution-company {
+    display: block;
   }
 }

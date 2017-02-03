@@ -1,8 +1,8 @@
-<ul class="">
+<ul class="company-list grid grid--v-center">
   {{#each companies}}
-  <li class="">
-    <a class="" href="{{url}}">
-      <img alt="{{name}}" class="" src="{{logo.src}}" />
+  <li class="company-list__item grid__col grid__col--4-12">
+    <a class="company-list__link" href="{{url}}">
+      <img alt="{{name}}" class="company-list__image" src="{{logo.src}}" />
     </a>
   </li>
   {{/each}}

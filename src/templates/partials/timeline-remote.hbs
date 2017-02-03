@@ -1,0 +1,25 @@
+<div class="">
+  <div class="timeline__header line-segment">
+    <strong class="heading-three timeline__major-change-title">{{period}}</strong>
+  </div>
+  <div class="timeline__segment line-segment">
+    <div class="timeline__header timeline__header--contracting line-segment">
+      <h3 class="heading-three">{{title}}</h3>
+      {{>line-segment vertical=true class="line-segment__line--header-vertical"}}
+      {{>line-segment horizontal=true class="line-segment__line--header-h"}}
+    </div>
+    {{#each modules}}
+      <div class="timeline__content-item {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last{{/if}} line-segment">
+        {{> ( lookup . 'module') data}}
+        {{#unless no-border}}
+          {{#unless @last}}
+            {{>line-segment grey=true horizontal=true}}
+          {{else}}
+            {{>line-segment horizontal=true}}
+          {{/unless}}
+        {{/unless}}
+      </div>
+    {{/each}}
+    {{>line-segment vertical=true class="line-segment__line--after-contract"}}
+  </div>
+</div>
