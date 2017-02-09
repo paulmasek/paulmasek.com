@@ -2,7 +2,7 @@
 <div class="timeline__major-period timeline__segment {{#if @last}} timeline__major-period--last{{/if}} line-segment">
   <strong class="timeline__period-title timeline__period-title--perm line-segment">
     {{period}}
-    {{>line-segment vertical=true class="line-segment__line--period-title-perm"}}
+    {{>line-segment vertical=true class="line-segment__line--small-separator"}}
   </strong>
   <div class="timeline__header timeline__header--perm">
     <h3 class="heading-three timeline__perm-title">{{company}}</h3>
@@ -21,7 +21,7 @@
     {{/unless}}
   </div>
   {{#unless @last}}
-    {{>line-segment vertical=true class="line-segment__line--after-contract"}}
+    {{>line-segment vertical=true class="line-segment__line--medium-separator"}}
   {{/unless}}
 </div>
 {{/each}}

@@ -3,7 +3,7 @@
   <div class="timeline__segment line-segment">
     <div class="timeline__header timeline__header--contracting line-segment">
       <h3 class="heading-three timeline__header-title">{{title}}</h3>
-      {{>line-segment vertical=true class="line-segment__line--header-vertical"}}
+      {{>line-segment vertical=true class="line-segment__line--small-separator-header"}}
       {{>line-segment horizontal=true class="line-segment__line--header-h"}}
     </div>
     {{#each modules}}
@@ -18,6 +18,6 @@
         {{/unless}}
       </div>
     {{/each}}
-    {{>line-segment vertical=true class="line-segment__line--after-contract"}}
+    {{>line-segment vertical=true class="line-segment__line--medium-separator"}}
   </div>
 </div>
