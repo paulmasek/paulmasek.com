@@ -5,15 +5,15 @@
       {{>line-segment vertical=true class="line-segment__line--medium-separator"}}
     </strong>
     {{#each contracts}}
-      <div class="timeline__segment timeline__segment--{{slug}} line-segment">
-        <div class="timeline__header timeline__header--contracting line-segment">
+      <div class="timeline__segment timeline__segment--{{slug}} line-segment line-segment--medium-separator">
+        <div class="timeline__header timeline__header--contracting line-segment line-segment--header">
           <h3 class="heading-three timeline__header-title">{{company}}</h3>
           <img alt="{{company}} logo" class="timeline__contracting-logo" src="{{logo.src}}" />
           {{>line-segment vertical=true class="line-segment__line--small-separator-header"}}
           {{>line-segment horizontal=true class="line-segment__line--header-h"}}
         </div>
         {{#each modules}}
-          <div class="timeline__content-item line-segment{{#if @last}} timeline__content-item--last{{/if}}">
+          <div class="timeline__content-item line-segment{{#if @last}} timeline__content-item--last line-segment--content{{/if}}">
             {{> ( lookup . 'module') data}}
             {{#unless @last}}
               {{>line-segment grey=true horizontal=true}}

@@ -1,17 +1,10 @@
 .timeline {
-  padding-top: $line-border + $small-vertical-separator-height + 4px;
   position: relative;
   text-align: center;
 
   &__segment {
-    padding-bottom: 10px + $medium-vertical-separator-height + $line-border;
-
     &--digirati {
       margin-top: -16px;
-    }
-
-    &--major-change {
-      padding-bottom: $big-vertical-separator-height;
     }
   }
 
@@ -19,7 +12,6 @@
     margin-bottom: -16px;
 
     &--last {
-      padding-bottom: 0;
       margin-bottom: 0;
     }
   }
@@ -43,11 +35,6 @@
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     display: flex;
-
-    &--contracting {
-      padding-bottom: $small-vertical-separator-height + $line-border-header;
-      margin-bottom: 36px;
-    }
   }
 
   &__content-item {
@@ -58,16 +45,11 @@
     }
 
     &--last {
-      @include section-break;
       margin-bottom: 0;
 
       .line-segment__line {
         display: block;
       }
-    }
-
-    &--last-timeline-item {
-      padding-bottom: 0;
     }
 
     &--perm {
@@ -109,11 +91,33 @@
 }
 
 
-
-
-
 .line-segment {
   position: relative;
+
+  &--start {
+    padding-top: $line-border + $small-vertical-separator-height +  $line-border-header;
+  }
+
+  &--start-title {
+    padding-top: $line-border + $small-vertical-separator-height + 4px;
+  }
+
+  &--header {
+    padding-bottom: $small-vertical-separator-height + $line-border-header;
+    margin-bottom: 36px;
+  }
+
+  &--content {
+    padding-bottom: 14px;
+  }
+
+  &--medium-separator {
+    padding-bottom: $line-border-header + $medium-vertical-separator-height + $line-border;
+  }
+
+  &--big-separator {
+    padding-bottom: $big-vertical-separator-height;
+  }
 
   &__line {
     display: block;
