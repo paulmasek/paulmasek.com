@@ -1,5 +1,5 @@
 .work {
   &__inner {
-    @include section-inner;
+    padding-bottom: $double-lh;
   }
 }

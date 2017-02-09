@@ -1,40 +1,7 @@
-<div class="timeline">
+<div class="timeline line-segment">
   {{> timeline-contracting}}
   {{> timeline-remote freelancing.remote}}
-  <div class="line-segment timeline__major-change">
-    <strong class="heading-three timeline__major-change-title">{{freelancing.start-date}}</strong>
-    <h3 class="heading-two">{{freelancing.start-title}}</h3>
-    {{>line-segment vertical=true class="line-segment__line--started-freelancing"}}
-  </div>
-  <div>
-    {{#each perm}}
-    <div class="timeline__perm{{#if @last}} timeline__perm--last{{/if}} line-segment">
-      <div class="line-segment timeline__perm-period">
-        <strong class="heading-three">{{period}}</strong>
-        {{>line-segment vertical=true class="line-segment__line--perm-period"}}
-      </div>
-      <div class="timeline__perm-content">
-        <div class="timeline__header timeline__header--perm">
-          <h3 class="heading-three timeline__perm-title">{{company}}</h3>
-          <img alt="{{company}} logo" class="timeline__perm-logo" src="{{logo.src}}" />
-        </div>
-        <strong class="heading-three-alt timeline__perm-role">{{role}}</strong>
-        <div class="timeline__content-item line-segment cms timeline__content-item--last{{#if @last}} timeline__content-item--last-timeline-item{{/if}}">
-          {{{introduction}}}
-          <ul class="">
-          {{#each responsibilities}}
-            <li class="">{{{content}}}</li>
-          {{/each}}
-          </ul>
-          {{#unless @last}}
-            {{>line-segment horizontal=true class=""}}
-          {{/unless}}
-        </div>
-        {{#unless @last}}
-          {{>line-segment vertical=true class="line-segment__line--after-contract"}}
-        {{/unless}}
-      </div>
-    </div>
-    {{/each}}
-  </div>
+  {{> timeline-started-freelancing}}
+  {{> timeline-perm}}
+  {{>line-segment vertical=true class="line-segment__line--timeline-start"}}
 </div>

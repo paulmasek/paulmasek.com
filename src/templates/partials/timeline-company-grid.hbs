@@ -1,6 +1,6 @@
-<ul class="company-list grid grid--v-center">
+<ul class="company-list grid grid--border-seperated">
   {{#each companies}}
-  <li class="company-list__item grid__col grid__col--4-12">
+  <li class="company-list__item company-list__item--{{slug}} grid__col grid__col--6-12">
     <a class="company-list__link" href="{{url}}">
       <img alt="{{name}}" class="company-list__image" src="{{logo.src}}" />
     </a>

@@ -1,27 +1,41 @@
 .timeline {
+  padding-top: 20px + 40px + 4px;
+  position: relative;
   text-align: center;
 
   &__segment {
-    padding-bottom: 20px + 70px + 20px;
+    padding-bottom: 10px + 80px + 20px;
+
+    &--digirati {
+      margin-top: -16px;
+    }
+
+    &--major-change {
+      padding-bottom: 70px;
+    }
+  }
+
+  &__major-period {
+    margin-bottom: -16px;
+
+    &--last {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
   }
 
   &__period-title {
-    padding-bottom: 40px;
-    position: relative;
-  }
+    @include h4-big;
+    margin-bottom: 0;
+    padding-bottom: 6px + 80px + 20px;
 
-  &__period-title-line {
-    height: 40px;
-  }
+    &--major-change {
+      padding-bottom: 0;
+    }
 
-  &__contracting-logo {
-    margin-bottom: 10px;
-    width: 100px;
-  }
-
-  &__perm-logo {
-    margin-bottom: 10px;
-    width: 50px;
+    &--perm {
+      padding-bottom: 6px + 40px + 20px;
+    }
   }
 
   &__header {
@@ -31,59 +45,66 @@
     display: flex;
 
     &--contracting {
-      padding-bottom: 50px + 20px;
-      margin-bottom: $double-lh;
+      padding-bottom: 40px + 10px;
+      margin-bottom: 36px;
     }
-  }
-
-  &__contracting-title {
-    width: 100%;
   }
 
   &__content-item {
-    @include section-break;
+    margin-bottom: 56px;
 
-    &--no-border {
-      padding-bottom: 0;
-      margin-bottom: 34px;
+    .line-segment__line {
+      display: none;
     }
-
+    
     &--last {
+      @include section-break;
       margin-bottom: 0;
+
+      .line-segment__line {
+        display: block;
+      }
     }
 
     &--last-timeline-item {
       padding-bottom: 0;
     }
-  }
 
-  &__major-change {
-    padding-bottom: 70px;
-  }
-
-  &__perm-period {
-    padding-bottom: 50px + 20px;
-  }
-
-  &__perm {
-    padding-bottom: 20px + 70px + 20px;
-
-    &--last {
-      padding-bottom: 0;
+    &--perm {
+      text-align: left;
     }
   }
 
-  &__major-change-title,
+  // Contracting
+
+  &__header-title {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+
+  &__contracting-logo {
+    margin-bottom: 10px;
+    width: 100px;
+  }
+
+  &__started-freelancing {
+    margin-bottom: 6px;
+  }
+
+  // Perm
+
+  &__perm-logo {
+    margin-bottom: 10px;
+    width: 50px;
+  }
+
   &__perm-title {
     margin-bottom: 0;
   }
 
   &__perm-role {
-    text-align: center;
-  }
-
-  &__perm-content {
-    text-align: left;
+    @include h4-big($black);
+    margin-bottom: 20px;
   }
 }
 
@@ -131,13 +152,13 @@
     }
 
     &--header-vertical {
-      bottom: 20px;
-      height: 50px;
+      bottom: 10px;
+      height: 40px;
     }
 
     &--after-contract {
       bottom: 20px;
-      height: 70px;
+      height: 80px;
     }
 
     &--started-freelancing {
@@ -147,6 +168,21 @@
     &--perm-period {
       bottom: 20px;
       height: 50px;
+    }
+
+    &--period-title-perm {
+      bottom: 20px;
+      height: 40px;
+    }
+
+    &--period-title {
+      bottom: 20px;
+      height: 80px;
+    }
+
+    &--timeline-start {
+      height: 40px;
+      top: 20px;
     }
   }
 

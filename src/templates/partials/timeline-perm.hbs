@@ -1,0 +1,27 @@
+{{#each perm}}
+<div class="timeline__major-period timeline__segment {{#if @last}} timeline__major-period--last{{/if}} line-segment">
+  <strong class="timeline__period-title timeline__period-title--perm line-segment">
+    {{period}}
+    {{>line-segment vertical=true class="line-segment__line--period-title-perm"}}
+  </strong>
+  <div class="timeline__header timeline__header--perm">
+    <h3 class="heading-three timeline__perm-title">{{company}}</h3>
+    <img alt="{{company}} logo" class="timeline__perm-logo" src="{{logo.src}}" />
+  </div>
+  <strong class="timeline__perm-role">{{role}}</strong>
+  <div class="timeline__content-item timeline__content-item--perm line-segment cms timeline__content-item--last{{#if @last}} timeline__content-item--last-timeline-item{{/if}}">
+    {{{introduction}}}
+    <ul class="">
+    {{#each responsibilities}}
+      <li class="">{{{content}}}</li>
+    {{/each}}
+    </ul>
+    {{#unless @last}}
+      {{>line-segment horizontal=true class=""}}
+    {{/unless}}
+  </div>
+  {{#unless @last}}
+    {{>line-segment vertical=true class="line-segment__line--after-contract"}}
+  {{/unless}}
+</div>
+{{/each}}

@@ -16,6 +16,7 @@
           "year": "2016",
           "contracts": [
             {
+              "slug": "ry",
               "company": "Radley Yeldar",
               "logo": {
                 "src": "assets/images/radley-yeldar-logo.svg",
@@ -43,6 +44,7 @@
               ]
             },
             {
+              "slug": "zone",
               "company": "Zone",
               "logo": {
                 "src": "assets/images/zone-logo.svg",
@@ -58,6 +60,7 @@
               ]
             },
             {
+              "slug": "digirati",
               "company": "Digirati",
               "logo": {
                 "src": "assets/images/digirati-logo.png",
@@ -91,22 +94,7 @@
             "data": {
               "companies": [
                 {
-                  "name": "borne™",
-                  "logo": {
-                    "src": "assets/images/borne-logo.svg",
-                    "alt": ""
-                  },
-                  "url": "https://www.weareborne.com/"
-                },
-                {
-                  "name": "Rubber Cheese",
-                  "logo": {
-                    "src": "assets/images/rubber-cheese-logo.jpg",
-                    "alt": ""
-                  },
-                  "url": "http://www.rubbercheese.com/"
-                },
-                {
+                  "slug": "studioaura",
                   "name": "StudioAura",
                   "logo": {
                     "src": "assets/images/studio-aura-logo.svg",
@@ -115,12 +103,31 @@
                   "url": "http://www.studioaura.com/"
                 },
                 {
+                  "slug": "rubber-cheese",
+                  "name": "Rubber Cheese",
+                  "logo": {
+                    "src": "assets/images/rubber-cheese-logo.jpg",
+                    "alt": ""
+                  },
+                  "url": "http://www.rubbercheese.com/"
+                },
+                {
+                  "slug": "spork",
                   "name": "Spork Digital",
                   "logo": {
                     "src": "assets/images/spork-logo.svg",
                     "alt": ""
                   },
                   "url": "http://spork.digital"
+                },
+                {
+                  "slug": "borne",
+                  "name": "borne™",
+                  "logo": {
+                    "src": "assets/images/borne-logo.svg",
+                    "alt": ""
+                  },
+                  "url": "https://www.weareborne.com/"
                 }
               ]
             }

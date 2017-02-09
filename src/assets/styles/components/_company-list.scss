@@ -1,8 +1,65 @@
 .company-list {
-  margin-bottom: 26px;
-  
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 60px;
+
+  &__item {
+    align-items: center;
+    display: flex;
+    padding-bottom: 1px + 20px;
+    padding-top: 20px;
+    text-align: center;
+
+    &:before {
+      background-color: $border-grey;
+      display: block;
+    }
+
+    &:nth-of-type(odd) {
+      &:after {
+        background-color: $border-grey;
+        display: block;
+      }
+    }
+
+    &:nth-child(-n+2) {
+      padding-top: 0;
+    }
+
+    &:nth-child(2n+1):nth-last-child(-n+2),
+    &:nth-child(2n+1):nth-last-child(-n+2) ~ .company-list__item {
+      padding-bottom: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &--borne .company-list__image {
+      width: percentage(100 / 157.5);
+    }
+
+    &--rubber-cheese .company-list__image {
+      width: percentage(100 / 157.5);
+    }
+
+    &--studioaura .company-list__image {
+      width: percentage(118 / 157.5);
+    }
+
+    &--spork .company-list__image {
+      width: percentage(88 / 157.5);
+    }
+  }
+
+  &__link {
+    width: 100%;
+  }
+
   &__image {
     filter: grayscale(100%);
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

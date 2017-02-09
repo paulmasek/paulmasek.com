@@ -56,6 +56,10 @@
   margin-bottom: 20px;
 }
 
+@mixin h4-big-size {
+  font-size: 18px;
+}
+
 @mixin h4-size {
   font-size: 1rem;
 }
@@ -93,4 +97,11 @@
 
 @mixin h4-alt {
   @include h4($black);
+}
+
+@mixin h4-big($color: $orange) {
+  @include bold;
+  @include h4-big-size;
+  color: $color;
+  display: block;
 }
