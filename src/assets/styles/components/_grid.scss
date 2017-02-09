@@ -1,65 +1,16 @@
 @mixin gen-grid($prefix: 'grid__col') {
   .#{$prefix} {
-    &--1-12 {
-      width: 8.333333333333333%;
-    }
-
-    &--2-12 {
-      width: 16.666666666666667%;
-    }
-
-    &--3-12 {
-      width: 25%;
-    }
-
-    &--4-12 {
-      width: 33.333333333333333%;
-    }
-
-    &--5-12 {
-      width: 41.666666666666667%;
-    }
-
-    &--6-12 {
-      width: 50%;
-    }
-
-    &--7-12 {
-      width: 58.333333333333333%;
-    }
-
-    &--8-12 {
-      width: 66.666666666666666%;
-    }
-
-    &--9-12 {
-      width: 75%;
-    }
-
-    &--10-12 {
-      width: 83.333333333333333%;
-    }
-
-    &--11-12 {
-      width: 83.333333333333333%;
-    }
-
-    &--12-12 {
-      width: 100%;
+    @for $i from 1 through $grid-columns {
+      &--#{$i}-#{$grid-columns} {
+        $width: (100 / $grid-columns) * $i;
+        width: $width * 1%;
+      }
     }
   }
 }
 
-.container {
-  padding-left: $gutter;
-  padding-right: $gutter;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .grid {
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   display: flex;
   margin-left: -$gutter;
 
@@ -70,6 +21,48 @@
   &__col {
     padding-left: $gutter;
   }
+
+  &--thin {
+    margin-left: -$gutter / 2;
+
+    .grid__col {
+      padding-left: $gutter / 2;
+    }
+  }
+
+  &--border-seperated {
+    margin-left: 0;
+
+    .grid__col {
+      padding-left: 0;
+      position: relative;
+
+      &:before {
+        bottom: 0;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+
+      &:after {
+        content: '';
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+      }
+    }
+  }
+}
+
+.container {
+  padding-left: $gutter;
+  padding-right: $gutter;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @include gen-grid;
