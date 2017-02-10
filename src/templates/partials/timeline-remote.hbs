@@ -1,13 +1,13 @@
 <div class="timeline__major-period">
   <strong class="timeline__period-title timeline__period-title--major-change">{{period}}</strong>
-  <div class="timeline__segment line-segment line-segment--medium-separator">
-    <div class="timeline__header line-segment line-segment--header">
+  <div class="timeline__segment line-segment line-segment--vertical line-segment--medium-separator">
+    <div class="timeline__header line-segment line-segment line-segment--horizontal line-segment--vertical line-segment--header">
       <h3 class="heading-three timeline__header-title">{{title}}</h3>
       {{>line-segment vertical=true class="line-segment__line--small-separator-header"}}
       {{>line-segment horizontal=true class="line-segment__line--header-h"}}
     </div>
     {{#each modules}}
-      <div class="timeline__content-item {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last line-segment--content{{/if}} line-segment">
+      <div class="timeline__content-item {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last line-segment line-segment--content line-segment--horizontal{{/if}}">
         {{> ( lookup . 'module') data}}
         {{#unless no-border}}
           {{#unless @last}}

@@ -10,7 +10,6 @@
 
 @mixin section-break($color: $border-orange) {
   // border-bottom: 1px solid $color;
-  padding-bottom: $single-lh;
   margin-bottom: $double-lh-header;
 }
 

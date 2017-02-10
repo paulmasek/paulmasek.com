@@ -1,9 +1,14 @@
 <div class="section-hero{{#if class}} section-hero--work{{/if}}">
-  <div class="container">
-    <h2 class="section-hero__title">{{title}}</h2>
-    <div class="">
-      {{{content}}}
+  <div class="section-hero__inner">
+    <div class="container container--thin">
+      <h2 class="section-hero__title">{{title}}</h2>
+      <div class="">
+        {{{content}}}
+      </div>
+      <div class="hero-background">
+        <div class="hero-background__image" style="background-image: url('{{background.src}}')">{{background.alt}}</div>
+        <div class="hero-background__overlay">&nbsp;</div>
+      </div>
     </div>
-    <div class="hero-background" style="background-image: url('{{background.src}}')">{{background.alt}}</div>
   </div>
 </div>

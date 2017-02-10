@@ -1,7 +1,16 @@
-@mixin gen-grid($prefix: 'grid__col') {
+@mixin gen-grid($size: false, $prefix: 'grid__col') {
   .#{$prefix} {
     @for $i from 1 through $grid-columns {
-      &--#{$i}-#{$grid-columns} {
+
+      $class: #{$i}-#{$grid-columns};
+
+      @if $size {
+        $class: #{$size}-#{$class};
+      }
+
+      @debug($class);
+
+      &--#{$class} {
         $width: (100 / $grid-columns) * $i;
         width: $width * 1%;
       }
@@ -63,6 +72,18 @@
   padding-right: $gutter;
   margin-left: auto;
   margin-right: auto;
+
+  &--thin {
+    max-width: 640px + $gutter * 2;
+  }
+
+  &--wide {
+    max-width: 880px + $gutter * 2;
+  }
 }
 
 @include gen-grid;
+
+@include media('>=tablet') {
+  @include gen-grid('sm');
+}

@@ -18,7 +18,7 @@
   }
 
   &:after {
-    background: #000;
+    background: $black;
     content: '';
     display: block;
     height: 100%;
@@ -55,11 +55,11 @@
     font-size: 46px;
     display: block;
     margin-bottom: 4px;
-    text-shadow: 0 2px 1px rgba(0,0,0, .2);
+    text-shadow: 0 2px 1px $text-image-shadow;
   }
 
   &__heading-role {
-    text-shadow: 0 2px 4px rgba(0,0,0, .2);
+    text-shadow: 0 2px 4px $text-image-shadow;
     font-size: 16px;
     display: block;
   }

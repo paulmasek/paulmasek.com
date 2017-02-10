@@ -19,14 +19,9 @@
   &__period-title {
     @include h4-big;
     margin-bottom: 0;
-    padding-bottom: 6px + $medium-vertical-separator-height + $line-border;
 
     &--major-change {
       padding-bottom: 0;
-    }
-
-    &--perm {
-      padding-bottom: 6px + $small-vertical-separator-height + $line-border-header;
     }
   }
 
@@ -94,17 +89,83 @@
 .line-segment {
   position: relative;
 
+  &--horizontal {
+    .no-js & {
+      &:after {
+        background-color: $border-orange;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+
+  &--vertical {
+    .no-js &  {
+      &:before {
+        background-color: $border-orange;
+        content: '';
+        display: none;
+        height: 100%;
+        margin-left: -.5px;
+        left: 50%;
+        position: absolute;
+        width: 1px;
+      }
+    }
+  }
+
   &--start {
     padding-top: $line-border + $small-vertical-separator-height +  $line-border-header;
+
+    .no-js & {
+      &:before {
+        display: block;
+        height: $small-vertical-separator-height;
+        top: $line-border;
+      }
+    }
   }
 
   &--start-title {
     padding-top: $line-border + $small-vertical-separator-height + 4px;
+
+    .no-js & {
+      &:before {
+        display: block;
+        height: $small-vertical-separator-height;
+        top: $line-border;
+      }
+    }
   }
 
   &--header {
     padding-bottom: $small-vertical-separator-height + $line-border-header;
     margin-bottom: 36px;
+
+    .no-js & {
+      &:before {
+        bottom: $line-border-header;
+        display: block;
+        height: $small-vertical-separator-height;
+      }
+    }
+  }
+
+  &--period-title {
+    padding-bottom: 6px + $medium-vertical-separator-height + $line-border;
+
+    .no-js & {
+      &:before {
+        bottom: $line-border;
+        display: block;
+        height: $medium-vertical-separator-height;
+      }
+    }
   }
 
   &--content {
@@ -113,15 +174,48 @@
 
   &--medium-separator {
     padding-bottom: $line-border-header + $medium-vertical-separator-height + $line-border;
+
+    .no-js & {
+      &:before {
+        bottom: $line-border;
+        display: block;
+        height: $medium-vertical-separator-height;
+      }
+    }
   }
 
   &--big-separator {
     padding-bottom: $big-vertical-separator-height;
+
+    .no-js & {
+      &:before {
+        bottom: 0;
+        display: block;
+        height: $big-vertical-separator-height;
+      }
+    }
+  }
+
+
+  &--period-title-perm {
+    padding-bottom: 6px + $small-vertical-separator-height + $line-border-header;
+
+    .no-js & {
+      &:before {
+        bottom: $line-border-header;
+        display: block;
+        height: $small-vertical-separator-height;
+      }
+    }
   }
 
   &__line {
     display: block;
     position: absolute;
+
+    .no-js & {
+      display: none;
+    }
 
     &--horizontal {
       height: 1px;

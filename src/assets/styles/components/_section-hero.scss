@@ -1,16 +1,36 @@
 .section-hero {
   @include bold;
   @include section-inner;
-  align-items: center;
   background-color: $white;
   color: $white;
+  align-items: center;
   flex-direction: row;
   display: flex;
+  position: relative;
   overflow: hidden;
   min-height: 300px;
-  position: relative;
   text-align: center;
   z-index: 1;
+
+  @include media('>tablet') {
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  &__inner {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+
+    width: 100%;
+
+    @include media('>tablet') {
+      position: absolute;
+    }
+  }
 
   &__title {
     @include h2;
