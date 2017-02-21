@@ -1,16 +1,16 @@
-<section class="about">
+<section class="about js-trigger-header js-about-content">
   <div class="container container--thin about__inner line-segment line-segment--start line-segment--vertical">
 
     <div class="line-segment line-segment--header line-segment--vertical line-segment--horizontal">
-      <img class="about__profile-pic" src="{{profile-pic.src}}" alt="{{profile-pic.alt}}" />
-      {{>line-segment vertical=true class="line-segment__line--small-separator-header"}}
-      {{>line-segment horizontal=true}}
+      <img class="about__profile-pic js-animate-profile-pic" src="{{profile-pic.src}}" alt="{{profile-pic.alt}}" />
+      {{>line-segment vertical=true class="line-segment__line--small-separator-header" name="about-two"}}
+      {{>line-segment horizontal=true name="about-three"}}
     </div>
 
-    <div class="">
+    <div class="about__content js-animate-about-content">
       {{{body}}}
     </div>
 
-    {{>line-segment vertical=true class="line-segment__line--small-separator"}}
+    {{>line-segment vertical=true class="line-segment__line--small-separator" name="about-one"}}
   </div>
 </section>

@@ -212,6 +212,7 @@
   &__line {
     display: block;
     position: absolute;
+    overflow: hidden;
 
     .no-js & {
       display: none;
@@ -224,26 +225,42 @@
       width: 100%;
 
       .line-segment__part {
-        background-color: $border-orange;
         height: 1px;
         width: 50%;
       }
 
       .line-segment__part-left {
         left: 0;
+
+        .js & {
+          .line-segment__contents {
+            transform: translateX(100%);
+          }
+        }
       }
 
       .line-segment__part-right {
         right: 0;
+
+        .js & {
+          .line-segment__contents {
+            transform: translateX(-100%);
+          }
+        }
       }
     }
 
     &--vertical {
-      background-color: $border-orange;
       left: 50%;
       margin-left: -.5px;
       bottom: 0;
       width: 1px;
+
+      .js & {
+        .line-segment__contents {
+          transform: translateY(-100%);
+        }
+      }
     }
 
     &--grey {
@@ -276,5 +293,16 @@
   &__part {
     display: block;
     position: absolute;
+    overflow: hidden;
+  }
+
+  &__contents {
+    background-color: $border-orange;
+    display: block;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
