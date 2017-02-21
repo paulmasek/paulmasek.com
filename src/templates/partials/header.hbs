@@ -2,14 +2,21 @@
   <div class="main-header__inner container">
     <a class="main-header__branding branding branding--minimal" href="#top">P<span class="branding__full-part">aul</span> M<span class="branding__full-part">asek</span>
     </a>
-    <nav class="primary-navigation">
-      <ul class="primary-navigation-list">
-    {{#each global.navigation}}
-        <li class="primary-navigation__item">
-          <a class="primary-navigation__link" href="{{link}}">{{text}}</a>
-        </li>
-    {{/each}}
-      </ul>
-    </nav>
+    <button class="primary-navigation-show-hide hamburger hamburger--squeeze js-trigger-primary-navigation" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
   </div>
 </header>
+<nav class="primary-navigation js-primary-navigation">
+  <div class="primary-navigation__inner">
+    <ul class="primary-navigation__list">
+  {{#each global.navigation}}
+      <li class="primary-navigation__item">
+        <a class="primary-navigation__link" href="{{link}}">{{text}}</a>
+      </li>
+  {{/each}}
+    </ul>
+  </div>
+</nav>
