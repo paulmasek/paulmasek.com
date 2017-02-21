@@ -2,6 +2,11 @@
   &__profile-pic {
     border-radius: 50%;
     width:100px;
+
+    @include media('>tablet') {
+      align-self: flex-start;
+      margin-right: $gutter;
+    }
   }
 
   &__quote {
@@ -36,5 +41,10 @@
 
   &__attribution-company {
     display: block;
+  }
+
+  @include media('>tablet') {
+    display: flex;
+    text-align: left;
   }
 }
