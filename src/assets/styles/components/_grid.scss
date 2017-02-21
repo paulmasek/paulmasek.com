@@ -8,8 +8,6 @@
         $class: #{$size}-#{$class};
       }
 
-      @debug($class);
-
       &--#{$class} {
         $width: (100 / $grid-columns) * $i;
         width: $width * 1%;
@@ -29,6 +27,7 @@
 
   &__col {
     padding-left: $gutter;
+    width: 100%;
   }
 
   &--thin {
