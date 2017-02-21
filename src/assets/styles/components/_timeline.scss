@@ -56,6 +56,7 @@
 
   &__header-title {
     margin-bottom: 14px;
+    max-width: 300px;
     width: 100%;
   }
 
@@ -82,6 +83,12 @@
   &__perm-role {
     @include h4-big($black);
     margin-bottom: $line-border;
+  }
+
+  &__perm {
+    @include media('>tablet') {
+      max-width: 500px;
+    }
   }
 }
 
