@@ -2,7 +2,7 @@
   "name": "paul-masek",
   "version": "0.1.0",
   "devDependencies": {
-    "assemble": "^0.17.1",
+    "assemble": "^0.19.0",
     "autoprefixer": "^6.7.0",
     "babel-cli": "^6.22.2",
     "babel-core": "^6.21.0",
@@ -38,5 +38,8 @@
   "scripts": {
     "start": "webpack && gulp",
     "init": "babel-node init.js --presets es2015"
+  },
+  "dependencies": {
+    "scrollmagic": "^2.0.5"
   }
 }
