@@ -8,6 +8,15 @@
   text-align: center;
   z-index: 1;
 
+  .js & {
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+
+    &--background-loaded {
+      opacity: 1;
+    }
+  }
+
   &__container {
     display: flex;
     flex-direction: row;
@@ -16,6 +25,15 @@
   &__content {
     align-self: center;
     transform: translateY(0);
+
+    .js & {
+      opacity: 0;
+      transition: opacity .3s 1.5s ease-in-out;
+    }
+
+    .introduction--background-loaded & {
+      opacity: 1;
+    }
   }
 
   &:after {

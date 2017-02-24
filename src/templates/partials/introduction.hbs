@@ -1,10 +1,12 @@
-<section class="introduction">
+<section class="introduction js-introduction">
   <div class="container introduction__container">
     <div class="introduction__content js-introduction-content  js-trigger-introduction">
-      <h1 class="introduction__heading">
-        <span class="introduction__heading-name">{{global.title}}</span>
-        <span class="introduction__heading-role">{{introduction.tagline}}</span>
-      </h1>
+      <div class="introduction__header">
+        <h1 class="introduction__heading">
+          <span class="introduction__heading-name">{{global.title}}</span>
+          <span class="introduction__heading-role">{{introduction.tagline}}</span>
+        </h1>
+      </div>
       <ul class="introduction__navigation">
     {{#each global.navigation}}
         <li class="introduction__navigation-item">
@@ -14,7 +16,7 @@
       </ul>
     </div>
   </div>
-  <div class="hero-background">
+  <div class="introduction__background hero-background">
     <div class="hero-background__image" style="background-image: url('{{introduction.background.src}}')">{{introduction.background.alt}}</div>
     <div class="hero-background__overlay">&nbsp;</div>
   </div>

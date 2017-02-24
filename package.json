@@ -41,6 +41,7 @@
     "init": "babel-node init.js --presets es2015"
   },
   "dependencies": {
+    "imagesloaded": "^4.1.1",
     "scrollmagic": "^2.0.5"
   }
 }

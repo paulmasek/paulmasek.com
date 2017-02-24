@@ -1,3 +1,4 @@
+import imagesLoaded from 'imagesloaded'
 import SiteAnimation from './site-animation'
 import siteAnimationConfig from './site-animation-config'
 
@@ -8,6 +9,7 @@ const App = {
   init() {
     this.debug = false
     // this.debug = true
+    this.setupIntroduction()
     this.setupSiteAnimation()
     this.setupNavigation()
   },
@@ -23,6 +25,16 @@ const App = {
       header.classList.toggle('main-header--navigation-active')
       e.preventDefault()
     })
+  },
+
+  setupIntroduction() {
+    // const introduction = document.querySelector('.js-introduction')
+    const introduction = document.querySelector('.js-introduction')
+
+    imagesLoaded(introduction, () => {
+      console.log('here')
+      introduction.classList.add('introduction--background-loaded')
+    });
   },
 
   setupSiteAnimation() {
