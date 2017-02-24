@@ -1,6 +1,10 @@
 {
   "name": "paul-masek",
   "title": "Paul Masek",
+  "social-media": {
+    "twitter": "https://www.twitter.com/paulmasek",
+    "linkedin": "https://uk.linkedin.com/pub/paul-masek/26/a48/7b3"
+  },
   "navigation": [
     {
       "text": "About",

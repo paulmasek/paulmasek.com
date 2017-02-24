@@ -1,0 +1,36 @@
+.social-media {
+  letter-spacing: -3.9px;
+
+  &__item {
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 28px;
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__icon {
+    display: inline-block;
+    padding-bottom: 0;
+    position: relative;
+    vertical-align: top;
+    transform: translateY(-8px);
+    top: 50%;
+
+    &--twitter {
+      height: 16px;
+      width: 20px;
+    }
+
+    &--linkedin {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
