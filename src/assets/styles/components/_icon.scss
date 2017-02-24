@@ -1,0 +1,22 @@
+.icon {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+
+  &__el {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &--twitter {
+    padding-bottom: percentage(16 / 20);
+  }
+
+  &--linkedin {
+    padding-bottom: percentage(16 / 16);
+  }
+}
