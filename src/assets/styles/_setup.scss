@@ -6,21 +6,6 @@ a {
   color: $orange;
 }
 
-.branding {
-  @include bold;
-  color: $orange;
-  display: inline-block;
-  text-decoration: none;
-
-  &--minimal {
-    letter-spacing: -.1em;
-
-    .branding__full-part {
-      @include v-hidden;
-    }
-  }
-}
-
 p,
 ol,
 ul,

@@ -1,0 +1,88 @@
+$branding-switch-delay: .5s;
+
+.branding {
+  @include bold;
+  color: $orange;
+  display: inline-block;
+  text-decoration: none;
+  width: 167px;
+
+  &__part {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: width .3s $branding-switch-delay ease-in-out, transform .3s $branding-switch-delay ease-in-out;
+  }
+
+  &__full-part {
+    display: inline-block;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: opacity .3s $branding-switch-delay ease-in-out, transform .3s $branding-switch-delay ease-in-out;
+  }
+
+  &__part {
+    display: inline-block;
+
+    &--one {
+      width: 65px;
+    }
+
+    &--two {
+      transform: translateX(0);
+      width: 94px;
+    }
+  }
+
+  &__minimal-part {
+    background-color: $white;
+    position: relative;
+    z-index: 2;
+
+    &--one {
+      left: -2px;
+    }
+
+    &--two {
+      left: -2.3px;
+    }
+  }
+
+  &__full-part {
+    &--one {
+      right: 2px;
+    }
+
+    &--two {
+      right: 2.3px;
+    }
+  }
+
+  &--minimal {
+    overflow: hidden;
+
+    .main-header--active & {
+      .branding__part--one {
+        width: 18px;
+      }
+
+      .branding__part--two {
+        transform: translateX(-4px);
+        width: 24px;
+      }
+
+      .branding__full-part--one {
+        opacity: 0;
+        transform: translateX(-62px);
+      }
+
+      .branding__full-part--two {
+        opacity: 0;
+        transform: translateX(-90px);
+      }
+    }
+  }
+}

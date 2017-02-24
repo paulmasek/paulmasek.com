@@ -19,6 +19,16 @@
     @include header-branding-size;
     position: relative;
     top: 6px;
+
+    @include media('>big-phone') {
+      top: 11px;
+    }
+
+    @include media('>tablet') {
+      &:hover {
+        color: $black;
+      }
+    }
   }
 
   &--active {
