@@ -1,0 +1,13 @@
+.section {
+  position: relative;
+
+  &__anchor {
+    left: 0;
+    position: absolute;
+    top: -50px;
+
+    @include media('>big-phone') {
+      top: -60px;
+    }
+  }
+}
