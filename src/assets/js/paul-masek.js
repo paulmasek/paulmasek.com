@@ -1,6 +1,7 @@
 import imagesLoaded from 'imagesloaded'
 import SiteAnimation from './site-animation'
 import siteAnimationConfig from './site-animation-config'
+import Utils from './utils'
 
 /* eslint-disable no-new */
 
@@ -9,6 +10,7 @@ const App = {
   init() {
     this.debug = false
     // this.debug = true
+    this.animationEndEvent = Utils.getAnimationEnd(Modernizr.prefixed('animation'))
     this.setupIntroduction()
     this.setupSiteAnimation()
     this.setupNavigation()
