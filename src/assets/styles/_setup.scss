@@ -41,42 +41,6 @@ img,
   @include h4-alt;
 }
 
-.hero-background {
-  background-color: $black;
-  left: 0;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: -2;
-  width: 100%;
-
-  &__image {
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100% + 8px);
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% + 8px);
-    filter: blur(4px);
-    z-index: 1;
-  }
-
-  &__overlay {
-    background-color: $black;
-    left: 0;
-    height: 100%;
-    opacity: .3;
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-  }
-}
-
 .form-label {
   @include h4;
   margin-bottom: 6px;
