@@ -1,6 +1,7 @@
 import ScrollMagic from 'ScrollMagic'
 import 'animation.gsap'
 import 'debug.addIndicators'
+import 'GSAP.scrollTo'
 
 /* eslint-disable no-new */
 
@@ -10,6 +11,7 @@ class SiteAnimation {
     this.config = options.config
     this.setupController()
     this.setupAnimations()
+    this.setupScrollTo()
   }
 
   setupController() {
@@ -45,6 +47,16 @@ class SiteAnimation {
 
       this.scenes.push(scene)
     }
+  }
+
+  setupScrollTo() {
+    this.controller.scrollTo(function(newpos) {
+      TweenMax.to(window, 1, {
+        scrollTo: {
+          y: newpos
+        }
+      })
+    })
   }
 }
 

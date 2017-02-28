@@ -12,7 +12,6 @@ const App = {
     // this.debug = true
     this.animationEndEvent = Utils.getAnimationEnd(Modernizr.prefixed('animation'))
     this.setupIntroduction()
-    this.setupSiteAnimation()
     this.setupNavigation()
   },
 
@@ -32,18 +31,48 @@ const App = {
   setupIntroduction() {
     // const introduction = document.querySelector('.js-introduction')
     const introduction = document.querySelector('.js-introduction')
+    const introductionContent = document.querySelector('.js-introduction-content')
+    const backgroundLoadedClass = 'introduction--background-loaded'
+    const animationCompleteClass = 'introduction--initial-animation-complete'
 
     imagesLoaded(introduction, () => {
-      console.log('here')
-      introduction.classList.add('introduction--background-loaded')
+      introduction.classList.add(backgroundLoadedClass)
+
+      introductionContent.addEventListener(this.animationEndEvent, () => {
+        introduction.classList.add(animationCompleteClass)
+        this.setupSiteAnimation()
+      })
     });
   },
 
   setupSiteAnimation() {
-    new SiteAnimation({
+    this.siteAnimation = new SiteAnimation({
       debug: this.debug,
       config: siteAnimationConfig,
     })
+
+    this.setupAnchors()
+  },
+
+  setupAnchors() {
+    this.anchorLinks = document.querySelectorAll('a[href^=\'#\']')
+
+    for (let i = 0; i < this.anchorLinks.length; i += 1) {
+      this.anchorLinks[i].addEventListener('click', (event) => {
+        const el = this.anchorLinks[i]
+        const anchoredTo = el.href.substring(el.href.indexOf('#') + 1)
+
+        if (anchoredTo && anchoredTo.length > 0) {
+          const target = document.getElementById(anchoredTo)
+
+          if (target) {
+            this.siteAnimation.controller.scrollTo(target)
+          }
+        }
+
+        event.preventDefault()
+      })
+    }
   },
 }
 
