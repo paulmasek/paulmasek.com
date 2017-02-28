@@ -37,6 +37,14 @@ class SiteAnimation {
         scene.setTween(tween)
       }
 
+      if (config.type === 'fromTo') {
+        const tween = new TimelineMax()
+
+        tween.fromTo(config.el, 1, config.from, config.to)
+
+        scene.setTween(tween)
+      }
+
       scene.addTo(this.controller)
 
       if (this.debug || typeof config.debug !== 'undefined') {
