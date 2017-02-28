@@ -8,19 +8,19 @@
   "navigation": [
     {
       "text": "About",
-      "link": "about"
+      "link": "#about"
     },
     {
       "text": "Work",
-      "link": "work"
+      "link": "#work"
     },
     {
       "text": "Skills",
-      "link": "skills"
+      "link": "#skills"
     },
     {
       "text": "Contact",
-      "link": "contact"
+      "link": "#contact"
     }
   ]
 }
