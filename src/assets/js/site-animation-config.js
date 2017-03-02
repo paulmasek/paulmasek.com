@@ -126,4 +126,96 @@ export default [
     activeClass: 'about__content--active'
   },
 
+  {
+    name: 'Skills Hero Background',
+    el: '.js-animate-skills-hero-background',
+    sceneOpts: {
+      triggerElement: '.js-animate-skills-hero',
+      triggerHook: 0.5,
+      duration: 200,
+      offset: 0,
+    },
+    type: 'to',
+    css: {
+      filter: 'blur(4px)'
+    }
+  },
+
+  {
+    name: 'Skills Hero Content',
+    el: '.js-animate-skills-hero-content',
+    sceneOpts: {
+      triggerElement: '.js-animate-skills-hero',
+      triggerHook: 0.5,
+      duration: 200,
+      offset: 0,
+    },
+    type: 'to',
+    css: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    }
+  },
+
+  {
+    name: 'Work Hero Background',
+    el: '.js-animate-work-hero-background',
+    sceneOpts: {
+      triggerElement: '.js-animate-work-hero',
+      triggerHook: 0.5,
+      duration: 200,
+      offset: 0,
+    },
+    type: 'to',
+    css: {
+      filter: 'blur(4px)'
+    }
+  },
+
+  {
+    name: 'Work Hero Content',
+    el: '.js-animate-work-hero-content',
+    sceneOpts: {
+      triggerElement: '.js-animate-work-hero',
+      triggerHook: 0.5,
+      duration: 200,
+      offset: 0,
+    },
+    type: 'to',
+    css: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    }
+  },
+
+  {
+    name: 'Contact Hero Background',
+    el: '.js-animate-contact-hero-background',
+    sceneOpts: {
+      triggerElement: '.js-animate-contact-hero',
+      triggerHook: 0.5,
+      duration: 200,
+      offset: 0,
+    },
+    type: 'to',
+    css: {
+      filter: 'blur(4px)'
+    }
+  },
+
+  {
+    name: 'Contact Hero Content',
+    el: '.js-animate-contact-hero-content',
+    sceneOpts: {
+      triggerElement: '.js-animate-contact-hero',
+      triggerHook: 0.5,
+      duration: 200,
+      offset: 0,
+    },
+    type: 'to',
+    css: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    }
+  },
 ]

@@ -24,7 +24,6 @@
     height: 100%;
     top: 0;
     z-index: 1;
-
     width: 100%;
 
     @include media('>tablet') {
@@ -34,5 +33,18 @@
 
   &__title {
     @include h2;
+  }
+}
+
+.js {
+  .section-hero {
+    .hero-background__image {
+      filter: blur(0);
+    }
+
+    &__content {
+      opacity: 0;
+      transform: translateY(100px);
+    }
   }
 }
