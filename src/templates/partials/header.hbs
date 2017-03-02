@@ -21,7 +21,7 @@
     <ul class="primary-navigation__list">
   {{#each global.navigation}}
       <li class="primary-navigation__item">
-        <a class="primary-navigation__link" href="{{link}}">{{text}}</a>
+        <a class="primary-navigation__link" data-event-name="header-primary-navigation-click" data-event-value="{{text}}" href="{{link}}">{{text}}</a>
       </li>
   {{/each}}
     </ul>
