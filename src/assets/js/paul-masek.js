@@ -34,7 +34,7 @@ const App = {
   setupIntroduction() {
     // const introduction = document.querySelector('.js-introduction')
     const introduction = document.querySelector('.js-introduction')
-    const introductionContent = document.querySelector('.js-introduction-content')
+    const introductionContent = introduction.querySelector('.js-animate-introduction-content')
     const backgroundLoadedClass = 'introduction--background-loaded'
     const animationCompleteClass = 'introduction--initial-animation-complete'
 

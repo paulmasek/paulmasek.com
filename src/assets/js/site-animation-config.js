@@ -21,12 +21,11 @@ export default [
     type: 'class-toggle',
     activeClass: 'desktop-header-active'
   },
-
   {
     name: 'Introduction',
-    el: '.js-introduction-content',
+    el: '.js-animate-introduction-content',
     sceneOpts: {
-      triggerElement: '.js-trigger-introduction',
+      triggerElement: '.js-animate-introduction-content',
       triggerHook: 'onLeave',
       duration: 400,
       offset: -150,
