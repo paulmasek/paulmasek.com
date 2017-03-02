@@ -2,6 +2,7 @@ import imagesLoaded from 'imagesloaded'
 import SiteAnimation from './site-animation'
 import siteAnimationConfig from './site-animation-config'
 import Utils from './utils'
+import EventTracking from './event-tracking'
 
 /* eslint-disable no-new */
 
@@ -13,6 +14,7 @@ const App = {
     this.animationEndEvent = Utils.getAnimationEnd(Modernizr.prefixed('animation'))
     this.setupIntroduction()
     this.setupNavigation()
+    new EventTracking()
   },
 
   setupNavigation() {
