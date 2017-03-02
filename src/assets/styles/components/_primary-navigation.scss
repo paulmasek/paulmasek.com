@@ -9,6 +9,21 @@
   width: 100%;
   z-index: -1;
 
+  @include media('>big-phone') {
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+    right: 74px;
+    text-align: right;
+    top: 20px;
+    z-index: 10;
+
+    .desktop-header-active & {
+      opacity: 1;
+    }
+  }
+
   &__list {
     left: 0;
     margin-bottom: 0;
@@ -16,6 +31,15 @@
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+
+    @include media('>big-phone') {
+      display: inline-block;
+      margin-right: 2px;
+      position: static;
+      transform: none;
+      width: auto;
+      vertical-align: middle;
+    }
   }
 
   &__item {
@@ -25,22 +49,85 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+
+    @include media('<=big-phone') {
+      opacity: 0;
+      transform: translateX(-100px);
+
+      $delay: .3s;
+      $initial-delay: 0s;
+
+      .primary-navigation--active & {
+        animation-delay: .5s;
+        animation-duration: .3s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-name: fade-in-right;
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            animation-delay: $initial-delay + ($delay * $i);
+          }
+        }
+      }
+    }
+
+    @include media('>big-phone') {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: top;
+
+      &:after {
+        color: rgba($orange, .4);
+        content: '/';
+        display: inline-block;
+      }
+
+      &:last-of-type {
+        &:after {
+          display: none;
+        }
+      }
+    }
   }
 
   &__link {
     font-size: 28px;
     text-decoration: none;
+
+    @include media('>big-phone') {
+      @include bold;
+      font-size: 16px;
+      padding-left: 6px;
+      padding-right: 4px;
+    }
+
+    @include media('>tablet') {
+      &:hover {
+        color: $black;
+      }
+    }
   }
 
   &__inner {
     height: 100%;
     padding-top: 50px;
     position: relative;
+
+    @include media('>big-phone') {
+      height: auto;
+      padding-top: 0;
+    }
   }
 
-  &--animate-in {
+  &--active {
+    animation-timing-function: ease-in-out;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: fade-in;
     background-color: $white;
-    opacity: 1;
     z-index: 9;
   }
 }
@@ -54,5 +141,11 @@
 
   .hamburger-box {
     vertical-align: top;
+  }
+
+  @include media('>big-phone') {
+    display: none;
+    right: $gutter;
+    top: 20px;
   }
 }

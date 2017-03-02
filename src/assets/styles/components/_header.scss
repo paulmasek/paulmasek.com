@@ -13,6 +13,11 @@
   &__inner {
     padding-left: $gutterHalf;
     padding-right: $gutterHalf;
+
+    @include media('>big-phone') {
+      padding-left: $gutter;
+      padding-right: $gutter;
+    }
   }
 
   &__branding {
@@ -31,11 +36,51 @@
     }
   }
 
-  &--active {
-    opacity: 1;
+  @include media('<=big-phone') {
+    .mobile-header-active & {
+      opacity: 1;
+    }
+
+    .primary-navigation-active & {
+      border-bottom: 1px solid rgba($black, .05);
+    }
+  }
+
+  @include media('>big-phone') {
+    .desktop-header-active & {
+      opacity: 1;
+    }
   }
 
   &--navigation-active {
     box-shadow: none;
+  }
+
+  @include media('>big-phone') {
+    height: 60px;
+  }
+
+  &__social-media {
+    margin-bottom: 0;
+    position: absolute;
+    right: 42px;
+    top: 8px;
+
+    @include media('>big-phone') {
+      right: 18px;
+      top: 14px;
+    }
+
+    path {
+      fill: $orange;
+    }
+  }
+
+  @include media('>tablet') {
+    .social-media__link:hover {
+      path {
+        fill: $black;
+      }
+    }
   }
 }

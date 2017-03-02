@@ -24,8 +24,9 @@ const App = {
 
     trigger.addEventListener('click', (e) => {
       trigger.classList.toggle('is-active')
-      navigation.classList.toggle('primary-navigation--animate-in')
+      navigation.classList.toggle('primary-navigation--active')
       header.classList.toggle('main-header--navigation-active')
+      document.body.classList.toggle('primary-navigation-active')
       e.preventDefault()
     })
   },

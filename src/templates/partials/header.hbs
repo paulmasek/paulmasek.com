@@ -8,18 +8,7 @@
         <span class="branding__minimal-part branding__minimal-part--two">M</span><span class="branding__full-part branding__full-part--two">asek</span>
       </span>
     </a>
-    <nav class="primary-navigation js-primary-navigation">
-      <div class="primary-navigation__inner">
-        <ul class="primary-navigation__list">
-      {{#each global.navigation}}
-          <li class="primary-navigation__item">
-            <a class="primary-navigation__link" href="{{link}}">{{text}}</a>
-          </li>
-      {{/each}}
-        </ul>
-        {{> social-media class="primary-navigation__social-media" links=global.social-media}}
-      </div>
-    </nav>
+    {{> social-media class="main-header__social-media" links=global.social-media}}
     <button class="primary-navigation-show-hide hamburger hamburger--squeeze js-trigger-primary-navigation" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
