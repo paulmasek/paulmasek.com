@@ -13,6 +13,7 @@
   z-index: 1;
 
   @include media('>tablet') {
+    font-size: 18px;
     height: 0;
     padding-bottom: 56.25%;
   }
@@ -33,6 +34,10 @@
 
   &__title {
     @include h2;
+
+    @include media('>tablet') {
+      font-size: 30px;
+    }
   }
 }
 
