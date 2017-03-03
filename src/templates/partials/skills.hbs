@@ -1,37 +1,41 @@
-<section class="section skills">
+<section class="section skills js-animate-trigger-skills-content">
   {{> section-hero introduction class="skills" name="skills"}}
-  <div class="container container--thin skills__inner">
+  <div class="container container--thin skills__inner js-animate-skills-content">
     <div class="skills__main line-segment line-segment--content line-segment--horizontal">
-      <h3 class="heading-three">{{main-skills.title}}</h3>
-      <ul class="">
+      <h3 class="heading-three skills__main-title">{{main-skills.title}}</h3>
+      <ul class="js-animate-trigger-main-skill">
   {{#each main-skills.skills}}
-        <li class="">
+        <li class="js-animate-main-skill">
           <h4 class="heading-four">{{title}}<span class="heading-four-alt skills__main-secondary"> - {{sub-title}}</span></h4>
           {{{content}}}
         </li>
   {{/each}}
       </ul>
-      {{>line-segment horizontal=true}}
+      {{>line-segment horizontal=true fromLeft=true name="skills-separator"}}
     </div>
     <div class="grid">
-      <div class="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary">
-        <h3 class="heading-three">{{workflow.title}}</h3>
-        <ul class="">
-        {{#each workflow.skills}}
-          <li class="">
-              <h4 class="heading-four-alt">{{title}}</h4>
-              {{{content}}}
-          </li>
-        {{/each}}
-        </ul>
+      <div class="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary js-animate-trigger-workflow">
+        <div class="skills__secondary-inner js-animate-workflow">
+          <h3 class="heading-three">{{workflow.title}}</h3>
+          <ul class="">
+          {{#each workflow.skills}}
+            <li class="">
+                <h4 class="heading-four-alt">{{title}}</h4>
+                {{{content}}}
+            </li>
+          {{/each}}
+          </ul>
+        </div>
       </div>
-      <div class="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary">
-        <h3 class="heading-three">{{software.title}}</h3>
-        <ul class="">
-        {{#each software.skills}}
-          <li class="">{{title}}</li>
-        {{/each}}
-        </ul>
+      <div class="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary js-animate-trigger-design">
+        <div class="skills__secondary-inner js-animate-design">
+          <h3 class="heading-three">{{software.title}}</h3>
+          <ul class="">
+          {{#each software.skills}}
+            <li class="">{{title}}</li>
+          {{/each}}
+          </ul>
+        </div>
       </div>
     </div>
   </div>

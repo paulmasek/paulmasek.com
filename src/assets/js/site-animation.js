@@ -45,6 +45,14 @@ class SiteAnimation {
         scene.setTween(tween)
       }
 
+      if (config.type === 'staggerFromTo') {
+        const tween = new TimelineMax()
+
+        tween.staggerFromTo(config.el, 2, config.fromCSS, config.toCSS, config.staggerGap)
+
+        scene.setTween(tween)
+      }
+
       scene.addTo(this.controller)
 
       if (this.debug || typeof config.debug !== 'undefined') {

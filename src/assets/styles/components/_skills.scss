@@ -31,3 +31,21 @@
     }
   }
 }
+
+.js {
+  .skills__main-title {
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+
+  .skills--active {
+    .skills__main-title {
+      opacity: 1;
+    }
+  }
+
+  .skills__secondary-inner {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}

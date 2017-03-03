@@ -1,6 +1,6 @@
 export default [
   {
-    name: 'Show header',
+    name: 'Show header 1',
     el: 'body',
     sceneOpts: {
       triggerElement: '.js-trigger-header',
@@ -11,7 +11,7 @@ export default [
     activeClass: 'mobile-header-active'
   },
   {
-    name: 'Show header',
+    name: 'Show header 2',
     el: 'body',
     sceneOpts: {
       triggerElement: '.js-trigger-header',
@@ -146,7 +146,7 @@ export default [
     sceneOpts: {
       triggerElement: '.js-animate-skills-hero',
       triggerHook: 0.5,
-      duration: 200,
+      duration: 300,
       offset: 0,
     },
     type: 'to',
@@ -177,7 +177,7 @@ export default [
     sceneOpts: {
       triggerElement: '.js-animate-work-hero',
       triggerHook: 0.5,
-      duration: 200,
+      duration: 300,
       offset: 0,
     },
     type: 'to',
@@ -208,8 +208,88 @@ export default [
     sceneOpts: {
       triggerElement: '.js-animate-contact-hero',
       triggerHook: 0.5,
-      duration: 200,
+      duration: 300,
       offset: 0,
+    },
+    type: 'to',
+    css: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    }
+  },
+
+  {
+    name: 'Skills Content',
+    el: '.js-animate-trigger-skills-content',
+    sceneOpts: {
+      triggerElement: '.js-animate-skills-content',
+      triggerHook: 'onEnter',
+      offset: 150,
+    },
+    type: 'class-toggle',
+    activeClass: 'skills--active'
+  },
+
+  {
+    name: 'Stagger main skills',
+    el: '.js-animate-main-skill',
+    sceneOpts: {
+      triggerElement: '.js-animate-trigger-main-skill',
+      triggerHook: 'onEnter',
+      offset: 100,
+      duration: 400,
+    },
+    type: 'staggerFromTo',
+    fromCSS: {
+      opacity: 0,
+      transform: 'translateY(50px)',
+    },
+    toCSS: {
+      opacity: 1,
+      transform: 'translateY(0)',
+    },
+    staggerGap: 1
+  },
+
+  {
+    name: 'Skills separator',
+    el: '.js-animate-line-skills-separator',
+    sceneOpts: {
+      triggerElement: '.js-animate-trigger-line-skills-separator',
+      triggerHook: 'onEnter',
+      duration: 150,
+      offset: 150,
+    },
+    type: 'to',
+    css: {
+      transform: 'translateX(0)'
+    }
+  },
+
+  {
+    name: 'Skills Workflow',
+    el: '.js-animate-workflow',
+    sceneOpts: {
+      triggerElement: '.js-animate-trigger-workflow',
+      triggerHook: 'onEnter',
+      duration: 100,
+      offset: 100,
+    },
+    type: 'to',
+    css: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    }
+  },
+
+  {
+    name: 'Skills Design',
+    el: '.js-animate-design',
+    sceneOpts: {
+      triggerElement: '.js-animate-trigger-design',
+      triggerHook: 'onEnter',
+      duration: 100,
+      offset: 200,
     },
     type: 'to',
     css: {
