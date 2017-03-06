@@ -23,33 +23,26 @@ class SiteAnimation {
 
     for (let i = 0; i < this.config.length; i++) {
       let config = this.config[i]
+      let tween = false
       const scene = new ScrollMagic.Scene(config.sceneOpts)
+      const tweenOptions = ['to', 'fromTo', 'staggerFromTo']
 
-      if (config.type === 'class-toggle') {
-        scene.setClassToggle(config.el, config.activeClass)
+      switch (config.type) {
+        case 'class-toggle':
+          scene.setClassToggle(config.el, config.activeClass)
+          break
+        case 'to':
+          tween = TweenMax.to(config.el, 1, config.css)
+          break
+        case 'fromTo':
+          tween = TweenMax.fromTo(config.el, 1, config.from, config.to)
+          break
+        case 'staggerFromTo':
+          tween = TweenMax.staggerFromTo(config.el, 2, config.fromCSS, config.toCSS, config.staggerGap)
+          break
       }
 
-      if (config.type === 'to') {
-        const tween = new TimelineMax()
-
-        tween.to(config.el, 1, config.css)
-
-        scene.setTween(tween)
-      }
-
-      if (config.type === 'fromTo') {
-        const tween = new TimelineMax()
-
-        tween.fromTo(config.el, 1, config.from, config.to)
-
-        scene.setTween(tween)
-      }
-
-      if (config.type === 'staggerFromTo') {
-        const tween = new TimelineMax()
-
-        tween.staggerFromTo(config.el, 2, config.fromCSS, config.toCSS, config.staggerGap)
-
+      if (tween && tweenOptions.includes(config.type)) {
         scene.setTween(tween)
       }
 
