@@ -117,12 +117,16 @@ export default [
     name: 'About Content',
     el: '.js-animate-about-content',
     sceneOpts: {
-      triggerElement: '.js-animate-about-content',
+      triggerElement: '.js-animate-trigger-about-content',
       triggerHook: 'onEnter',
-      offset: 200,
+      duration: 150,
+      offset: 0,
     },
-    type: 'class-toggle',
-    activeClass: 'about__content--active'
+    type: 'to',
+    css: {
+      opacity: 1,
+      transform: 'translateY(0)',
+    }
   },
 
   {
