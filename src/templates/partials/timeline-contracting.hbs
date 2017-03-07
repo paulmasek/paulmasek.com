@@ -2,15 +2,15 @@
   <div class="timeline__major-period">
     <strong class="timeline__period-title line-segment line-segment--vertical line-segment--period-title">
       {{year}}
-      {{>line-segment vertical=true class="line-segment__line--medium-separator"}}
+      {{>line-segment vertical=true class="line-segment__line--medium-separator" name="work"}}
     </strong>
     {{#each contracts}}
       <div class="timeline__segment timeline__segment--{{slug}} line-segment line-segment--vertical line-segment--medium-separator">
         <div class="timeline__header line-segment line-segment--header line-segment--horizontal line-segment--vertical">
           <h3 class="heading-three timeline__header-title">{{company}}</h3>
           <img alt="{{company}} logo" class="timeline__contracting-logo" src="{{logo.src}}" />
-          {{>line-segment vertical=true class="line-segment__line--small-separator-header"}}
-          {{>line-segment horizontal=true class="line-segment__line--header-h"}}
+          {{>line-segment vertical=true class="line-segment__line--small-separator-header" name="work"}}
+          {{>line-segment horizontal=true class="line-segment__line--header-h" name="work-horizontal"}}
         </div>
         {{#each modules}}
           <div class="timeline__content-item {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last line-segment line-segment--content line-segment--horizontal{{/if}}">
@@ -19,12 +19,12 @@
               {{#unless @last}}
                 {{>line-segment grey=true horizontal=true}}
               {{else}}
-                {{>line-segment horizontal=true}}
+                {{>line-segment horizontal=true name="work-horizontal"}}
               {{/unless}}
             {{/unless}}
           </div>
         {{/each}}
-        {{>line-segment vertical=true class="line-segment__line--medium-separator"}}
+        {{>line-segment vertical=true class="line-segment__line--medium-separator" name="work"}}
       </div>
     {{/each}}
   </div>

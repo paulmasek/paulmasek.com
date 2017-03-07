@@ -4,7 +4,7 @@
     <div class="timeline__major-period timeline__segment {{#if @last}} timeline__major-period--last{{/if}} {{#unless @last}}line-segment line-segment--vertical line-segment--medium-separator{{/unless}}">
       <strong class="timeline__period-title timeline__period-title--perm line-segment line-segment--vertical line-segment--period-title-perm">
         {{period}}
-        {{>line-segment vertical=true class="line-segment__line--small-separator"}}
+        {{>line-segment vertical=true class="line-segment__line--small-separator" name="work"}}
       </strong>
       <div class="timeline__header timeline__header--perm">
         <h3 class="heading-three timeline__perm-title">{{company}}</h3>
@@ -19,11 +19,11 @@
         {{/each}}
         </ul>
         {{#unless @last}}
-          {{>line-segment horizontal=true class=""}}
+          {{>line-segment horizontal=true class="" name="work-horizontal"}}
         {{/unless}}
       </div>
       {{#unless @last}}
-        {{>line-segment vertical=true class="line-segment__line--medium-separator"}}
+        {{>line-segment vertical=true class="line-segment__line--medium-separator" name="work"}}
       {{/unless}}
     </div>
   </div>
