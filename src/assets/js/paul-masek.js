@@ -1,6 +1,7 @@
 import imagesLoaded from 'imagesloaded'
 import SiteAnimation from './site-animation'
-import siteAnimationConfig from './site-animation-config'
+import siteAnimationIndividual from './site-animation-individual'
+import SiteAnimationFlexible from './site-animation-flexible'
 import Utils from './utils'
 import EventTracking from './event-tracking'
 
@@ -51,7 +52,8 @@ const App = {
   setupSiteAnimation() {
     this.siteAnimation = new SiteAnimation({
       debug: this.debug,
-      config: siteAnimationConfig,
+      indidvidualScenes: siteAnimationIndividual,
+      flexibleScenes: SiteAnimationFlexible,
     })
 
     this.setupAnchors()
