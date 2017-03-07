@@ -13,7 +13,7 @@
           {{>line-segment horizontal=true class="line-segment__line--header-h" name="work-horizontal"}}
         </div>
         {{#each modules}}
-          <div class="timeline__content-item {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last line-segment line-segment--content line-segment--horizontal{{/if}}">
+          <div class="timeline__content-item timeline__content-item--{{module}} {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last line-segment line-segment--content line-segment--horizontal{{/if}}">
             {{> ( lookup . 'module') data}}
             {{#unless no-border}}
               {{#unless @last}}
