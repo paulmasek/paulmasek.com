@@ -121,6 +121,101 @@
     }
   }
 
+  &--perm-branch {
+    @include media('>tablet') {
+      padding-bottom: 0;
+      padding-top: $small-vertical-separator-height + $line-border-header;
+
+      .no-js & {
+        &:before {
+          top: 0;
+          display: block;
+          height: $small-vertical-separator-height
+        }
+      }
+
+      > .line-segment__line--mobile-perm-separator {
+        display: none;
+      }
+    }
+  }
+
+  &--freelancing {
+    .no-js & {
+      &:after {
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        width: calc(100% - #{$perm-desktop-max-width});
+      }
+    }
+  }
+
+  &--hide-mobile-horizontal {
+    @include media('<=tablet') {
+      padding-bottom: 0;
+
+      .no-js & {
+        &:after {
+          display: none;
+        }
+      }
+
+      > .line-segment__line--horizontal {
+        display: none;
+      }
+    }
+  }
+
+  &--hide-mobile-vertical {
+    @include media('<=tablet') {
+      padding-bottom: 0;
+
+      .no-js & {
+        &:before {
+          display: none;
+        }
+      }
+
+      > .line-segment__line--vertical {
+        display: none;
+      }
+    }
+  }
+
+  &--hide-desktop-horizontal {
+    @include media('>tablet') {
+      padding-bottom: 0;
+
+      .no-js & {
+        &:after {
+          display: none;
+        }
+      }
+
+      > .line-segment__line--horizontal {
+        display: none;
+      }
+    }
+  }
+
+  &--hide-desktop-vertical {
+    @include media('>tablet') {
+      padding-bottom: 0;
+
+      .no-js & {
+        &:before {
+          display: none;
+        }
+      }
+
+      > .line-segment__line--vertical {
+        display: none;
+      }
+    }
+  }
+
   &__line {
     display: block;
     position: absolute;
@@ -212,6 +307,23 @@
     &--small-separator-header {
       bottom: $line-border-header;
       height: $small-vertical-separator-height;
+    }
+
+    &--freelancing {
+      bottom: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      width: calc(100% - #{$perm-desktop-max-width});
+    }
+
+    &--perm-branch {
+      @include media('>tablet') {
+        bottom: auto;
+        height: $small-vertical-separator-height;
+        top: 0;
+        display: block;
+      }
     }
   }
 

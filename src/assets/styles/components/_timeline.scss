@@ -95,9 +95,16 @@
     margin-bottom: $line-border;
   }
 
+  &__perm-grid {
+    @include media('>tablet') {
+      justify-content: space-between;
+    }
+  }
+
   &__perm {
     @include media('>tablet') {
-      max-width: 500px;
+      max-width: $perm-desktop-max-width + $gutter;
+      width: 50%;
     }
   }
 }

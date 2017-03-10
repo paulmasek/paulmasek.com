@@ -1,5 +1,9 @@
 .work {
   &__inner {
     padding-bottom: $double-lh;
+
+    @include media('>tablet') {
+      padding-bottom: 66px;
+    }
   }
 }

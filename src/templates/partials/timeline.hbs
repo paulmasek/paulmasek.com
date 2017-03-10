@@ -1,7 +1,14 @@
 <div class="timeline line-segment line-segment--start-title line-segment--vertical">
-  {{> timeline-contracting}}
-  {{> timeline-remote freelancing.remote}}
-  {{> timeline-started-freelancing}}
-  {{> timeline-perm}}
+  <div class="container container--thin">
+    {{> timeline-contracting}}
+    {{> timeline-remote freelancing.remote}}
+    {{> timeline-started-freelancing}}
+  </div>
+  <div class="container container--wide">
+    <div class="line-segment line-segment--horizontal line-segment--freelancing line-segment--hide-mobile-horizontal">
+      {{> timeline-perm}}
+      {{>line-segment horizontal=true class="line-segment__line--freelancing" name="work-horizontal"}}
+    </div>
+  </div>
   {{>line-segment vertical=true class="line-segment__line--small-separator" name="work"}}
 </div>
