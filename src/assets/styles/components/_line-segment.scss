@@ -124,7 +124,7 @@
   &--perm-branch {
     @include media('>tablet') {
       padding-bottom: 0;
-      padding-top: $small-vertical-separator-height + $line-border-header;
+      padding-top: 34px;
 
       .no-js & {
         &:before {

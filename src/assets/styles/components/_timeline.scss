@@ -107,4 +107,32 @@
       width: 50%;
     }
   }
+
+  &__period-title-content {
+    display: block;
+  }
+}
+
+.js {
+  .timeline__period-title-content {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  .timeline__contracting-logo {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  .timeline__header-title,
+  .timeline__started-freelancing,
+  .timeline__content-item--perm {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  .timeline__content-module {
+    opacity: 0;
+    transform: translateY(100px);
+  }
 }

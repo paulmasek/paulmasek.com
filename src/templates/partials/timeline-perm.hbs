@@ -2,30 +2,36 @@
 {{#each perm}}
   <div class="grid__col timeline__perm">
     <div class="timeline__major-period timeline__segment {{#if @last}} timeline__major-period--last{{/if}} line-segment line-segment--vertical{{#unless @last}} line-segment--medium-separator{{/unless}} line-segment--perm-branch">
-      <strong class="timeline__period-title timeline__period-title--perm line-segment line-segment--vertical line-segment--period-title-perm">
-        {{period}}
-        {{>line-segment vertical=true class="line-segment__line--small-separator" name="work"}}
-      </strong>
-      <div class="timeline__header timeline__header--perm">
-        <h3 class="heading-three timeline__perm-title">{{company}}</h3>
-        <img alt="{{company}} logo" class="timeline__perm-logo" src="{{logo.src}}" />
+      <div class="line-segment line-segment--vertical line-segment--period-title-perm js-animate-trigger-perm-date-title">
+        <strong class="timeline__period-title timeline__period-title--perm timeline__period-title-content js-animate-perm-date-title">{{period}}</strong>
+        {{>line-segment vertical=true class="line-segment__line--small-separator" name="work-start-perm-item"}}
       </div>
-      <strong class="timeline__perm-role">{{role}}</strong>
-      <div class="timeline__content-item timeline__content-item--perm timeline__content-item--last cms{{#unless @last}} line-segment line-segment--content line-segment--horizontal line-segment--hide-desktop-horizontal{{/unless}}">
-        {{{introduction}}}
-        <ul class="">
-        {{#each responsibilities}}
-          <li class="">{{{content}}}</li>
-        {{/each}}
-        </ul>
-        {{#unless @last}}
-          {{>line-segment horizontal=true class="" name="work-horizontal"}}
-        {{/unless}}
+      <div class="js-animate-trigger-content-module">
+        <div class="timeline__content-module js-animate-content-module">
+          <div class="timeline__header timeline__header--perm">
+            <h3 class="heading-three timeline__perm-title">{{company}}</h3>
+            <img alt="{{company}} logo" class="timeline__perm-logo" src="{{logo.src}}" />
+          </div>
+          <strong class="timeline__perm-role">{{role}}</strong>
+        </div>
+      </div>
+      <div class="js-animate-trigger-content-module">
+        <div class="timeline__content-item timeline__content-item--perm timeline__content-item--last cms{{#unless @last}} line-segment line-segment--content line-segment--horizontal line-segment--hide-desktop-horizontal{{/unless}} js-animate-content-module">
+          {{{introduction}}}
+          <ul class="">
+          {{#each responsibilities}}
+            <li class="">{{{content}}}</li>
+          {{/each}}
+          </ul>
+          {{#unless @last}}
+            {{>line-segment horizontal=true class="" name="work-horizontal"}}
+          {{/unless}}
+        </div>
       </div>
       {{#unless @last}}
         {{>line-segment vertical=true class="line-segment__line--medium-separator line-segment__line--mobile-perm-separator" name="work"}}
       {{/unless}}
-      {{>line-segment vertical=true class="line-segment__line--perm-branch" name="work"}}
+      {{>line-segment vertical=true class="line-segment__line--perm-branch" name="work-small-start-perm"}}
     </div>
   </div>
 {{/each}}

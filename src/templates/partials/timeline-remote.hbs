@@ -1,23 +1,27 @@
-<div class="timeline__major-period">
-  <strong class="timeline__period-title timeline__period-title--major-change">{{period}}</strong>
+<div class="timeline__major-period  js-animate-trigger-date-title">
+  <strong class="timeline__period-title timeline__period-title--major-change timeline__period-title-content js-animate-date-title">{{period}}</strong>
   <div class="timeline__segment line-segment line-segment--vertical line-segment--medium-separator">
     <div class="timeline__header line-segment line-segment line-segment--horizontal line-segment--vertical line-segment--header">
-      <h3 class="heading-three timeline__header-title">{{title}}</h3>
-      {{>line-segment vertical=true class="line-segment__line--small-separator-header" name="work"}}
-      {{>line-segment horizontal=true class="line-segment__line--header-h"  name="work-horizontal"}}
+      <div class="js-animate-trigger-contracing-title">
+        <h3 class="heading-three timeline__header-title js-animate-contracting-title">{{title}}</h3>
+      </div>
+      {{>line-segment vertical=true class="line-segment__line--small-separator-header" name="work-small-after-title"}}
+      {{>line-segment horizontal=true class="line-segment__line--header-h"  name="work-horizontal-after-title"}}
     </div>
     {{#each modules}}
-      <div class="timeline__content-item timeline__content-item--{{module}} {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last line-segment line-segment--content line-segment--horizontal{{/if}}">
+      <div class="timeline__content-item timeline__content-item--{{module}} {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last line-segment line-segment--content line-segment--horizontal{{/if}} js-animate-trigger-content-module">
+        <div class="timeline__content-module js-animate-content-module">
         {{> ( lookup . 'module') data}}
+        </div>
         {{#unless no-border}}
           {{#unless @last}}
             {{>line-segment grey=true horizontal=true}}
           {{else}}
-            {{>line-segment horizontal=true name="work-horizontal"}}
+            {{>line-segment horizontal=true name="work-horizontal-after-modules"}}
           {{/unless}}
         {{/unless}}
       </div>
     {{/each}}
-    {{>line-segment vertical=true class="line-segment__line--medium-separator" name="work"}}
+    {{>line-segment vertical=true class="line-segment__line--medium-separator" name="work-after-modules"}}
   </div>
 </div>
