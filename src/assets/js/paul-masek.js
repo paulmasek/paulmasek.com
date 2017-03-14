@@ -11,7 +11,6 @@ const App = {
 
   init() {
     this.debug = false
-    // this.debug = true
     this.animationEndEvent = Utils.getAnimationEnd(Modernizr.prefixed('animation'))
     this.setupIntroduction()
     this.setupNavigation()
@@ -46,7 +45,7 @@ const App = {
         introduction.classList.add(animationCompleteClass)
         this.setupSiteAnimation()
       })
-    });
+    })
   },
 
   setupSiteAnimation() {
