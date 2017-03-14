@@ -6,7 +6,6 @@ import frontMatter from 'gulp-front-matter'
 import handlebars from 'gulp-hb'
 import gulpRename from 'gulp-rename'
 import handlebarsLayouts from 'handlebars-layouts'
-import browserSync from '../tasks/browser-sync-create'
 
 gulp.task(gulpConfig.templates.task, () => {
   const handlebarsStream = handlebars({
@@ -37,5 +36,4 @@ gulp.task(gulpConfig.templates.task, () => {
     }))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(gulpConfig.templates.dest))
-    .pipe(browserSync.stream())
 })
