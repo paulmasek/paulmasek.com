@@ -1,7 +1,7 @@
 {
   "introduction": {
     "title": "Skills",
-    "content": "<p>I’m always learning new things, but here are a selection the languages, libraries and tools I’ve got experience with.</p>",
+    "body": "<p>I’m always learning new things, but here are a selection the languages, libraries and tools I’ve got experience with.</p>",
     "background": {
       "src": "assets/images/content/skills-hero.jpg",
       "alt": ""
@@ -13,27 +13,27 @@
       {
         "title": "HTML",
         "sub-title": "XHTML / HTML5",
-        "content": "<p>Accessible, semantic and SEO friendly</p>"
+        "body": "<p>Accessible, semantic and SEO friendly</p>"
       },
       {
         "title": "CSS",
         "sub-title": "CSS3 / SASS / LESS",
-        "content": "<p>The latest techniques (I ❤️ Flexbox), Cross browser & device, maintainable</p>"
+        "body": "<p>The latest techniques (I ❤️ Flexbox), Cross browser & device, maintainable</p>"
       },
       {
         "title": "JavaScript",
         "sub-title": "jQuery,  ES5 and ES6",
-        "content": "<p>Progressivly enhanced and perfomant</p>"
+        "body": "<p>Progressivly enhanced and perfomant</p>"
       },
       {
         "title": "Templating",
         "sub-title": "Handlebars",
-        "content": "<p>Used extensivily for building static front-end builds & styleguides</p>"
+        "body": "<p>Used extensivily for building static front-end builds & styleguides</p>"
       },
       {
         "title": "CMS",
         "sub-title": "Wordpress",
-        "content": "<p>Custom theme development</p>"
+        "body": "<p>Custom theme development</p>"
       }
     ]
   },
@@ -42,15 +42,15 @@
     "skills": [
       {
         "title": "Version Control",
-        "content": "<p>SVN & Git</p>"
+        "body": "<p>SVN & Git</p>"
       },
       {
         "title": "Auomation",
-        "content": "<p>Gulp, Grunt, NPM bower etc</p>"
+        "body": "<p>Gulp, Grunt, NPM bower etc</p>"
       },
       {
         "title": "Project Management ",
-        "content": "<p>JIRA & Trello etc</p>"
+        "body": "<p>JIRA & Trello etc</p>"
       }
     ]
   },
