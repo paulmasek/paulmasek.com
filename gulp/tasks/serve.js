@@ -57,8 +57,6 @@ gulp.task('serve', gulpConfig.tasks.default, () => {
   browserSync.init(browserSyncSettings)
 
   if (typeof config.tasks.watch!== 'undefined') {
-
-
     config.tasks.watch.forEach((task) => {
       if (typeof gulpConfig[task] !== 'undefined') {
         gulp.watch(gulpConfig[task].watch, [task])
