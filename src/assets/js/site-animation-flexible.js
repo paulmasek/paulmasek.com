@@ -3,7 +3,7 @@ export default [
     name: 'Work line',
     trigger: '.js-animate-trigger-line-work',
     animate: '.js-animate-line-work',
-    config:  {
+    config: {
       sceneOpts: {
         triggerHook: 'onEnter',
         duration: 120,
@@ -11,15 +11,15 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateY(0)'
-      }
-    }
+        transform: 'translateY(0)',
+      },
+    },
   },
   {
     name: 'Work line Small',
     trigger: '.js-animate-trigger-line-work-small',
     animate: '.js-animate-line-work-small',
-    config:  {
+    config: {
       sceneOpts: {
         triggerHook: 'onEnter',
         duration: 60,
@@ -27,15 +27,15 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateY(0)'
-      }
-    }
+        transform: 'translateY(0)',
+      },
+    },
   },
   {
     name: 'Work line Small After title',
     trigger: '.js-animate-trigger-line-work-small-after-title',
     animate: '.js-animate-line-work-small-after-title',
-    config:  {
+    config: {
       sceneOpts: {
         triggerHook: 'onEnter',
         duration: 60,
@@ -43,9 +43,9 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateY(0)'
-      }
-    }
+        transform: 'translateY(0)',
+      },
+    },
   },
   {
     name: 'Work horizontal',
@@ -59,9 +59,9 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateX(0)'
-      }
-    }
+        transform: 'translateX(0)',
+      },
+    },
   },
   {
     name: 'Work horizontal after title',
@@ -75,9 +75,9 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateX(0)'
-      }
-    }
+        transform: 'translateX(0)',
+      },
+    },
   },
   {
     name: 'Work horizontal after modules',
@@ -91,15 +91,15 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateX(0)'
-      }
-    }
+        transform: 'translateX(0)',
+      },
+    },
   },
   {
     name: 'Work line after modules',
     trigger: '.js-animate-trigger-line-work-after-modules',
     animate: '.js-animate-line-work-after-modules',
-    config:  {
+    config: {
       sceneOpts: {
         triggerHook: 'onEnter',
         duration: 60,
@@ -107,9 +107,9 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateY(0)'
-      }
-    }
+        transform: 'translateY(0)',
+      },
+    },
   },
   {
     name: 'Date title',
@@ -124,9 +124,9 @@ export default [
       type: 'to',
       css: {
         opacity: '1',
-        transform: 'translateY(0)'
+        transform: 'translateY(0)',
       },
-    }
+    },
   },
   {
     name: 'Logo',
@@ -141,9 +141,9 @@ export default [
       type: 'to',
       css: {
         opacity: '1',
-        transform: 'translateY(0)'
+        transform: 'translateY(0)',
       },
-    }
+    },
   },
   {
     name: 'Contacting title',
@@ -158,9 +158,9 @@ export default [
       type: 'to',
       css: {
         opacity: '1',
-        transform: 'translateY(0)'
+        transform: 'translateY(0)',
       },
-    }
+    },
   },
   {
     name: 'Timeline module',
@@ -175,15 +175,15 @@ export default [
       type: 'to',
       css: {
         opacity: '1',
-        transform: 'translateY(0)'
+        transform: 'translateY(0)',
       },
-    }
+    },
   },
   {
     name: 'Work line after freelancing',
     trigger: '.js-animate-trigger-line-work-after-freelancing',
     animate: '.js-animate-line-work-after-freelancing',
-    config:  {
+    config: {
       sceneOpts: {
         triggerHook: 'onEnter',
         duration: 60,
@@ -191,9 +191,9 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateY(0)'
-      }
-    }
+        transform: 'translateY(0)',
+      },
+    },
   },
   {
     name: 'Work horizontal start perm',
@@ -207,15 +207,15 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateX(0)'
-      }
-    }
+        transform: 'translateX(0)',
+      },
+    },
   },
   {
     name: 'Work line small start perm',
     trigger: '.js-animate-trigger-line-work-small-start-perm',
     animate: '.js-animate-line-work-small-start-perm',
-    config:  {
+    config: {
       sceneOpts: {
         triggerHook: 'onEnter',
         duration: 60,
@@ -223,9 +223,9 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateY(0)'
-      }
-    }
+        transform: 'translateY(0)',
+      },
+    },
   },
   {
     name: 'Perm title',
@@ -240,15 +240,15 @@ export default [
       type: 'to',
       css: {
         opacity: '1',
-        transform: 'translateY(0)'
+        transform: 'translateY(0)',
       },
-    }
+    },
   },
   {
     name: 'Work line small start perm item',
     trigger: '.js-animate-trigger-line-work-start-perm-item',
     animate: '.js-animate-line-work-start-perm-item',
-    config:  {
+    config: {
       sceneOpts: {
         triggerHook: 'onEnter',
         duration: 60,
@@ -256,8 +256,8 @@ export default [
       },
       type: 'to',
       css: {
-        transform: 'translateY(0)'
-      }
-    }
-  }
+        transform: 'translateY(0)',
+      },
+    },
+  },
 ]

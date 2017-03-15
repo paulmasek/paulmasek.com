@@ -1,16 +1,13 @@
 class EventTracking {
   constructor(options) {
-    this.local = true;
+    this.local = true
     this.setupLinkTracking()
   }
 
   setupLinkTracking() {
-    const matches = document.body.matchesSelector || document.body.webkitMatchesSelector || document.body.mozMatchesSelector || document.body.msMatchesSelector || document.body.webkitMatchesSelector || document.body.matchesSelector
-
     document.addEventListener('click', (event) => {
-      if (event.target.matches('a, a *')) {
-
-        let href = event.target.href
+      if (event.target.Modernizr.prefixed('matchesSelector', document.body)('a, a *')) {
+        const href = event.target.href
         let link = event.target
 
         if (!href) {
@@ -27,22 +24,24 @@ class EventTracking {
     })
   }
 
-  findUpTag(el, attr) {
-    while (el.parentNode) {
-        el = el.parentNode
-        if (el[attr]) {
-            return el
-        }
-    }
-    return null
-  }
-
   sendEvent(name, value) {
     if (this.local) {
       console.log(`Log event '${name}', with a value of '${value}' to Analytics`)
     } else {
       //Post to Analytics
     }
+  }
+
+  static findUpTag(el, attr) {
+    let node = el
+
+    while (node.parentNode) {
+      node = node.parentNode
+      if (node[attr]) {
+        return node
+      }
+    }
+    return null
   }
 }
 

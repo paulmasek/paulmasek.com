@@ -8,7 +8,7 @@ export default [
       offset: -50,
     },
     type: 'class-toggle',
-    activeClass: 'mobile-header-active'
+    activeClass: 'mobile-header-active',
   },
   {
     name: 'Show header 2',
@@ -19,7 +19,7 @@ export default [
       offset: -60,
     },
     type: 'class-toggle',
-    activeClass: 'desktop-header-active'
+    activeClass: 'desktop-header-active',
   },
   {
     name: 'Introduction',
@@ -33,8 +33,8 @@ export default [
     type: 'to',
     css: {
       opacity: 0,
-      transform: 'translateY(-100px)'
-    }
+      transform: 'translateY(-100px)',
+    },
   },
 
   {
@@ -48,8 +48,8 @@ export default [
     },
     type: 'to',
     css: {
-      transform: 'translateY(0)'
-    }
+      transform: 'translateY(0)',
+    },
   },
 
   {
@@ -64,8 +64,8 @@ export default [
     type: 'to',
     css: {
       opacity: 1,
-      transform: 'translateY(0)'
-    }
+      transform: 'translateY(0)',
+    },
   },
 
   {
@@ -79,8 +79,8 @@ export default [
     },
     type: 'to',
     css: {
-      transform: 'translateY(0)'
-    }
+      transform: 'translateY(0)',
+    },
   },
 
   {
@@ -94,8 +94,8 @@ export default [
     },
     type: 'to',
     css: {
-      transform: 'translateX(0)'
-    }
+      transform: 'translateX(0)',
+    },
   },
 
   {
@@ -109,8 +109,8 @@ export default [
     },
     type: 'to',
     css: {
-      transform: 'translateX(0)'
-    }
+      transform: 'translateX(0)',
+    },
   },
 
   {
@@ -126,7 +126,7 @@ export default [
     css: {
       opacity: 1,
       transform: 'translateY(0)',
-    }
+    },
   },
 
   {
@@ -140,8 +140,8 @@ export default [
     },
     type: 'to',
     css: {
-      filter: 'blur(4px)'
-    }
+      filter: 'blur(4px)',
+    },
   },
 
   {
@@ -156,8 +156,8 @@ export default [
     type: 'to',
     css: {
       opacity: 1,
-      transform: 'translateY(0)'
-    }
+      transform: 'translateY(0)',
+    },
   },
 
   {
@@ -171,8 +171,8 @@ export default [
     },
     type: 'to',
     css: {
-      filter: 'blur(4px)'
-    }
+      filter: 'blur(4px)',
+    },
   },
 
   {
@@ -187,8 +187,8 @@ export default [
     type: 'to',
     css: {
       opacity: 1,
-      transform: 'translateY(0)'
-    }
+      transform: 'translateY(0)',
+    },
   },
 
   {
@@ -202,8 +202,8 @@ export default [
     },
     type: 'to',
     css: {
-      filter: 'blur(4px)'
-    }
+      filter: 'blur(4px)',
+    },
   },
 
   {
@@ -218,8 +218,8 @@ export default [
     type: 'to',
     css: {
       opacity: 1,
-      transform: 'translateY(0)'
-    }
+      transform: 'translateY(0)',
+    },
   },
 
   {
@@ -231,7 +231,7 @@ export default [
       offset: 150,
     },
     type: 'class-toggle',
-    activeClass: 'skills--active'
+    activeClass: 'skills--active',
   },
 
   {
@@ -252,7 +252,7 @@ export default [
       opacity: 1,
       transform: 'translateY(0)',
     },
-    staggerGap: 1
+    staggerGap: 1,
   },
 
   {
@@ -266,8 +266,8 @@ export default [
     },
     type: 'to',
     css: {
-      transform: 'translateX(0)'
-    }
+      transform: 'translateX(0)',
+    },
   },
 
   {
@@ -282,8 +282,8 @@ export default [
     type: 'to',
     css: {
       opacity: 1,
-      transform: 'translateY(0)'
-    }
+      transform: 'translateY(0)',
+    },
   },
 
   {
@@ -298,7 +298,7 @@ export default [
     type: 'to',
     css: {
       opacity: 1,
-      transform: 'translateY(0)'
-    }
+      transform: 'translateY(0)',
+    },
   },
 ]
