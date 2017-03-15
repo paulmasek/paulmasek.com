@@ -29,6 +29,8 @@ const gulpConfig = {
 
   lintCSS: {
     task: 'lintCSS',
+    lint: `${directories.sass}**/*.scss`,
+    ignore: `${directories.sass}vendor/**/*.scss`,
     watch: `${directories.sass}**/*.scss`
   },
 
