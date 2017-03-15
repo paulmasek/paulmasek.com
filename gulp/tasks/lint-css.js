@@ -3,9 +3,11 @@ import stylelint from 'gulp-stylelint'
 import gulpNotify from 'gulp-notify'
 import gulpConfig from '../gulp-config'
 
+
 gulp.task(gulpConfig.lintCSS.task, () => {
-  gulp.src(gulpConfig.styles.src)
+  return gulp.src(gulpConfig.styles.watch)
     .pipe(stylelint({
+      debug: true,
       failAfterError: true,
       reporters: [
         {
@@ -17,7 +19,7 @@ gulp.task(gulpConfig.lintCSS.task, () => {
     .on('error', function(err) {
         gulpNotify({
           title: 'SCSS linting failed',
-          message: 'See console',
+          message: err.message,
           sound: 'Submarine'
         }).write(err)
         this.emit('end')
