@@ -5,8 +5,10 @@ class EventTracking {
   }
 
   setupLinkTracking() {
+    const matches = Modernizr.prefixed('matchesSelector', document.body, false)
+
     document.addEventListener('click', (event) => {
-      if (event.target.Modernizr.prefixed('matchesSelector', document.body)('a, a *')) {
+      if (event.target[matches]('a, a *')) {
         const href = event.target.href
         let link = event.target
 
