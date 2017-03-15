@@ -13,10 +13,10 @@
     height: auto;
     padding-left: 0;
     padding-right: 0;
-    width: auto;
     right: 74px;
     text-align: right;
     top: 20px;
+    width: auto;
     z-index: 10;
 
     .desktop-header-active & {
@@ -37,8 +37,8 @@
       margin-right: 2px;
       position: static;
       transform: none;
-      width: auto;
       vertical-align: middle;
+      width: auto;
     }
   }
 
@@ -62,8 +62,8 @@
         animation-duration: .3s;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
         animation-name: fade-in-right;
+        animation-timing-function: ease-in-out;
 
         @for $i from 1 through 10 {
           &:nth-child(#{$i}) {
@@ -122,11 +122,11 @@
   }
 
   &--active {
-    animation-timing-function: ease-in-out;
     animation-duration: .3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-name: fade-in;
+    animation-timing-function: ease-in-out;
     background-color: $white;
     z-index: 9;
   }

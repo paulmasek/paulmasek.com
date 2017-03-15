@@ -27,9 +27,9 @@
 
   &__header {
     align-items: center;
+    display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
-    display: flex;
   }
 
   &__content-item {

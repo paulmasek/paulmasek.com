@@ -17,14 +17,14 @@
   }
 
   &--vertical {
-    .no-js &  {
+    .no-js & {
       &:before {
         background-color: $border-orange;
         content: '';
         display: none;
         height: 100%;
-        margin-left: -.5px;
         left: 50%;
+        margin-left: -.5px;
         position: absolute;
         width: 1px;
       }
@@ -56,8 +56,8 @@
   }
 
   &--header {
-    padding-bottom: $small-vertical-separator-height + $line-border-header;
     margin-bottom: 36px;
+    padding-bottom: $small-vertical-separator-height + $line-border-header;
 
     .no-js & {
       &:before {
@@ -108,7 +108,6 @@
     }
   }
 
-
   &--period-title-perm {
     padding-bottom: 6px + $small-vertical-separator-height + $line-border-header;
 
@@ -128,9 +127,9 @@
 
       .no-js & {
         &:before {
-          top: 0;
           display: block;
-          height: $small-vertical-separator-height
+          height: $small-vertical-separator-height;
+          top: 0;
         }
       }
 
@@ -145,8 +144,8 @@
       &:after {
         bottom: auto;
         left: 50%;
-        transform: translateX(-50%);
         top: 0;
+        transform: translateX(-50%);
         width: calc(100% - #{$perm-desktop-max-width});
       }
     }
@@ -218,16 +217,16 @@
 
   &__line {
     display: block;
-    position: absolute;
     overflow: hidden;
+    position: absolute;
 
     .no-js & {
       display: none;
     }
 
     &--horizontal {
-      height: 1px;
       bottom: 0;
+      height: 1px;
       left: 0;
       width: 100%;
 
@@ -258,8 +257,8 @@
     }
 
     &--horizontal-left {
-      height: 1px;
       bottom: 0;
+      height: 1px;
       left: 0;
       width: 100%;
 
@@ -271,9 +270,9 @@
     }
 
     &--vertical {
+      bottom: 0;
       left: 50%;
       margin-left: -.5px;
-      bottom: 0;
       width: 1px;
 
       .js & {
@@ -312,32 +311,32 @@
     &--freelancing {
       bottom: auto;
       left: 50%;
-      transform: translateX(-50%);
       top: 0;
+      transform: translateX(-50%);
       width: calc(100% - #{$perm-desktop-max-width});
     }
 
     &--perm-branch {
       @include media('>tablet') {
         bottom: auto;
+        display: block;
         height: $small-vertical-separator-height;
         top: 0;
-        display: block;
       }
     }
   }
 
   &__part {
     display: block;
-    position: absolute;
     overflow: hidden;
+    position: absolute;
   }
 
   &__contents {
     background-color: $border-orange;
     display: block;
-    left: 0;
     height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
     width: 100%;

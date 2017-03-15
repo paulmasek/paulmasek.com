@@ -48,13 +48,13 @@ img,
 
 .text-input {
   @include small-size;
+  appearance: none;
   background-color: $white;
   border: 1px solid $border-grey;
   border-radius: 0;
   display: block;
   padding: 11px 13px;
   width: 100%;
-  appearance: none;
 }
 
 .primary-navigation-active {

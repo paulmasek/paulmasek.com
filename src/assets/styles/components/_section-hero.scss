@@ -1,14 +1,14 @@
 .section-hero {
   @include bold;
   @include section-inner;
+  align-items: center;
   background-color: $white;
   color: $white;
-  align-items: center;
-  flex-direction: row;
   display: flex;
-  position: relative;
-  overflow: hidden;
+  flex-direction: row;
   min-height: 300px;
+  overflow: hidden;
+  position: relative;
   text-align: center;
   z-index: 1;
 
@@ -20,12 +20,12 @@
 
   &__inner {
     align-items: center;
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     height: 100%;
     top: 0;
-    z-index: 1;
     width: 100%;
+    z-index: 1;
 
     @include media('>tablet') {
       position: absolute;

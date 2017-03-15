@@ -43,20 +43,16 @@
 
   &__heading-name {
     color: $orange;
-    font-size: 46px;
     display: block;
+    font-size: 46px;
     margin-bottom: 4px;
     // text-shadow: 0 2px 1px $text-image-shadow;
   }
 
   &__heading-role {
     // text-shadow: 0 2px 4px $text-image-shadow;
-    font-size: 16px;
     display: block;
-  }
-
-  &__navigation {
-
+    font-size: 16px;
   }
 
   &__navigation-item {
@@ -109,7 +105,7 @@
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    filter: blur(0px);
+    filter: blur(0);
   }
 
   .introduction__content {

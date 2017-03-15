@@ -1,7 +1,7 @@
 .quote {
   &__profile-pic {
     border-radius: 50%;
-    width:100px;
+    width: 100px;
 
     @include media('>tablet') {
       align-self: flex-start;

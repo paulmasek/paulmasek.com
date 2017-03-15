@@ -9,8 +9,8 @@ $branding-switch-delay: .5s;
 
   &__part {
     display: inline-block;
-    position: relative;
     overflow: hidden;
+    position: relative;
     transition: width .3s $branding-switch-delay ease-in-out, transform .3s $branding-switch-delay ease-in-out;
   }
 
