@@ -5,7 +5,7 @@ import gulpConfig from '../gulp-config'
 
 
 gulp.task(gulpConfig.lintCSS.task, () => {
-  return gulp.src(gulpConfig.styles.watch)
+  return gulp.src([gulpConfig.lintCSS.lint, '!' + gulpConfig.lintCSS.ignore])
     .pipe(stylelint({
       debug: true,
       failAfterError: true,
