@@ -14,7 +14,9 @@ const App = {
     this.animationEndEvent = Utils.getAnimationEnd(Modernizr.prefixed('animation'))
     this.setupIntroduction()
     this.setupNavigation()
-    new EventTracking()
+    new EventTracking({
+      local: false,
+    })
   },
 
   setupNavigation() {

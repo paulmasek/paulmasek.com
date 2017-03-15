@@ -1,6 +1,6 @@
 class EventTracking {
   constructor(options) {
-    this.local = true
+    this.local = (typeof options.local !== 'undefined') ? options.local : false
     this.setupLinkTracking()
   }
 
@@ -18,17 +18,27 @@ class EventTracking {
         const value = link.getAttribute('data-event-value')
 
         if (name && value) {
-          this.sendEvent(name, value)
+          this.sendEvent('Tracked link', name, value)
         }
       }
     })
   }
 
-  sendEvent(name, value) {
-    if (this.local) {
-      console.log(`Log event '${name}', with a value of '${value}' to Analytics`)
+  sendEvent(category, action, label) {
+    const analyticsDefined = typeof ga !== 'undefined'
+
+    if (!this.local && analyticsDefined) {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: category,
+        eventAction: action,
+        eventLabel: label,
+      })
     } else {
-      //Post to Analytics
+      console.log(`Log event '${action}', with a label of '${label}' to Analytics (part of ${category} category)`)
+      if (!analyticsDefined) {
+        console.log('Google analytics is undefined - check it is installed correctly')
+      }
     }
   }
 
