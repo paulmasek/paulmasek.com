@@ -34,6 +34,6 @@ gulp.task(gulpConfig.templates.task, () => {
     .pipe(gulpRename({
       extname: '.html'
     }))
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin())
     .pipe(gulp.dest(gulpConfig.templates.dest))
 })
