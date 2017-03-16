@@ -64,8 +64,7 @@ $branding-switch-delay: .5s;
   &--minimal {
     overflow: hidden;
 
-    .mobile-header-active &,
-    .desktop-header-active & {
+    .header-active & {
       .branding__part--one {
         width: 18px;
       }
