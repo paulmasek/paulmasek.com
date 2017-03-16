@@ -1,20 +1,22 @@
 <section class="introduction js-introduction" id="top">
   <div class="container introduction__container">
-    <div class="introduction__content js-animate-introduction-content">
-      <div class="introduction__header">
-        <h1 class="introduction__heading">
-          <span class="introduction__heading-name">{{global.title}}</span>
-          <span class="introduction__heading-role">{{introduction.tagline}}</span>
-        </h1>
-        {{> social-media class="introduction__social-media" links=global.social-media}}
+    <div class="introduction__content-wrapper js-trigger-header">
+      <div class="introduction__content js-animate-introduction-content">
+        <div class="introduction__header">
+          <h1 class="introduction__heading">
+            <span class="introduction__heading-name">{{global.title}}</span>
+            <span class="introduction__heading-role">{{introduction.tagline}}</span>
+          </h1>
+          {{> social-media class="introduction__social-media" links=global.social-media}}
+        </div>
+        <ul class="introduction__navigation">
+      {{#each global.navigation}}
+          <li class="introduction__navigation-item">
+            <a class="introduction__navigation-link" href="{{link}}">{{text}}</a>
+          </li>
+      {{/each}}
+        </ul>
       </div>
-      <ul class="introduction__navigation">
-    {{#each global.navigation}}
-        <li class="introduction__navigation-item">
-          <a class="introduction__navigation-link" href="{{link}}">{{text}}</a>
-        </li>
-    {{/each}}
-      </ul>
     </div>
   </div>
   <div class="introduction__background hero-background">

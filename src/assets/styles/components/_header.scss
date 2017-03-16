@@ -36,19 +36,13 @@
     }
   }
 
-  @include media('<=big-phone') {
-    .mobile-header-active & {
-      opacity: 1;
-    }
-
-    .primary-navigation-active & {
-      border-bottom: 1px solid rgba($black, .05);
-    }
+  .header-active & {
+    opacity: 1;
   }
 
-  @include media('>big-phone') {
-    .desktop-header-active & {
-      opacity: 1;
+  @include media('<=big-phone') {
+    .primary-navigation-active & {
+      border-bottom: 1px solid rgba($black, .05);
     }
   }
 

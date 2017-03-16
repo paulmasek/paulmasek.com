@@ -1,25 +1,14 @@
 export default [
   {
-    name: 'Show header 1',
+    name: 'Show header',
     el: 'body',
     sceneOpts: {
       triggerElement: '.js-trigger-header',
       triggerHook: 'onLeave',
-      offset: -50,
+      offset: 100,
     },
     type: 'class-toggle',
-    activeClass: 'mobile-header-active',
-  },
-  {
-    name: 'Show header 2',
-    el: 'body',
-    sceneOpts: {
-      triggerElement: '.js-trigger-header',
-      triggerHook: 'onLeave',
-      offset: -60,
-    },
-    type: 'class-toggle',
-    activeClass: 'desktop-header-active',
+    activeClass: 'header-active',
   },
   {
     name: 'Introduction',
