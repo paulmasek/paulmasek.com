@@ -39,7 +39,7 @@ class EventTracking {
     } else {
       console.log(`Log event '${action}', with a label of '${label}' to Analytics (part of ${category} category)`)
       if (!analyticsDefined) {
-        console.log('Google analytics is undefined - check it is installed correctly')
+        console.log('Google Analytics is undefined - check it is installed correctly')
       }
     }
   }
