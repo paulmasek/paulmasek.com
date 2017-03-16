@@ -1,6 +1,9 @@
 {
   "name": "paul-masek",
-  "title": "Paul Masek",
+  "meta-name": "Paul Masek",
+  "meta-title": "Paul Masek - Freelance Front-End Web Developer London, UK",
+  "meta-description": "Contact Front-End Web Developer based in London, UK.",
+  "canonical": "http://paulmasek.com/",
   "social-media": {
     "twitter": "https://www.twitter.com/paulmasek",
     "linkedin": "https://uk.linkedin.com/pub/paul-masek/26/a48/7b3"
@@ -23,5 +26,5 @@
       "link": "#contact"
     }
   ],
-  "google-analytics-id": "UA-46157523-1" 
+  "google-analytics-id": "UA-46157523-1"
 }
