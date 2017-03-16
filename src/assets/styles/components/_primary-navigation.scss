@@ -19,7 +19,7 @@
     width: auto;
     z-index: 10;
 
-    .desktop-header-active & {
+    .header-active & {
       opacity: 1;
     }
   }
@@ -54,7 +54,7 @@
       opacity: 0;
       transform: translateX(-100px);
 
-      $delay: .3s;
+      $delay: .2s;
       $initial-delay: 0s;
 
       .primary-navigation--active & {
@@ -129,6 +129,10 @@
     animation-timing-function: ease-in-out;
     background-color: $white;
     z-index: 9;
+
+    @include media('>big-phone') {
+      z-index: 10;
+    }
   }
 }
 

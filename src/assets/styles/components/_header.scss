@@ -47,7 +47,9 @@
   }
 
   &--navigation-active {
-    box-shadow: none;
+    @include media('<=big-phone') {
+      box-shadow: none;
+    }
   }
 
   @include media('>big-phone') {

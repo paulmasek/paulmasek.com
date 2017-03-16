@@ -68,6 +68,8 @@ img,
   width: 100%;
 }
 
-.primary-navigation-active {
-  overflow: hidden;
+@include media('<=big-phone') {
+  .primary-navigation-active {
+    overflow: hidden;
+  }
 }
