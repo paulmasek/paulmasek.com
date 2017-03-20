@@ -32,90 +32,90 @@
   }
 
   &--start {
-    padding-top: $line-border + $small-vertical-separator-height +  $line-border-header;
+    padding-top: rem($line-border + $small-vertical-separator-height +  $line-border-header);
 
     .no-js & {
       &:before {
         display: block;
-        height: $small-vertical-separator-height;
-        top: $line-border;
+        height: rem($small-vertical-separator-height);
+        top: rem($line-border);
       }
     }
   }
 
   &--start-title {
-    padding-top: $line-border + $small-vertical-separator-height + 4px;
+    padding-top: rem($line-border + $small-vertical-separator-height + 4px);
 
     .no-js & {
       &:before {
         display: block;
-        height: $small-vertical-separator-height;
-        top: $line-border;
+        height: rem($small-vertical-separator-height);
+        top: rem($line-border);
       }
     }
   }
 
   &--header {
-    margin-bottom: 36px;
-    padding-bottom: $small-vertical-separator-height + $line-border-header;
+    margin-bottom: rem(36px);
+    padding-bottom: rem($small-vertical-separator-height + $line-border-header);
 
     .no-js & {
       &:before {
-        bottom: $line-border-header;
+        bottom: rem($line-border-header);
         display: block;
-        height: $small-vertical-separator-height;
+        height: rem($small-vertical-separator-height);
       }
     }
   }
 
   &--period-title {
-    padding-bottom: 6px + $medium-vertical-separator-height + $line-border;
+    padding-bottom: rem(6px + $medium-vertical-separator-height + $line-border);
 
     .no-js & {
       &:before {
-        bottom: $line-border;
+        bottom: rem($line-border);
         display: block;
-        height: $medium-vertical-separator-height;
+        height: rem($medium-vertical-separator-height);
       }
     }
   }
 
   &--content {
-    padding-bottom: 14px;
+    padding-bottom: rem(14px);
   }
 
   &--medium-separator {
-    padding-bottom: $line-border-header + $medium-vertical-separator-height + $line-border;
+    padding-bottom: rem($line-border-header + $medium-vertical-separator-height + $line-border);
 
     .no-js & {
       &:before {
-        bottom: $line-border;
+        bottom: rem($line-border);
         display: block;
-        height: $medium-vertical-separator-height;
+        height: rem($medium-vertical-separator-height);
       }
     }
   }
 
   &--big-separator {
-    padding-bottom: $big-vertical-separator-height;
+    padding-bottom: rem($big-vertical-separator-height);
 
     .no-js & {
       &:before {
         bottom: 0;
         display: block;
-        height: $big-vertical-separator-height;
+        height: rem($big-vertical-separator-height);
       }
     }
   }
 
   &--period-title-perm {
-    padding-bottom: 6px + $small-vertical-separator-height + $line-border-header;
+    padding-bottom: rem(6px + $small-vertical-separator-height + $line-border-header);
 
     .no-js & {
       &:before {
-        bottom: $line-border-header;
+        bottom: rem($line-border-header);
         display: block;
-        height: $small-vertical-separator-height;
+        height: rem($small-vertical-separator-height);
       }
     }
   }
@@ -123,12 +123,12 @@
   &--perm-branch {
     @include media('>tablet') {
       padding-bottom: 0;
-      padding-top: 34px;
+      padding-top: rem(34px);
 
       .no-js & {
         &:before {
           display: block;
-          height: $small-vertical-separator-height;
+          height: rem($small-vertical-separator-height);
           top: 0;
         }
       }
@@ -146,7 +146,7 @@
         left: 50%;
         top: 0;
         transform: translateX(-50%);
-        width: calc(100% - #{$perm-desktop-max-width});
+        width: calc(100% - #{rem($perm-desktop-max-width)});
       }
     }
   }
@@ -290,22 +290,22 @@
     }
 
     &--big-separator {
-      height: $big-vertical-separator-height;
+      height: rem($big-vertical-separator-height);
     }
 
     &--medium-separator {
-      bottom: $line-border;
-      height: $medium-vertical-separator-height;
+      bottom: rem($line-border);
+      height: rem($medium-vertical-separator-height);
     }
 
     &--small-separator {
-      height: $small-vertical-separator-height;
-      top: $line-border;
+      height: rem($small-vertical-separator-height);
+      top: rem($line-border);
     }
 
     &--small-separator-header {
-      bottom: $line-border-header;
-      height: $small-vertical-separator-height;
+      bottom: rem($line-border-header);
+      height: rem($small-vertical-separator-height);
     }
 
     &--freelancing {
@@ -313,14 +313,14 @@
       left: 50%;
       top: 0;
       transform: translateX(-50%);
-      width: calc(100% - #{$perm-desktop-max-width});
+      width: calc(100% - #{rem($perm-desktop-max-width)});
     }
 
     &--perm-branch {
       @include media('>tablet') {
         bottom: auto;
         display: block;
-        height: $small-vertical-separator-height;
+        height: rem($small-vertical-separator-height);
         top: 0;
       }
     }

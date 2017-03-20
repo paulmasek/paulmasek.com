@@ -24,7 +24,7 @@
   }
 
   &__secondary {
-    padding-bottom: 14px;
+    padding-bottom: rem(14px);
 
     &:last-of-type {
       padding-bottom: 0;
@@ -46,6 +46,6 @@
 
   .skills__secondary-inner {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(rem(100px));
   }
 }

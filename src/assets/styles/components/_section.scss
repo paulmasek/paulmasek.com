@@ -4,10 +4,10 @@
   &__anchor {
     left: 0;
     position: absolute;
-    top: -50px;
+    top: rem(-50px);
 
     @include media('>big-phone') {
-      top: -60px;
+      top: rem(-60px);
     }
   }
 }

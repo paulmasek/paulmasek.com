@@ -4,12 +4,12 @@
 
   &__segment {
     &--digirati {
-      margin-top: -16px;
+      margin-top: rem(-16px);
     }
   }
 
   &__major-period {
-    margin-bottom: -16px;
+    margin-bottom: rem(-16px);
 
     &--last {
       margin-bottom: 0;
@@ -33,7 +33,7 @@
   }
 
   &__content-item {
-    margin-bottom: 56px;
+    margin-bottom: rem(56px);
 
     .line-segment__line {
       display: none;
@@ -42,7 +42,7 @@
     &--timeline-company-grid {
       margin-left: auto;
       margin-right: auto;
-      max-width: 300px;
+      max-width: rem(300px);
 
       @include media('>=tablet') {
         max-width: none;
@@ -65,25 +65,25 @@
   // Contracting
 
   &__header-title {
-    margin-bottom: 14px;
-    max-width: 300px;
+    margin-bottom: rem(14px);
+    max-width: rem(300px);
     width: 100%;
   }
 
   &__contracting-logo {
-    margin-bottom: $line-border-header;
-    width: 100px;
+    margin-bottom: rem($line-border-header);
+    width: rem(100px);
   }
 
   &__started-freelancing {
-    margin-bottom: 6px;
+    margin-bottom: rem(6px);
   }
 
   // Perm
 
   &__perm-logo {
-    margin-bottom: $line-border-header;
-    width: 50px;
+    margin-bottom: rem($line-border-header);
+    width: rem(50px);
   }
 
   &__perm-title {
@@ -92,7 +92,7 @@
 
   &__perm-role {
     @include h4-big($black);
-    margin-bottom: $line-border;
+    margin-bottom: rem($line-border);
   }
 
   &__perm-grid {
@@ -103,7 +103,7 @@
 
   &__perm {
     @include media('>tablet') {
-      max-width: $perm-desktop-max-width + $gutter;
+      max-width: rem($perm-desktop-max-width + $gutter);
       width: 50%;
     }
   }
@@ -116,7 +116,7 @@
 .js {
   .timeline__period-title-content {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(rem(50px));
   }
 
   .timeline__content-module,
@@ -125,6 +125,6 @@
   .timeline__started-freelancing,
   .timeline__content-item--perm {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(rem(100px));
   }
 }

@@ -1,7 +1,7 @@
 .main-header {
   background-color: $white;
-  box-shadow: 0 5px 20px 3px rgba($black, .05);
-  height: 50px;
+  box-shadow: 0 rem(5px) rem(20px) rem(3px) rgba($black, .05);
+  height: rem(50px);
   left: 0;
   opacity: 0;
   position: fixed;
@@ -11,22 +11,22 @@
   z-index: 10;
 
   &__inner {
-    padding-left: $gutterHalf;
-    padding-right: $gutterHalf;
+    padding-left: rem($gutterHalf);
+    padding-right: rem($gutterHalf);
 
     @include media('>big-phone') {
-      padding-left: $gutter;
-      padding-right: $gutter;
+      padding-left: rem($gutter);
+      padding-right: rem($gutter);
     }
   }
 
   &__branding {
     @include header-branding-size;
     position: relative;
-    top: 6px;
+    top: rem(6px);
 
     @include media('>big-phone') {
-      top: 11px;
+      top: rem(11px);
     }
 
     @include media('>tablet') {
@@ -53,18 +53,18 @@
   }
 
   @include media('>big-phone') {
-    height: 60px;
+    height: rem(60px);
   }
 
   &__social-media {
     margin-bottom: 0;
     position: absolute;
-    right: 42px;
-    top: 8px;
+    right: rem(42px);
+    top: rem(8px);
 
     @include media('>big-phone') {
-      right: 18px;
-      top: 14px;
+      right: rem(18px);
+      top: rem(14px);
     }
 
     path {

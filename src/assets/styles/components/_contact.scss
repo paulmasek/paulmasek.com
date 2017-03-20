@@ -1,6 +1,6 @@
 .contact {
   &__inner {
     @include section-inner;
-    max-width: 640 + $gutter * 2;
+    max-width: rem(640 + $gutter * 2);
   }
 }

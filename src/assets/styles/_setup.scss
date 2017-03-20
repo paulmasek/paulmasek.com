@@ -54,7 +54,7 @@ img,
 
 .form-label {
   @include h4;
-  margin-bottom: 6px;
+  margin-bottom: rem(6px);
 }
 
 .text-input {
@@ -64,7 +64,7 @@ img,
   border: 1px solid $border-grey;
   border-radius: 0;
   display: block;
-  padding: 11px 13px;
+  padding: rem(11px) rem(13px);
   width: 100%;
 }
 

@@ -23,26 +23,24 @@
   }
 
   &__header {
-    margin-bottom: 38px;
+    margin-bottom: rem(38px);
   }
 
   &__heading {
     @include bold;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
   }
 
   &__heading-name {
     color: $orange;
     display: block;
-    font-size: 46px;
-    margin-bottom: 4px;
-    // text-shadow: 0 2px 1px $text-image-shadow;
+    font-size: rem(46px);
+    margin-bottom: rem(4px);
   }
 
   &__heading-role {
-    // text-shadow: 0 2px 4px $text-image-shadow;
     display: block;
-    font-size: 16px;
+    font-size: rem(16px);
   }
 
   &__navigation {
@@ -55,7 +53,7 @@
     &:after {
       color: rgba($white, .4);
       content: '/';
-      font-size: 14px;
+      font-size: rem(14px);
     }
 
     &:last-of-type:after {
@@ -65,7 +63,7 @@
 
   &__navigation-link {
     color: $white;
-    font-size: 14px;
+    font-size: rem(14px);
     text-decoration: none;
 
     &:hover {
@@ -99,7 +97,6 @@
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    // filter: blur(0);
   }
 
   .introduction__content {
@@ -112,10 +109,6 @@
 
   .introduction--background-loaded {
     animation-name: fade-in;
-
-    .hero-background__image {
-      // animation-name: blur;
-    }
 
     .introduction__content {
       animation-name: fade-in-up;

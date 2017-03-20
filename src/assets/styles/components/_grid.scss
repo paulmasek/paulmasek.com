@@ -19,22 +19,22 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$gutter;
+  margin-left: rem(-$gutter);
 
   &--v-center {
     align-items: center;
   }
 
   &__col {
-    padding-left: $gutter;
+    padding-left: rem($gutter);
     width: 100%;
   }
 
   &--thin {
-    margin-left: -$gutter / 2;
+    margin-left: rem(-$gutter / 2);
 
     .grid__col {
-      padding-left: $gutter / 2;
+      padding-left: rem($gutter / 2);
     }
   }
 
@@ -69,15 +69,15 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: $gutter;
-  padding-right: $gutter;
+  padding-left: rem($gutter);
+  padding-right: rem($gutter);
 
   &--thin {
-    max-width: 640px + $gutter * 2;
+    max-width: rem(640px + $gutter * 2);
   }
 
   &--wide {
-    max-width: 880px + $gutter * 2;
+    max-width: rem(880px + $gutter * 2);
   }
 }
 

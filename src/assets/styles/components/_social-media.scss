@@ -1,12 +1,12 @@
 .social-media {
-  letter-spacing: -3.9px;
+  letter-spacing: rem(-3.9px);
 
   &__item {
     display: inline-block;
-    height: 30px;
+    height: rem(30px);
     text-align: center;
     vertical-align: top;
-    width: 28px;
+    width: rem(28px);
   }
 
   &__link {
@@ -20,17 +20,17 @@
     padding-bottom: 0;
     position: relative;
     top: 50%;
-    transform: translateY(-8px);
+    transform: translateY(rem(-8px));
     vertical-align: top;
 
     &--twitter {
-      height: 16px;
-      width: 20px;
+      height: rem(16px);
+      width: rem(20px);
     }
 
     &--linkedin {
-      height: 16px;
-      width: 16px;
+      height: rem(16px);
+      width: rem(16px);
     }
   }
 }

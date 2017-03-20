@@ -1,11 +1,11 @@
 .quote {
   &__profile-pic {
     border-radius: 50%;
-    width: 100px;
+    width: rem(100px);
 
     @include media('>tablet') {
       align-self: flex-start;
-      margin-right: $gutter;
+      margin-right: rem($gutter);
     }
   }
 
@@ -16,21 +16,21 @@
         color: $orange;
         display: inline-block;
         font-family: Times;
-        font-size: 24px;
+        font-size: rem(24px);
         font-weight: bold;
-        line-height: 24px;
+        line-height: rem(24px);
         position: relative;
-        top: 3px;
+        top: rem(3px);
       }
 
       &:first-of-type:before {
         content: '\201C\0020';
-        margin-right: 4px;
+        margin-right: rem(4px);
       }
 
       &:last-of-type:after {
         content: '\0020\201D';
-        margin-left: 4px;
+        margin-left: rem(4px);
       }
     }
   }

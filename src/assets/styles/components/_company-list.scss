@@ -1,5 +1,5 @@
 .company-list {
-  margin-bottom: 60px;
+  margin-bottom: rem(60px);
 
   &__item {
     align-items: center;
@@ -7,8 +7,8 @@
     text-align: center;
 
     @include media('<tablet') {
-      padding-bottom: 1px + 20px;
-      padding-top: 20px;
+      padding-bottom: rem(1px + 20px);
+      padding-top: rem(20px);
 
       &:before {
         background-color: $border-grey;

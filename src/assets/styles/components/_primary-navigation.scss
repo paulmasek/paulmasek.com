@@ -1,8 +1,8 @@
 .primary-navigation {
   height: 100%;
   opacity: 0;
-  padding-left: $gutter;
-  padding-right: $gutter;
+  padding-left: rem($gutter);
+  padding-right: rem($gutter);
   position: fixed;
   text-align: center;
   top: 0;
@@ -13,9 +13,9 @@
     height: auto;
     padding-left: 0;
     padding-right: 0;
-    right: 74px;
+    right: rem(74px);
     text-align: right;
-    top: 20px;
+    top: rem(20px);
     width: auto;
     z-index: 10;
 
@@ -44,7 +44,7 @@
 
   &__item {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: rem(8px);
 
     &:last-of-type {
       margin-bottom: 0;
@@ -52,7 +52,7 @@
 
     @include media('<=big-phone') {
       opacity: 0;
-      transform: translateX(-100px);
+      transform: translateX(rem(-100px));
 
       $delay: .2s;
       $initial-delay: 0s;
@@ -93,14 +93,14 @@
   }
 
   &__link {
-    font-size: 28px;
+    font-size: rem(28px);
     text-decoration: none;
 
     @include media('>big-phone') {
       @include bold;
-      font-size: 16px;
-      padding-left: 6px;
-      padding-right: 4px;
+      font-size: rem(16px);
+      padding-left: rem(6px);
+      padding-right: rem(4px);
     }
 
     @include media('>tablet') {
@@ -112,7 +112,7 @@
 
   &__inner {
     height: 100%;
-    padding-top: 50px;
+    padding-top: rem(50px);
     position: relative;
 
     @include media('>big-phone') {
@@ -140,8 +140,8 @@
   outline: none;
   padding: 0;
   position: absolute;
-  right: $gutterHalf;
-  top: 16px;
+  right: rem($gutterHalf);
+  top: rem(16px);
 
   .hamburger-box {
     vertical-align: top;
@@ -149,7 +149,7 @@
 
   @include media('>big-phone') {
     display: none;
-    right: $gutter;
-    top: 20px;
+    right: rem($gutter);
+    top: rem(20px);
   }
 }

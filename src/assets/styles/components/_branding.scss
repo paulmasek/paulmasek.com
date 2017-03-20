@@ -5,7 +5,7 @@ $branding-switch-delay: .5s;
   color: $orange;
   display: inline-block;
   text-decoration: none;
-  width: 167px;
+  width: rem(167px);
 
   &__part {
     display: inline-block;
@@ -28,12 +28,12 @@ $branding-switch-delay: .5s;
     display: inline-block;
 
     &--one {
-      width: 65px;
+      width: rem(65px);
     }
 
     &--two {
       transform: translateX(0);
-      width: 94px;
+      width: rem(94px);
     }
   }
 
@@ -43,21 +43,21 @@ $branding-switch-delay: .5s;
     z-index: 2;
 
     &--one {
-      left: -2px;
+      left: rem(-2px);
     }
 
     &--two {
-      left: -2.3px;
+      left: rem(-2.3px);
     }
   }
 
   &__full-part {
     &--one {
-      right: 2px;
+      right: rem(2px);
     }
 
     &--two {
-      right: 2.3px;
+      right: rem(2.3px);
     }
   }
 
@@ -66,22 +66,22 @@ $branding-switch-delay: .5s;
 
     .header-active & {
       .branding__part--one {
-        width: 18px;
+        width: rem(18px);
       }
 
       .branding__part--two {
-        transform: translateX(-4px);
-        width: 24px;
+        transform: translateX(rem(-4px));
+        width: rem(24px);
       }
 
       .branding__full-part--one {
         opacity: 0;
-        transform: translateX(-62px);
+        transform: translateX(rem(-62px));
       }
 
       .branding__full-part--two {
         opacity: 0;
-        transform: translateX(-90px);
+        transform: translateX(rem(-90px));
       }
     }
   }

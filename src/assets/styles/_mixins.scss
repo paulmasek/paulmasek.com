@@ -4,13 +4,12 @@
 }
 
 @mixin section-inner {
-  padding-bottom: $double-lh;
-  padding-top: 56px;
+  padding-bottom: rem($double-lh);
+  padding-top: rem(56px);
 }
 
 @mixin section-break($color: $border-orange) {
-  // border-bottom: 1px solid $color;
-  margin-bottom: $double-lh-header;
+  margin-bottom: rem($double-lh-header);
 }
 
 @mixin remove-section-break {

@@ -7,14 +7,14 @@
 
   &__profile-pic {
     border-radius: 50%;
-    margin-bottom: 10px;
-    max-width: 200px;
-    min-width: 100px;
+    margin-bottom: rem(10px);
+    max-width: rem(200px);
+    min-width: rem(100px);
     width: percentage(120 / (320 - 24 * 2));
 
     .js & {
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(rem(100px));
     }
   }
 }
@@ -22,6 +22,6 @@
 .js {
   .about__content {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(rem(100px));
   }
 }
