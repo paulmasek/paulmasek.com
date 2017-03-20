@@ -10,8 +10,9 @@ import webpackSettings from '../../webpack.config.babel'
 
 const bundler = webpack(webpackSettings)
 
+
 gulp.task('serve', gulpConfig.tasks.default, () => {
-  let browserSyncOptions = gulpConfig.serve.browserSync
+  let middleware = false
 
   if (config.static) {
     browserSync.use(htmlInjector, {
@@ -24,16 +25,18 @@ gulp.task('serve', gulpConfig.tasks.default, () => {
     notify: false
   }
 
-  let middleware = [
-    webpackDevMiddleware(bundler, {
-      noInfo: true,
-      publicPath: webpackSettings.output.publicPath,
-      stats: {
-        colors: true
-      }
-    }),
-    webpackHotMiddleware(bundler)
-  ]
+  if (process.env.NODE_ENV === 'development') {
+    middleware = [
+      webpackDevMiddleware(bundler, {
+        noInfo: true,
+        publicPath: webpackSettings.output.publicPath,
+        stats: {
+          colors: true
+        }
+      }),
+      webpackHotMiddleware(bundler)
+    ]
+  }
 
   if (config.server) {
     browserSyncSettings.server = {

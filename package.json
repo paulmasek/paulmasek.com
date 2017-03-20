@@ -41,8 +41,9 @@
     "webpack-notifier": "^1.5.0"
   },
   "scripts": {
-    "start": "webpack && gulp",
-    "init": "babel-node init.js --presets es2015"
+    "start": "NODE_ENV=development webpack && NODE_ENV=development gulp",
+    "init": "babel-node init.js --presets es2015",
+    "prod": "NODE_ENV=production webpack && NODE_ENV=production gulp"
   },
   "dependencies": {
     "gsap": "^1.19.1",
