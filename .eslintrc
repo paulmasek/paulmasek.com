@@ -1,7 +1,22 @@
 {
+  "env": {
+    "browser": true,
+  },
   "extends": "airbnb",
   "rules": {
     "no-console": "off",
     "semi": [1, "never"]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.babel.js"
+      }
+    }
+  },
+  "globals": {
+    "Modernizr": true,
+    "TweenMax": true,
+    "ga": true,
   }
 }
