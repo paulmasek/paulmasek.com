@@ -1,5 +1,40 @@
 export default [
   {
+    name: 'Section Hero Content',
+    trigger: '.js-animate-trigger-section-hero-content',
+    animate: '.js-animate-section-hero-content',
+    config: {
+      sceneOpts: {
+        triggerHook: 'onEnter',
+        duration: 150,
+        offset: 100,
+      },
+      type: 'to',
+      css: {
+        opacity: 1,
+        transform: 'translateY(0)',
+      },
+    },
+  },
+  /*
+  {
+    name: 'Section Hero Background',
+    trigger: '.js-animate-trigger-section-hero-background',
+    animate: '.js-animate-section-hero-background',
+    config: {
+      sceneOpts: {
+        triggerHook: 'onEnter',
+        duration: 200,
+        offset: 200,
+      },
+      type: 'to',
+      css: {
+        filter: 'blur(4px)',
+      },
+    },
+  },
+  */
+  {
     name: 'Work line',
     trigger: '.js-animate-trigger-line-work',
     animate: '.js-animate-line-work',

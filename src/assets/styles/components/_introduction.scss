@@ -112,7 +112,7 @@
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    filter: blur(0);
+    // filter: blur(0);
   }
 
   .introduction__content {
@@ -127,7 +127,7 @@
     animation-name: fade-in;
 
     .hero-background__image {
-      animation-name: blur;
+      // animation-name: blur;
     }
 
     .introduction__content {

@@ -19,9 +19,11 @@
   </head>
   <body>
     {{> analytics}}
-    {{> header}}
-    {{{ block "main"}}}
-    {{> footer}}
+    <div class="wrapper">
+      {{> header}}
+      {{{ block "main"}}}
+      {{> footer}}
+    </div>
     <script src="assets/js/{{global.name}}.js"></script>
   </body>
 </html>

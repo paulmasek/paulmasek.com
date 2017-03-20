@@ -1,14 +1,16 @@
-<div class="section-hero{{#if class}} section-hero--work{{/if}} js-animate-{{name}}-hero">
+<div class="section-hero{{#if class}} section-hero--{{class}}{{/if}} js-animate-trigger-section-hero-background">
   <div class="section-hero__inner">
     <div class="container container--thin">
-      <div class="section-hero__content js-animate-{{name}}-hero-content">
-        <h2 class="section-hero__title">{{title}}</h2>
-        <div class="">
-          {{{body}}}
+      <div class="section-hero__content-wrapper js-animate-trigger-section-hero-content">
+        <div class="section-hero__content js-animate-section-hero-content">
+          <h2 class="section-hero__title">{{title}}</h2>
+          <div class="">
+            {{{body}}}
+          </div>
         </div>
       </div>
       <div class="hero-background">
-        <div class="hero-background__image js-animate-{{name}}-hero-background" style="background-image: url('{{background.src}}')">{{background.alt}}</div>
+        <div class="hero-background__image js-animate-section-hero-background" style="background-image: url('{{background.src}}')">{{background.alt}}</div>
         <div class="hero-background__overlay">&nbsp;</div>
       </div>
     </div>
