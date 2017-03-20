@@ -43,10 +43,6 @@
 
 .js {
   .section-hero {
-    .hero-background__image {
-      filter: blur(0);
-    }
-
     &__content {
       opacity: 0;
       transform: translateY(100px);
