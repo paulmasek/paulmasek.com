@@ -6,12 +6,14 @@ import frontMatter from 'gulp-front-matter'
 import handlebars from 'gulp-hb'
 import gulpRename from 'gulp-rename'
 import handlebarsLayouts from 'handlebars-layouts'
+import handlebarsHelpers from 'handlebars-helpers'
 
 gulp.task(gulpConfig.templates.task, () => {
   const handlebarsStream = handlebars({
     bustCache: true,
     debug: true
   })
+  .helpers(handlebarsHelpers)
   .helpers(handlebarsLayouts)
   .partials(gulpConfig.templates.src.partials + gulpConfig.templates.ext)
   .partials(gulpConfig.templates.src.layouts + gulpConfig.templates.ext)

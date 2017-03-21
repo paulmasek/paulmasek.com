@@ -30,9 +30,11 @@
       <div class="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary js-animate-trigger-design">
         <div class="skills__secondary-inner js-animate-design">
           <h3 class="heading-three">{{software.title}}</h3>
-          <ul class="">
+          <ul class="design-tools">
           {{#each software.skills}}
-            <li class="">{{title}}</li>
+            <li class="design-tools__item">
+              <span class="design-tools__icon">{{> icon icon=( lookup . 'name')}}</span> {{title}}
+            </li>
           {{/each}}
           </ul>
         </div>

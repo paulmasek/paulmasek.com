@@ -58,12 +58,15 @@
     "title": "Design",
     "skills": [
       {
+        "name": "sketch",
         "title": "Sketch"
       },
       {
+        "name": "photoshop",
         "title": "Photoshop"
       },
       {
+        "name": "illustrator",
         "title": "Illustrator"
       }
     ]
