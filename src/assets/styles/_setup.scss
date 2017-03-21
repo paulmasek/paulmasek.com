@@ -52,22 +52,6 @@ img,
   @include h4-alt;
 }
 
-.form-label {
-  @include h4;
-  margin-bottom: rem(6px);
-}
-
-.text-input {
-  @include small-size;
-  appearance: none;
-  background-color: $white;
-  border: 1px solid $border-grey;
-  border-radius: 0;
-  display: block;
-  padding: rem(11px) rem(13px);
-  width: 100%;
-}
-
 @include media('<=big-phone') {
   .primary-navigation-active {
     overflow: hidden;

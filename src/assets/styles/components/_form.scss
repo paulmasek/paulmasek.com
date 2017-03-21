@@ -1,0 +1,116 @@
+.form {
+  position: relative;
+  text-align: center;
+
+  &__fields {
+    opacity: 1;
+  }
+
+  &__inputs {
+    text-align: left;
+  }
+
+  &__loading {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999em;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    &:before {
+      background: transparent url('../images/loader.svg') top left/contain no-repeat;
+      content: '';
+      display: block;
+      height: rem(30px);
+      left: 50%;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(30px);
+    }
+  }
+
+  &__result {
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__result-title {
+    margin-bottom: 1.3em;
+  }
+
+  &--loading {
+    .form__fields {
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+      animation-name: fade-out-up;
+    }
+
+    .form__loading {
+      opacity: 1;
+      z-index: 1;
+
+      &:before {
+        animation-delay: .5s;
+        animation-duration: .3s;
+        animation-fill-mode: forwards;
+        animation-name: fade-in;
+      }
+    }
+
+    .form__result {
+      display: block;
+    }
+  }
+
+  &--success,
+  &--failed {
+    .form__fields {
+      display: none;
+    }
+
+    .form__loading {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  &--success {
+    .form__result--success {
+      animation-name: fade-in-up;
+      position: static;
+    }
+  }
+
+  &--failed {
+    .form__result--failed {
+      animation-name: fade-in-up;
+      position: static;
+    }
+  }
+}
+
+.form-label {
+  @include h4;
+  margin-bottom: rem(6px);
+}
+
+.text-input {
+  @include small-size;
+  appearance: none;
+  background-color: $white;
+  border: 1px solid $border-grey;
+  border-radius: 0;
+  display: block;
+  padding: rem(11px) rem(13px);
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.button {
+  @include bold;
+  background-color: $orange;
+  border: none;
+  border-radius: rem(5px);
+  color: $white;
+  display: inline-block;
+  padding: rem(10px) rem(14px);
+  vertical-align: top;
+}

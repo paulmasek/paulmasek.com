@@ -2,6 +2,7 @@ import imagesLoaded from 'imagesloaded'
 import SiteAnimation from './site-animation'
 import siteAnimationIndividual from './site-animation-individual'
 import SiteAnimationFlexible from './site-animation-flexible'
+import AjaxForm from './form'
 import Utils from './utils'
 import EventTracking from './event-tracking'
 
@@ -14,7 +15,24 @@ const App = {
     this.animationEndEvent = Utils.getAnimationEnd(Modernizr.prefixed('animation'))
     this.setupIntroduction()
     this.setupNavigation()
-    new EventTracking({
+    this.setupEventTracking()
+    this.setupForms()
+  },
+
+  setupForms() {
+    const forms = document.querySelectorAll('.js-form')
+    this.forms = []
+
+    for (let i = 0; i < forms.length; i += 1) {
+      this.forms.push(new AjaxForm({
+        el: forms[i],
+        resultDelay: 1000,
+      }))
+    }
+  },
+
+  setupEventTracking() {
+    this.eventTracking = new EventTracking({
       local: false,
     })
   },

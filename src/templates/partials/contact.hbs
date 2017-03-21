@@ -1,22 +1,7 @@
 <section class="section contact">
   {{> section-hero introduction name="contact"}}
   <div class="container container--wide contact__inner">
-    <form action="" method="">
-      <div class="grid">
-        <div class="grid__col grid__col--sm-6-12 form-row">
-          <label class="form-label" for="name">Name</label>
-          <input class="text-input" id="name" name="name" required type="text" />
-        </div>
-        <div class="grid__col grid__col--sm-6-12 form-row">
-          <label class="form-label" for="email">Email</label>
-          <input class="text-input" id="email" name="email" required type="email" />
-        </div>
-        <div class="grid__col grid__col--sm-12-12 form-row">
-          <label class="form-label" for="message">Message</label>
-          <textarea class="text-input" id="message" name="message" required rows="10"></textarea>
-        </div>
-      </div>
-    </form>
+  {{> form form}}
   </div>
   {{> section-anchor id="contact"}}
 </section>

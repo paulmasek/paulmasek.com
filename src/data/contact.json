@@ -6,5 +6,10 @@
       "src": "assets/images/content/contact-hero.jpg",
       "alt": ""
     }
+  },
+  "form": {
+    "action": "https://formspree.io/hello@paulmasek.com",
+    "failed": "<h3 class=\"heading-four form__result-title\">Message failed to send</h3><p>Unfortunately it looks like there was a problem sending your message.</p><p>Please email me at <a href=\"mailto:hello@paulmasek.com\">hello@paulmasek.com</a> instead.</p>",
+    "success": "<h3 class=\"heading-four form__result-title\">Message sent successfully</h3><p>Thanks for your message.</p>"
   }
 }
