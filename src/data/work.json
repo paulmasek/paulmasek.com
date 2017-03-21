@@ -19,7 +19,7 @@
               "slug": "ry",
               "company": "Radley Yeldar",
               "logo": {
-                "src": "assets/images/radley-yeldar-logo.svg",
+                "src": "assets/images/content/radley-yeldar-logo.svg",
                 "alt": ""
               },
               "modules": [
@@ -35,7 +35,7 @@
                     "name": "Megan Willis",
                     "role": "Project Manager",
                     "profile-pic": {
-                      "src": "assets/images/megan-willis.jpg",
+                      "src": "assets/images/content/megan-willis.jpg",
                       "alt": ""
                     },
                     "body": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation. A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project</p>"
@@ -47,7 +47,7 @@
               "slug": "zone",
               "company": "Zone",
               "logo": {
-                "src": "assets/images/zone-logo.svg",
+                "src": "assets/images/content/zone-logo.svg",
                 "alt": ""
               },
               "modules": [
@@ -63,7 +63,7 @@
               "slug": "digirati",
               "company": "Digirati",
               "logo": {
-                "src": "assets/images/digirati-logo.png",
+                "src": "assets/images/content/digirati-logo.png",
                 "alt": ""
               },
               "modules" : [
@@ -97,7 +97,7 @@
                   "slug": "studioaura",
                   "name": "StudioAura",
                   "logo": {
-                    "src": "assets/images/studio-aura-logo.svg",
+                    "src": "assets/images/content/studio-aura-logo.svg",
                     "alt": ""
                   },
                   "url": "http://www.studioaura.com/"
@@ -106,7 +106,7 @@
                   "slug": "rubber-cheese",
                   "name": "Rubber Cheese",
                   "logo": {
-                    "src": "assets/images/rubber-cheese-logo.jpg",
+                    "src": "assets/images/content/rubber-cheese-logo.jpg",
                     "alt": ""
                   },
                   "url": "http://www.rubbercheese.com/"
@@ -115,7 +115,7 @@
                   "slug": "spork",
                   "name": "Spork Digital",
                   "logo": {
-                    "src": "assets/images/spork-logo.svg",
+                    "src": "assets/images/content/spork-logo.svg",
                     "alt": ""
                   },
                   "url": "http://spork.digital"
@@ -124,7 +124,7 @@
                   "slug": "borne",
                   "name": "borne™",
                   "logo": {
-                    "src": "assets/images/borne-logo.svg",
+                    "src": "assets/images/content/borne-logo.svg",
                     "alt": ""
                   },
                   "url": "https://www.weareborne.com/"
@@ -139,10 +139,10 @@
               "role": "Managing Director",
               "company": "Rubber Cheese",
               "profile-pic": {
-                "src": "assets/images/kelly-molson.jpg",
+                "src": "assets/images/content/kelly-molson.jpg",
                 "alt": ""
               },
-              "body": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation. A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project</p>"
+              "body": "<p>Paul is extremely hard working and has produced great results for us on a number of development projects</p><p>He’s easy to get on with and a really good guy. His understanding of the platforms he works on is exceptional.</p>"
             }
           }
         ]
@@ -153,7 +153,7 @@
         "period": "May 2012 - Apr 2014",
         "company": "Shout Creative!",
         "logo": {
-          "src": "assets/images/shout-creative-logo.png",
+          "src": "assets/images/content/shout-creative-logo.png",
           "alt": ""
         },
         "role": "Lead front-end developer",
@@ -177,7 +177,7 @@
         "period": "Nov 2008 – Feb 2012",
         "company": "Solid State Group",
         "logo": {
-          "src": "assets/images/solid-state-group-logo.png",
+          "src": "assets/images/content/solid-state-group-logo.png",
           "alt": ""
         },
         "role": "Front-end developer",
