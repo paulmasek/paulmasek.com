@@ -97,6 +97,14 @@
       position: static;
     }
   }
+
+  &--contact {
+    min-height: rem(200px);
+
+    @include media('>tablet') {
+      min-height: rem(346px);
+    }
+  }
 }
 
 .form-label {

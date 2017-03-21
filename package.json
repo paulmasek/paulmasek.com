@@ -48,6 +48,7 @@
   "dependencies": {
     "gsap": "^1.19.1",
     "imagesloaded": "^4.1.1",
-    "scrollmagic": "^2.0.5"
+    "scrollmagic": "^2.0.5",
+    "superagent": "^3.5.1"
   }
 }
