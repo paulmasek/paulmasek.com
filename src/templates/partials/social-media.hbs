@@ -1,12 +1,9 @@
 <ul class="social-media {{class}}">
-  <li class="social-media__item">
-    <a class="social-media__link" data-event-name="primary-nav-social-media" data-event-value="twitter" href="{{links.twitter}}" target="_blank">
-    {{> icon class="social-media__icon social-media__icon--twitter" icon="twitter"}}
-    </a>
-  </li>
-  <li class="social-media__item">
-    <a class="social-media__link" data-event-name="primary-nav-social-media" data-event-value="LinkedIn" href="{{links.linkedin}}" target="_blank">
-      {{> icon class="social-media__icon social-media__icon--linkedin" icon ="linkedin"}}
-    </a>
-  </li>
+  {{#each links}}
+    <li class="social-media__item">
+      <a class="social-media__link" data-event-name="primary-nav-social-media" data-event-value="{{name}}" href="{{url}}" target="_blank">
+        {{> icon class="social-media__icon" icon=( lookup . 'name')}}
+      </a>
+    </li>
+  {{/each}}
 </ul>

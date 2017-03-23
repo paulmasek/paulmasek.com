@@ -4,10 +4,39 @@
   "meta-title": "Paul Masek - Freelance Front-End Web Developer London, UK",
   "meta-description": "Contact Front-End Web Developer based in London, UK.",
   "canonical": "http://paulmasek.com/",
-  "social-media": {
-    "twitter": "https://www.twitter.com/paulmasek",
-    "linkedin": "https://uk.linkedin.com/pub/paul-masek/26/a48/7b3"
-  },
+  "social-media": [
+    {
+      "name": "twitter",
+      "url": "https://www.twitter.com/paulmasek"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://uk.linkedin.com/pub/paul-masek/26/a48/7b3"
+    }
+  ],
+  "social-media-full": [
+    {
+      "name": "twitter",
+      "url": "https://www.twitter.com/paulmasek"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://uk.linkedin.com/pub/paul-masek/26/a48/7b3"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/paulmasek"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/paulmasek"
+    },
+    {
+      "name": "last-fm",
+      "url": "https://www.last.fm/user/djmas"
+    }
+
+  ],
   "navigation": [
     {
       "text": "About",
