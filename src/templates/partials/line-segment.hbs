@@ -1,6 +1,6 @@
 {{#if horizontal}}
   {{#unless fromLeft}}
-  <div class="line-segment__line line-segment__line--horizontal {{#if grey}} line-segment__line--grey{{/if}} {{class}} js-animate-trigger-line-{{name}}">
+  <div class="line-segment__line line-segment__line--horizontal {{#if grey}} line-segment__line--grey{{/if}}{{#if class}} {{class}}{{/if}} js-animate-trigger-line-{{name}}">
     <span class="line-segment__part line-segment__part-left">
       <span class="line-segment__contents js-animate-line-{{name}}-part-one"></span>
     </span>
@@ -9,12 +9,12 @@
     </span>
   </div>
   {{else}}
-  <div class="line-segment__line line-segment__line--horizontal-left {{#if grey}} line-segment__line--grey{{/if}} {{class}} js-animate-trigger-line-{{name}}">
+  <div class="line-segment__line line-segment__line--horizontal-left{{#if grey}} line-segment__line--grey{{/if}}{{#if class}} {{class}}{{/if}} js-animate-trigger-line-{{name}}">
     <span class="line-segment__contents js-animate-line-{{name}}"></span>
   </div>
   {{/unless}}
 {{else if vertical}}
-  <div class="line-segment__line line-segment__line--vertical{{#if grey}} line-segment__line--grey{{/if}} {{class}} js-animate-trigger-line-{{name}}" {{#if offset}} data-animate-offset="{{offset}}"{{/if}}>
+  <div class="line-segment__line line-segment__line--vertical{{#if grey}} line-segment__line--grey{{/if}}{{#if class}} {{class}}{{/if}} js-animate-trigger-line-{{name}}">
     <span class="line-segment__contents js-animate-line-{{name}}"></span>
   </div>
 {{/if}}

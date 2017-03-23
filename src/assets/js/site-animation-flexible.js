@@ -50,6 +50,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work line Small',
     trigger: '.js-animate-trigger-line-work-small',
@@ -66,6 +67,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work line Small After title',
     trigger: '.js-animate-trigger-line-work-small-after-title',
@@ -82,6 +84,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work horizontal',
     trigger: '.js-animate-trigger-line-work-horizontal',
@@ -98,6 +101,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work horizontal after title',
     trigger: '.js-animate-trigger-line-work-horizontal-after-title',
@@ -114,6 +118,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work horizontal after modules',
     trigger: '.js-animate-trigger-line-work-horizontal-after-modules',
@@ -130,6 +135,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work line after modules',
     trigger: '.js-animate-trigger-line-work-after-modules',
@@ -146,6 +152,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Date title',
     trigger: '.js-animate-trigger-date-title',
@@ -163,6 +170,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Logo',
     trigger: '.js-animate-trigger-logo',
@@ -180,6 +188,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Contacting title',
     trigger: '.js-animate-trigger-contracing-title',
@@ -197,6 +206,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Timeline module',
     trigger: '.js-animate-trigger-content-module',
@@ -214,6 +224,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work line after freelancing',
     trigger: '.js-animate-trigger-line-work-after-freelancing',
@@ -230,6 +241,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work horizontal start perm',
     trigger: '.js-animate-trigger-line-work-start-perm',
@@ -246,6 +258,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work line small start perm',
     trigger: '.js-animate-trigger-line-work-small-start-perm',
@@ -262,6 +275,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Perm title',
     trigger: '.js-animate-trigger-perm-date-title',
@@ -279,6 +293,7 @@ export default [
       },
     },
   },
+
   {
     name: 'Work line small start perm item',
     trigger: '.js-animate-trigger-line-work-start-perm-item',

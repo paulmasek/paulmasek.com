@@ -11,15 +11,11 @@
     max-width: rem(200px);
     min-width: rem(100px);
     width: percentage(120 / (320 - 24 * 2));
-
-    .js & {
-      opacity: 0;
-      transform: translateY(rem(100px));
-    }
   }
 }
 
-.js {
+.js-site-animations {
+  .about__profile-pic,
   .about__content {
     opacity: 0;
     transform: translateY(rem(100px));

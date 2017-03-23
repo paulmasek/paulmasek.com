@@ -8,8 +8,8 @@ import 'GSAP.scrollTo'
 class SiteAnimation {
   constructor(options) {
     this.debug = options.debug
-    this.indidvidualScenes = options.indidvidualScenes
-    this.flexibleScenes = options.flexibleScenes
+    this.indidvidualScenes = (typeof options.indidvidualScenes !== 'undefined') ? options.indidvidualScenes : false
+    this.flexibleScenes = (typeof options.flexibleScenes !== 'undefined') ? options.flexibleScenes : false
     this.tweenOptions = ['to', 'fromTo', 'staggerFromTo']
     this.setupController()
     this.setupAnimations()
@@ -23,19 +23,24 @@ class SiteAnimation {
   setupAnimations() {
     this.scenes = []
 
-    this.setupIndidvidualScenes()
-    this.setupFlexibleScenes()
-  }
+    if (this.indidvidualScenes && this.indidvidualScenes.length > 0) {
+      this.setupIndidvidualScenes(this.indidvidualScenes)
+    }
 
-  setupIndidvidualScenes() {
-    for (let i = 0; i < this.indidvidualScenes.length; i += 1) {
-      this.setupScene(this.indidvidualScenes[i])
+    if (this.flexibleScenes && this.flexibleScenes.length > 0) {
+      this.setupFlexibleScenes(this.flexibleScenes)
     }
   }
 
-  setupFlexibleScenes() {
-    for (let i = 0; i < this.flexibleScenes.length; i += 1) {
-      const thisFlexScene = this.flexibleScenes[i]
+  setupIndidvidualScenes(sceneConfigArr) {
+    for (let i = 0; i < sceneConfigArr.length; i += 1) {
+      this.setupScene(sceneConfigArr[i])
+    }
+  }
+
+  setupFlexibleScenes(sceneConfigArr) {
+    for (let i = 0; i < sceneConfigArr.length; i += 1) {
+      const thisFlexScene = sceneConfigArr[i]
       const triggerElements = document.querySelectorAll(thisFlexScene.trigger)
 
       for (let j = 0; j < triggerElements.length; j += 1) {

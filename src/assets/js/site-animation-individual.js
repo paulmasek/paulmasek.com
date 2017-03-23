@@ -1,16 +1,5 @@
 export default [
   {
-    name: 'Show header',
-    el: '.wrapper',
-    sceneOpts: {
-      triggerElement: '.js-trigger-header',
-      triggerHook: 'onLeave',
-      offset: 100,
-    },
-    type: 'class-toggle',
-    activeClass: 'header-active',
-  },
-  {
     name: 'Introduction',
     el: '.js-animate-introduction-content',
     sceneOpts: {
@@ -25,6 +14,7 @@ export default [
       transform: 'translateY(-100px)',
     },
   },
+
   {
     name: 'About line 1',
     el: '.js-animate-line-about-one',
@@ -116,6 +106,7 @@ export default [
       transform: 'translateY(0)',
     },
   },
+
   {
     name: 'Skills Content',
     el: '.js-animate-trigger-skills-content',

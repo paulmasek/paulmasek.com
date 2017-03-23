@@ -1,7 +1,7 @@
 import imagesLoaded from 'imagesloaded'
 import SiteAnimation from './site-animation'
 import siteAnimationIndividual from './site-animation-individual'
-import SiteAnimationFlexible from './site-animation-flexible'
+import siteAnimationFlexible from './site-animation-flexible'
 import AjaxForm from './form'
 import Utils from './utils'
 import EventTracking from './event-tracking'
@@ -13,6 +13,7 @@ const App = {
 
   init() {
     this.debug = false
+    this.disableParallax = true
     this.animationEndEvent = Utils.getAnimationEnd(Modernizr.prefixed('animation'))
     this.setupIntroduction()
     this.setupNavigation()
@@ -70,15 +71,28 @@ const App = {
   },
 
   setupSiteAnimation() {
-    this.lineSegments = new LineSegments()
-
     this.siteAnimation = new SiteAnimation({
       debug: this.debug,
-      indidvidualScenes: siteAnimationIndividual,
-      flexibleScenes: SiteAnimationFlexible,
+      indidvidualScenes: [
+        {
+          name: 'Show header',
+          el: '.wrapper',
+          sceneOpts: {
+            triggerElement: '.js-trigger-header',
+            triggerHook: 'onLeave',
+            offset: 100,
+          },
+          type: 'class-toggle',
+          activeClass: 'header-active',
+        },
+      ],
     })
 
     this.setupAnchors()
+
+    if (!this.disableParallax) {
+      this.setupParralax()
+    }
   },
 
   setupAnchors() {
@@ -100,6 +114,18 @@ const App = {
         event.preventDefault()
       })
     }
+  },
+
+  setupParralax() {
+    this.lineSegments = new LineSegments()
+
+    this.lineSegments.linesGenerated.then(() => {
+      document.body.classList.remove('no-js-site-animations')
+      document.body.classList.add('js-site-animations')
+
+      this.siteAnimation.setupIndidvidualScenes(siteAnimationIndividual)
+      this.siteAnimation.setupFlexibleScenes(siteAnimationFlexible)
+    })
   },
 }
 

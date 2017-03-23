@@ -6,13 +6,20 @@ class LineSegments {
   }
 
   generate() {
-    const horizontalLineData = LineSegments.getLineData('horizontal', 'h')
-    const verticalLineData = LineSegments.getLineData('vertical', 'v')
-    this.lineData = horizontalLineData.concat(verticalLineData)
+    this.linesGenerated = new Promise((resolve) => {
+      const horizontalLineData = LineSegments.getLineData('horizontal', 'h')
+      const verticalLineData = LineSegments.getLineData('vertical', 'v')
+      this.lineData = horizontalLineData.concat(verticalLineData)
 
-    this.lineData.forEach((lineData) => {
-      const html = LineSegments.getLineNode(LineSegments.buildLine(lineData))
-      lineData.parent.appendChild(html)
+      this.lineData.forEach((lineData, index) => {
+        const line = LineSegments.buildLine(lineData)
+        lineData.parent.appendChild(line)
+        this.lineData[index].el = line
+
+        if (index === this.lineData.length - 1) {
+          resolve('Lines generated and inserted')
+        }
+      })
     })
   }
 
@@ -23,7 +30,7 @@ class LineSegments {
   }
 
   static buildLine(args) {
-    return lineSegmentTemplate(args)
+    return LineSegments.getLineNode(lineSegmentTemplate(args))
   }
 
   static getLineData(type, prefix) {

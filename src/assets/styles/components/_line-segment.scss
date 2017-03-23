@@ -2,7 +2,7 @@
   position: relative;
 
   &--horizontal {
-    .no-js & {
+    .no-js-site-animations & {
       &:after {
         background-color: $border-orange;
         bottom: 0;
@@ -17,7 +17,7 @@
   }
 
   &--vertical {
-    .no-js & {
+    .no-js-site-animations & {
       &:before {
         background-color: $border-orange;
         content: '';
@@ -34,7 +34,7 @@
   &--start {
     padding-top: rem($line-border + $small-vertical-separator-height +  $line-border-header);
 
-    .no-js & {
+    .no-js-site-animations & {
       &:before {
         display: block;
         height: rem($small-vertical-separator-height);
@@ -46,7 +46,7 @@
   &--start-title {
     padding-top: rem($line-border + $small-vertical-separator-height + 4px);
 
-    .no-js & {
+    .no-js-site-animations & {
       &:before {
         display: block;
         height: rem($small-vertical-separator-height);
@@ -59,7 +59,7 @@
     margin-bottom: rem(36px);
     padding-bottom: rem($small-vertical-separator-height + $line-border-header);
 
-    .no-js & {
+    .no-js-site-animations & {
       &:before {
         bottom: rem($line-border-header);
         display: block;
@@ -71,7 +71,7 @@
   &--period-title {
     padding-bottom: rem(6px + $medium-vertical-separator-height + $line-border);
 
-    .no-js & {
+    .no-js-site-animations & {
       &:before {
         bottom: rem($line-border);
         display: block;
@@ -87,7 +87,7 @@
   &--medium-separator {
     padding-bottom: rem($line-border-header + $medium-vertical-separator-height + $line-border);
 
-    .no-js & {
+    .no-js-site-animations & {
       &:before {
         bottom: rem($line-border);
         display: block;
@@ -99,7 +99,7 @@
   &--big-separator {
     padding-bottom: rem($big-vertical-separator-height);
 
-    .no-js & {
+    .no-js-site-animations & {
       &:before {
         bottom: 0;
         display: block;
@@ -111,7 +111,7 @@
   &--period-title-perm {
     padding-bottom: rem(6px + $small-vertical-separator-height + $line-border-header);
 
-    .no-js & {
+    .no-js-site-animations & {
       &:before {
         bottom: rem($line-border-header);
         display: block;
@@ -122,10 +122,9 @@
 
   &--perm-branch {
     @include media('>tablet') {
-      padding-bottom: 0;
       padding-top: rem(34px);
 
-      .no-js & {
+      .no-js-site-animations & {
         &:before {
           display: block;
           height: rem($small-vertical-separator-height);
@@ -139,8 +138,20 @@
     }
   }
 
+  &--mobile-perm-separator {
+    @include media('>tablet') {
+      padding-bottom: 0;
+
+      .no-js-site-animations & {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
   &--freelancing {
-    .no-js & {
+    .no-js-site-animations & {
       &:after {
         bottom: auto;
         left: 50%;
@@ -155,7 +166,7 @@
     @include media('<=tablet') {
       padding-bottom: 0;
 
-      .no-js & {
+      .no-js-site-animations & {
         &:after {
           display: none;
         }
@@ -171,7 +182,7 @@
     @include media('<=tablet') {
       padding-bottom: 0;
 
-      .no-js & {
+      .no-js-site-animations & {
         &:before {
           display: none;
         }
@@ -187,7 +198,7 @@
     @include media('>tablet') {
       padding-bottom: 0;
 
-      .no-js & {
+      .no-js-site-animations & {
         &:after {
           display: none;
         }
@@ -203,7 +214,7 @@
     @include media('>tablet') {
       padding-bottom: 0;
 
-      .no-js & {
+      .no-js-site-animations & {
         &:before {
           display: none;
         }
@@ -219,10 +230,6 @@
     display: block;
     overflow: hidden;
     position: absolute;
-
-    .no-js & {
-      display: none;
-    }
 
     &--horizontal {
       bottom: 0;
