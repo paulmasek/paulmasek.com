@@ -1,10 +1,9 @@
 <div class="grid timeline__perm-grid">
 {{#each perm}}
   <div class="grid__col timeline__perm">
-    <div class="timeline__major-period timeline__segment {{#if @last}} timeline__major-period--last{{/if}} line-segment line-segment--vertical{{#unless @last}} line-segment--medium-separator{{/unless}} line-segment--perm-branch">
-      <div class="line-segment line-segment--vertical line-segment--period-title-perm js-animate-trigger-perm-date-title">
+    <div class="timeline__major-period timeline__segment {{#if @last}} timeline__major-period--last{{/if}} line-segment line-segment--vertical{{#unless @last}} line-segment--medium-separator{{/unless}} line-segment--perm-branch" {{#unless @last}}data-line-v="work" data-line-v-class="line-segment__line--medium-separator line-segment__line--mobile-perm-separator"{{else}}data-line-v="work-small-start-perm" data-line-v-class="line-segment__line--perm-branch"{{/unless}}>
+      <div class="line-segment line-segment--vertical line-segment--period-title-perm js-animate-trigger-perm-date-title" data-line-v="work-start-perm-item" data-line-v-class="line-segment__line--small-separator">
         <strong class="timeline__period-title timeline__period-title--perm timeline__period-title-content js-animate-perm-date-title">{{period}}</strong>
-        {{>line-segment vertical=true class="line-segment__line--small-separator" name="work-start-perm-item"}}
       </div>
       <div class="js-animate-trigger-content-module">
         <div class="timeline__content-module js-animate-content-module">
@@ -16,22 +15,15 @@
         </div>
       </div>
       <div class="js-animate-trigger-content-module">
-        <div class="timeline__content-item timeline__content-item--perm timeline__content-item--last cms{{#unless @last}} line-segment line-segment--content line-segment--horizontal line-segment--hide-desktop-horizontal{{/unless}} js-animate-content-module">
+        <div class="timeline__content-item timeline__content-item--perm timeline__content-item--last cms{{#unless @last}} line-segment line-segment--content line-segment--horizontal line-segment--hide-desktop-horizontal{{/unless}} js-animate-content-module"{{#unless @last}} data-line-h="work-horizontal"{{/unless}}>
           {{{introduction}}}
           <ul class="">
           {{#each responsibilities}}
             <li class="">{{{body}}}</li>
           {{/each}}
           </ul>
-          {{#unless @last}}
-            {{>line-segment horizontal=true class="" name="work-horizontal"}}
-          {{/unless}}
         </div>
       </div>
-      {{#unless @last}}
-        {{>line-segment vertical=true class="line-segment__line--medium-separator line-segment__line--mobile-perm-separator" name="work"}}
-      {{/unless}}
-      {{>line-segment vertical=true class="line-segment__line--perm-branch" name="work-small-start-perm"}}
     </div>
   </div>
 {{/each}}

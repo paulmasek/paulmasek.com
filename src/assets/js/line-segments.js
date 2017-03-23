@@ -38,7 +38,7 @@ class LineSegments {
         parent: el,
         name: el.getAttribute(`${dataPrefix}`),
         class: el.getAttribute(`${dataPrefix}-class`),
-        fromLeft: el.getAttribute(`${dataPrefix}-fromLeft`),
+        fromLeft: el.getAttribute(`${dataPrefix}-from-left`),
         [type]: true,
       })
     }

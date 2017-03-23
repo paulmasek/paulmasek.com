@@ -1,12 +1,8 @@
 <section class="section about js-about-content">
-  <div class="container container--thin about__inner line-segment line-segment--start line-segment--vertical">
-
-    <div class="line-segment line-segment--header line-segment--vertical line-segment--horizontal">
+  <div class="container container--thin about__inner line-segment line-segment--start line-segment--vertical"  data-line-v="about-one" data-line-v-class="line-segment__line--small-separator">
+    <div class="line-segment line-segment--header line-segment--vertical line-segment--horizontal" data-line-v="about-two" data-line-v-class="line-segment__line--small-separator-header" data-line-h="about-three">
       <img class="about__profile-pic js-animate-profile-pic" src="{{about.profile-pic.src}}" alt="{{about.profile-pic.alt}}" />
-      {{>line-segment vertical=true class="line-segment__line--small-separator-header" name="about-two"}}
-      {{>line-segment horizontal=true name="about-three"}}
     </div>
-
     <div class="js-animate-trigger-about-content">
       <div class="about__content js-animate-about-content">
         {{{about.body}}}
@@ -14,9 +10,6 @@
         {{>social-media links=global.social-media-full}}
       </div>
     </div>
-
-    {{>line-segment vertical=true class="line-segment__line--small-separator" name="about-one"}}
   </div>
-
   {{> section-anchor id="about"}}
 </section>

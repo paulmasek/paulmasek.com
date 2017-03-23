@@ -1,14 +1,12 @@
-<div class="timeline line-segment line-segment--start-title line-segment--vertical">
+<div class="timeline line-segment line-segment--start-title line-segment--vertical" data-line-v="work-small" data-line-v-class="line-segment__line--small-separator">
   <div class="container container--thin">
     {{> timeline-contracting}}
     {{> timeline-remote freelancing.remote}}
     {{> timeline-started-freelancing}}
   </div>
   <div class="container container--wide">
-    <div class="line-segment line-segment--horizontal line-segment--freelancing line-segment--hide-mobile-horizontal">
+    <div class="line-segment line-segment--horizontal line-segment--freelancing line-segment--hide-mobile-horizontal" data-line-h="work-start-perm" data-line-h-class="line-segment__line--freelancing">
       {{> timeline-perm}}
-      {{>line-segment horizontal=true class="line-segment__line--freelancing" name="work-start-perm"}}
     </div>
   </div>
-  {{>line-segment vertical=true class="line-segment__line--small-separator" name="work-small"}}
 </div>
