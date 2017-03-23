@@ -5,6 +5,7 @@ import SiteAnimationFlexible from './site-animation-flexible'
 import AjaxForm from './form'
 import Utils from './utils'
 import EventTracking from './event-tracking'
+import LineSegments from './line-segments'
 
 /* eslint-disable no-new */
 
@@ -69,6 +70,8 @@ const App = {
   },
 
   setupSiteAnimation() {
+    this.lineSegments = new LineSegments()
+
     this.siteAnimation = new SiteAnimation({
       debug: this.debug,
       indidvidualScenes: siteAnimationIndividual,

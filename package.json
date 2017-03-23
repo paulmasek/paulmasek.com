@@ -33,6 +33,7 @@
     "gulp-stylelint": "^3.7.0",
     "handlebars-helpers": "^0.8.0",
     "handlebars-layouts": "^3.1.4",
+    "handlebars-loader": "^1.4.0",
     "require-dir": "^0.3.1",
     "stylelint-order": "^0.4.1",
     "webpack": "^2.2.1",

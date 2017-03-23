@@ -47,7 +47,12 @@ const webpackConfig = {
             }
           }
         ]
-      }
+      },
+      {
+        test: /\.hbs$/,
+        exclude: /node_modules/,
+        loader: 'handlebars-loader',
+      },
     ]
   },
 
