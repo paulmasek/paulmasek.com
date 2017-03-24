@@ -40,21 +40,34 @@ const App = {
   },
 
   setupNavigation() {
-    const header = document.querySelector('.js-header')
-    const navigation = document.querySelector('.js-primary-navigation')
-    const trigger = document.querySelector('.js-trigger-primary-navigation')
+    this.header = document.querySelector('.js-header')
+    this.navigation = document.querySelector('.js-primary-navigation')
+    this.navigationTrigger = document.querySelector('.js-trigger-primary-navigation')
+    const links = document.querySelectorAll('.primary-navigation__link')
 
-    trigger.addEventListener('click', (e) => {
-      trigger.classList.toggle('is-active')
-      navigation.classList.toggle('primary-navigation--active')
-      header.classList.toggle('main-header--navigation-active')
-      document.body.classList.toggle('primary-navigation-active')
+    this.navigationTrigger.addEventListener('click', (e) => {
+      this.toggleNavigation()
       e.preventDefault()
     })
+
+    for (let i = 0; i < links.length; i += 1) {
+      const link = links[i]
+
+      link.addEventListener('click', (e) => {
+        this.toggleNavigation()
+        e.preventDefault()
+      })
+    }
+  },
+
+  toggleNavigation() {
+    this.navigationTrigger.classList.toggle('is-active')
+    this.navigation.classList.toggle('primary-navigation--active')
+    this.header.classList.toggle('main-header--navigation-active')
+    document.body.classList.toggle('primary-navigation-active')
   },
 
   setupIntroduction() {
-    // const introduction = document.querySelector('.js-introduction')
     const introduction = document.querySelector('.js-introduction')
     const introductionContent = introduction.querySelector('.js-animate-introduction-content')
     const backgroundLoadedClass = 'introduction--background-loaded'
