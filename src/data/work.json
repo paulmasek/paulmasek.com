@@ -64,7 +64,7 @@
               "slug": "digirati",
               "company": "Digirati",
               "logo": {
-                "src": "assets/images/content/digirati-logo.png",
+                "src": "assets/images/content/digirati-logo.svg",
                 "alt": ""
               },
               "modules" : [
