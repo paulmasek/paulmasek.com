@@ -6,7 +6,7 @@
       <ul class="js-animate-trigger-main-skill">
   {{#each main-skills.skills}}
         <li class="js-animate-main-skill">
-          <h4 class="heading-four">{{title}}<span class="heading-four-alt skills__main-secondary"> - {{sub-title}}</span></h4>
+          <h4 class="heading-four skills__title">{{title}} - {{sub-title}}</h4>
           {{{body}}}
         </li>
   {{/each}}
@@ -19,7 +19,7 @@
           <ul class="">
           {{#each workflow.skills}}
             <li class="">
-                <h4 class="heading-four-alt">{{title}}</h4>
+                <h4 class="heading-four skills__title">{{title}}</h4>
                 {{{body}}}
             </li>
           {{/each}}
@@ -32,7 +32,7 @@
           <ul class="design-tools">
           {{#each software.skills}}
             <li class="design-tools__item">
-              <span class="design-tools__icon">{{> icon icon=( lookup . 'name')}}</span> {{title}}
+              {{title}}
             </li>
           {{/each}}
           </ul>

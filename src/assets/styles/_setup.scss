@@ -48,10 +48,6 @@ img,
   @include h4;
 }
 
-.heading-four-alt {
-  @include h4-alt;
-}
-
 @include media('<=big-phone') {
   .primary-navigation-active {
     overflow: hidden;

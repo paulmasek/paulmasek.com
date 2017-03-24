@@ -44,10 +44,6 @@
     z-index: -1;
   }
 
-  &__result-title {
-    margin-bottom: 1.3em;
-  }
-
   &--loading {
     .form__fields {
       animation-duration: .5s;

@@ -30,6 +30,10 @@
       padding-bottom: 0;
     }
   }
+
+  &__title {
+    margin-bottom: 0;
+  }
 }
 
 .js-site-animations {
@@ -47,19 +51,5 @@
   .skills__secondary-inner {
     opacity: 0;
     transform: translateY(rem(100px));
-  }
-}
-
-.design-tools {
-  &__item {
-    align-items: center;
-    display: flex;
-    margin-bottom: rem(10px);
-  }
-
-  &__icon {
-    display: inline-block;
-    margin-right: rem(8px);
-    width: rem(30px);
   }
 }
