@@ -1,7 +1,7 @@
 {
   "introduction": {
     "title": "Work",
-    "body": "<p class=\"no-break\">Where I’ve worked and my experience.</p><p><a href=\"\">Need my CV? Download here.</a></p>",
+    "body": "<p class=\"no-break\">Where I’ve worked and my experience.</p><p>Need my CV? <a href=\"\">Download here.</a></p>",
     "background": {
       "src": "assets/images/content/work-hero.jpg",
       "alt": ""
