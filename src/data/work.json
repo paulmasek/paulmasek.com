@@ -50,6 +50,7 @@
                 "src": "assets/images/content/zone-logo.svg",
                 "alt": ""
               },
+              "logo-title": true,
               "modules": [
                 {
                   "module": "timeline-content",

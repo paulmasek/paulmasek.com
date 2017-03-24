@@ -1,6 +1,7 @@
 .quote {
   &__profile-pic {
     border-radius: 50%;
+    filter: grayscale(100%);
     width: rem(100px);
 
     @include media('>tablet') {

@@ -68,6 +68,11 @@
     margin-bottom: rem(14px);
     max-width: rem(300px);
     width: 100%;
+
+    &--hidden {
+      left: -9999em;
+      position: absolute;
+    }
   }
 
   &__contracting-logo {
