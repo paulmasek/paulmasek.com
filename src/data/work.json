@@ -154,7 +154,7 @@
         "period": "May 2012 - Apr 2014",
         "company": "Shout Creative!",
         "logo": {
-          "src": "assets/images/content/shout-creative-logo.png",
+          "src": "assets/images/content/shout-creative-logo.svg",
           "alt": ""
         },
         "role": "Lead front-end developer",
