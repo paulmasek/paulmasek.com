@@ -1,5 +1,6 @@
 .button {
   @include bold;
+  appearance: none;
   background-color: $orange;
   border: none;
   border-radius: rem(5px);
