@@ -18,12 +18,12 @@
       {
         "title": "CSS",
         "sub-title": "CSS3 / SASS / LESS",
-        "body": "<p>The latest techniques, cross-browser & device, maintainable</p>"
+        "body": "<p>The latest techniques, cross-browser & device, maintainable and reusable with BEM</p>"
       },
       {
         "title": "JavaScript",
         "sub-title": "ES5 & ES6, jQuery",
-        "body": "<p>Progressively enhanced and performant</p>"
+        "body": "<p>Efficient, progressively enhanced and performant.<br/> Varying levels of experience of other libraries such as React </p>"
       },
       {
         "title": "Templating",

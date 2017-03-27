@@ -26,7 +26,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                      "body": "<p>Developed a series of responsive front-end builds for large international clients. Though my contract was initially for one month to work on a single project, I was asked on multiple occasions to extend my contract – and ended up working on four projects in total over three months.</p><p>The builds often included complex elements such as advanced Parallax and JS heavy interfaces. Whilst following the company's internal build processes, I was also able to gain further experience with Grunt, BEM and Susy.</p>"
+                    "body": "<p>I developed a series of responsive builds for large international clients. The contract was initially for one month for a single project, but I was asked on multiple occasions to extend – and ended up working on four projects in total over three months.</p><p>The builds often included complex elements such as advanced Parallax and JS heavy interfaces. Whilst following the company's internal build processes, I was also able to gain further experience with Grunt, BEM and Susy.</p>"
                   }
                 },
                 {
@@ -38,7 +38,19 @@
                       "src": "assets/images/content/megan-willis.jpg",
                       "alt": ""
                     },
-                    "body": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation. A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project</p>"
+                    "body": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation.</p><p>A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project.</p>"
+                  }
+                },
+                {
+                  "module": "timeline-quote",
+                  "data": {
+                    "name": "Chris Stanley",
+                    "role": "Digital and Technical Operations Manager",
+                    "profile-pic": {
+                      "src": "assets/images/content/chris-stanley.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>Paul is a very competent developer, we initially secured his services for a few weeks but after seeing his work ethic, quality of work and his team work we extended many times. The whole team loved working with Paul and I had many great comments about him, the main project that Paul worked on was loved by the client and we have used it as an example of standout communications.</p><p>I personally didn't want to lose Paul and once we have more work that our internal team can't service I will be calling on Paul and hope he is free, which is doubtful given his abilities.</p><p>Outside of his work he is a good guy to have a non work chat with and is very personable.</p>"
                   }
                 }
               ]
@@ -55,7 +67,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                      "body": "<p>I was contracted to work on-site at Zone, where I worked on a several large corporate websites adding additional responsive templates and functionality.</p><p>With these projects I got exposure to ASP templates and Gitflow, and gained further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p>"
+                      "body": "<p>I worked on several large corporate websites and a webapp adding additional responsive templates and functionality.</p><p>With these projects I gained exposure to ASP templates, Gitflow, ES6 and further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p><p>I was initially contracted for one month then was extended for another month.</p>"
                   }
                 }
               ]
@@ -71,7 +83,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                    "body": "<p>I was contracted to work on-site at Zone, where I worked on a several large corporate websites adding additional responsive templates and functionality.</p><p>With these projects I got exposure to ASP templates and Gitflow, and gained further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p>"
+                    "body": "<p>Worked on an internal project for Digirati, building a series of mobile first static templates and a style guide powered by Handlebars & Assemble. </p><p>With this contract I gained exposure to Atomic Design and worked on a commercial project without jQuery with minimal use of other JS libraries.</p><p>Accessibility and progressive enhancement were really important in this contract, with the use of ARIA within HTML and following of web accessibility guidelines.</p>"
                   }
                 }
               ]
@@ -87,7 +99,7 @@
             "module": "timeline-content",
             "no-border": true,
             "data": {
-              "body": "<p>In 2014 & 2015 I worked remote for various small digital agencies and a couple of startups. This more often than not involved building from start to finish medium sized websites powered by Wordpress.</p>"
+              "body": "<p>In 2014 & 2015 I worked remote for various small creative agencies and startups. This mostly involved building, from start to finish, medium sized responsive websites powered by WordPress. For these, I would create custom themes from scratch with bespoke HTML/CSS/JS. Working as an external team member, it was crucial that the builds were as close to pixel-perfect as possible to the designs supplied.</p>"
             }
           },
           {
@@ -137,13 +149,13 @@
             "module": "timeline-quote",
             "data": {
               "name": "Kelly Molson",
-              "role": "Managing Director",
+              "role": "Founder & Managing Director",
               "company": "Rubber Cheese",
               "profile-pic": {
                 "src": "assets/images/content/kelly-molson.jpg",
                 "alt": ""
               },
-              "body": "<p>Paul is extremely hard working and has produced great results for us on a number of development projects</p><p>He’s easy to get on with and a really good guy. His understanding of the platforms he works on is exceptional.</p>"
+              "body": "<p>Paul is extremely hard working and has produced great results for us on a number of development projects. He works efficiently and quickly, and communication (which is key for us) has always been clear and concise.</p><p>He’s easy to get on with and a really good guy. His understanding of the platforms he works on is exceptional.</p>"
             }
           }
         ]
@@ -158,19 +170,22 @@
           "alt": ""
         },
         "role": "Lead front-end developer",
-        "introduction": "<p>During my time at this Norwich-based creative agency, the majority of my role consisted of converting designs into content-managed websites. As Lead Developer, my additional responsibilities included:</p>",
+        "introduction": "<p>Converted designs into content-managed, WordPress-powered websites for a small Norwich design agency.</p>",
         "responsibilities": [
           {
-            "body": "Development of website specifications with input into website structure, functionality and UX"
+            "body": "Developed website specifications with input into website structure, functionality and UX"
           },
           {
-            "body": "Input into project management, including timelines and workflow"
+            "body": "Had input into project management, including timelines and workflow"
           },
           {
-            "body": "Evolving desktop designs in browser when required"
+            "body": "Converted desktop designs into responsive websites in browser"
           },
           {
-            "body": "Liaising with freelancers working on outsourced projects"
+            "body": "Evolved desktop designs in browser when required"
+          },
+          {
+            "body": "Liaised with freelancers working on outsourced projects"
           }
         ]
       },
@@ -182,19 +197,22 @@
           "alt": ""
         },
         "role": "Front-end developer",
-        "introduction": "<p>I worked on multiple websites and web applications in medium-sized teams. Clients varied from high profile internationals to small businesses and start-ups. Highlights included</p>",
+        "introduction": "<p>Worked on websites & webapps in medium-sized teams. Clients varied from high-profile internationals to startups.</p>",
         "responsibilities": [
           {
-            "body": "Carrying out CMS integration with the company’s enterprise level Java-based system, Cookie Jar"
+            "body": "Carried out CMS integration with the company’s enterprise level Java-based system, Cookie Jar"
           },
           {
-            "body": "Fully designing websites and web applications"
+            "body": "Fully designed websites and web applications"
           },
           {
-            "body": "Training clients in the use of their content-managed websites"
+            "body": "Trained clients in the use of their content-managed websites"
           },
           {
-            "body": "Helping mentor junior developers, including code reviews"
+            "body": "After promotion from Junior Developer, led the front-end on several projects"
+          },
+          {
+            "body": "Helped mentor junior developers, including code reviews"
           }
         ]
       }
