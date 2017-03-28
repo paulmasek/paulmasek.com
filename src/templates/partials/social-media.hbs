@@ -1,7 +1,7 @@
 <ul class="social-media {{class}}">
   {{#each links}}
     <li class="social-media__item">
-      <a class="social-media__link" data-event-name="primary-nav-social-media" data-event-value="{{name}}" href="{{url}}" target="_blank">
+      <a class="social-media__link" data-event-name="{{../event-name}}" data-event-value="{{name}}" href="{{url}}" target="_blank">
         {{> icon class="social-media__icon" icon=( lookup . 'name')}}
       </a>
     </li>

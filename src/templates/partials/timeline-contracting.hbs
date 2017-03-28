@@ -5,12 +5,12 @@
     </strong>
     {{#each contracts}}
       <div class="timeline__segment timeline__segment--{{slug}} line-segment line-segment--vertical line-segment--medium-separator" data-line-v="work-after-modules" data-line-v-class="line-segment__line--medium-separator">
-        <div class="timeline__header line-segment line-segment--header line-segment--horizontal line-segment--vertical js-animate-trigger-logo" data-line-v="work-small-after-title" data-line-v-class="line-segment__line--small-separator-header" data-line-h="work-horizontal-after-title" data-line-h-class="line-segment__line--header-h">
+        <a class="timeline__header line-segment line-segment--header line-segment--horizontal line-segment--vertical js-animate-trigger-logo" data-line-v="work-small-after-title" data-line-v-class="line-segment__line--small-separator-header" data-line-h="work-horizontal-after-title" data-line-h-class="line-segment__line--header-h" href="{{url}}" target="_blank" data-event-name="Company logo link click" data-event-value="{{company}}">
           <div class="js-animate-trigger-contracing-title">
             <h3 class="heading-three timeline__header-title{{#if logo-title}} timeline__header-title--hidden{{/if}} js-animate-contracting-title">{{company}}</h3>
           </div>
           <img alt="{{company}} logo" class="timeline__contracting-logo js-animate-logo" src="{{logo.src}}" />
-        </div>
+        </a>
         {{#each modules}}
           <div class="timeline__content-item timeline__content-item--{{module}} {{#if no-border}} timeline__content-item--no-border{{/if}}{{#if @last }} timeline__content-item--last line-segment line-segment--content line-segment--horizontal{{/if}} js-animate-trigger-content-module" {{#unless no-border}}{{#unless @last}}data-line-h{{else}}data-line-h="work-horizontal-after-modules"{{/unless}}{{/unless}}>
             <div class="timeline__content-module js-animate-content-module">

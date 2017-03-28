@@ -1,7 +1,7 @@
 {
   "introduction": {
     "title": "Work",
-    "body": "<p class=\"no-break\">From my latest contracts to where I began my career, see where I’ve worked, the experience I’ve gained and a few of my testimonials.</p><p>Need my CV? <a href=\"\">Download it here.</a></p>",
+    "body": "<p class=\"no-break\">From my latest contracts to where I began my career, see where I’ve worked, the experience I’ve gained and a few of my testimonials.</p><p>Need my CV? <a href=\"downloads/paul-masek-cv.pdf\" download data-event-name=\"Content link click\" data-event-value=\"Download CV\">Download it here.</a></p>",
     "background": {
       "src": "assets/images/content/work-hero.jpg",
       "alt": ""
@@ -22,6 +22,7 @@
                 "src": "assets/images/content/radley-yeldar-logo.svg",
                 "alt": ""
               },
+              "url": "http://ry.com/",
               "modules": [
                 {
                   "module": "timeline-content",
@@ -62,6 +63,7 @@
                 "src": "assets/images/content/zone-logo.svg",
                 "alt": ""
               },
+              "url": "https://www.zonedigital.com/",
               "logo-title": true,
               "modules": [
                 {
@@ -79,6 +81,7 @@
                 "src": "assets/images/content/digirati-logo.svg",
                 "alt": ""
               },
+              "url": "http://digirati.com/",
               "modules" : [
                 {
                   "module": "timeline-content",
@@ -107,7 +110,7 @@
             "data": {
               "companies": [
                 {
-                  "slug": "studioaura",
+                  "slug": "studio-aura",
                   "name": "StudioAura",
                   "logo": {
                     "src": "assets/images/content/studio-aura-logo.svg",
@@ -117,7 +120,7 @@
                 },
                 {
                   "slug": "rubber-cheese",
-                  "name": "Rubber Cheese",
+                  "name": "RubberCheese",
                   "logo": {
                     "src": "assets/images/content/rubber-cheese-logo.jpg",
                     "alt": ""
@@ -169,6 +172,7 @@
           "src": "assets/images/content/shout-creative-logo.svg",
           "alt": ""
         },
+        "url": "http://shoutcreative.com/",
         "role": "Lead front-end developer",
         "introduction": "<p>Converted designs into content-managed, WordPress-powered websites for a small Norwich design agency.</p>",
         "responsibilities": [
@@ -196,6 +200,7 @@
           "src": "assets/images/content/solid-state-group-logo.png",
           "alt": ""
         },
+        "url": "https://www.solidstategroup.com/",
         "role": "Front-end developer",
         "introduction": "<p>Worked on websites & webapps in medium-sized teams. Clients varied from high-profile internationals to startups.</p>",
         "responsibilities": [

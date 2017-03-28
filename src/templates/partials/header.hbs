@@ -1,6 +1,6 @@
 <header class="main-header js-header">
   <div class="main-header__inner container">
-    <a class="main-header__branding branding branding--minimal" href="#top">
+    <a class="main-header__branding branding branding--minimal" href="#top" data-event-name="Content link click" data-event-value="Branding click">
       <span class="branding__part branding__part--one">
         <span class="branding__minimal-part branding__minimal-part--one">P</span><span class="branding__full-part branding__full-part--one">aul</span>
       </span>
@@ -8,7 +8,7 @@
         <span class="branding__minimal-part branding__minimal-part--two">M</span><span class="branding__full-part branding__full-part--two">asek</span>
       </span>
     </a>
-    {{> social-media class="main-header__social-media social-media--header" links=global.social-media}}
+    {{> social-media class="main-header__social-media social-media--header" links=global.social-media event-name="Primary navigation social media"}}
     <button class="primary-navigation-show-hide hamburger hamburger--squeeze js-trigger-primary-navigation" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
@@ -21,7 +21,7 @@
     <ul class="primary-navigation__list">
   {{#each global.navigation}}
       <li class="primary-navigation__item">
-        <a class="primary-navigation__link" data-event-name="header-primary-navigation-click" data-event-value="{{text}}" href="{{link}}">{{text}}</a>
+        <a class="primary-navigation__link" data-event-name="Header primary navigation click" data-event-value="{{text}}" href="{{link}}">{{text}}</a>
       </li>
   {{/each}}
     </ul>

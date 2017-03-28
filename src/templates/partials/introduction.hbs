@@ -7,12 +7,12 @@
             <span class="introduction__heading-name">{{global.meta-name}}</span>
             <span class="introduction__heading-role">{{introduction.tagline}}</span>
           </h1>
-          {{> social-media class="introduction__social-media social-media--introduction" links=global.social-media}}
+          {{> social-media class="introduction__social-media social-media--introduction" links=global.social-media  event-name="Introduction social media"}}
         </div>
         <ul class="introduction__navigation">
       {{#each global.navigation}}
           <li class="introduction__navigation-item">
-            <a class="introduction__navigation-link" href="{{link}}">{{text}}</a>
+            <a class="introduction__navigation-link" href="{{link}}" data-event-name="Introduction navigation click" data-event-value="{{text}}">{{text}}</a>
           </li>
       {{/each}}
         </ul>
