@@ -13,7 +13,7 @@ class EventTracking {
         let link = event.target
 
         if (!href) {
-          link = this.findUpTag(event.target, 'href')
+          link = EventTracking.findUpTag(event.target, 'href')
         }
 
         const name = link.getAttribute('data-event-name')
