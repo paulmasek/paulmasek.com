@@ -48,6 +48,10 @@ img,
   @include h4;
 }
 
+.highlighted {
+  @include highlighted;
+}
+
 @include media('<=big-phone') {
   .primary-navigation-active {
     overflow: hidden;
