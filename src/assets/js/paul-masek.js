@@ -29,6 +29,15 @@ const App = {
       this.forms.push(new AjaxForm({
         el: forms[i],
         resultDelay: 1000,
+        onSubmit: () => {
+          this.eventTracking.sendEvent('Form submission', 'Contact form', 'Submitted')
+        },
+        onSuccess: () => {
+          this.eventTracking.sendEvent('Form submission', 'Contact form', 'Success')
+        },
+        onFailed: () => {
+          this.eventTracking.sendEvent('Form submission', 'Contact form', 'Failed')
+        },
       }))
     }
   },
