@@ -131,7 +131,13 @@
     z-index: 9;
 
     @include media('>big-phone') {
-      z-index: 10;
+      animation: none;
+      background-color: transparent;
+      z-index: -1;
+
+      .header-active & {
+        z-index: 10;
+      }
     }
   }
 }
