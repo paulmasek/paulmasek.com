@@ -83,7 +83,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                    "body": "<p>Worked on an internal project for Digirati, building a series of mobile first static templates and a style guide powered by Handlebars & Assemble. </p><p>With this contract I gained exposure to Atomic Design and worked on a commercial project without jQuery with minimal use of other JS libraries.</p><p>Accessibility and progressive enhancement were really important in this contract, with the use of ARIA within HTML and following of web accessibility guidelines.</p>"
+                    "body": "<p>Worked on an internal project for Digirati, building a series of mobile-first static templates and a style guide powered by Handlebars & Assemble. </p><p>With this contract I gained exposure to Atomic Design and worked on a commercial project without jQuery with minimal use of other JS libraries.</p><p>Accessibility and progressive enhancement were really important in this contract, with the use of ARIA within HTML and following of web accessibility guidelines.</p>"
                   }
                 }
               ]
@@ -164,7 +164,7 @@
     "perm": [
       {
         "period": "May 2012 - Apr 2014",
-        "company": "Shout Creative!",
+        "company": "Shout! Creative",
         "logo": {
           "src": "assets/images/content/shout-creative-logo.svg",
           "alt": ""
