@@ -2,14 +2,8 @@
   position: relative;
   text-align: center;
 
-  &__segment {
-    &--digirati {
-      margin-top: rem(-16px);
-    }
-  }
-
   &__major-period {
-    margin-bottom: rem(-16px);
+    margin-bottom: rem(-6px);
 
     &--last {
       margin-bottom: 0;

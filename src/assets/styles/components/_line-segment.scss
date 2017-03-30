@@ -85,11 +85,11 @@
   }
 
   &--medium-separator {
-    padding-bottom: rem($line-border-header + $medium-vertical-separator-height + $line-border);
+    padding-bottom: rem($line-border-header + $medium-vertical-separator-height + $line-border-header);
 
     .no-js-site-animations & {
       &:before {
-        bottom: rem($line-border);
+        bottom: rem($line-border-header);
         display: block;
         height: rem($medium-vertical-separator-height);
       }
