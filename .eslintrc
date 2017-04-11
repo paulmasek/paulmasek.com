@@ -5,7 +5,10 @@
   "extends": "airbnb",
   "rules": {
     "no-console": "off",
-    "semi": [1, "never"]
+    "semi": [1, "never"],
+    "max-len": "off",
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
   },
   "settings": {
     "import/resolver": {
