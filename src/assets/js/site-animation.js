@@ -1,6 +1,5 @@
 import ScrollMagic from 'ScrollMagic'
 import 'animation.gsap'
-import 'debug.addIndicators'
 import 'GSAP.scrollTo'
 
 /* eslint-disable no-new */
