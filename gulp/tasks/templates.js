@@ -11,7 +11,7 @@ import handlebarsHelpers from 'handlebars-helpers'
 gulp.task(gulpConfig.templates.task, () => {
   const handlebarsStream = handlebars({
     bustCache: true,
-    debug: true
+    debug: false
   })
   .helpers(handlebarsHelpers)
   .helpers(handlebarsLayouts)
