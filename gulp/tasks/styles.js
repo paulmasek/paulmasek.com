@@ -32,6 +32,7 @@ gulp.task(gulpConfig.styles.task, () => {
         sound: 'Basso'
       }).write(err)
       this.emit('end')
+      console.log(err.formatted)
     })
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
