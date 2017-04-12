@@ -1,11 +1,10 @@
 import imagesLoaded from 'imagesloaded'
-import SiteAnimation from './site-animation'
-import siteAnimationIndividual from './site-animation-individual'
-import siteAnimationFlexible from './site-animation-flexible'
+import jump from 'jump.js'
 import AjaxForm from './form'
 import Utils from './utils'
 import EventTracking from './event-tracking'
-import LineSegments from './line-segments'
+
+require('waypoints/lib/noframework.waypoints.js')
 
 /* eslint-disable no-new */
 
@@ -93,28 +92,24 @@ const App = {
   },
 
   setupSiteAnimation() {
-    this.siteAnimation = new SiteAnimation({
-      debug: this.debug,
-      indidvidualScenes: [
-        {
-          name: 'Show header',
-          el: '.wrapper',
-          sceneOpts: {
-            triggerElement: '.js-trigger-header',
-            triggerHook: 'onLeave',
-            offset: 100,
-          },
-          type: 'class-toggle',
-          activeClass: 'header-active',
-        },
-      ],
+    const wrapper = document.querySelector('.wrapper')
+    const activeClass = 'header-active'
+
+    new Waypoint({
+      element: document.querySelector('.js-trigger-header'),
+      handler: (direction) => {
+        if (direction === 'down') {
+          wrapper.classList.add(activeClass)
+        } else {
+          wrapper.classList.remove(activeClass)
+        }
+      },
+      offset() {
+        return -this.element.clientHeight
+      },
     })
 
     this.setupAnchors()
-
-    if (!this.disableParallax) {
-      this.setupParralax()
-    }
   },
 
   setupAnchors() {
@@ -127,27 +122,12 @@ const App = {
 
         if (anchoredTo && anchoredTo.length > 0) {
           const target = document.getElementById(anchoredTo)
-
-          if (target) {
-            this.siteAnimation.controller.scrollTo(target)
-          }
+          jump(target)
         }
 
         event.preventDefault()
       })
     }
-  },
-
-  setupParralax() {
-    this.lineSegments = new LineSegments()
-
-    this.lineSegments.linesGenerated.then(() => {
-      document.body.classList.remove('no-js-site-animations')
-      document.body.classList.add('js-site-animations')
-
-      this.siteAnimation.setupIndidvidualScenes(siteAnimationIndividual)
-      this.siteAnimation.setupFlexibleScenes(siteAnimationFlexible)
-    })
   },
 }
 

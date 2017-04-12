@@ -21,5 +21,6 @@
     "Modernizr": true,
     "TweenMax": true,
     "ga": true,
+    "Waypoint": true
   }
 }
