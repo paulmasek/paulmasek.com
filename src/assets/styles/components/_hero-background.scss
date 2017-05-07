@@ -10,7 +10,7 @@
 
   &__image {
     backface-visibility: hidden;
-    background-position: top center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -31,5 +31,17 @@
     top: 0;
     width: 100%;
     z-index: 2;
+  }
+
+  &--work {
+    .hero-background__image {
+      background-position: bottom center;
+    }
+  }
+
+  &--contact {
+    .hero-background__image {
+      background-position: top left;
+    }
   }
 }
