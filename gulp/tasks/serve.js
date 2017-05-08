@@ -10,7 +10,6 @@ import webpackSettings from '../../webpack.config.babel'
 
 const bundler = webpack(webpackSettings)
 
-
 gulp.task('serve', gulpConfig.tasks.default, () => {
   let middleware = false
 
