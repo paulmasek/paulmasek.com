@@ -28,7 +28,7 @@ directories = {
 
 export default {
   name: packageInfo.name,
-  title: 'Project starter',
+  title: 'Personal Website',
   directories: directories,
   //Static true, adds HTML injection via dist folder
   static: true,
