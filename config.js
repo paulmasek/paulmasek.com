@@ -1,4 +1,4 @@
-import packageInfo from './package.json'
+import packageInfo from './package.json';
 
 let directories = {
   src: 'src',
@@ -23,25 +23,25 @@ directories = {
   imagesSrc: `${directories.src}/assets/images/`,
   imagesDest: `${directories.dest}/assets/images/`,
   fontsSrc: `${directories.src}/assets/fonts/`,
-  fontsDest: `${directories.dest}/assets/fonts/`
+  fontsDest: `${directories.dest}/assets/fonts/`,
 }
 
 export default {
   name: packageInfo.name,
   title: 'Personal Website',
-  directories: directories,
-  //Static true, adds HTML injection via dist folder
+  directories,
+  // Static true, adds HTML injection via dist folder
   static: true,
-  //Server true serves dist folder via BrowserSync server
+  // Server true serves dist folder via BrowserSync server
   server: true,
-  //If server is false, BrowserSync will proxy the hostname specified here
+  // If server is false, BrowserSync will proxy the hostname specified here
   localhost: false,
-  //If wordpress is true, several addtional bits of functionality will be added to serve
+  // If wordpress is true, several addtional bits of functionality will be added to serve
   wordpress: false,
   tasks: {
-    //Default gulp tasks before serve (BrowserSync) is started
+    // Default gulp tasks before serve (BrowserSync) is started
     default: ['templates', 'styles', 'lintCSS', 'images', 'fonts'],
-    //Tasks that gulp will trigger when files within these tasks are changed
+    // Tasks that gulp will trigger when files within these tasks are changed
     watch: ['templates', 'styles', 'lintCSS', 'images', 'fonts'],
-  }
-};
+  },
+}

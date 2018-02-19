@@ -10,26 +10,25 @@ import gulpConfig from '../gulp-config'
 
 gulp.task(gulpConfig.styles.task, () => {
   const processors = [
-    autoprefixer(
-      {
-        browsers: gulpConfig.styles.prefix
-      }
-    ),
+    autoprefixer({
+      browsers: gulpConfig.styles.prefix,
+    }),
     cssNano({
       browsers: gulpConfig.styles.prefix,
       minifySelectors: false,
-      safe: true
-    })
+      safe: true,
+    }),
   ]
 
-  gulp.src(gulpConfig.styles.src)
+  gulp
+    .src(gulpConfig.styles.src)
     .pipe(sourcemaps.init())
     .pipe(sass())
     .on('error', function(err) {
       gulpNotify({
         title: 'SCSS compilation error',
         message: 'See console',
-        sound: 'Basso'
+        sound: 'Basso',
       }).write(err)
       this.emit('end')
       console.log(err.formatted)

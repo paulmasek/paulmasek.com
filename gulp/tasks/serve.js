@@ -1,11 +1,11 @@
+import webpack from 'webpack'
 import gulp from 'gulp'
-import browserSync from '../tasks/browser-sync-create'
 import htmlInjector from 'bs-html-injector'
-import config from '../../config'
-import gulpConfig from '../gulp-config'
 import webpackDevMiddleware from 'webpack-dev-middleware'
 import webpackHotMiddleware from 'webpack-hot-middleware'
-import webpack from 'webpack'
+import browserSync from '../tasks/browser-sync-create'
+import config from '../../config'
+import gulpConfig from '../gulp-config'
 import webpackSettings from '../../webpack.config.babel'
 
 const bundler = webpack(webpackSettings)
@@ -15,13 +15,13 @@ gulp.task('serve', gulpConfig.tasks.default, () => {
 
   if (config.static) {
     browserSync.use(htmlInjector, {
-      files: `${config.directories.dest}/**/*.html`
+      files: `${config.directories.dest}/**/*.html`,
     })
   }
 
-  let browserSyncSettings = {
+  const browserSyncSettings = {
     open: false,
-    notify: false
+    notify: false,
   }
 
   if (process.env.NODE_ENV === 'development') {
@@ -30,36 +30,36 @@ gulp.task('serve', gulpConfig.tasks.default, () => {
         noInfo: true,
         publicPath: webpackSettings.output.publicPath,
         stats: {
-          colors: true
-        }
+          colors: true,
+        },
       }),
-      webpackHotMiddleware(bundler)
+      webpackHotMiddleware(bundler),
     ]
   }
 
   if (config.server) {
     browserSyncSettings.server = {
       baseDir: config.directories.dest,
-      middleware: middleware
+      middleware,
     }
   } else if (config.localhost) {
     browserSyncSettings.proxy = {
       target: config.localhost,
-      middleware: middleware
+      middleware,
     }
   }
 
   if (config.wordpress) {
     browserSyncSettings.snippetOptions = {
       whitelist: ['/wp-admin/admin-ajax.php'],
-      blacklist: ['/wp-admin/**']
+      blacklist: ['/wp-admin/**'],
     }
   }
 
   browserSync.init(browserSyncSettings)
 
-  if (typeof config.tasks.watch!== 'undefined') {
-    config.tasks.watch.forEach((task) => {
+  if (typeof config.tasks.watch !== 'undefined') {
+    config.tasks.watch.forEach(task => {
       if (typeof gulpConfig[task] !== 'undefined') {
         gulp.watch(gulpConfig[task].watch, [task])
       }
@@ -67,7 +67,7 @@ gulp.task('serve', gulpConfig.tasks.default, () => {
   }
 
   if (typeof gulpConfig.serve.reload !== 'undefined') {
-    gulpConfig.serve.reload.forEach((directory) => {
+    gulpConfig.serve.reload.forEach(directory => {
       gulp.watch(directory).on('change', browserSync.reload)
     })
   }

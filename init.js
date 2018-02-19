@@ -1,5 +1,5 @@
-import config from './config'
-import fs from 'fs'
+import config from './config';
+import fs from 'fs';
 
 const directories = config.directories
 let paths = {}
@@ -8,7 +8,7 @@ paths.assetsPaths = {
   fonts: directories.fontsSrc,
   js: directories.jsSrc,
   images: directories.imagesSrc,
-  styles: directories.sass
+  styles: directories.sass,
 }
 
 if (!config.wordpress) {
@@ -17,23 +17,20 @@ if (!config.wordpress) {
     layouts: directories.templateLayouts,
     pages: directories.templatePages,
     partials: directories.templatePartials,
-    data: directories.data
+    data: directories.data,
   }
 }
 
-let makePaths = [
-  directories.src,
-  directories.assets
-]
+const makePaths = [directories.src, directories.assets]
 
-for (var key in paths) {
+for (let key in paths) {
   for (var i in paths[key]) {
     makePaths.push(paths[key][i])
   }
 }
 
 for (var i = 0; i < makePaths.length; i++) {
-  let path = makePaths[i]
+  const path = makePaths[i]
 
   fs.exists(path, (exists) => {
     if (!exists) {
@@ -42,8 +39,7 @@ for (var i = 0; i < makePaths.length; i++) {
   })
 }
 
-let initialJS =
-`if (module.hot) {
+const initialJS = `if (module.hot) {
   module.hot.accept()
 }
 `
@@ -51,15 +47,14 @@ let initialJS =
 let files = [
   {
     path: directories.jsSrc + config.directories.jsFilename,
-    contents: initialJS
+    contents: initialJS,
   },
   {
-    path: directories.sass + config.directories.sassFilename
-  }
+    path: directories.sass + config.directories.sassFilename,
+  },
 ]
 
-let indexFile =
-`<!DOCTYPE html>
+let indexFile = `<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -72,33 +67,32 @@ let indexFile =
   </body>
 </html>`
 
-
 let initialData = {
   name: config.name,
   title: config.title,
 }
 
-initialData = JSON.stringify(initialData);
+initialData = JSON.stringify(initialData)
 
 if (!config.wordpress) {
   files.push(
     {
       path: `${directories.data}global.json`,
-      contents: initialData
+      contents: initialData,
     },
     {
       path: `${directories.templatePages}index.hbs`,
-      contents: indexFile
-    }
+      contents: indexFile,
+    },
   )
 }
 
 for (let i = 0; i < files.length; i++) {
-  let fileObj = files[i]
+  const fileObj = files[i]
 
   fs.exists(fileObj.path, (exists) => {
     if (!exists) {
-      let contents = ''
+      let contents = '';
 
       if (typeof fileObj.contents !== 'undefined') {
         contents = fileObj.contents

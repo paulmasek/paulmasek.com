@@ -1,9 +1,8 @@
 import options from '../config'
 
-const directories = options.directories
+const { directories } = options
 
 const gulpConfig = {
-
   tasks: options.tasks,
 
   styles: {
@@ -22,40 +21,39 @@ const gulpConfig = {
       partials: `${directories.templatePartials}*`,
       layouts: `${directories.templateLayouts}*`,
       pages: `${directories.templatePages}*`,
-      data: [`${directories.data}*.json`]
+      data: [`${directories.data}*.json`],
     },
-    dest: directories.dest
+    dest: directories.dest,
   },
 
   lintCSS: {
     task: 'lintCSS',
     lint: `${directories.sass}**/*.scss`,
     ignore: `${directories.sass}vendor/**/*.scss`,
-    watch: `${directories.sass}**/*.scss`
+    watch: `${directories.sass}**/*.scss`,
   },
 
   images: {
     task: 'images',
     src: `${directories.imagesSrc}**/*`,
     dest: directories.imagesDest,
-    watch: `${directories.imagesSrc}**/*`
+    watch: `${directories.imagesSrc}**/*`,
   },
 
   fonts: {
     task: 'fonts',
     src: `${directories.fontsSrc}**/*`,
     dest: directories.fontsDest,
-    watch: `${directories.fontsSrc}**/*`
+    watch: `${directories.fontsSrc}**/*`,
   },
 
   serve: {
     browserSync: {
       open: false,
-      notify: false
+      notify: false,
     },
-    reload: [`${directories.src}/**/*.php`]
+    reload: [`${directories.src}/**/*.php`],
   },
-
 }
 
 export default gulpConfig
