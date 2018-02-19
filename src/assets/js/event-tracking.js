@@ -1,15 +1,15 @@
 class EventTracking {
   constructor(options) {
-    this.local = (typeof options.local !== 'undefined') ? options.local : false
+    this.local = typeof options.local !== 'undefined' ? options.local : false
     this.setupLinkTracking()
   }
 
   setupLinkTracking() {
     const matches = Modernizr.prefixed('matchesSelector', document.body, false)
 
-    document.addEventListener('click', (event) => {
+    document.addEventListener('click', event => {
       if (event.target[matches]('a, a *')) {
-        const href = event.target.href
+        const { href } = event.target
         let link = event.target
 
         if (!href) {

@@ -22,8 +22,7 @@
   &__header {
     align-items: center;
     display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
+    flex-flow: column-reverse nowrap;
     text-decoration: none;
   }
 

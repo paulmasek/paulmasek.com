@@ -9,7 +9,6 @@ require('waypoints/lib/noframework.waypoints.js')
 /* eslint-disable no-new */
 
 const App = {
-
   init() {
     this.debug = false
     this.disableParallax = true
@@ -25,19 +24,21 @@ const App = {
     this.forms = []
 
     for (let i = 0; i < forms.length; i += 1) {
-      this.forms.push(new AjaxForm({
-        el: forms[i],
-        resultDelay: 1000,
-        onSubmit: () => {
-          this.eventTracking.sendEvent('Form submission', 'Contact form', 'Submitted')
-        },
-        onSuccess: () => {
-          this.eventTracking.sendEvent('Form submission', 'Contact form', 'Success')
-        },
-        onFailed: () => {
-          this.eventTracking.sendEvent('Form submission', 'Contact form', 'Failed')
-        },
-      }))
+      this.forms.push(
+        new AjaxForm({
+          el: forms[i],
+          resultDelay: 1000,
+          onSubmit: () => {
+            this.eventTracking.sendEvent('Form submission', 'Contact form', 'Submitted')
+          },
+          onSuccess: () => {
+            this.eventTracking.sendEvent('Form submission', 'Contact form', 'Success')
+          },
+          onFailed: () => {
+            this.eventTracking.sendEvent('Form submission', 'Contact form', 'Failed')
+          },
+        })
+      )
     }
   },
 
@@ -53,7 +54,7 @@ const App = {
     this.navigationTrigger = document.querySelector('.js-trigger-primary-navigation')
     const links = document.querySelectorAll('.primary-navigation__link')
 
-    this.navigationTrigger.addEventListener('click', (e) => {
+    this.navigationTrigger.addEventListener('click', e => {
       this.toggleNavigation()
       e.preventDefault()
     })
@@ -61,7 +62,7 @@ const App = {
     for (let i = 0; i < links.length; i += 1) {
       const link = links[i]
 
-      link.addEventListener('click', (e) => {
+      link.addEventListener('click', e => {
         this.toggleNavigation()
         e.preventDefault()
       })
@@ -97,7 +98,7 @@ const App = {
 
     new Waypoint({
       element: document.querySelector('.js-trigger-header'),
-      handler: (direction) => {
+      handler: direction => {
         if (direction === 'down') {
           wrapper.classList.add(activeClass)
         } else {
@@ -113,10 +114,10 @@ const App = {
   },
 
   setupAnchors() {
-    this.anchorLinks = document.querySelectorAll('a[href^=\'#\']')
+    this.anchorLinks = document.querySelectorAll('a[href^="#"]')
 
     for (let i = 0; i < this.anchorLinks.length; i += 1) {
-      this.anchorLinks[i].addEventListener('click', (event) => {
+      this.anchorLinks[i].addEventListener('click', event => {
         const el = this.anchorLinks[i]
         const anchoredTo = el.href.substring(el.href.indexOf('#') + 1)
 
