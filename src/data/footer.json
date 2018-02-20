@@ -1,3 +1,4 @@
 {
-  "body": "<p>&copy; 2017 Paul Masek Limited. All rights reserved. <a class=\"main-footer__back-to-top\" href=\"#top\" data-event-name=\"Content link click\" data-event-value=\"Back to top\">Back to top</a></p>"
+  "body":
+    "<p>&copy; 2018 Paul Masek Limited. All rights reserved. <a class=\"main-footer__back-to-top\" href=\"#top\" data-event-name=\"Content link click\" data-event-value=\"Back to top\">Back to top</a></p>"
 }
