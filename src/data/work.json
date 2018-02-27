@@ -32,6 +32,19 @@
                     "body":
                       "<p>Worked closely alongside their lead front-end developer to build reusable components for a large corporate site.</p><p>I then led the development of a vanilla ES6 JS and Handlebars application within the site. This involved pulling data from an internal API and integrating with Google Maps to build a location search interface.</p><p>Gitflow was used throughout the project. In addition I was involved with regular<br/> front-end code reviews</p>"
                   }
+                },
+                {
+                  "module": "timeline-quote",
+                  "data": {
+                    "name": "Mike Simmonds",
+                    "role": "Lead Front-End developer",
+                    "profile-pic": {
+                      "src": "assets/images/content/mike-simmonds.jpg",
+                      "alt": ""
+                    },
+                    "body":
+                      "<p>I worked with Paul on two large platform rebuilds featuring numerous technologies and methodologies. He took both projects in his stride, with ease.</p><p>Paul was always a key part of the team, he contributed to projects in ways you expect a permanent team member to. He was easy to manage, always willing, professional and reliable, he was greatly missed when his contract ended! I would recommend Paul without hesitation.</p>"
+                  }
                 }
               ]
             },
@@ -48,7 +61,20 @@
                   "module": "timeline-content",
                   "data": {
                     "body":
-                      "<p>Led the development on the front-end of a large website build. This involved building the main site structure alongside a series of flexible and reusable components.</p><p>These were built with Twig and BEM and then progressively enhanced with<br/> Vanilla ES6 JS</p><p>I worked closely aside their design and management team to ensure the components could accommodate a large number of scenarios to reduce future development time.</p>"
+                      "<p>Led the development on the front-end of a large website build. This involved building the main site structure alongside a series of flexible and reusable components.</p><p>These were built with Twig and BEM then progressively enhanced with vanilla ES6 JS</p><p>I worked closely aside their design and management team to ensure the components could accommodate a large number of scenarios to reduce future development time.</p>"
+                  }
+                },
+                {
+                  "module": "timeline-quote",
+                  "data": {
+                    "name": "Tamsin Radford",
+                    "role": "Project Manager",
+                    "profile-pic": {
+                      "src": "assets/images/content/tamsin-radford.jpg",
+                      "alt": ""
+                    },
+                    "body":
+                      "<p>Paul handled the front end on one of the larger website builds in the studio and it was a real pleasure working with him.</p><p>Easy to talk to and totally unflappable, he accelerated the project when internal resources were stretched. An added bonus were his great tips along the way and software recommendations that I’ve applied to web projects since.</p>"
                   }
                 }
               ]
@@ -67,6 +93,19 @@
                   "data": {
                     "body":
                       "<p>Worked on a JS and animation-heavy single page site. ES6 was used throughout alongside Handlebars.</p><p>Also developed a large static build. I used Handlebars alongside BEM to create a number of reusable components to be integrated into Umbraco<br/> by the back-end team.</p>"
+                  }
+                },
+                {
+                  "module": "timeline-quote",
+                  "data": {
+                    "name": "Stacey Fenton",
+                    "role": "Software Engineer",
+                    "profile-pic": {
+                      "src": "assets/images/content/stacey-fenton.jpg",
+                      "alt": ""
+                    },
+                    "body":
+                      "<p>Paul is an excellent front-end developer. Whenever we needed to bring in freelancers to help cover extra work he would always be our first choice.</p><p>We'd often assign him to projects which involved complex JavaScript and animations, and be confident that he would deliver the work on time and to a high standard. He was well-liked within the team, by both developers and project managers. I can't recommend working with Paul enough, and I hope I get the opportunity to work with him again in the future.</p>"
                   }
                 }
               ]
