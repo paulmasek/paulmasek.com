@@ -6,7 +6,7 @@
       <ul class="js-animate-trigger-main-skill">
   {{#each main-skills.skills}}
         <li class="js-animate-main-skill">
-          <h4 class="heading-four skills__title">{{title}} - {{sub-title}}</h4>
+          <h4 class="heading-four skills__title">{{title}}{{#if sub-title}} - {{sub-title}}{{/if}}</h4>
           {{{body}}}
         </li>
   {{/each}}
