@@ -80,7 +80,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                    "body": "<p>Led the development of the front-end for a corporate website which included a React-powered event and news archive application. This allowed the user to explore a collection of content using various metrics, with a library of flexible UI components.</p>Worked with their other developers to help provide a grounding in React and to effectively handover the application for future development.</p>"
+                    "body": "<p>Led the development of the front-end for a corporate website that included a React-powered event and news archive application. This allowed the user to explore a collection of content using various metrics, with a library of flexible UI components.</p>Worked with their other developers to help provide a grounding in React and to effectively handover the application for future development.</p>"
                   }
                 }
               ]
@@ -109,7 +109,7 @@
                       "src": "assets/images/content/hamzah-ghafoor.jpg",
                       "alt": ""
                     },
-                    "body": "<p>It was a privilege working with Paul over the last 6 months. He is a very cool head under pressure and extremely knowledgeable in his field. His understanding of vanilla JavaScript is second to none and this was proven time and again over the duration.</p><p>Paul helped me re-write the agency's bespoke boilerplate and taught me a lot regarding the latest standards for Javascript and the best ways to apply them. As well as this, he was tasked with leading a Front-end build that had to be re-written into Vue components - something he had not used before. This did not handicap him at all, he managed to pickup Vue and apply it effectively to a build with a tight deadline, on time.</p><p>His thorough understanding of UI and UX as well as his ability to impart that knowledge will make him a valuable asset to any company he goes to. Paul was a great guy to work with and generally hang out with. I look forward to working with him again in the future. His tea making skills could be improved though.</p>"
+                    "body": "<p>It was a privilege working with Paul over the last 6 months. He is a very cool head under pressure and extremely knowledgeable in his field. His understanding of Vanilla JavaScript is second to none and this was proven time and again over the duration.</p><p>Paul helped me re-write the agency's bespoke boilerplate and taught me a lot regarding the latest standards for Javascript and the best ways to apply them. As well as this, he was tasked with leading a Front-end build that had to be re-written into Vue components - something he had not used before. This did not handicap him at all, he managed to pickup Vue and apply it effectively to a build with a tight deadline, on time.</p><p>His thorough understanding of UI and UX as well as his ability to impart that knowledge will make him a valuable asset to any company he goes to. Paul was a great guy to work with and generally hang out with. I look forward to working with him again in the future. His tea making skills could be improved though.</p>"
                   }
                 }
               ]
@@ -132,7 +132,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                    "body": "<p>Worked closely alongside their lead front-end engineer to build reusable components for a large corporate site.</p><p>I then led the development of a vanilla ES6 JS and Handlebars application within the site. This involved pulling data from an internal API and integrating with Google Maps to build a location search interface.</p><p>Gitflow was used throughout the project. In addition I was involved with regular<br/> front-end code reviews</p>"
+                    "body": "<p>Worked closely alongside their lead front-end engineer to build reusable components for a large corporate site.</p><p>I then led the development of a Vanilla ES6 JS and Handlebars application within the site. This involved pulling data from an internal API and integrating with Google Maps to build a location search interface.</p><p>Gitflow was used throughout the project. In addition I was involved with regular<br/> front-end code reviews.</p>"
                   }
                 },
                 {
@@ -144,7 +144,7 @@
                       "src": "assets/images/content/mike-simmonds.jpg",
                       "alt": ""
                     },
-                    "body": "<p>I worked with Paul on two large platform rebuilds featuring numerous technologies and methodologies. He took both projects in his stride, with ease.</p><p>Paul was always a key part of the team, he contributed to projects in ways you expect a permanent team member to. He was easy to manage, always willing, professional and reliable, he was greatly missed when his contract ended! I would recommend Paul without hesitation.</p>"
+                    "body": "<p>I worked with Paul on two large platform rebuilds featuring numerous technologies and methodologies. He took both projects in his stride, with ease.</p><p>Paul was always a key part of the team, he contributed to projects in ways you expect a permanent team member to. He was easy to manage, always willing, professional and reliable. He was greatly missed when his contract ended! I would recommend Paul without hesitation.</p>"
                   }
                 }
               ]
@@ -162,7 +162,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                    "body": "<p>Led the development on the front-end of a large website build. This involved building the main site structure alongside a series of flexible and reusable components.</p><p>These were built with Twig and BEM then progressively enhanced with vanilla ES6 JS</p><p>I worked closely aside their design and management team to ensure the components could accommodate a large number of scenarios to reduce future development time.</p>"
+                    "body": "<p>Led the development on the front-end of a large website build. This involved building the main site structure alongside a series of flexible and reusable components.</p><p>These were built with Twig and BEM then progressively enhanced with Vanilla ES6 JS.</p><p>I worked closely aside their design and management team to ensure the components could accommodate a large number of scenarios to reduce future development time.</p>"
                   }
                 },
                 {
@@ -267,7 +267,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                    "body": "<p>I worked on several large corporate websites and a webapp adding additional responsive templates and functionality.</p><p>With these projects I gained exposure to ASP templates, Gitflow, ES6 and further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p><p>I was initially contracted for one month then was extended for another month.</p>"
+                    "body": "<p>I worked on several large corporate websites and a webapp, adding additional responsive templates and functionality.</p><p>With these projects I gained exposure to ASP templates, Gitflow, ES6 and further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p><p>I was initially contracted for one month then was extended for another month.</p>"
                   }
                 }
               ]
@@ -284,7 +284,7 @@
                 {
                   "module": "timeline-content",
                   "data": {
-                    "body": "<p>Worked on an internal project for Digirati, building a series of mobile-first static templates and a style guide powered by Handlebars & Assemble. </p><p>With this contract I gained exposure to Atomic Design and worked on a commercial project without jQuery with minimal use of other JS libraries.</p><p>Accessibility and progressive enhancement were really important in this contract, with the use of ARIA within HTML and following of web accessibility guidelines.</p>"
+                    "body": "<p>Worked on an internal project for Digirati, building a series of mobile-first static templates and a style guide powered by Handlebars & Assemble. </p><p>With this contract I gained exposure to Atomic Design and worked on a commercial project without jQuery, with minimal use of other JS libraries.</p><p>Accessibility and progressive enhancement were really important in this contract, with the use of ARIA within HTML and the following of web accessibility guidelines.</p>"
                   }
                 }
               ]
@@ -294,13 +294,13 @@
       ],
       "remote": {
         "period": "2014-2015",
-        "title": "Freelancing remotely with various digital agencies",
+        "title": "Remote freelancing",
         "modules": [
           {
             "module": "timeline-content",
             "no-border": true,
             "data": {
-              "body": "<p>In 2014 & 2015 I worked remote for various small creative agencies and startups. This mostly involved building, from start to finish, medium sized responsive websites powered by WordPress. For these, I would create custom themes from scratch with bespoke HTML/CSS/JS. Working as an external team member, it was crucial that the builds were as close to pixel-perfect as possible to the designs supplied.</p>"
+              "body": "<p>In 2014 & 2015 I worked remote for various small creative agencies and startups. This mostly involved building, from start to finish, medium-sized responsive websites powered by WordPress. For these, I would create custom themes from scratch with bespoke HTML/CSS/JS. Working as an external team member, it was crucial that the builds were as close to pixel-perfect as possible to the designs supplied.</p>"
             }
           },
           {
