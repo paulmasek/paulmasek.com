@@ -1,7 +1,7 @@
 {
   "introduction": {
     "title": "Work",
-    "body": "<p class=\"no-break\">My work history, the experience I’ve gained and a few of my testimonials.</p><p>Need my CV? <a href=\"downloads/paul-masek-cv.pdf\" download data-event-name=\"Content link click\" data-event-value=\"Download CV\">Download it here.</a></p>",
+    "body": "<p class=\"no-break\">My work history, the experience I've gained and a few of my testimonials.</p><p>Need my CV? <a href=\"downloads/paul-masek-cv.pdf\" download data-event-name=\"Content link click\" data-event-value=\"Download CV\">Download it here.</a></p>",
     "background": {
       "src": "assets/images/content/hero-work.jpg",
       "alt": ""
@@ -174,7 +174,7 @@
                       "src": "assets/images/content/tamsin-radford.jpg",
                       "alt": ""
                     },
-                    "body": "<p>Paul handled the front end on one of the larger website builds in the studio and it was a real pleasure working with him.</p><p>Easy to talk to and totally unflappable, he accelerated the project when internal resources were stretched. An added bonus were his great tips along the way and software recommendations that I’ve applied to web projects since.</p>"
+                    "body": "<p>Paul handled the front end on one of the larger website builds in the studio and it was a real pleasure working with him.</p><p>Easy to talk to and totally unflappable, he accelerated the project when internal resources were stretched. An added bonus were his great tips along the way and software recommendations that I've applied to web projects since.</p>"
                   }
                 }
               ]
@@ -356,7 +356,7 @@
                 "src": "assets/images/content/kelly-molson.jpg",
                 "alt": ""
               },
-              "body": "<p>Paul is extremely hard working and has produced great results for us on a number of development projects. He works efficiently and quickly, and communication (which is key for us) has always been clear and concise.</p><p>He’s easy to get on with and a really good guy. His understanding of the platforms he works on is exceptional.</p>"
+              "body": "<p>Paul is extremely hard working and has produced great results for us on a number of development projects. He works efficiently and quickly, and communication (which is key for us) has always been clear and concise.</p><p>He's easy to get on with and a really good guy. His understanding of the platforms he works on is exceptional.</p>"
             }
           }
         ]
@@ -403,7 +403,7 @@
         "introduction": "<p>Worked on websites & webapps in medium-sized teams. Clients varied from high-profile internationals to startups.</p>",
         "responsibilities": [
           {
-            "body": "Carried out CMS integration with the company’s enterprise level Java-based system, Cookie Jar"
+            "body": "Carried out CMS integration with the company's enterprise level Java-based system, Cookie Jar"
           },
           {
             "body": "Fully designed websites and web applications"
