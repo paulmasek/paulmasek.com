@@ -13,6 +13,110 @@
       "start-title": "Started Freelancing! 🎉",
       "contracting": [
         {
+          "year-starting": "2019",
+          "contracts": [
+            {
+              "slug": "liminal-pages",
+              "company": "Liminal Pages",
+              "url": "https://liminalpages.com",
+              "logo": {
+                "src": "assets/images/content/liminal-pages-logo.svg",
+                "alt": ""
+              },
+              "logo-title": true,
+              "modules": [
+                {
+                  "module": "timeline-content",
+                  "data": {
+                    "body": "<p>Developed a Gatsby-powered static website with content sourced by WordPress, hosted on netlify. I built flexible React and GraphQL-driven components and templates, with netlify forms and MailChimp integrated as required.</p>"
+                  }
+                },
+                {
+                  "module": "timeline-quote",
+                  "data": {
+                    "name": "Sophie Playle",
+                    "role": "Director",
+                    "profile-pic": {
+                      "src": "assets/images/content/sophie-playle.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>Paul went above and beyond to build my website using the latest technologies and with the utmost attention to detail, resulting in a super-fast, responsive and highly functional site.</p><p>He provided me with periodic reviews to make sure the design was being interpreted to my satisfaction, and guidance on transferring my design to the web.</p><p>I was very impressed with his dedication to the details of the project and am incredibly grateful for all his hard work.</p>"
+                  }
+                }
+              ]
+            },
+            {
+              "slug": "matter-of-form",
+              "company": "Matter Of Form",
+              "url": "https://matterofform.com",
+              "logo": {
+                "src": "assets/images/content/matter-of-form-logo.png",
+                "alt": ""
+              },
+              "modules": [
+                {
+                  "module": "timeline-content",
+                  "data": {
+                    "body": "<p>Worked with a team of developers to build a large Vue.js with Nuxt.js, server-side rendered website, powered by a Headless CMS, Kentico Cloud.</p><p>My main task was working on the data layer on the front-end and back-end, providing content from the CMS and other APIs. I also developed the structure and the dynamic functionality of components. I took responsibility for any complex JS that arose throughout the project.</p><p>I was responsible for the initial setup of the project, reviewing any JS pull requests across the team, and helping mentor the junior developers.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "year-starting": "2018",
+          "contracts": [
+            {
+              "slug": "design-culture",
+              "company": "Design Culture",
+              "logo": {
+                "src": "assets/images/content/design-culture-logo.svg",
+                "alt": ""
+              },
+              "url": "https://www.design-culture.co.uk/",
+              "logo-title": true,
+              "modules": [
+                {
+                  "module": "timeline-content",
+                  "data": {
+                    "body": "<p>Led the development of the front-end for a corporate website which included a React-powered event and news archive application. This allowed the user to explore a collection of content using various metrics, with a library of flexible UI components.</p>Worked with their other developers to help provide a grounding in React and to effectively handover the application for future development.</p>"
+                  }
+                }
+              ]
+            },
+            {
+              "slug": "matter-of-form",
+              "company": "Matter Of Form",
+              "url": "https://matterofform.com",
+              "logo": {
+                "src": "assets/images/content/matter-of-form-logo.png",
+                "alt": ""
+              },
+              "modules": [
+                {
+                  "module": "timeline-content",
+                  "data": {
+                    "body": "<p>Led the development of the front-end of a large, highly modular luxury hotel website.</p><p>Vue.js and Vuex were used as part of a Vanilla JS and BEM component library, to provide interactive functionality.</p><p>I was also responsible for front-end code reviews and helping to develop internal processes and internal tools, like the agency's boilerplate.</p>"
+                  }
+                },
+                {
+                  "module": "timeline-quote",
+                  "data": {
+                    "name": "Hamzah Ghafoor",
+                    "role": "Creative Technology lead",
+                    "profile-pic": {
+                      "src": "assets/images/content/hamzah-ghafoor.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>It was a privilege working with Paul over the last 6 months. He is a very cool head under pressure and extremely knowledgeable in his field. His understanding of vanilla JavaScript is second to none and this was proven time and again over the duration.</p><p>Paul helped me re-write the agency's bespoke boilerplate and taught me a lot regarding the latest standards for Javascript and the best ways to apply them. As well as this, he was tasked with leading a Front-end build that had to be re-written into Vue components - something he had not used before. This did not handicap him at all, he managed to pickup Vue and apply it effectively to a build with a tight deadline, on time.</p><p>His thorough understanding of UI and UX as well as his ability to impart that knowledge will make him a valuable asset to any company he goes to. Paul was a great guy to work with and generally hang out with. I look forward to working with him again in the future. His tea making skills could be improved though.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "year-starting": "2017",
           "contracts": [
             {
@@ -53,6 +157,7 @@
                 "alt": ""
               },
               "url": "https://www.design-culture.co.uk/",
+              "logo-title": true,
               "modules": [
                 {
                   "module": "timeline-content",
