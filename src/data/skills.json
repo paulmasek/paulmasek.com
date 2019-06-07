@@ -1,7 +1,7 @@
 {
   "introduction": {
     "title": "Skills",
-    "body": "<p>Here is a selection of the languages, libraries and tools with which I’ve had the most experience. I’m also always developing my skillset, and enjoy the challenge of working with new technologies.</p>",
+    "body": "<p>Here is a selection of the languages, libraries and tools with which I've had the most experience. I'm always developing my skillset and love the challenge of working with new technologies.</p>",
     "background": {
       "src": "assets/images/content/hero-skills.jpg",
       "alt": ""
@@ -11,29 +11,41 @@
     "title": "Development",
     "skills": [
       {
-        "title": "HTML",
-        "sub-title": "XHTML / HTML5",
-        "body": "<p>Accessible, semantic & SEO friendly</p>"
+        "title": "React",
+        "sub-title": null,
+        "body": "<p>Standalone or with Redux. Gatsby-powered static sites</p>"
       },
       {
-        "title": "CSS",
-        "sub-title": "CSS3 / SASS / LESS",
-        "body": "<p>The latest techniques, cross-browser & device, maintainable & reusable with BEM</p>"
+        "title": "Vue.js",
+        "sub-title": null,
+        "body": "<p>Standalone or with Vuex. Headless CMS projects with Nuxt.js"
       },
       {
         "title": "JavaScript",
-        "sub-title": "ES5 & ES6, jQuery",
-        "body": "<p class=\"no-break\">Efficient, progressively enhanced & performant</p><p>Varying levels of experience of other libraries such as React and Redux</p>"
+        "sub-title": "Vanilla, ES6/7",
+        "body": "<p>Performant, linted and progressively enhanced wherever possible</p>"
       },
       {
+        "title": "CSS / SASS",
+        "sub-title": null,
+        "body": "<p>The latest techniques, cross-browser & device, maintainable & reusable with BEM</p>"
+      },
+
+      {
+        "title": "HTML",
+        "sub-title": null,
+        "body": "<p>Accessible, semantic & SEO friendly</p>"
+      },
+
+      {
         "title": "Templating",
-        "sub-title": "Handlebars",
+        "sub-title": "Handlebars / Twig",
         "body": "<p>Used extensively for static front-end builds & style guides</p>"
       },
       {
         "title": "CMS",
-        "sub-title": "WordPress",
-        "body": "<p>Custom theme development</p>"
+        "sub-title": null,
+        "body": "<p>WordPress & WP-API, Kentico Cloud</p>"
       }
     ]
   },
@@ -42,11 +54,11 @@
     "skills": [
       {
         "title": "Version Control",
-        "body": "<p>Git, SVN & processes like Gitflow.</p>"
+        "body": "<p>Git, SVN & processes like Gitflow</p>"
       },
       {
         "title": "Auomation",
-        "body": "<p>Gulp, Grunt, NPM, Webpack, Bower, etc.</p>"
+        "body": "<p>Webpack, Gulp, Yarn, etc.</p>"
       },
       {
         "title": "Project Management ",
@@ -55,7 +67,7 @@
     ]
   },
   "software": {
-    "title": "Design",
+    "title": "Design tools",
     "skills": [
       {
         "name": "sketch",

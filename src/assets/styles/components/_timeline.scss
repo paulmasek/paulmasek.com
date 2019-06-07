@@ -69,6 +69,14 @@
     }
   }
 
+  &__segment {
+    &--liminal-pages {
+      .timeline__contracting-logo {
+        width: rem(175px);
+      }
+    }
+  }
+
   &__contracting-logo {
     margin-bottom: rem($line-border-header);
     width: rem(100px);
