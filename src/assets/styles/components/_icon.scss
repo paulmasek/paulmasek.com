@@ -2,6 +2,7 @@
   display: block;
   height: 0;
   overflow: hidden;
+  padding-bottom: percentage(24 / 24);
   position: relative;
 
   &__el {
@@ -10,37 +11,5 @@
     position: absolute;
     top: 0;
     width: 100%;
-  }
-
-  &--twitter {
-    padding-bottom: percentage(16 / 20);
-  }
-
-  &--linkedin {
-    padding-bottom: percentage(16 / 16);
-  }
-
-  &--sketch {
-    padding-bottom: percentage(26.931 / 30);
-  }
-
-  &--photoshop {
-    padding-bottom: percentage(30 / 30);
-  }
-
-  &--illustrator {
-    padding-bottom: percentage(30 / 30);
-  }
-
-  &--github {
-    padding-bottom: percentage(30 / 30);
-  }
-
-  &--last-fm {
-    padding-bottom: percentage(16 / 9.625);
-  }
-
-  &--instagram {
-    padding-bottom: percentage(30 / 30);
   }
 }
