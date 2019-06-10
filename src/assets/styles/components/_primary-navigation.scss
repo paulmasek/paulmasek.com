@@ -1,4 +1,5 @@
 .primary-navigation {
+  font-size: rem(28px);
   height: 100%;
   opacity: 0;
   padding-left: rem($gutter);
@@ -10,12 +11,15 @@
   z-index: -1;
 
   @include media('>big-phone') {
-    height: auto;
+    align-items: center;
+    display: flex;
+    font-size: rem(16px);
+    height: rem($header-height-desktop);
+    line-height: rem(20px);
     padding-left: 0;
     padding-right: 0;
     right: rem(87px);
     text-align: right;
-    top: rem(19px);
     width: auto;
     z-index: 10;
 
@@ -34,10 +38,9 @@
 
     @include media('>big-phone') {
       display: inline-block;
-      margin-right: 2px;
       position: static;
       transform: none;
-      vertical-align: middle;
+      vertical-align: top;
       width: auto;
     }
   }
@@ -93,14 +96,14 @@
   }
 
   &__link {
-    font-size: rem(28px);
     text-decoration: none;
 
     @include media('>big-phone') {
       @include bold;
-      font-size: rem(16px);
+      display: inline-block;
       padding-left: rem(6px);
       padding-right: rem(4px);
+      vertical-align: top;
     }
 
     @include media('>tablet') {
@@ -143,11 +146,9 @@
 }
 
 .primary-navigation-show-hide {
+  line-height: rem(18px);
   outline: none;
   padding: 0;
-  position: absolute;
-  right: rem($gutterHalf);
-  top: rem(16px);
 
   .hamburger-box {
     vertical-align: top;
@@ -155,7 +156,5 @@
 
   @include media('>big-phone') {
     display: none;
-    right: rem($gutter);
-    top: rem(20px);
   }
 }
