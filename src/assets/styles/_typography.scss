@@ -34,6 +34,7 @@
 
 @mixin header-branding-size {
   font-size: rem(30px);
+  line-height: rem(30px);
 }
 
 @mixin small-size {

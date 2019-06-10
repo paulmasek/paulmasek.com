@@ -5,6 +5,7 @@ $branding-switch-delay: .5s;
   color: $orange;
   display: inline-block;
   text-decoration: none;
+  vertical-align: top;
   width: rem(167px);
 
   &__part {
@@ -12,6 +13,7 @@ $branding-switch-delay: .5s;
     overflow: hidden;
     position: relative;
     transition: width .3s $branding-switch-delay ease-in-out, transform .3s $branding-switch-delay ease-in-out;
+    vertical-align: top;
   }
 
   &__full-part {
@@ -32,33 +34,17 @@ $branding-switch-delay: .5s;
     }
 
     &--two {
-      transform: translateX(0);
+      transform: translateX(7px);
       width: rem(94px);
     }
   }
 
   &__minimal-part {
     background-color: $white;
+    display: inline-block;
     position: relative;
+    vertical-align: top;
     z-index: 2;
-
-    &--one {
-      left: rem(-2px);
-    }
-
-    &--two {
-      left: rem(-2.3px);
-    }
-  }
-
-  &__full-part {
-    &--one {
-      right: rem(2px);
-    }
-
-    &--two {
-      right: rem(2.3px);
-    }
   }
 
   &--minimal {
@@ -70,7 +56,7 @@ $branding-switch-delay: .5s;
       }
 
       .branding__part--two {
-        transform: translateX(rem(-4px));
+        transform: translateX(4px);
         width: rem(24px);
       }
 
@@ -81,7 +67,7 @@ $branding-switch-delay: .5s;
 
       .branding__full-part--two {
         opacity: 0;
-        transform: translateX(rem(-90px));
+        transform: translateX(rem(-97px));
       }
     }
   }
