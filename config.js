@@ -1,4 +1,4 @@
-import packageInfo from './package.json';
+import packageInfo from './package.json'
 
 let directories = {
   src: 'src',
@@ -24,6 +24,24 @@ directories = {
   imagesDest: `${directories.dest}/assets/images/`,
   fontsSrc: `${directories.src}/assets/fonts/`,
   fontsDest: `${directories.dest}/assets/fonts/`,
+  copy: [
+    {
+      from: `${directories.src}/deploy/**/*`,
+      to: directories.dest,
+    },
+    {
+      from: `${directories.src}/assets/js/vendor/**/*`,
+      to: `${directories.dest}/assets/js/`,
+    },
+    {
+      from: `${directories.src}/assets/favicon/**/*`,
+      to: directories.dest,
+    },
+    {
+      from: `${directories.src}/downloads/**/*`,
+      to: `${directories.dest}/downloads/`,
+    },
+  ],
 }
 
 export default {
@@ -40,8 +58,10 @@ export default {
   wordpress: false,
   tasks: {
     // Default gulp tasks before serve (BrowserSync) is started
-    default: ['templates', 'styles', 'lintCSS', 'images', 'fonts'],
+    default: ['clean', 'templates', 'styles', 'lintCSS', 'images', 'fonts', 'copy'],
     // Tasks that gulp will trigger when files within these tasks are changed
     watch: ['templates', 'styles', 'lintCSS', 'images', 'fonts'],
+    // Taks that will trigger on build
+    build: ['clean', 'styles', 'templates', 'images', 'fonts', 'copy'],
   },
 }
