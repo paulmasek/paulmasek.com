@@ -5,7 +5,7 @@
     "start": "NODE_ENV=development webpack && NODE_ENV=development gulp",
     "prod": " NODE_ENV=production gulp build && NODE_ENV=production webpack"
   },
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^8.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -42,17 +42,19 @@
     "handlebars-helpers": "^0.10.0",
     "handlebars-layouts": "^3.1.4",
     "handlebars-loader": "^1.6.0",
-    "imagesloaded": "^4.1.4",
-    "jump.js": "^1.0.2",
     "require-dir": "^1.0.0",
     "stylelint": "^9.0.0",
     "stylelint-order": "^0.8.0",
-    "superagent": "^3.8.2",
-    "waypoints": "^4.0.1",
     "webpack": "^3.11.0",
     "webpack-dev-middleware": "^2.0.5",
     "webpack-hot-middleware": "^2.21.0",
     "webpack-module-hot-accept": "^1.0.5",
     "webpack-notifier": "^1.5.1"
+  },
+  "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "jump.js": "^1.0.2",
+    "superagent": "^3.8.2",
+    "waypoints": "^4.0.1"
   }
 }
