@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "NODE_ENV=development webpack && NODE_ENV=development gulp",
-    "prod": "gulp build && webpack"
+    "prod": " NODE_ENV=production gulp build && NODE_ENV=production webpack"
   },
   "dependencies": {
     "autoprefixer": "^8.0.0",
