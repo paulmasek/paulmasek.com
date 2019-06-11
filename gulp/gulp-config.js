@@ -47,6 +47,16 @@ const gulpConfig = {
     watch: `${directories.fontsSrc}**/*`,
   },
 
+  copy: {
+    task: 'copy',
+    paths: directories.copy,
+  },
+
+  clean: {
+    task: 'clean',
+    del: `${directories.dest}/**`,
+  },
+
   serve: {
     browserSync: {
       open: false,

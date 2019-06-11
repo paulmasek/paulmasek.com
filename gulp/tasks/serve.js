@@ -8,23 +8,24 @@ import config from '../../config'
 import gulpConfig from '../gulp-config'
 import webpackSettings from '../../webpack.config.babel'
 
+const development = process.env.NODE_ENV === 'development'
 const bundler = webpack(webpackSettings)
 
 gulp.task('serve', gulpConfig.tasks.default, () => {
-  let middleware = false
+  if (development) {
+    let middleware = false
 
-  if (config.static) {
-    browserSync.use(htmlInjector, {
-      files: `${config.directories.dest}/**/*.html`,
-    })
-  }
+    if (config.static) {
+      browserSync.use(htmlInjector, {
+        files: `${config.directories.dest}/**/*.html`,
+      })
+    }
 
-  const browserSyncSettings = {
-    open: false,
-    notify: false,
-  }
+    const browserSyncSettings = {
+      open: false,
+      notify: false,
+    }
 
-  if (process.env.NODE_ENV === 'development') {
     middleware = [
       webpackDevMiddleware(bundler, {
         noInfo: true,
@@ -35,40 +36,40 @@ gulp.task('serve', gulpConfig.tasks.default, () => {
       }),
       webpackHotMiddleware(bundler),
     ]
-  }
 
-  if (config.server) {
-    browserSyncSettings.server = {
-      baseDir: config.directories.dest,
-      middleware,
-    }
-  } else if (config.localhost) {
-    browserSyncSettings.proxy = {
-      target: config.localhost,
-      middleware,
-    }
-  }
-
-  if (config.wordpress) {
-    browserSyncSettings.snippetOptions = {
-      whitelist: ['/wp-admin/admin-ajax.php'],
-      blacklist: ['/wp-admin/**'],
-    }
-  }
-
-  browserSync.init(browserSyncSettings)
-
-  if (typeof config.tasks.watch !== 'undefined') {
-    config.tasks.watch.forEach(task => {
-      if (typeof gulpConfig[task] !== 'undefined') {
-        gulp.watch(gulpConfig[task].watch, [task])
+    if (config.server) {
+      browserSyncSettings.server = {
+        baseDir: config.directories.dest,
+        middleware,
       }
-    })
-  }
+    } else if (config.localhost) {
+      browserSyncSettings.proxy = {
+        target: config.localhost,
+        middleware,
+      }
+    }
 
-  if (typeof gulpConfig.serve.reload !== 'undefined') {
-    gulpConfig.serve.reload.forEach(directory => {
-      gulp.watch(directory).on('change', browserSync.reload)
-    })
+    if (config.wordpress) {
+      browserSyncSettings.snippetOptions = {
+        whitelist: ['/wp-admin/admin-ajax.php'],
+        blacklist: ['/wp-admin/**'],
+      }
+    }
+
+    browserSync.init(browserSyncSettings)
+
+    if (typeof config.tasks.watch !== 'undefined') {
+      config.tasks.watch.forEach(task => {
+        if (typeof gulpConfig[task] !== 'undefined') {
+          gulp.watch(gulpConfig[task].watch, [task])
+        }
+      })
+    }
+
+    if (typeof gulpConfig.serve.reload !== 'undefined') {
+      gulpConfig.serve.reload.forEach(directory => {
+        gulp.watch(directory).on('change', browserSync.reload)
+      })
+    }
   }
 })
