@@ -1,7 +1,11 @@
 {
   "name": "paul-masek",
   "version": "0.1.0",
-  "devDependencies": {
+  "scripts": {
+    "start": "NODE_ENV=development webpack && NODE_ENV=development gulp",
+    "prod": " NODE_ENV=production gulp build && NODE_ENV=production webpack"
+  },
+  "dependencies": {
     "autoprefixer": "^8.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -45,13 +49,7 @@
     "webpack-dev-middleware": "^2.0.5",
     "webpack-hot-middleware": "^2.21.0",
     "webpack-module-hot-accept": "^1.0.5",
-    "webpack-notifier": "^1.5.1"
-  },
-  "scripts": {
-    "start": "NODE_ENV=development webpack && NODE_ENV=development gulp",
-    "prod": " NODE_ENV=production gulp build && NODE_ENV=production webpack"
-  },
-  "dependencies": {
+    "webpack-notifier": "^1.5.1",
     "imagesloaded": "^4.1.4",
     "jump.js": "^1.0.2",
     "superagent": "^3.8.2",
