@@ -46,5 +46,8 @@
       "link": "#contact"
     }
   ],
-  "google-analytics-id": "UA-46157523-1"
+  "google-analytics-id": "UA-46157523-1",
+  "og-image": "assets/images/content/og-image.jpg",
+  "twitter-image": "assets/images/content/twitter-image.jpg",
+  "twitter-handle": "@paulmasek"
 }
