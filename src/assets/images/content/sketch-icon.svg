@@ -1,7 +1,0 @@
-<svg class="icon__el" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 26.93">
-  <path fill="#fdb300" d="M6.54.88L15 0l8.46.88L30 9.58 15 26.93 0 9.61z"/>
-  <path fill="#ea6c00" d="M6.08 9.6L15 26.92 0 9.6h6.08M23.93 9.6L15 26.92 30 9.6h-6.07"/>
-  <path fill="#fdad00" d="M6.08 9.6h17.85L15 26.92 6.08 9.6"/><path fill="#fdd231" d="M15 0L6.54.88l-.46 8.73L15 0M15 0l8.45.88.48 8.73L15 0"/>
-  <path fill="#fdad00" d="M30 9.61L23.45.88l.48 8.73H30M0 9.61L6.54.88l-.46 8.73H0"/>
-  <path fill="#feeeb7" d="M15 0L6.08 9.61h17.85L15 0"/>
-</svg>
