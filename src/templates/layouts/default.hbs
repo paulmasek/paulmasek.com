@@ -11,11 +11,20 @@
     <meta name="robots" content="noodp"/>
     <link rel="canonical" href="{{global.canonical}}" />
     <meta property="og:locale" content="en_gb" />
+    <meta property="og:url" content="{{global.canonical}}" />
+    <meta property="og:site_name" content="{{global.meta-name}}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{global.meta-title}}" />
     <meta property="og:description" content="{{global.meta-description}}" />
-    <meta property="og:url" content="{{global.canonical}}" />
-    <meta property="og:site_name" content="{{global.meta-name}}" />
+    <meta content="{{global.og-image}}" property="og:image">
+    <meta content="1200" property="og:image:width">
+    <meta content="630" property="og:image:height">
+    <meta content="summary" name="twitter:card">
+    <meta content="{{global.twitter-handle}}" name="twitter:site">
+    <meta content="{{global.meta-title}}" name="twitter:title">
+    <meta content="{{global.twitter-handle}}" name="twitter:creator">
+    <meta content="{{global.meta-description}}" name="twitter:description">
+    <meta content="{{global.twitter-image}}" name="twitter:image">
   </head>
   <body class="no-js-site-animations">
     {{> analytics}}
