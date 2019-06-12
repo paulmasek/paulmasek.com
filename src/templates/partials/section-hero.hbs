@@ -9,10 +9,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-background hero-background--{{class}}">
-        <div class="hero-background__image js-animate-section-hero-background" style="background-image: url('{{background.src}}')">{{background.alt}}</div>
-        <div class="hero-background__overlay">&nbsp;</div>
-      </div>
+      {{> hero-background image=background className="introduction__background" modifier=class }}
     </div>
   </div>
 </div>
