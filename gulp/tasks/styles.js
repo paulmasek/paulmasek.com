@@ -8,6 +8,8 @@ import gulpNotify from 'gulp-notify'
 import browserSync from '../tasks/browser-sync-create'
 import gulpConfig from '../gulp-config'
 
+const development = process.env.NODE_ENV === 'development'
+
 gulp.task(gulpConfig.styles.task, () => {
   const processors = [
     autoprefixer({
@@ -20,21 +22,39 @@ gulp.task(gulpConfig.styles.task, () => {
     }),
   ]
 
-  gulp
-    .src(gulpConfig.styles.src)
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .on('error', function(err) {
-      gulpNotify({
-        title: 'SCSS compilation error',
-        message: 'See console',
-        sound: 'Basso',
-      }).write(err)
-      this.emit('end')
-      console.log(err.formatted)
-    })
-    .pipe(postcss(processors))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(gulpConfig.styles.dest))
-    .pipe(browserSync.stream())
+  if (development) {
+    gulp
+      .src(gulpConfig.styles.src)
+      .pipe(sourcemaps.init())
+      .pipe(sass())
+      .on('error', function(err) {
+        gulpNotify({
+          title: 'SCSS compilation error',
+          message: 'See console',
+          sound: 'Basso',
+        }).write(err)
+        this.emit('end')
+        console.log(err.formatted)
+      })
+      .pipe(postcss(processors))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest(gulpConfig.styles.dest))
+      .pipe(browserSync.stream())
+  } else {
+    gulp
+      .src(gulpConfig.styles.src)
+      .pipe(sourcemaps.init())
+      .pipe(sass())
+      .on('error', function(err) {
+        gulpNotify({
+          title: 'SCSS compilation error',
+          message: 'See console',
+          sound: 'Basso',
+        }).write(err)
+        this.emit('end')
+        console.log(err.formatted)
+      })
+      .pipe(postcss(processors))
+      .pipe(gulp.dest(gulpConfig.styles.dest))
+  }
 })

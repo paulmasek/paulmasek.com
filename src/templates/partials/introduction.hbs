@@ -19,8 +19,5 @@
       </div>
     </div>
   </div>
-  <div class="introduction__background hero-background hero-background--introduction">
-    <div class="hero-background__image" style="background-image: url('{{introduction.background.src}}')">{{introduction.background.alt}}</div>
-    <div class="hero-background__overlay">&nbsp;</div>
-  </div>
+  {{> hero-background image=introduction.background className="introduction__background" modifier="introduction" }}
 </section>

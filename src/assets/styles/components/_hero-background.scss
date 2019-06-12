@@ -8,20 +8,10 @@
   width: 100%;
   z-index: -2;
 
-  &__image {
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-  &__overlay {
+  &:before {
     background-color: $black;
+    content: '';
+    display: block;
     height: 100%;
     left: 0;
     opacity: .6;
@@ -31,15 +21,22 @@
     z-index: 2;
   }
 
-  &--work {
-    .hero-background__image {
-      background-position: bottom center;
-    }
+  &__image {
+    height: 100%;
+    left: 0;
+    margin-bottom: 0;
+    object-fit: cover;
+    object-position: bottom right;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
   }
 
-  &--contact {
+  &--contact,
+  &--work {
     .hero-background__image {
-      background-position: top left;
+      object-position: bottom center;
     }
   }
 }

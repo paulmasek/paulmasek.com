@@ -1,6 +1,29 @@
 {
   "name": "paul-masek",
-  "version": "0.1.0",
+  "description": "The personal site for Paul Masek, a contract front-end web developer",
+  "keywords": [
+    "personal-site",
+    "portfolio",
+    "contractor",
+    "freelancer"
+  ],
+  "version": "2.0.0",
+  "license": "UNLICENSED",
+  "homepage": "https://paulmasek.com",
+  "bugs": "https://github.com/paulmasek/paulmasek.com/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulmasek/paulmasek.com.git"
+  },
+  "author": {
+    "name": "Paul Masek",
+    "email": "hello@paulmasek.com",
+    "url": "https://paulmasek.com"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development webpack && NODE_ENV=development gulp",
+    "prod": " NODE_ENV=production gulp build && NODE_ENV=production webpack"
+  },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "babel-cli": "^6.26.0",
@@ -11,6 +34,8 @@
     "browser-sync": "^2.23.6",
     "bs-html-injector": "^3.0.3",
     "cssnano": "^3.10.0",
+    "del": "^4.1.1",
+    "dotenv": "^8.0.0",
     "eslint": "^4.18.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -21,12 +46,12 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.6.1",
-    "gulp": "^3.9.1",
+    "gulp": "3.9.0",
     "gulp-extname": "^0.2.2",
     "gulp-front-matter": "^1.3.0",
     "gulp-hb": "^7.0.1",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^6.0.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^3.2.0",
     "gulp-postcss": "^7.0.1",
@@ -45,11 +70,6 @@
     "webpack-hot-middleware": "^2.21.0",
     "webpack-module-hot-accept": "^1.0.5",
     "webpack-notifier": "^1.5.1"
-  },
-  "scripts": {
-    "start": "NODE_ENV=development webpack && NODE_ENV=development gulp",
-    "init": "babel-node init.js --presets env",
-    "prod": "NODE_ENV=production webpack && NODE_ENV=production gulp"
   },
   "dependencies": {
     "imagesloaded": "^4.1.4",
