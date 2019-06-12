@@ -1,6 +1,25 @@
 {
   "name": "paul-masek",
-  "version": "0.1.0",
+  "description": "The personal site for Paul Masek, a contract front-end web developer",
+  "keywords": [
+    "personal-site",
+    "portfolio",
+    "contractor",
+    "freelancer"
+  ],
+  "version": "2.0.0",
+  "license": "UNLICENSED",
+  "homepage": "https://paulmasek.com",
+  "bugs": "https://github.com/paulmasek/paulmasek.com/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulmasek/paulmasek.com.git"
+  },
+  "author": {
+    "name": "Paul Masek",
+    "email": "hello@paulmasek.com",
+    "url": "https://paulmasek.com"
+  },
   "scripts": {
     "start": "NODE_ENV=development webpack && NODE_ENV=development gulp",
     "prod": " NODE_ENV=production gulp build && NODE_ENV=production webpack"
