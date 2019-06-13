@@ -19,7 +19,7 @@ gulp.task(gulpConfig.templates.task, () => {
     .partials(gulpConfig.templates.src.layouts + gulpConfig.templates.ext)
     .data(gulpConfig.templates.src.data)
     .data({
-      DEPLOY_URL: process.env.DEPLOY_URL,
+      URL: process.env.URL,
       GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
     })
 
