@@ -63,8 +63,12 @@ const App = {
       const link = links[i]
 
       link.addEventListener('click', e => {
-        this.toggleNavigation()
-        e.preventDefault()
+        const isMobile = window.matchMedia(`(max-width: 600px)`)
+
+        if (isMobile) {
+          this.toggleNavigation()
+          e.preventDefault()
+        }
       })
     }
   },
