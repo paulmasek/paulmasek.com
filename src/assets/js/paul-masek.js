@@ -63,9 +63,9 @@ const App = {
       const link = links[i]
 
       link.addEventListener('click', e => {
-        const isMobile = window.matchMedia(`(max-width: 600px)`)
+        const mobileMq = window.matchMedia(`(max-width: 600px)`)
 
-        if (isMobile) {
+        if (mobileMq.matches) {
           this.toggleNavigation()
           e.preventDefault()
         }
