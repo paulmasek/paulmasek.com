@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Paul Masek - Contract Front-End Web Developer London, UK`,
+    description: `I’m a London-based contract front-end web developer with over 10 years’ commercial experience working on high quality website & webapp builds.`,
     author: `@paulmasek`,
   },
   plugins: [
@@ -19,8 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `paul-masek`,
         start_url: `/`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
