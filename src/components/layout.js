@@ -7,10 +7,11 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'helmet';
+import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import '../styles/paul-masek.scss';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,7 +27,25 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
+      <Helmet>
+        <meta charset="utf-8" />
+      </Helmet>
+      <Helmet>
+        <meta name="robots" content="noodp" />
+      </Helmet>
+      <Helmet>
+        <link rel="canonical" href="{{ URL }}" />
+      </Helmet>
+      <Helmet>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      </Helmet>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
+      <div class="no-js-site-animations">
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
