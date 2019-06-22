@@ -11,15 +11,19 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import Footer from './footer';
 import '../styles/paul-masek.scss';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query globalSiteData {
       site {
         siteMetadata {
           title
         }
+      }
+      footer: footerJson {
+        body
       }
     }
   `);
@@ -45,13 +49,9 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Helmet>
-      <div class="no-js-site-animations">
+      <div className="no-js-site-animations">
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer body={data.footer.body} />
       </div>
     </>
   );
