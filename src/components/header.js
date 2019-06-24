@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'gatsby';
 import useMediaQuery from 'react-use-media-query-hook';
 import Navigation from './navigation';
 import SocialMedia from './social-media';
