@@ -32,19 +32,19 @@
   "navigation": [
     {
       "text": "About",
-      "link": "#about"
+      "link": "/#about"
     },
     {
       "text": "Skills",
-      "link": "#skills"
+      "link": "/#skills"
     },
     {
       "text": "Work",
-      "link": "#work"
+      "link": "/#work"
     },
     {
       "text": "Contact",
-      "link": "#contact"
+      "link": "/#contact"
     }
   ],
   "og-image": "assets/images/content/og-image.jpg",

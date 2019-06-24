@@ -5,11 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import useUpdateBodyClass from '../utils/useUpdateBodyClass';
 import Header from './header';
 import Footer from './footer';
 import '../styles/paul-masek.scss';
@@ -22,11 +23,24 @@ const Layout = ({ children }) => {
           title
         }
       }
+      global: globalJson {
+        navigation {
+          link
+          text
+        }
+        social_media {
+          name
+          url
+        }
+      }
       footer: footerJson {
         body
       }
     }
   `);
+
+  const [headerActive, setHeaderActive] = useState(false);
+  const [setClassActive] = useUpdateBodyClass('header-active', headerActive);
 
   return (
     <>
@@ -50,6 +64,11 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <div className="no-js-site-animations">
+        <Header
+          navigationItems={data.global.navigation}
+          socialMediaLinks={data.global.social_media}
+          active={headerActive}
+        />
         <main>{children}</main>
         <Footer body={data.footer.body} />
       </div>
