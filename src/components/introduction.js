@@ -8,12 +8,12 @@ import SocialMedia from './social-media';
 import HeroBackground from './hero-background';
 
 const Introduction = ({
+  id,
   background,
   name,
   tagline,
   navigationItems,
   socialMediaLinks,
-  id,
   setHeaderActive,
   setClassActive,
 }) => {

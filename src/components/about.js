@@ -40,10 +40,14 @@ const About = ({ body, id, profilePicImage, profilePicAlt }) => {
 };
 
 About.propTypes = {
+  id: PropTypes.string,
   body: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
   profilePicImage: PropTypes.shape({}).isRequired,
   profilePicAlt: PropTypes.string.isRequired,
+};
+
+About.defaultProps = {
+  id: null,
 };
 
 export default About;
