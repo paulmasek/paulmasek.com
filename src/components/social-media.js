@@ -25,6 +25,7 @@ const SocialMedia = ({ className, links, linkClickEvent }) => (
             data-event-name={linkClickEvent}
             data-event-value={name}
             href={url}
+            rel="noopener noreferrer"
             target="_blank"
           >
             <Icon className="social-media__icon" />
