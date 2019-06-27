@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import uniqid from 'uniqid';
 import { Link } from 'gatsby';
 
-import useUpdateBodyClass from '../utils/useUpdateBodyClass';
+import useUpdateBodyClass from '../utils/use-update-body-class';
 
 const Navigation = ({ items, active, linkClick }) => {
   useUpdateBodyClass('primary-navigation-active', active);
