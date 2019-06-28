@@ -9,6 +9,7 @@ import SEO from '../components/seo';
 import About from '../components/about';
 import Skills from '../components/skills';
 import Work from '../components/work';
+import Contact from '../components/contact';
 
 const IndexPage = ({ data }) => {
   const [headerActive, setHeaderActive] = useState(false);
@@ -51,6 +52,14 @@ const IndexPage = ({ data }) => {
         introductionBody={data.work.introduction.body}
         introductionBackground={data.work.introduction.background}
         timeline={data.work.timeline}
+      />
+      <Contact
+        id="contact"
+        introductionTitle={data.contact.introduction.title}
+        introductionBody={data.contact.introduction.body}
+        introductionBackground={data.contact.introduction.background}
+        submitSuccessMessage={data.contact.form.contactSuccess}
+        submitFailedMessage={data.contact.form.contactFailed}
       />
     </Layout>
   );
@@ -227,6 +236,26 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+    contact: contactJson {
+      introduction {
+        body
+        title
+        background {
+          alt
+          src {
+            childImageSharp {
+              sizes(maxWidth: 780) {
+                ...GatsbyImageSharpSizes
+              }
+            }
+          }
+        }
+      }
+      form {
+        contactSuccess
+        contactFailed
       }
     }
   }
