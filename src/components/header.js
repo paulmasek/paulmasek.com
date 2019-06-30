@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import useMediaQuery from 'react-use-media-query-hook';
+import useMediaQuery from '../utils/use-media-query';
 import Navigation from './navigation';
 import SocialMedia from './social-media';
 
-const Header = ({ navigationItems, socialMediaLinks, active }) => {
+const Header = ({ navigationItems, socialMediaLinks }) => {
   const [primaryNavigationOpen, setNavigationState] = useState(false);
-  const isMobile = useMediaQuery('(max-width: 600px)');
+  const isMobile = window && useMediaQuery('(max-width: 600px)');
 
   return (
     <>
@@ -77,11 +77,8 @@ const Header = ({ navigationItems, socialMediaLinks, active }) => {
 Header.propTypes = {
   navigationItems: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   socialMediaLinks: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-  active: PropTypes.bool,
 };
 
-Header.defaultProps = {
-  active: false,
-};
+Header.defaultProps = {};
 
 export default Header;
