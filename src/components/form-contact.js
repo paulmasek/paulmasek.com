@@ -14,8 +14,8 @@ import TextInput from './text-input';
 const FancyTextInput = withFormField(TextInput);
 const NetlifyForm = withNetlifyForm(Form);
 
-const MESSAGE_REQUIRED_FIELD = 'Field field required';
-const MESSAGE_INVALID_EMAIL = 'Email field invalid';
+const MESSAGE_REQUIRED_FIELD = 'Required';
+const MESSAGE_INVALID_EMAIL = 'Must be email';
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required(MESSAGE_REQUIRED_FIELD),
