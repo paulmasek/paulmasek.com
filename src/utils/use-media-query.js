@@ -2,7 +2,7 @@ import { useState, useLayoutEffect } from 'react';
 
 function useMediaQuery(mediaQuery) {
   const [matches, setMatches] = useState(() => {
-    if (window) {
+    if (typeof window !== 'undefined') {
       return window.matchMedia(mediaQuery).matches;
     }
 
@@ -10,21 +10,12 @@ function useMediaQuery(mediaQuery) {
   });
 
   useLayoutEffect(() => {
-    let mediaQueryList;
-    let listener;
-
-    if (window) {
-      mediaQueryList = window.matchMedia(mediaQuery);
-      listener = e => setMatches(e.matches);
+    if (typeof window !== 'undefined') {
+      const mediaQueryList = window.matchMedia(mediaQuery);
+      const listener = e => setMatches(e.matches);
       mediaQueryList.addListener(listener);
+      return () => mediaQueryList.removeListener(listener);
     }
-    return () => {
-      if (window) {
-        return mediaQueryList.removeListener(listener);
-      }
-
-      return false;
-    };
   }, [mediaQuery]);
 
   return matches;

@@ -7,7 +7,7 @@ import SocialMedia from './social-media';
 
 const Header = ({ navigationItems, socialMediaLinks }) => {
   const [primaryNavigationOpen, setNavigationState] = useState(false);
-  const isMobile = window && useMediaQuery('(max-width: 600px)');
+  const isMobile = useMediaQuery('(max-width: 600px)');
 
   return (
     <>
