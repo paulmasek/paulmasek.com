@@ -62,10 +62,16 @@
       color: rgba($white, .4);
       content: '/';
       font-size: rem(14px);
+      margin-left: rem(4px);
+      margin-right: rem(4px);
 
       @include media('>tablet') {
         font-size: rem(16px);
       }
+    }
+
+    &:first-of-type:after {
+      margin-left: 0;
     }
 
     &:last-of-type:after {

@@ -51,6 +51,20 @@
 
     &:last-of-type {
       margin-bottom: 0;
+
+      .primary-navigation__link {
+        @include media('>big-phone') {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &:first-of-type {
+      .primary-navigation__link {
+        @include media('>big-phone') {
+          padding-left: 0;
+        }
+      }
     }
 
     @include media('<=big-phone') {
@@ -101,8 +115,8 @@
     @include media('>big-phone') {
       @include bold;
       display: inline-block;
-      padding-left: rem(6px);
-      padding-right: rem(4px);
+      padding-left: rem(8px);
+      padding-right: rem(8px);
       vertical-align: top;
     }
 
