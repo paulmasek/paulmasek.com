@@ -5,3 +5,18 @@
  */
 
 // You can delete this file if you're not using it
+
+const scrollToElement = require('scroll-to-element');
+
+const checkHash = ({ hash }) => {
+  if (hash) {
+    scrollToElement(hash, {
+      offset: 0,
+      duration: 500,
+    });
+  }
+};
+
+exports.onRouteUpdate = ({ location }) => {
+  checkHash(location);
+};
