@@ -13,7 +13,6 @@ import Contact from '../components/contact';
 
 const IndexPage = ({ data }) => {
   const [headerActive, setHeaderActive] = useState(false);
-  const [setClassActive] = useUpdateBodyClass('header-active', headerActive);
 
   return (
     <Layout headerActive={headerActive}>
@@ -25,7 +24,6 @@ const IndexPage = ({ data }) => {
         navigationItems={data.global.navigation}
         socialMediaLinks={data.global.social_media_full}
         setHeaderActive={setHeaderActive}
-        setClassActive={setClassActive}
         id="top"
       />
       <About

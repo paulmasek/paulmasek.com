@@ -9,11 +9,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import useUpdateBodyClass from '../utils/use-update-body-class';
 import Header from './header';
 import Footer from './footer';
 import '../styles/paul-masek.scss';
 
 const Layout = ({ children, headerActive }) => {
+  useUpdateBodyClass('header-active', headerActive);
+
   const data = useStaticQuery(graphql`
     query globalSiteData {
       site {
@@ -37,25 +40,27 @@ const Layout = ({ children, headerActive }) => {
     }
   `);
 
+  const client = !!document;
+  const htmlClass = client
+    ? 'js no-js-site-animations'
+    : 'no-js no-js-site-animations';
+
   return (
     <>
       <Helmet>
-        <meta charset="utf-8" />
-        <meta name="robots" content="noodp" />
-        <link rel="canonical" href="{{ URL }}" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <html className={htmlClass} />
         <link
           href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
           rel="stylesheet"
         />
       </Helmet>
-      <div className="no-js-site-animations">
+      <div className="wrapper">
         <Header
           navigationItems={data.global.navigation}
           socialMediaLinks={data.global.social_media}
           active={headerActive}
         />
-        <main>{children}</main>
+        <main className="wrapper__main">{children}</main>
         <Footer body={data.footer.body} />
       </div>
     </>
