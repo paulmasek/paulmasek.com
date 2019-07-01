@@ -7,7 +7,7 @@ import SocialMedia from './social-media';
 import SmoothScrollLink from './smooth-scroll-link';
 
 const Header = ({ navigationItems, socialMediaLinks }) => {
-  const [primaryNavigationOpen, setNavigationState] = useState(false);
+  const [primaryNavigationOpen, setNavigationOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width: 600px)');
 
   return (
@@ -54,7 +54,7 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
               }
             )}
             type="button"
-            onClick={() => setNavigationState(!primaryNavigationOpen)}
+            onClick={() => setNavigationOpen(!primaryNavigationOpen)}
           >
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
@@ -67,7 +67,7 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
         active={primaryNavigationOpen}
         linkClick={() => {
           if (isMobile) {
-            setNavigationState(false);
+            setNavigationOpen(false);
           }
         }}
       />
