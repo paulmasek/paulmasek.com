@@ -1,88 +1,168 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
+import getAbsoluteUrl from '../utils/get-absolute-url';
+import getFixedGraphQlImage from '../utils/get-fixed-graphql-image';
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+function getSocialImage(imageObj, defaultImageObj) {
+  const imageSrc = getFixedGraphQlImage(imageObj);
+  const defaultImageSrc = getFixedGraphQlImage(defaultImageObj);
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  if (imageSrc) {
+    return imageSrc;
+  }
+
+  if (defaultImageSrc) {
+    return defaultImageSrc;
+  }
+
+  return null;
+}
+
+function Seo({ lang, meta, description, title, ogImage, twitterImage }) {
+  const data = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
-            description
-            author
+          }
+        }
+        globalJson {
+          metaName
+          metaDescription
+          ogDescription
+          ogImage {
+            childImageSharp {
+              resize(width: 1200, height: 630) {
+                src
+              }
+            }
+          }
+          twitterHandle
+          twitterImage {
+            childImageSharp {
+              resize(width: 1000, height: 1000) {
+                src
+              }
+            }
           }
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription =
+    description && description.length > 0
+      ? description
+      : data.globalJson.metaDescription;
+
+  const openGraphImageSrc = getAbsoluteUrl(
+    getSocialImage(ogImage, data.globalJson.ogImage)
+  );
+  const twitterImageSrc = getAbsoluteUrl(
+    getSocialImage(twitterImage, data.globalJson.twitterImage)
+  );
+
+  const processedTitle = title
+    ? `${title} | ${data.globalJson.metaName}`
+    : data.site.siteMetadata.title;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      defaultTitle={data.site.siteMetadata.title}
+      title={processedTitle}
       meta={[
         {
-          name: `description`,
+          name: 'description',
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: title,
+          name: 'og:locale',
+          content: 'en_gb',
         },
         {
-          property: `og:description`,
+          name: 'og:site_name',
+          content: data.globalJson.metaName,
+        },
+        {
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          property: 'og:title',
+          content: processedTitle,
+        },
+        {
+          property: 'og:description',
+          content: data.globalJson.ogDescription,
+        },
+        {
+          property: 'og:image',
+          content: openGraphImageSrc,
+        },
+        {
+          property: 'og:image:width',
+          content: '1200',
+        },
+        {
+          property: 'og:image:height',
+          content: '630',
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:site',
+          content: data.globalJson.twitterHandle,
+        },
+        {
+          name: 'twitter:title',
+          content: processedTitle,
+        },
+        {
+          name: 'twitter:creator',
+          content: data.globalJson.twitterHandle,
+        },
+        {
+          name: 'twitter:description',
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
+          name: 'twitter:image',
+          content: twitterImageSrc,
         },
       ].concat(meta)}
     />
-  )
+  );
 }
 
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
+Seo.propTypes = {
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
+  meta: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      content: PropTypes.string,
+    })
+  ),
+  description: PropTypes.string,
+  title: PropTypes.string,
+  ogImage: PropTypes.shape({}),
+  twitterImage: PropTypes.shape({}),
+};
 
-export default SEO
+Seo.defaultProps = {
+  lang: 'en-GB',
+  meta: [],
+  description: '',
+  title: '',
+  ogImage: null,
+  twitterImage: null,
+};
+
+export default Seo;
