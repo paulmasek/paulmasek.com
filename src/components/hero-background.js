@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Img from 'gatsby-image';
-import getGraphQlImage from '../utils/get-graphql-image';
+import getFluidGraphQlImage from '../utils/get-fluid-graphql-image';
 
 const HeroBackground = ({ className, modifier, alt, imageObj }) => {
   const modifierClass = !!modifier.length && `hero-background--${modifier}`;
-  const imageSizes = getGraphQlImage(imageObj);
+  const imageSizes = getFluidGraphQlImage(imageObj);
 
   return (
     <div className={classNames('hero-background', className, modifierClass)}>

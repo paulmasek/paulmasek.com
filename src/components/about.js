@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import getGraphQlImage from '../utils/get-graphql-image';
+import getFluidGraphQlImage from '../utils/get-fluid-graphql-image';
 import SectionAnchor from './section-anchor';
 
 const About = ({ body, id, profilePicImage, profilePicAlt }) => {
-  const imageSizes = getGraphQlImage(profilePicImage);
+  const imageSizes = getFluidGraphQlImage(profilePicImage);
 
   return (
     <section className="section about js-about-content">

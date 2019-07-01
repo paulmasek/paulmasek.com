@@ -1,4 +1,4 @@
-function getGraphQlImage(imageObj) {
+function getFluidGraphQlImage(imageObj) {
   if (imageObj && imageObj.childImageSharp) {
     return imageObj.childImageSharp.sizes;
   }
@@ -6,4 +6,4 @@ function getGraphQlImage(imageObj) {
   return null;
 }
 
-export default getGraphQlImage;
+export default getFluidGraphQlImage;
