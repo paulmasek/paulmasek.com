@@ -46,6 +46,12 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        whitelist: ['URL'],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.ANALYTICS_ID,
