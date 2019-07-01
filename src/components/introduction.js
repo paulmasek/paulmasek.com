@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import { Waypoint } from 'react-waypoint';
+import classNames from 'classnames';
 
 import SocialMedia from './social-media';
 import HeroBackground from './hero-background';
@@ -15,17 +16,23 @@ const Introduction = ({
   navigationItems,
   socialMediaLinks,
   setHeaderActive,
-  setClassActive,
 }) => {
+  const [imageLoaded, setBackgroundLoaded] = useState(false);
+
   return (
-    <section className="introduction js-introduction" id={id}>
+    <section
+      className={classNames('introduction js-introduction', {
+        'introduction--background-loaded': imageLoaded,
+      })}
+      id={id}
+    >
       <div className="container introduction__container">
         <Waypoint
+          scrollableAncestor={window}
           onEnter={({ previousPosition }) => {
             const direction = previousPosition === 'below' ? 'down' : 'up';
 
             if (direction === 'up') {
-              setClassActive(false);
               setHeaderActive(false);
             }
           }}
@@ -33,7 +40,6 @@ const Introduction = ({
             const direction = currentPosition === 'above' ? 'down' : 'up';
 
             if (direction === 'down') {
-              setClassActive(true);
               setHeaderActive(true);
             }
           }}
@@ -74,6 +80,7 @@ const Introduction = ({
         modifier="introduction"
         alt={background.alt}
         imageObj={background.src}
+        onLoaded={() => setBackgroundLoaded(true)}
       />
     </section>
   );
@@ -85,7 +92,6 @@ Introduction.propTypes = {
   tagline: PropTypes.string.isRequired,
   navigationItems: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   socialMediaLinks: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-  setClassActive: PropTypes.func.isRequired,
   setHeaderActive: PropTypes.func.isRequired,
   id: PropTypes.string,
 };
