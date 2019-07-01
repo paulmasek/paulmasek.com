@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout headerActive={headerActive}>
-      <SEO title="Home" />
+      <SEO />
       <Introduction
         background={data.introduction.background}
         name={data.introduction.name}
