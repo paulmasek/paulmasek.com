@@ -5,6 +5,7 @@ import uniqid from 'uniqid';
 import { Link } from 'gatsby';
 
 import useUpdateBodyClass from '../utils/use-update-body-class';
+import SmoothScrollLink from './smooth-scroll-link';
 
 const Navigation = ({ items, active, linkClick }) => {
   useUpdateBodyClass('primary-navigation-active', active);
@@ -19,15 +20,17 @@ const Navigation = ({ items, active, linkClick }) => {
         <ul className="primary-navigation__list">
           {items.map(({ text, link }) => (
             <li className="primary-navigation__item" key={uniqid()}>
-              <Link
+              <SmoothScrollLink
                 className="primary-navigation__link"
                 data-event-name="Header primary navigation click"
                 data-event-value={text}
                 to={link}
-                onClick={linkClick}
+                onClick={e => {
+                  linkClick(e, link);
+                }}
               >
                 {text}
-              </Link>
+              </SmoothScrollLink>
             </li>
           ))}
         </ul>

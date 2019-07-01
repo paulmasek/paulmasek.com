@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import useMediaQuery from '../utils/use-media-query';
 import Navigation from './navigation';
 import SocialMedia from './social-media';
+import SmoothScrollLink from './smooth-scroll-link';
 
 const Header = ({ navigationItems, socialMediaLinks }) => {
   const [primaryNavigationOpen, setNavigationState] = useState(false);
@@ -17,9 +18,9 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
         })}
       >
         <div className="main-header__inner container">
-          <a
+          <SmoothScrollLink
             className="main-header__branding branding branding--minimal"
-            href="#top"
+            to="#top"
             data-event-name="Content link click"
             data-event-value="Branding click"
           >
@@ -39,7 +40,7 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
                 asek
               </span>
             </span>
-          </a>
+          </SmoothScrollLink>
           <SocialMedia
             className="main-header__social-media social-media--header"
             links={socialMediaLinks}

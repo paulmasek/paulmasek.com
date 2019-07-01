@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import { Waypoint } from 'react-waypoint';
-import { Link } from 'gatsby';
 
 import SocialMedia from './social-media';
 import HeroBackground from './hero-background';
+import SmoothScrollLink from './smooth-scroll-link';
 
 const Introduction = ({
   id,
@@ -54,14 +54,14 @@ const Introduction = ({
               <ul className="introduction__navigation">
                 {navigationItems.map(({ text, link }) => (
                   <li className="introduction__navigation-item" key={uniqid()}>
-                    <Link
+                    <SmoothScrollLink
                       className="introduction__navigation-link"
                       to={link}
                       data-event-name="Introduction navigation click"
                       data-event-value={text}
                     >
                       {text}
-                    </Link>
+                    </SmoothScrollLink>
                   </li>
                 ))}
               </ul>

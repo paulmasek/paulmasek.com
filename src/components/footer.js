@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactStringReplace from 'react-string-replace';
+import SmoothScrollLink from './smooth-scroll-link';
 
 const Footer = ({ body, topId, topText, topEventName, topEventValue }) => (
   <footer className="main-footer">
@@ -14,14 +15,14 @@ const Footer = ({ body, topId, topText, topEventName, topEventValue }) => (
             ).join(''),
           }}
         />
-        <a
+        <SmoothScrollLink
           className="main-footer__back-to-top"
-          href={`#${topId}`}
+          to={`#${topId}`}
           data-event-name={topEventName}
           data-event-value={topEventValue}
         >
           {topText}
-        </a>
+        </SmoothScrollLink>
       </div>
     </div>
   </footer>
