@@ -40,7 +40,7 @@ const Layout = ({ children, headerActive }) => {
     }
   `);
 
-  const client = !!document;
+  const client = typeof document !== 'undefined';
   const htmlClass = client
     ? 'js no-js-site-animations'
     : 'no-js no-js-site-animations';
