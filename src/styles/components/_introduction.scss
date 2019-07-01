@@ -2,11 +2,16 @@
   @include bold;
   color: $white;
   display: flex;
+  margin-top: rem(-$header-height-mobile);
   min-height: 100vh;
   overflow: hidden;
   position: relative;
   text-align: center;
   z-index: 1;
+
+  @include media('>big-phone') {
+    margin-top: rem(-$header-height-desktop);
+  }
 
   &__container {
     display: flex;
@@ -70,10 +75,6 @@
       }
     }
 
-    &:first-of-type:after {
-      margin-left: 0;
-    }
-
     &:last-of-type:after {
       display: none;
     }
@@ -128,10 +129,5 @@
     .introduction__content {
       animation-name: fade-in-up;
     }
-  }
-
-  .introduction--initial-animation-complete .introduction__content {
-    animation-name: none;
-    opacity: 1;
   }
 }
