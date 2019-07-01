@@ -20,7 +20,7 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
         <div className="main-header__inner container">
           <SmoothScrollLink
             className="main-header__branding branding branding--minimal"
-            to="#top"
+            to="/#top"
             data-event-name="Content link click"
             data-event-value="Branding click"
           >
