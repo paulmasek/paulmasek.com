@@ -4,8 +4,6 @@ import scrollToElement from 'scroll-to-element';
 import { Link } from 'gatsby';
 
 const handleClick = (e, onClick, to, duration) => {
-  e.preventDefault();
-
   if (onClick) {
     onClick(e, to);
   }
@@ -15,6 +13,8 @@ const handleClick = (e, onClick, to, duration) => {
     const anchor = to.substring(to.indexOf('#'));
 
     if (url.pathname === window.location.pathname) {
+      e.preventDefault();
+
       scrollToElement(anchor, {
         offset: 0,
         duration,
@@ -24,10 +24,9 @@ const handleClick = (e, onClick, to, duration) => {
 };
 
 const SmoothScrollLink = ({ to, onClick, duration, children, ...props }) => {
-  const external = to.indexOf('://') > -1;
   const pageLink = to.indexOf('/') === -1;
 
-  if (pageLink && !external) {
+  if (pageLink) {
     return (
       <a
         href={to}
@@ -41,32 +40,16 @@ const SmoothScrollLink = ({ to, onClick, duration, children, ...props }) => {
     );
   }
 
-  if (!external) {
-    return (
-      <Link
-        to={to}
-        onClick={e => {
-          handleClick(e, onClick, to);
-        }}
-        {...props}
-      >
-        {children}
-      </Link>
-    );
-  }
-
   return (
-    <a
-      href={to}
+    <Link
+      to={to}
       onClick={e => {
-        if (onClick) {
-          onClick(e);
-        }
+        handleClick(e, onClick, to);
       }}
       {...props}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 
