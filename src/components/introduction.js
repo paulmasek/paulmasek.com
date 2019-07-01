@@ -28,7 +28,7 @@ const Introduction = ({
     >
       <div className="container introduction__container">
         <Waypoint
-          scrollableAncestor={window}
+          scrollableAncestor="window"
           onEnter={({ previousPosition }) => {
             const direction = previousPosition === 'below' ? 'down' : 'up';
 
