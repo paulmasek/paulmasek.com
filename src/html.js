@@ -7,7 +7,7 @@ export default function HTML(props) {
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(H){H.className=H.className.replace(/\\bno-js\\b/,'js');console.log('here');console.log(H);})(document.documentElement)`,
+            __html: `(function(H){H.className=H.className.replace(/\\bno-js\\b/,'js')})(document.documentElement)`,
           }}
         ></script>
         <meta charSet="utf-8" />
