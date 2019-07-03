@@ -40,15 +40,18 @@ const Layout = ({ children, headerActive }) => {
     }
   `);
 
-  const client = typeof document !== 'undefined';
-  const htmlClass = client
-    ? 'js no-js-site-animations'
-    : 'no-js no-js-site-animations';
+  // const client = typeof document !== 'undefined';
+  // const htmlClass = client
+  //   ? 'js no-js-site-animations'
+  //   : 'no-js no-js-site-animations';
+
+  // if (client) {
+  //   console.log('called in layout');
+  // }
 
   return (
     <>
       <Helmet>
-        <html className={htmlClass} />
         <link
           href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
           rel="stylesheet"
