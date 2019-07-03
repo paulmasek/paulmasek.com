@@ -1,0 +1,17 @@
+.button {
+  @include bold;
+  appearance: none;
+  background-color: $orange;
+  border: none;
+  border-radius: rem(5px);
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  padding: rem(10px) rem(14px);
+  vertical-align: top;
+
+  &:hover {
+    background-color: darken($orange, 5);
+  }
+}

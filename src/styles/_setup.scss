@@ -1,0 +1,60 @@
+html {
+  @include body-font;
+}
+
+a {
+  color: $orange;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+p,
+ol,
+ul,
+form,
+img,
+.form-row,
+.quote,
+.quote__attribution,
+.main-footer__content {
+  margin-bottom: 1.3em;
+}
+
+.no-break {
+  margin-bottom: 0;
+}
+
+.heading-two {
+  @include h2;
+}
+
+.heading-three {
+  @include h3;
+}
+
+.heading-three-alt {
+  @include h3-alt;
+}
+
+.heading-four {
+  @include h4;
+}
+
+.highlighted {
+  @include highlighted;
+}
+
+@include media('<=big-phone') {
+  .primary-navigation-active {
+    overflow: hidden;
+  }
+}

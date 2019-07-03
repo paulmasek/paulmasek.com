@@ -1,0 +1,42 @@
+$base-size: 16px;
+$black: #000;
+$white: #fff;
+$off-black: #0b0b0b;
+$orange: #ff670c;
+$border-grey: rgba($black, .1);
+$border-orange: rgba($orange, .4);
+$text-image-shadow: rgba(0, 0, 0, .2);
+$error-red: #f00;
+
+$footer-background: #f8f8f8;
+$footer-text: #080809;
+
+$gutter: 24px;
+$gutterHalf: $gutter / 2;
+
+$double-lh: 36px;
+$double-lh-header: 34px;
+$single-lh: 14px;
+$grid-columns: 12;
+
+$line-border: 20px;
+$line-border-header: 10px;
+$small-vertical-separator-height: 40px;
+$medium-vertical-separator-height: 80px;
+$big-vertical-separator-height: 100px;
+$header-height-mobile: 50px;
+$header-height-desktop: 60px;
+
+$hamburger-layer-color: $orange;
+$hamburger-hover-opacity: 1;
+$hamburger-layer-width: 24px;
+$hamburger-layer-height: 2px;
+
+$breakpoints: (
+  'phone': 320px,
+  'big-phone': 600px,
+  'tablet': 768px,
+  'desktop': 1024px
+);
+
+$perm-desktop-max-width: 326px;

@@ -1,0 +1,52 @@
+{
+  "metaName": "Paul Masek",
+  "metaTitle": "Paul Masek - Contract Front-End Web Developer London, UK",
+  "metaDescription": "I’m a London-based contract front-end web developer with over 10 years’ commercial experience working on high quality website & webapp builds.",
+  "ogDescription": "Contract front-end web developer with over 10 years’ commercial experience.",
+  "canonical": "https://paulmasek.com/",
+  "social-media": [
+    {
+      "name": "twitter",
+      "url": "https://www.twitter.com/paulmasek"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://uk.linkedin.com/pub/paul-masek/26/a48/7b3"
+    }
+  ],
+  "social-media-full": [
+    {
+      "name": "twitter",
+      "url": "https://www.twitter.com/paulmasek"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://uk.linkedin.com/pub/paul-masek/26/a48/7b3"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/paulmasek"
+    }
+  ],
+  "navigation": [
+    {
+      "text": "About",
+      "link": "/#about"
+    },
+    {
+      "text": "Skills",
+      "link": "/#skills"
+    },
+    {
+      "text": "Work",
+      "link": "/#work"
+    },
+    {
+      "text": "Contact",
+      "link": "/#contact"
+    }
+  ],
+  "ogImage": "../../images/content/og-image.jpg",
+  "twitterImage": "../../images/content/twitter-image.jpg",
+  "twitterHandle": "@paulmasek"
+}

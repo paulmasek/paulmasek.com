@@ -1,0 +1,424 @@
+{
+  "introduction": {
+    "title": "Work",
+    "body": "<p class=\"no-break\">My work history, the experience I've gained and a few of my testimonials.</p><p>Need my CV? <a href=\"downloads/paul-masek-cv.pdf\" download data-event-name=\"Content link click\" data-event-value=\"Download CV\">Download it here.</a></p>",
+    "background": {
+      "src": "../../images/content/hero-work.jpg",
+      "alt": "Working in a hostel kitchen"
+    }
+  },
+  "timeline": {
+    "freelancing": {
+      "startDate": "Early 2014",
+      "startTitle": "Started Freelancing! 🎉",
+      "contracting": [
+        {
+          "yearStarting": "2019",
+          "contracts": [
+            {
+              "slug": "liminal-pages",
+              "company": "Liminal Pages",
+              "url": "https://liminalpages.com",
+              "logo": {
+                "src": "../../images/content/liminal-pages-logo.svg",
+                "alt": ""
+              },
+              "logoTitle": true,
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Developed a Gatsby-powered static website with content sourced by WordPress, hosted on netlify. I built flexible React and GraphQL-driven components and templates, with netlify forms and MailChimp integrated as required.</p>"
+                  }
+                },
+                {
+                  "module": "timelineQuote",
+                  "data": {
+                    "name": "Sophie Playle",
+                    "role": "Director",
+                    "profilePic": {
+                      "src": "../../images/content/sophie-playle.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>Paul went above and beyond to build my website using the latest technologies and with the utmost attention to detail, resulting in a super-fast, responsive and highly functional site.</p><p>He provided me with periodic reviews to make sure the design was being interpreted to my satisfaction, and guidance on transferring my design to the web.</p><p>I was very impressed with his dedication to the details of the project and am incredibly grateful for all his hard work.</p>"
+                  }
+                }
+              ]
+            },
+            {
+              "slug": "matter-of-form",
+              "company": "Matter Of Form",
+              "url": "https://matterofform.com",
+              "logo": {
+                "src": "../../images/content/matter-of-form-logo.png",
+                "alt": ""
+              },
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Worked with a team of developers to build a large Vue.js with Nuxt.js, server-side rendered website, powered by a Headless CMS, Kentico Cloud.</p><p>My main task was working on the data layer on the front-end and back-end, providing content from the CMS and other APIs. I also developed the structure and the dynamic functionality of components. I took responsibility for any complex JS that arose throughout the project.</p><p>I was responsible for the initial setup of the project, reviewing any JS pull requests across the team, and helping mentor the junior developers.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "yearStarting": "2018",
+          "contracts": [
+            {
+              "slug": "design-culture",
+              "company": "Design Culture",
+              "logo": {
+                "src": "../../images/content/design-culture-logo.svg",
+                "alt": ""
+              },
+              "url": "https://www.design-culture.co.uk/",
+              "logoTitle": true,
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Led the development of the front-end for a corporate website that included a React-powered event and news archive application. This allowed the user to explore a collection of content using various metrics, with a library of flexible UI components.</p>Worked with their other developers to help provide a grounding in React and to effectively handover the application for future development.</p>"
+                  }
+                }
+              ]
+            },
+            {
+              "slug": "matter-of-form",
+              "company": "Matter Of Form",
+              "url": "https://matterofform.com",
+              "logo": {
+                "src": "../../images/content/matter-of-form-logo.png",
+                "alt": ""
+              },
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Led the development of the front-end of a large, highly modular luxury hotel website.</p><p>Vue.js and Vuex were used as part of a Vanilla JS and BEM component library, to provide interactive functionality.</p><p>I was also responsible for front-end code reviews and helping to develop internal processes and internal tools, like the agency's boilerplate.</p>"
+                  }
+                },
+                {
+                  "module": "timelineQuote",
+                  "data": {
+                    "name": "Hamzah Ghafoor",
+                    "role": "Creative Technology lead",
+                    "profilePic": {
+                      "src": "../../images/content/hamzah-ghafoor.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>It was a privilege working with Paul over the last 6 months. He is a very cool head under pressure and extremely knowledgeable in his field. His understanding of Vanilla JavaScript is second to none and this was proven time and again over the duration.</p><p>Paul helped me re-write the agency's bespoke boilerplate and taught me a lot regarding the latest standards for Javascript and the best ways to apply them. As well as this, he was tasked with leading a Front-end build that had to be re-written into Vue components - something he had not used before. This did not handicap him at all, he managed to pickup Vue and apply it effectively to a build with a tight deadline, on time.</p><p>His thorough understanding of UI and UX as well as his ability to impart that knowledge will make him a valuable asset to any company he goes to. Paul was a great guy to work with and generally hang out with. I look forward to working with him again in the future. His tea making skills could be improved though.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "yearStarting": "2017",
+          "contracts": [
+            {
+              "slug": "zone",
+              "company": "Zone",
+              "logo": {
+                "src": "../../images/content/zone-logo.svg",
+                "alt": ""
+              },
+              "url": "https://www.zonedigital.com/",
+              "logoTitle": true,
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Worked closely alongside their lead front-end developer to build reusable components for a large corporate site.</p><p>I then led the development of a Vanilla ES6 JS and Handlebars application within the site. This involved pulling data from an internal API and integrating with Google Maps to build a location search interface.</p><p>Gitflow was used throughout the project. In addition I was involved with regular<br/> front-end code reviews.</p>"
+                  }
+                },
+                {
+                  "module": "timelineQuote",
+                  "data": {
+                    "name": "Mike Simmonds",
+                    "role": "Lead Front-End Developer",
+                    "profilePic": {
+                      "src": "../../images/content/mike-simmonds.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>I worked with Paul on two large platform rebuilds featuring numerous technologies and methodologies. He took both projects in his stride, with ease.</p><p>Paul was always a key part of the team, he contributed to projects in ways you expect a permanent team member to. He was easy to manage, always willing, professional and reliable. He was greatly missed when his contract ended! I would recommend Paul without hesitation.</p>"
+                  }
+                }
+              ]
+            },
+            {
+              "slug": "design-culture",
+              "company": "Design Culture",
+              "logo": {
+                "src": "../../images/content/design-culture-logo.svg",
+                "alt": ""
+              },
+              "url": "https://www.design-culture.co.uk/",
+              "logoTitle": true,
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Led the development on the front-end of a large website build. This involved building the main site structure alongside a series of flexible and reusable components.</p><p>These were built with Twig and BEM then progressively enhanced with Vanilla ES6 JS.</p><p>I worked closely aside their design and management team to ensure the components could accommodate a large number of scenarios to reduce future development time.</p>"
+                  }
+                },
+                {
+                  "module": "timelineQuote",
+                  "data": {
+                    "name": "Tamsin Radford",
+                    "role": "Project Manager",
+                    "profilePic": {
+                      "src": "../../images/content/tamsin-radford.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>Paul handled the front end on one of the larger website builds in the studio and it was a real pleasure working with him.</p><p>Easy to talk to and totally unflappable, he accelerated the project when internal resources were stretched. An added bonus were his great tips along the way and software recommendations that I've applied to web projects since.</p>"
+                  }
+                }
+              ]
+            },
+            {
+              "slug": "ry",
+              "company": "Radley Yeldar",
+              "logo": {
+                "src": "../../images/content/radley-yeldar-logo.svg",
+                "alt": ""
+              },
+              "url": "http://ry.com/",
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Worked on a JS and animation-heavy single page site. ES6 was used throughout alongside Handlebars.</p><p>Also developed a large static build. I used Handlebars alongside BEM to create a number of reusable components to be integrated into Umbraco<br/> by the back-end team.</p>"
+                  }
+                },
+                {
+                  "module": "timelineQuote",
+                  "data": {
+                    "name": "Stacey Fenton",
+                    "role": "Software Engineer",
+                    "profilePic": {
+                      "src": "../../images/content/stacey-fenton.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>Paul is an excellent front-end developer. Whenever we needed to bring in freelancers to help cover extra work he would always be our first choice.</p><p>We'd often assign him to projects which involved complex JavaScript and animations, and be confident that he would deliver the work on time and to a high standard. He was well-liked within the team, by both developers and project managers. I can't recommend working with Paul enough, and I hope I get the opportunity to work with him again in the future.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "yearStarting": "2016",
+          "contracts": [
+            {
+              "slug": "ry",
+              "company": "Radley Yeldar",
+              "logo": {
+                "src": "../../images/content/radley-yeldar-logo.svg",
+                "alt": ""
+              },
+              "url": "http://ry.com/",
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Developed a series of builds for large international clients. The contract was initially for one month for a single project, but I was asked on multiple occasions to extend and worked on four projects over three months.</p><p>The builds often included complex elements such as advanced Parallax and JS heavy interfaces. Whilst following the company's internal build processes, I was also able to gain further experience with Grunt, BEM and Susy.</p>"
+                  }
+                },
+                {
+                  "module": "timelineQuote",
+                  "data": {
+                    "name": "Megan Willis",
+                    "role": "Project Manager",
+                    "profilePic": {
+                      "src": "../../images/content/megan-willis.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>Paul is an excellent front end developer, and I would work with him again without hesitation.</p><p>A true professional, Paul is experienced, proactive, and consistently delivers quality on time.</p><p>I worked with Paul on a showcase piece for a new, major client, and he was crucial to the success of the project.</p>"
+                  }
+                },
+                {
+                  "module": "timelineQuote",
+                  "data": {
+                    "name": "Chris Stanley",
+                    "role": "Digital and Technical Operations Manager",
+                    "profilePic": {
+                      "src": "../../images/content/chris-stanley.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>Paul is a very competent developer, we initially secured his services for a few weeks but after seeing his work ethic, quality of work and his team work we extended many times. The whole team loved working with Paul and I had many great comments about him, the main project that Paul worked on was loved by the client and we have used it as an example of standout communications.</p><p>I personally didn't want to lose Paul and once we have more work that our internal team can't service I will be calling on Paul and hope he is free, which is doubtful given his abilities.</p><p>Outside of his work he is a good guy to have a non work chat with and is very personable.</p>"
+                  }
+                }
+              ]
+            },
+            {
+              "slug": "zone",
+              "company": "Zone",
+              "logo": {
+                "src": "../../images/content/zone-logo.svg",
+                "alt": ""
+              },
+              "url": "https://www.zonedigital.com/",
+              "logoTitle": true,
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>I worked on several large corporate websites and a webapp, adding additional responsive templates and functionality.</p><p>With these projects I gained exposure to ASP templates, Gitflow, ES6 and further experience building on top of large codebases with multiple team members. This involved writing modular SASS with the BEM methodology. Progressive enhancement was also very important within this role.</p><p>I was initially contracted for one month then was extended for another month.</p>"
+                  }
+                }
+              ]
+            },
+            {
+              "slug": "digirati",
+              "company": "Digirati",
+              "logo": {
+                "src": "../../images/content/digirati-logo.svg",
+                "alt": ""
+              },
+              "url": "http://digirati.com/",
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Worked on an internal project for Digirati, building a series of mobile-first static templates and a style guide powered by Handlebars & Assemble. </p><p>With this contract I gained exposure to Atomic Design and worked on a commercial project without jQuery, with minimal use of other JS libraries.</p><p>Accessibility and progressive enhancement were really important in this contract, with the use of ARIA within HTML and the following of web accessibility guidelines.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "remote": {
+        "period": "2014-2015",
+        "title": "Remote freelancing",
+        "modules": [
+          {
+            "module": "timelineContent",
+            "noBorder": true,
+            "data": {
+              "body": "<p>In 2014 & 2015 I worked remote for various small creative agencies and startups. This mostly involved building, from start to finish, medium-sized responsive websites powered by WordPress. For these, I would create custom themes from scratch with bespoke HTML/CSS/JS. Working as an external team member, it was crucial that the builds were as close to pixel-perfect as possible to the designs supplied.</p>"
+            }
+          },
+          {
+            "module": "timelineCompanyGrid",
+            "data": {
+              "companies": [
+                {
+                  "slug": "studio-aura",
+                  "name": "StudioAura",
+                  "logo": {
+                    "src": "../../images/content/studio-aura-logo.svg",
+                    "alt": ""
+                  },
+                  "url": "http://www.studioaura.com/"
+                },
+                {
+                  "slug": "rubber-cheese",
+                  "name": "RubberCheese",
+                  "logo": {
+                    "src": "../../images/content/rubber-cheese-logo.jpg",
+                    "alt": ""
+                  },
+                  "url": "http://www.rubbercheese.com/"
+                },
+                {
+                  "slug": "spork",
+                  "name": "Spork Digital",
+                  "logo": {
+                    "src": "../../images/content/spork-logo.svg",
+                    "alt": ""
+                  },
+                  "url": "http://spork.digital"
+                },
+                {
+                  "slug": "borne",
+                  "name": "borne™",
+                  "logo": {
+                    "src": "../../images/content/borne-logo.svg",
+                    "alt": ""
+                  },
+                  "url": "https://www.weareborne.com/"
+                }
+              ]
+            }
+          },
+          {
+            "module": "timelineQuote",
+            "data": {
+              "name": "Kelly Molson",
+              "role": "Founder & Managing Director",
+              "company": "Rubber Cheese",
+              "profilePic": {
+                "src": "../../images/content/kelly-molson.jpg",
+                "alt": ""
+              },
+              "body": "<p>Paul is extremely hard working and has produced great results for us on a number of development projects. He works efficiently and quickly, and communication (which is key for us) has always been clear and concise.</p><p>He's easy to get on with and a really good guy. His understanding of the platforms he works on is exceptional.</p>"
+            }
+          }
+        ]
+      }
+    },
+    "perm": [
+      {
+        "period": "May 2012 - Apr 2014",
+        "company": "Shout! Creative",
+        "logo": {
+          "src": "../../images/content/shout-creative-logo.svg",
+          "alt": ""
+        },
+        "url": "http://shoutcreative.com/",
+        "role": "Lead front-end developer",
+        "introduction": "<p>Converted designs into content-managed, WordPress-powered websites for a small Norwich design agency.</p>",
+        "responsibilities": [
+          {
+            "body": "Developed website specifications with input into website structure, functionality and UX"
+          },
+          {
+            "body": "Had input into project management, including timelines and workflow"
+          },
+          {
+            "body": "Converted desktop designs into responsive websites in browser"
+          },
+          {
+            "body": "Evolved desktop designs in browser when required"
+          },
+          {
+            "body": "Liaised with freelancers working on outsourced projects"
+          }
+        ]
+      },
+      {
+        "period": "Nov 2008 – Feb 2012",
+        "company": "Solid State Group",
+        "logo": {
+          "src": "../../images/content/solid-state-group-logo.png",
+          "alt": ""
+        },
+        "url": "https://www.solidstategroup.com/",
+        "role": "Front-end developer",
+        "introduction": "<p>Worked on websites & webapps in medium-sized teams. Clients varied from high-profile internationals to startups.</p>",
+        "responsibilities": [
+          {
+            "body": "Carried out CMS integration with the company's enterprise level Java-based system, Cookie Jar"
+          },
+          {
+            "body": "Fully designed websites and web applications"
+          },
+          {
+            "body": "Trained clients in the use of their content-managed websites"
+          },
+          {
+            "body": "After promotion from Junior developer, led the front-end on several projects"
+          },
+          {
+            "body": "Helped mentor junior developer, including code reviews"
+          }
+        ]
+      }
+    ]
+  }
+}

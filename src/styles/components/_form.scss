@@ -1,0 +1,93 @@
+.form {
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: opacity .3s ease-in-out;
+  width: 100%;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__success {
+    width: 50%;
+  }
+
+  &__error {
+    margin-bottom: rem(28px);
+    padding-top: rem(22px);
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__body {
+    width: 100%;
+  }
+
+  &--is-submitting {
+    opacity: .4;
+
+    &:after {
+      z-index: 1;
+    }
+  }
+
+  &__honey {
+    @include v-hidden;
+  }
+
+  &--submitted {
+    .form__inner {
+      display: flex;
+      width: 200%;
+    }
+
+    .form__body {
+      opacity: 0;
+      width: 50%;
+      z-index: -1;
+    }
+  }
+}
+
+.form-field {
+  text-align: left;
+
+  &__label {
+    @include h4;
+    margin-bottom: rem(6px);
+  }
+
+  &__error {
+    color: $error-red;
+  }
+
+  &--invalid {
+    .form-field__input {
+      border-color: $error-red;
+    }
+  }
+}
+
+.text-input {
+  @include small-size;
+  appearance: none;
+  background-color: $white;
+  border: 1px solid $border-grey;
+  border-radius: 0;
+  display: block;
+  outline: none;
+  padding: rem(11px) rem(13px);
+  width: 100%;
+}

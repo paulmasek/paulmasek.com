@@ -1,0 +1,15 @@
+{
+  "introduction": {
+    "title": "Contact Me",
+    "body": "<p>To get in touch with me about your contract, use the form below (the more detail the better!) or email me at <a href=\"mailto:hello@paulmasek.com\" data-event-name=\"Content link click\" data-event-value=\"Clicked mailto\">hello@paulmasek.com</a>.",
+    "background": {
+      "src": "../../images/content/hero-contact.jpg",
+      "alt": "Coding on MacBook Pro"
+    }
+  },
+  "form": {
+    "action": "https://formspree.io/hello@paulmasek.com",
+    "contactFailed": "<h3 class=\"heading-four form__result-title\">Message failed to send</h3><p>Unfortunately it looks like there was a problem sending your message.</p><p>Please email me at <a href=\"mailto:hello@paulmasek.com\">hello@paulmasek.com</a> instead.</p>",
+    "contactSuccess": "<h3 class=\"heading-four form__result-title\">Message sent successfully</h3><p>Thanks for your message.</p>"
+  }
+}

@@ -1,0 +1,32 @@
+.about {
+  text-align: center;
+
+  &__inner {
+    @include section-inner;
+  }
+
+  &__profile-pic {
+    border-radius: 50%;
+    margin-bottom: rem(10px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(200px);
+    min-width: rem(100px);
+    overflow: hidden;
+    width: percentage(120 / (320 - 24 * 2));
+
+    picture,
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+}
+
+.js-site-animations {
+  .about__profile-pic,
+  .about__content {
+    opacity: 0;
+    transform: translateY(rem(100px));
+  }
+}
