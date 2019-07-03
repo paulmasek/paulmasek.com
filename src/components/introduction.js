@@ -83,6 +83,7 @@ const Introduction = ({
         modifier="introduction"
         alt={background.alt}
         imageObj={background.src}
+        loading="eager"
         onLoaded={() => setBackgroundLoaded(true)}
       />
     </section>

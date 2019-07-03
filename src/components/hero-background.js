@@ -4,7 +4,14 @@ import classNames from 'classnames';
 import Img from 'gatsby-image';
 import getFluidGraphQlImage from '../utils/get-fluid-graphql-image';
 
-const HeroBackground = ({ className, modifier, alt, imageObj, onLoaded }) => {
+const HeroBackground = ({
+  className,
+  modifier,
+  loading,
+  alt,
+  imageObj,
+  onLoaded,
+}) => {
   const modifierClass = !!modifier.length && `hero-background--${modifier}`;
   const imageSizes = getFluidGraphQlImage(imageObj);
 
@@ -15,6 +22,7 @@ const HeroBackground = ({ className, modifier, alt, imageObj, onLoaded }) => {
         sizes={imageSizes}
         alt={alt}
         onLoad={onLoaded}
+        loading={loading}
       />
     </div>
   );
@@ -23,6 +31,7 @@ const HeroBackground = ({ className, modifier, alt, imageObj, onLoaded }) => {
 HeroBackground.propTypes = {
   className: PropTypes.string,
   modifier: PropTypes.string,
+  loading: PropTypes.string,
   alt: PropTypes.string.isRequired,
   imageObj: PropTypes.shape({}).isRequired,
   onLoaded: PropTypes.func,
@@ -32,6 +41,7 @@ HeroBackground.defaultProps = {
   className: '',
   modifier: '',
   onLoaded: null,
+  loading: 'lazy',
 };
 
 export default HeroBackground;
