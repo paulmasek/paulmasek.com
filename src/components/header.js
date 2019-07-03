@@ -5,6 +5,9 @@ import useMediaQuery from '../utils/use-media-query';
 import Navigation from './navigation';
 import SocialMedia from './social-media';
 import SmoothScrollLink from './smooth-scroll-link';
+import withEventTracked from './with-event-tracked';
+
+const EventTrackedSmoothScrollLink = withEventTracked(SmoothScrollLink);
 
 const Header = ({ navigationItems, socialMediaLinks }) => {
   const [primaryNavigationOpen, setNavigationOpen] = useState(false);
@@ -18,11 +21,11 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
         })}
       >
         <div className="main-header__inner container">
-          <SmoothScrollLink
+          <EventTrackedSmoothScrollLink
             className="main-header__branding branding branding--minimal"
             to="/#top"
-            data-event-name="Content link click"
-            data-event-value="Branding click"
+            eventName="Content link click"
+            eventValue="Branding click"
           >
             <span className="branding__part branding__part--one">
               <span className="branding__minimal-part branding__minimal-part--one">
@@ -40,7 +43,7 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
                 asek
               </span>
             </span>
-          </SmoothScrollLink>
+          </EventTrackedSmoothScrollLink>
           <SocialMedia
             className="main-header__social-media social-media--header"
             links={socialMediaLinks}

@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import classNames from 'classnames';
+import withEventTracked from './with-event-tracked';
+
+const EventTrackedLink = withEventTracked('a');
 
 const TimelineCompanyGrid = ({ companies }) => {
   return (
@@ -18,16 +21,16 @@ const TimelineCompanyGrid = ({ companies }) => {
             )}
             key={uniqid()}
           >
-            <a
+            <EventTrackedLink
               className="company-list__link"
               href={url}
               target="_blank"
-              data-event-name="Company logo link click"
-              data-event-value={name}
+              eventName="Company logo link click"
+              eventValue={name}
               rel="noopener noreferrer"
             >
               <img alt={name} className="company-list__image" src={logoUrl} />
-            </a>
+            </EventTrackedLink>
           </li>
         );
       })}

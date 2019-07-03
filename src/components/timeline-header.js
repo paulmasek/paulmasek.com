@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import withEventTracked from './with-event-tracked';
+
+const EventTrackedLink = withEventTracked('a');
 
 const TimelineHeader = ({
   title,
@@ -30,7 +33,7 @@ const TimelineHeader = ({
 
   if (url) {
     return (
-      <a
+      <EventTrackedLink
         className="timeline__header line-segment line-segment--header line-segment--horizontal line-segment--vertical js-animate-trigger-logo"
         data-line-v="work-small-after-title"
         data-line-v-class="line-segment__line--small-separator-header"
@@ -39,11 +42,11 @@ const TimelineHeader = ({
         href={url}
         rel="noopener noreferrer"
         target="_blank"
-        data-event-name={clickEvent}
-        data-event-value={clickEventValue}
+        eventName={clickEvent}
+        eventValue={clickEventValue}
       >
         {body}
-      </a>
+      </EventTrackedLink>
     );
   }
 

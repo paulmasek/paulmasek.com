@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
+import withEventTracked from './with-event-tracked';
+
+const EventTrackedLink = withEventTracked('a');
 
 const TimelinePerm = ({ roles }) => {
   return (
@@ -25,13 +28,13 @@ const TimelinePerm = ({ roles }) => {
               </div>
               <div className="js-animate-trigger-content-module">
                 <div className="timeline__content-module js-animate-content-module">
-                  <a
+                  <EventTrackedLink
                     className="timeline__header timeline__header--perm"
                     href={url}
                     rel="noopener noreferrer"
                     target="_blank"
-                    data-event-name="Company logo link click"
-                    data-event-value={company}
+                    eventName="Company logo link click"
+                    eventValue={company}
                   >
                     <h3 className="heading-three timeline__perm-title">
                       {company}
@@ -41,7 +44,7 @@ const TimelinePerm = ({ roles }) => {
                       className="timeline__perm-logo"
                       src={logo.src.publicURL}
                     />
-                  </a>
+                  </EventTrackedLink>
                   <strong className="timeline__perm-role">{role}</strong>
                 </div>
               </div>

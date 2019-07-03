@@ -7,6 +7,9 @@ import classNames from 'classnames';
 import SocialMedia from './social-media';
 import HeroBackground from './hero-background';
 import SmoothScrollLink from './smooth-scroll-link';
+import withEventTracked from './with-event-tracked';
+
+const EventTrackedSmoothScrollLink = withEventTracked(SmoothScrollLink);
 
 const Introduction = ({
   id,
@@ -60,14 +63,14 @@ const Introduction = ({
               <ul className="introduction__navigation">
                 {navigationItems.map(({ text, link }) => (
                   <li className="introduction__navigation-item" key={uniqid()}>
-                    <SmoothScrollLink
+                    <EventTrackedSmoothScrollLink
                       className="introduction__navigation-link"
                       to={link}
-                      data-event-name="Introduction navigation click"
-                      data-event-value={text}
+                      eventName="Introduction navigation click"
+                      eventValue={text}
                     >
                       {text}
-                    </SmoothScrollLink>
+                    </EventTrackedSmoothScrollLink>
                   </li>
                 ))}
               </ul>

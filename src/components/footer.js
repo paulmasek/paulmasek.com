@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactStringReplace from 'react-string-replace';
 import SmoothScrollLink from './smooth-scroll-link';
+import withEventTracked from './with-event-tracked';
+
+const EventTrackedSmoothScrollLink = withEventTracked(SmoothScrollLink);
 
 const Footer = ({ body, topId, topText, topEventName, topEventValue }) => (
   <footer className="main-footer">
@@ -15,14 +18,14 @@ const Footer = ({ body, topId, topText, topEventName, topEventValue }) => (
             ).join(''),
           }}
         />
-        <SmoothScrollLink
+        <EventTrackedSmoothScrollLink
           className="main-footer__back-to-top"
           to={`#${topId}`}
-          data-event-name={topEventName}
-          data-event-value={topEventValue}
+          eventName={topEventName}
+          eventValue={topEventValue}
         >
           {topText}
-        </SmoothScrollLink>
+        </EventTrackedSmoothScrollLink>
       </div>
     </div>
   </footer>

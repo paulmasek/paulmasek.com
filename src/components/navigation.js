@@ -6,6 +6,9 @@ import { Link } from 'gatsby';
 
 import useUpdateBodyClass from '../utils/use-update-body-class';
 import SmoothScrollLink from './smooth-scroll-link';
+import withEventTracked from './with-event-tracked';
+
+const EventTrackedSmoothScrollLink = withEventTracked(SmoothScrollLink);
 
 const Navigation = ({ items, active, linkClick }) => {
   useUpdateBodyClass('primary-navigation-active', active);
@@ -20,17 +23,17 @@ const Navigation = ({ items, active, linkClick }) => {
         <ul className="primary-navigation__list">
           {items.map(({ text, link }) => (
             <li className="primary-navigation__item" key={uniqid()}>
-              <SmoothScrollLink
+              <EventTrackedSmoothScrollLink
                 className="primary-navigation__link"
-                data-event-name="Header primary navigation click"
-                data-event-value={text}
+                eventName="Header primary navigation click"
+                eventValue={text}
                 to={link}
                 onClick={e => {
                   linkClick(e, link);
                 }}
               >
                 {text}
-              </SmoothScrollLink>
+              </EventTrackedSmoothScrollLink>
             </li>
           ))}
         </ul>

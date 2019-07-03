@@ -6,6 +6,9 @@ import uniqid from 'uniqid';
 import Github from '../images/icons/github.svg';
 import LinkedIn from '../images/icons/linkedin.svg';
 import Twitter from '../images/icons/twitter.svg';
+import withEventTracked from './with-event-tracked';
+
+const EventTrackedLink = withEventTracked('a');
 
 const icons = {
   twitter: Twitter,
@@ -20,16 +23,16 @@ const SocialMedia = ({ className, links, linkClickEvent }) => (
 
       return (
         <li className="social-media__item" key={uniqid()}>
-          <a
+          <EventTrackedLink
             className="social-media__link"
-            data-event-name={linkClickEvent}
-            data-event-value={name}
+            eventName={linkClickEvent}
+            eventValue={name}
             href={url}
             rel="noopener noreferrer"
             target="_blank"
           >
             <Icon className="social-media__icon" />
-          </a>
+          </EventTrackedLink>
         </li>
       );
     })}
