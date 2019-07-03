@@ -12,7 +12,14 @@
     margin-right: auto;
     max-width: rem(200px);
     min-width: rem(100px);
+    overflow: hidden;
     width: percentage(120 / (320 - 24 * 2));
+
+    picture,
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+    }
   }
 }
 
