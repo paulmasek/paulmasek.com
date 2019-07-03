@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import getFluidGraphQlImage from '../utils/get-fluid-graphql-image';
 import SectionAnchor from './section-anchor';
+import TrackedHtmlContent from './tracked-html-content';
 
 const About = ({ body, id, profilePicImage, profilePicAlt }) => {
   const imageSizes = getFluidGraphQlImage(profilePicImage);
@@ -28,9 +29,9 @@ const About = ({ body, id, profilePicImage, profilePicAlt }) => {
           />
         </div>
         <div className="js-animate-trigger-about-content">
-          <div
+          <TrackedHtmlContent
             className="about__content js-animate-about-content"
-            dangerouslySetInnerHTML={{ __html: body }}
+            body={body}
           />
         </div>
       </div>
