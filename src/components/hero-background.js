@@ -23,6 +23,7 @@ const HeroBackground = ({
         alt={alt}
         onLoad={onLoaded}
         loading={loading}
+        objectPosition="top right"
       />
     </div>
   );

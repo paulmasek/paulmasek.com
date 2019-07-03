@@ -25,18 +25,20 @@
     height: 100%;
     left: 0;
     margin-bottom: 0;
-    object-fit: cover;
-    object-position: bottom right;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 1;
+
+    img {
+      object-position: bottom right !important;
+    }
   }
 
   &--contact,
   &--work {
-    .hero-background__image {
-      object-position: bottom center;
+    .hero-background__image img {
+      object-position: bottom center !important;
     }
   }
 }
