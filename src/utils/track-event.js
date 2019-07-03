@@ -7,4 +7,4 @@ function trackEvent(eventName, eventCategory, eventValue) {
   }
 }
 
-return trackEvent;
+export default trackEvent;
