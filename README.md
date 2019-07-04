@@ -1,6 +1,6 @@
 # My personal website for contract work
 
-View at https://paulmasek.com.
+View at [paulmasek.com](https://paulmasek.com).
 
 It currently uses [GatsbyJS](https://www.gatsbyjs.org/) to drive a React and JSON driven front-end.
 
