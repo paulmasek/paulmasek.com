@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
         name={data.introduction.name}
         tagline={data.introduction.tagline}
         navigationItems={data.global.navigation}
-        socialMediaLinks={data.global.social_media_full}
+        socialMediaLinks={data.global.socialMediaFull}
         setHeaderActive={setHeaderActive}
         id="top"
       />
@@ -70,7 +70,7 @@ export const query = graphql`
         link
         text
       }
-      social_media_full {
+      socialMediaFull {
         name
         url
       }
