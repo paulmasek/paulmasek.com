@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import useUpdateBodyClass from '../utils/use-update-body-class';
 import Layout from '../components/layout';
 import Introduction from '../components/introduction';
 import SEO from '../components/seo';
