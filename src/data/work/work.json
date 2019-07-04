@@ -80,7 +80,7 @@
                 {
                   "module": "timelineContent",
                   "data": {
-                    "body": "<p>Led the development of the front-end for a corporate website that included a React-powered event and news archive application. This allowed the user to explore a collection of content using various metrics, with a library of flexible UI components.</p>Worked with their other developers to help provide a grounding in React and to effectively handover the application for future development.</p>"
+                    "body": "<p>Led the development of the front-end for a corporate website that included a React-powered event and news archive application. This allowed the user to explore a collection of content using various metrics, with a library of flexible UI components.</p><p>Worked with their other developers to help provide a grounding in React and to effectively handover the application for future development.</p>"
                   }
                 }
               ]
