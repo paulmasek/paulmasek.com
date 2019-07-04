@@ -29,7 +29,7 @@ const Layout = ({ children, headerActive }) => {
           link
           text
         }
-        social_media {
+        socialMedia {
           name
           url
         }
@@ -51,7 +51,7 @@ const Layout = ({ children, headerActive }) => {
       <div className="wrapper">
         <Header
           navigationItems={data.global.navigation}
-          socialMediaLinks={data.global.social_media}
+          socialMediaLinks={data.global.socialMedia}
           active={headerActive}
         />
         <main className="wrapper__main">{children}</main>
