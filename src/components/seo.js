@@ -43,7 +43,7 @@ function Seo({ lang, meta, description, title, ogImage, twitterImage }) {
           twitterHandle
           twitterImage {
             childImageSharp {
-              resize(width: 1000, height: 1000) {
+              resize(width: 876, height: 438) {
                 src
               }
             }
@@ -82,11 +82,11 @@ function Seo({ lang, meta, description, title, ogImage, twitterImage }) {
           content: metaDescription,
         },
         {
-          name: 'og:locale',
+          property: 'og:locale',
           content: 'en_gb',
         },
         {
-          name: 'og:site_name',
+          property: 'og:site_name',
           content: data.globalJson.metaName,
         },
         {
@@ -131,7 +131,7 @@ function Seo({ lang, meta, description, title, ogImage, twitterImage }) {
         },
         {
           name: 'twitter:description',
-          content: metaDescription,
+          content: data.globalJson.ogDescription,
         },
         {
           name: 'twitter:image',
