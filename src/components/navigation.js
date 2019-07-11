@@ -15,7 +15,7 @@ const Navigation = ({ items, active, linkClick }) => {
 
   return (
     <nav
-      className={classNames('primary-navigation js-primary-navigation', {
+      className={classNames('primary-navigation', {
         'primary-navigation--active': active,
       })}
     >

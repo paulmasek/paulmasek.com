@@ -9,21 +9,18 @@ const About = ({ body, id, profilePicImage, profilePicAlt }) => {
   const imageSizes = getFluidGraphQlImage(profilePicImage);
 
   return (
-    <section className="section about js-about-content">
+    <section className="section about">
       <div className="container container--thin about__inner line-segment line-segment--start line-segment--vertical">
         <div className="line-segment line-segment--header line-segment--vertical line-segment--horizontal">
           <Img
-            className="about__profile-pic js-animate-profile-pic"
+            className="about__profile-pic"
             src="profile-pic"
             alt={profilePicAlt}
             sizes={imageSizes}
           />
         </div>
-        <div className="js-animate-trigger-about-content">
-          <TrackedHtmlContent
-            className="about__content js-animate-about-content"
-            body={body}
-          />
+        <div>
+          <TrackedHtmlContent className="about__content" body={body} />
         </div>
       </div>
       <SectionAnchor id={id} />

@@ -17,7 +17,7 @@ const Skills = ({
   softwareSkills,
 }) => {
   return (
-    <section className="section skills js-animate-trigger-skills-content">
+    <section className="section skills">
       <SetionHero
         title={introductionTitle}
         body={introductionBody}
@@ -25,14 +25,14 @@ const Skills = ({
         imageObject={introductionBackground.src}
         modifier="skills"
       />
-      <div className="container container--thin skills__inner js-animate-skills-content">
+      <div className="container container--thin skills__inner">
         <div className="skills__main line-segment line-segment--content line-segment--horizontal">
           <h3 className="heading-three skills__main-title">
             {mainSkillsTitle}
           </h3>
-          <ul className="js-animate-trigger-main-skill">
+          <ul>
             {mainSkillsSkills.map(({ title, subTitle, body }) => (
-              <li className="js-animate-main-skill" key={uniqid()}>
+              <li key={uniqid()}>
                 <h4 className="heading-four skills__title">
                   {title}
                   {subTitle && ` - ${subTitle}`}
@@ -43,12 +43,12 @@ const Skills = ({
           </ul>
         </div>
         <div className="grid">
-          <div className="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary js-animate-trigger-workflow">
-            <div className="skills__secondary-inner js-animate-workflow">
+          <div className="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary">
+            <div className="skills__secondary-inner">
               <h3 className="heading-three">{workflowTitle}</h3>
               <ul className="">
                 {workflowSkills.map(({ title, body }) => (
-                  <li className="js-animate-main-skill" key={uniqid()}>
+                  <li key={uniqid()}>
                     <h4 className="heading-four skills__title">{title}</h4>
                     <div dangerouslySetInnerHTML={{ __html: body }} />
                   </li>
@@ -56,8 +56,8 @@ const Skills = ({
               </ul>
             </div>
           </div>
-          <div className="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary js-animate-trigger-design">
-            <div className="skills__secondary-inner js-animate-design">
+          <div className="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary">
+            <div className="skills__secondary-inner">
               <h3 className="heading-three">{softwareTitle}</h3>
               <ul className="design-tools">
                 {softwareSkills.map(({ title }) => (

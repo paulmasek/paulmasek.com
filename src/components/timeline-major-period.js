@@ -9,7 +9,7 @@ const TimelineMajorPeriod = ({ className, modifier, title, children }) => {
     <div className="timeline__major-period">
       <strong
         className={classNames(
-          'timeline__period-title timeline__period-title-content js-animate-date-title',
+          'timeline__period-title timeline__period-title-content',
           className,
           modifierClass
         )}

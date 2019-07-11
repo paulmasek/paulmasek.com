@@ -24,7 +24,7 @@ const TimelineContracting = ({ contracts }) => {
           >
             <img
               alt={`${company} logo`}
-              className="timeline__contracting-logo js-animate-logo"
+              className="timeline__contracting-logo"
               src={logo.src.publicURL}
             />
           </TimelineHeader>

@@ -17,13 +17,13 @@ const TimelinePerm = ({ roles }) => {
 
           const contentFragment = (
             <>
-              <div className="line-segment line-segment--vertical line-segment--period-title-perm js-animate-trigger-perm-date-title">
-                <strong className="timeline__period-title timeline__period-title--perm timeline__period-title-content js-animate-perm-date-title">
+              <div className="line-segment line-segment--vertical line-segment--period-title-perm">
+                <strong className="timeline__period-title timeline__period-title--perm timeline__period-title-content">
                   {period}
                 </strong>
               </div>
-              <div className="js-animate-trigger-content-module">
-                <div className="timeline__content-module js-animate-content-module">
+              <div>
+                <div className="timeline__content-module">
                   <EventTrackedLink
                     className="timeline__header timeline__header--perm"
                     href={url}
@@ -48,7 +48,7 @@ const TimelinePerm = ({ roles }) => {
           );
 
           const responsibilitiesFragment = (
-            <div className="timeline__content-item timeline__content-item--perm timeline__content-item--last cms js-animate-content-module">
+            <div className="timeline__content-item timeline__content-item--perm timeline__content-item--last cms">
               <div dangerouslySetInnerHTML={{ __html: introduction }} />
               <ul>
                 {responsibilities.map(({ body }) => (
@@ -66,7 +66,7 @@ const TimelinePerm = ({ roles }) => {
                 <div className="timeline__major-period timeline__segment line-segment line-segment--vertical line-segment--perm-branch">
                   <div className="line-segment line-segment--vertical line-segment--medium-separator line-segment--mobile-perm-separator">
                     {contentFragment}
-                    <div className="line-segment line-segment--horizontal line-segment--content line-segment--hide-desktop-horizontal js-animate-trigger-content-module">
+                    <div className="line-segment line-segment--horizontal line-segment--content line-segment--hide-desktop-horizontal">
                       {responsibilitiesFragment}
                     </div>
                   </div>
@@ -75,9 +75,7 @@ const TimelinePerm = ({ roles }) => {
                 <div className="timeline__major-period timeline__segment line-segment line-segment--vertical line-segment--perm-branch timeline__major-period--last">
                   <div className="">
                     {contentFragment}
-                    <div className="js-animate-trigger-content-module">
-                      {responsibilitiesFragment}
-                    </div>
+                    <div>{responsibilitiesFragment}</div>
                   </div>
                 </div>
               )}

@@ -15,14 +15,11 @@ const TimelineHeader = ({
 }) => {
   const body = (
     <>
-      <div className="js-animate-trigger-contracing-title">
+      <div>
         <h3
-          className={classNames(
-            'heading-three timeline__header-title js-animate-contracting-title',
-            {
-              'timeline__header-title--hidden': isLogoTitle,
-            }
-          )}
+          className={classNames('heading-three timeline__header-title', {
+            'timeline__header-title--hidden': isLogoTitle,
+          })}
         >
           {title}
         </h3>
@@ -34,7 +31,7 @@ const TimelineHeader = ({
   if (url) {
     return (
       <EventTrackedLink
-        className="timeline__header line-segment line-segment--header line-segment--horizontal line-segment--vertical js-animate-trigger-logo"
+        className="timeline__header line-segment line-segment--header line-segment--horizontal line-segment--vertical"
         href={url}
         rel="noopener noreferrer"
         target="_blank"

@@ -9,7 +9,7 @@ const TimelineContentItem = ({ modifier, last, noBorder, children }) => {
   return (
     <div
       className={classNames(
-        'timeline__content-item timeline__content-item js-animate-trigger-content-module',
+        'timeline__content-item timeline__content-item',
         modifierClass,
         {
           'timeline__content-item--last line-segment line-segment--content line-segment--horizontal': last,
@@ -17,9 +17,7 @@ const TimelineContentItem = ({ modifier, last, noBorder, children }) => {
         }
       )}
     >
-      <div className="timeline__content-module js-animate-content-module">
-        {children}
-      </div>
+      <div className="timeline__content-module">{children}</div>
     </div>
   );
 };
