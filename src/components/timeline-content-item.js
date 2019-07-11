@@ -5,7 +5,6 @@ import classNames from 'classnames';
 const TimelineContentItem = ({ modifier, last, noBorder, children }) => {
   const modifierClass =
     !!modifier.length && `timeline__content-item--${modifier}`;
-  const lineH = !last && !noBorder && 'work-horizontal-after-modules';
 
   return (
     <div
@@ -17,7 +16,6 @@ const TimelineContentItem = ({ modifier, last, noBorder, children }) => {
           'timeline__content-item--no-border': noBorder,
         }
       )}
-      data-line-h={lineH}
     >
       <div className="timeline__content-module js-animate-content-module">
         {children}

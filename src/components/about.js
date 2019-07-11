@@ -10,17 +10,8 @@ const About = ({ body, id, profilePicImage, profilePicAlt }) => {
 
   return (
     <section className="section about js-about-content">
-      <div
-        className="container container--thin about__inner line-segment line-segment--start line-segment--vertical"
-        data-line-v="about-one"
-        data-line-v-class="line-segment__line--small-separator"
-      >
-        <div
-          className="line-segment line-segment--header line-segment--vertical line-segment--horizontal"
-          data-line-v="about-two"
-          data-line-v-class="line-segment__line--small-separator-header"
-          data-line-h="about-three"
-        >
+      <div className="container container--thin about__inner line-segment line-segment--start line-segment--vertical">
+        <div className="line-segment line-segment--header line-segment--vertical line-segment--horizontal">
           <Img
             className="about__profile-pic js-animate-profile-pic"
             src="profile-pic"

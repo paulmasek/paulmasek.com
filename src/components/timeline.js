@@ -12,11 +12,7 @@ const Timeline = ({ perm, freelancing }) => {
   } = freelancing;
 
   return (
-    <div
-      className="timeline line-segment line-segment--start-title line-segment--vertical"
-      data-line-v="work-small"
-      data-line-v-class="line-segment__line--small-separator"
-    >
+    <div className="timeline line-segment line-segment--start-title line-segment--vertical">
       <div className="container container--thin">
         <TimelineFreelancing
           contracting={contracting}
@@ -26,11 +22,7 @@ const Timeline = ({ perm, freelancing }) => {
         />
       </div>
       <div className="container container--wide">
-        <div
-          className="line-segment line-segment--horizontal line-segment--freelancing line-segment--hide-mobile-horizontal"
-          data-line-h="work-start-perm"
-          data-line-h-class="line-segment__line--freelancing"
-        >
+        <div className="line-segment line-segment--horizontal line-segment--freelancing line-segment--hide-mobile-horizontal">
           <TimelinePerm roles={perm} />
         </div>
       </div>

@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 
 const TimelineMajorChange = ({ date, title }) => {
   return (
-    <div
-      className="timeline__segment timeline__segment--major-change line-segment line-segment--big-separator line-segment--vertical js-animate-trigger-date-title"
-      data-line-v="work-after-freelancing"
-      data-line-v-class="line-segment__line--big-separator"
-    >
+    <div className="timeline__segment timeline__segment--major-change line-segment line-segment--big-separator line-segment--vertical js-animate-trigger-date-title">
       <strong className="timeline__period-title timeline__period-title--major-change timeline__period-title-content js-animate-date-title">
         {date}
       </strong>

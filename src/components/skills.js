@@ -26,11 +26,7 @@ const Skills = ({
         modifier="skills"
       />
       <div className="container container--thin skills__inner js-animate-skills-content">
-        <div
-          className="skills__main line-segment line-segment--content line-segment--horizontal"
-          data-line-h="skills-separator"
-          data-line-h-from-left="true"
-        >
+        <div className="skills__main line-segment line-segment--content line-segment--horizontal">
           <h3 className="heading-three skills__main-title">
             {mainSkillsTitle}
           </h3>

@@ -11,8 +11,6 @@ const TimelineSegment = ({ modifier, children }) => {
         'timeline__segment line-segment line-segment--vertical line-segment--medium-separator',
         modifierClass
       )}
-      data-line-v="work-after-modules"
-      data-line-v-class="line-segment__line--medium-separator"
     >
       {children}
     </div>

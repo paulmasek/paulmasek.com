@@ -35,10 +35,6 @@ const TimelineHeader = ({
     return (
       <EventTrackedLink
         className="timeline__header line-segment line-segment--header line-segment--horizontal line-segment--vertical js-animate-trigger-logo"
-        data-line-v="work-small-after-title"
-        data-line-v-class="line-segment__line--small-separator-header"
-        data-line-h="work-horizontal-after-title"
-        data-line-h-class="line-segment__line--header-h"
         href={url}
         rel="noopener noreferrer"
         target="_blank"
@@ -51,13 +47,7 @@ const TimelineHeader = ({
   }
 
   return (
-    <div
-      className="timeline__header line-segment  line-segment--header line-segment--horizontal line-segment--vertical"
-      data-line-v="work-small-after-title"
-      data-line-v-class="line-segment__line--small-separator-header"
-      data-line-h="work-horizontal-after-title"
-      data-line-h-class="line-segment__line--header-h"
-    >
+    <div className="timeline__header line-segment  line-segment--header line-segment--horizontal line-segment--vertical">
       {body}
     </div>
   );
