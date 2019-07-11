@@ -76,9 +76,9 @@ const TimelinePerm = ({ roles }) => {
                   >
                     {contentFragment}
                     <LineSegment
-                      className="line-segment--hide-desktop-horizontal"
                       modifier="content"
                       horizontal
+                      hideDesktopHorizontal
                     >
                       {responsibilitiesFragment}
                     </LineSegment>

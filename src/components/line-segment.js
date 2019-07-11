@@ -5,6 +5,10 @@ import classNames from 'classnames';
 const LineSegment = ({
   vertical,
   horizontal,
+  hideMobileVertical,
+  hideDesktopVertical,
+  hideMobileHorizontal,
+  hideDesktopHorizontal,
   modifier,
   className,
   children,
@@ -16,6 +20,10 @@ const LineSegment = ({
     {
       'line-segment--vertical': vertical,
       'line-segment--horizontal': horizontal,
+      'line-segment--hide-mobile-vertical': hideMobileVertical,
+      'line-segment--hide-desktop-vertical': hideDesktopVertical,
+      'line-segment--hide-mobile-horizontal': hideMobileHorizontal,
+      'line-segment--hide-desktop-horizontal': hideDesktopHorizontal,
       [`line-segment--${modifier}`]: modifier,
     },
     className
@@ -31,6 +39,10 @@ const LineSegment = ({
 LineSegment.propTypes = {
   vertical: PropTypes.bool,
   horizontal: PropTypes.bool,
+  hideMobileVertical: PropTypes.bool,
+  hideDesktopVertical: PropTypes.bool,
+  hideMobileHorizontal: PropTypes.bool,
+  hideDesktopHorizontal: PropTypes.bool,
   className: PropTypes.string,
   modifier: PropTypes.string,
   children: PropTypes.node,
@@ -42,6 +54,10 @@ LineSegment.defaultProps = {
   render: null,
   vertical: false,
   horizontal: false,
+  hideMobileVertical: false,
+  hideDesktopVertical: false,
+  hideMobileHorizontal: false,
+  hideDesktopHorizontal: false,
   className: '',
   modifier: '',
 };

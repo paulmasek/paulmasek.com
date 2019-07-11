@@ -23,11 +23,7 @@ const Timeline = ({ perm, freelancing }) => {
         />
       </div>
       <div className="container container--wide">
-        <LineSegment
-          className="line-segment--hide-mobile-horizontal"
-          modifier="freelancing"
-          horizontal
-        >
+        <LineSegment modifier="freelancing" horizontal hideMobileHorizontal>
           <TimelinePerm roles={perm} />
         </LineSegment>
       </div>
