@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import SetionHero from './section-hero';
 import SectionAnchor from './section-anchor';
+import LineSegment from './line-segment';
 
 const Skills = ({
   id,
@@ -26,7 +27,7 @@ const Skills = ({
         modifier="skills"
       />
       <div className="container container--thin skills__inner">
-        <div className="skills__main line-segment line-segment--content line-segment--horizontal">
+        <LineSegment className="skills__main" modifier="content" horizontal>
           <h3 className="heading-three skills__main-title">
             {mainSkillsTitle}
           </h3>
@@ -41,7 +42,7 @@ const Skills = ({
               </li>
             ))}
           </ul>
-        </div>
+        </LineSegment>
         <div className="grid">
           <div className="grid__col grid__col--12-12 grid__col--sm-6-12 skills__secondary">
             <div className="skills__secondary-inner">

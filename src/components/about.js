@@ -4,25 +4,30 @@ import Img from 'gatsby-image';
 import getFluidGraphQlImage from '../utils/get-fluid-graphql-image';
 import SectionAnchor from './section-anchor';
 import TrackedHtmlContent from './tracked-html-content';
+import LineSegment from './line-segment';
 
 const About = ({ body, id, profilePicImage, profilePicAlt }) => {
   const imageSizes = getFluidGraphQlImage(profilePicImage);
 
   return (
     <section className="section about">
-      <div className="container container--thin about__inner line-segment line-segment--start line-segment--vertical">
-        <div className="line-segment line-segment--header line-segment--vertical line-segment--horizontal">
+      <LineSegment
+        className="container container--thin about__inner"
+        modifier="start"
+        vertical
+      >
+        <LineSegment modifier="header" horizontal vertical>
           <Img
             className="about__profile-pic"
             src="profile-pic"
             alt={profilePicAlt}
             sizes={imageSizes}
           />
-        </div>
+        </LineSegment>
         <div>
           <TrackedHtmlContent className="about__content" body={body} />
         </div>
-      </div>
+      </LineSegment>
       <SectionAnchor id={id} />
     </section>
   );

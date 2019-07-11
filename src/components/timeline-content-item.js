@@ -1,23 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import LineSegment from './line-segment';
 
 const TimelineContentItem = ({ modifier, last, noBorder, children }) => {
   const modifierClass =
     !!modifier.length && `timeline__content-item--${modifier}`;
+  const child = <div className="timeline__content-module">{children}</div>;
+
+  if (last) {
+    return (
+      <LineSegment
+        className={classNames(
+          'timeline__content-item timeline__content-item--last',
+          modifierClass,
+          {
+            'timeline__content-item--no-border': noBorder,
+          }
+        )}
+        modifier="content"
+        horizontal
+      >
+        {child}
+      </LineSegment>
+    );
+  }
 
   return (
     <div
-      className={classNames(
-        'timeline__content-item timeline__content-item',
-        modifierClass,
-        {
-          'timeline__content-item--last line-segment line-segment--content line-segment--horizontal': last,
-          'timeline__content-item--no-border': noBorder,
-        }
-      )}
+      className={classNames('timeline__content-item', modifierClass, {
+        'timeline__content-item--no-border': noBorder,
+      })}
     >
-      <div className="timeline__content-module">{children}</div>
+      {child}
     </div>
   );
 };

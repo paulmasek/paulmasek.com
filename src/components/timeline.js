@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TimelinePerm from './timeline-perm';
 import TimelineFreelancing from './timeline-freelancing';
+import LineSegment from './line-segment';
 
 const Timeline = ({ perm, freelancing }) => {
   const {
@@ -12,7 +13,7 @@ const Timeline = ({ perm, freelancing }) => {
   } = freelancing;
 
   return (
-    <div className="timeline line-segment line-segment--start-title line-segment--vertical">
+    <LineSegment className="timeline" modifier="start-title" vertical>
       <div className="container container--thin">
         <TimelineFreelancing
           contracting={contracting}
@@ -22,11 +23,15 @@ const Timeline = ({ perm, freelancing }) => {
         />
       </div>
       <div className="container container--wide">
-        <div className="line-segment line-segment--horizontal line-segment--freelancing line-segment--hide-mobile-horizontal">
+        <LineSegment
+          className="line-segment--hide-mobile-horizontal"
+          modifier="freelancing"
+          horizontal
+        >
           <TimelinePerm roles={perm} />
-        </div>
+        </LineSegment>
       </div>
-    </div>
+    </LineSegment>
   );
 };
 

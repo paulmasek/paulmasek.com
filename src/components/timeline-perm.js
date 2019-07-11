@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import withEventTracked from './with-event-tracked';
+import LineSegment from './line-segment';
 
 const EventTrackedLink = withEventTracked('a');
 
@@ -17,11 +18,11 @@ const TimelinePerm = ({ roles }) => {
 
           const contentFragment = (
             <>
-              <div className="line-segment line-segment--vertical line-segment--period-title-perm">
+              <LineSegment modifier="period-title-perm" vertical>
                 <strong className="timeline__period-title timeline__period-title--perm timeline__period-title-content">
                   {period}
                 </strong>
-              </div>
+              </LineSegment>
               <div>
                 <div className="timeline__content-module">
                   <EventTrackedLink
@@ -63,21 +64,37 @@ const TimelinePerm = ({ roles }) => {
           return (
             <div className="grid__col timeline__perm" key={uniqid()}>
               {!last ? (
-                <div className="timeline__major-period timeline__segment line-segment line-segment--vertical line-segment--perm-branch">
-                  <div className="line-segment line-segment--vertical line-segment--medium-separator line-segment--mobile-perm-separator">
+                <LineSegment
+                  className="timeline__major-period timeline__segment"
+                  modifier="perm-branch"
+                  vertical
+                >
+                  <LineSegment
+                    className="line-segment--medium-separator"
+                    modifier="mobile-perm-separator"
+                    vertical
+                  >
                     {contentFragment}
-                    <div className="line-segment line-segment--horizontal line-segment--content line-segment--hide-desktop-horizontal">
+                    <LineSegment
+                      className="line-segment--hide-desktop-horizontal"
+                      modifier="content"
+                      horizontal
+                    >
                       {responsibilitiesFragment}
-                    </div>
-                  </div>
-                </div>
+                    </LineSegment>
+                  </LineSegment>
+                </LineSegment>
               ) : (
-                <div className="timeline__major-period timeline__segment line-segment line-segment--vertical line-segment--perm-branch timeline__major-period--last">
+                <LineSegment
+                  className="timeline__major-period timeline__major-period--last timeline__segment"
+                  modifier="perm-branch"
+                  vertical
+                >
                   <div className="">
                     {contentFragment}
                     <div>{responsibilitiesFragment}</div>
                   </div>
-                </div>
+                </LineSegment>
               )}
             </div>
           );
