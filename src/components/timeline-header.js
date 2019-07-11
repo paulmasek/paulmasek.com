@@ -47,18 +47,13 @@ const TimelineHeader = ({
         )}
         vertical
         horizontal
-        modifier="header"
+        type="header"
       />
     );
   }
 
   return (
-    <LineSegment
-      className="timeline__header"
-      modifier="header"
-      vertical
-      horizontal
-    >
+    <LineSegment className="timeline__header" type="header" vertical horizontal>
       {body}
     </LineSegment>
   );

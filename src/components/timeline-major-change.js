@@ -6,7 +6,7 @@ const TimelineMajorChange = ({ date, title }) => {
   return (
     <LineSegment
       className="timeline__segment timeline__segment--major-change"
-      modifier="big-separator"
+      type="big-separator"
       vertical
     >
       <strong className="timeline__period-title timeline__period-title--major-change timeline__period-title-content">

@@ -70,13 +70,13 @@ const TimelinePerm = ({ roles }) => {
                   vertical
                 >
                   <LineSegment
-                    className="line-segment--medium-separator"
                     modifier="mobile-perm-separator"
+                    type="medium-separator"
                     vertical
                   >
                     {contentFragment}
                     <LineSegment
-                      modifier="content"
+                      type="content"
                       horizontal
                       hideDesktopHorizontal
                     >

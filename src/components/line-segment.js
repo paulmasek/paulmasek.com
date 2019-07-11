@@ -9,6 +9,7 @@ const LineSegment = ({
   hideDesktopVertical,
   hideMobileHorizontal,
   hideDesktopHorizontal,
+  type,
   modifier,
   className,
   children,
@@ -24,6 +25,7 @@ const LineSegment = ({
       'line-segment--hide-desktop-vertical': hideDesktopVertical,
       'line-segment--hide-mobile-horizontal': hideMobileHorizontal,
       'line-segment--hide-desktop-horizontal': hideDesktopHorizontal,
+      [`line-segment--${type}`]: type,
       [`line-segment--${modifier}`]: modifier,
     },
     className
@@ -47,6 +49,7 @@ LineSegment.propTypes = {
   modifier: PropTypes.string,
   children: PropTypes.node,
   render: PropTypes.func,
+  type: PropTypes.string,
 };
 
 LineSegment.defaultProps = {
@@ -60,6 +63,7 @@ LineSegment.defaultProps = {
   hideDesktopHorizontal: false,
   className: '',
   modifier: '',
+  type: '',
 };
 
 export default LineSegment;

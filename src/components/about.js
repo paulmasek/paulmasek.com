@@ -13,10 +13,10 @@ const About = ({ body, id, profilePicImage, profilePicAlt }) => {
     <section className="section about">
       <LineSegment
         className="container container--thin about__inner"
-        modifier="start"
+        type="start"
         vertical
       >
-        <LineSegment modifier="header" horizontal vertical>
+        <LineSegment type="header" horizontal vertical>
           <Img
             className="about__profile-pic"
             src="profile-pic"

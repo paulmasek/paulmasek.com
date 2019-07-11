@@ -27,7 +27,7 @@ const Skills = ({
         modifier="skills"
       />
       <div className="container container--thin skills__inner">
-        <LineSegment className="skills__main" modifier="content" horizontal>
+        <LineSegment className="skills__main" type="content" horizontal>
           <h3 className="heading-three skills__main-title">
             {mainSkillsTitle}
           </h3>

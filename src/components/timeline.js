@@ -13,7 +13,7 @@ const Timeline = ({ perm, freelancing }) => {
   } = freelancing;
 
   return (
-    <LineSegment className="timeline" modifier="start-title" vertical>
+    <LineSegment className="timeline" type="start-title" vertical>
       <div className="container container--thin">
         <TimelineFreelancing
           contracting={contracting}

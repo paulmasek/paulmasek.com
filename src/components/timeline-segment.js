@@ -9,7 +9,7 @@ const TimelineSegment = ({ modifier, children }) => {
   return (
     <LineSegment
       className={classNames('timeline__segment', modifierClass)}
-      modifier="medium-separator"
+      type="medium-separator"
       vertical
     >
       {children}

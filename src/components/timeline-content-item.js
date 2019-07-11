@@ -18,7 +18,7 @@ const TimelineContentItem = ({ modifier, last, noBorder, children }) => {
             'timeline__content-item--no-border': noBorder,
           }
         )}
-        modifier="content"
+        type="content"
         horizontal
       >
         {child}
