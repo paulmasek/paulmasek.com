@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import withEventTracked from './with-event-tracked';
+import LineSegment from './line-segment';
 
 const EventTrackedLink = withEventTracked('a');
 
@@ -15,14 +16,11 @@ const TimelineHeader = ({
 }) => {
   const body = (
     <>
-      <div className="js-animate-trigger-contracing-title">
+      <div>
         <h3
-          className={classNames(
-            'heading-three timeline__header-title js-animate-contracting-title',
-            {
-              'timeline__header-title--hidden': isLogoTitle,
-            }
-          )}
+          className={classNames('heading-three timeline__header-title', {
+            'timeline__header-title--hidden': isLogoTitle,
+          })}
         >
           {title}
         </h3>
@@ -33,33 +31,31 @@ const TimelineHeader = ({
 
   if (url) {
     return (
-      <EventTrackedLink
-        className="timeline__header line-segment line-segment--header line-segment--horizontal line-segment--vertical js-animate-trigger-logo"
-        data-line-v="work-small-after-title"
-        data-line-v-class="line-segment__line--small-separator-header"
-        data-line-h="work-horizontal-after-title"
-        data-line-h-class="line-segment__line--header-h"
-        href={url}
-        rel="noopener noreferrer"
-        target="_blank"
-        eventName={clickEvent}
-        eventValue={clickEventValue}
-      >
-        {body}
-      </EventTrackedLink>
+      <LineSegment
+        render={(cssClass, props) => (
+          <EventTrackedLink
+            className={classNames('timeline__header', cssClass)}
+            href={url}
+            rel="noopener noreferrer"
+            target="_blank"
+            eventName={clickEvent}
+            eventValue={clickEventValue}
+            {...props}
+          >
+            {body}
+          </EventTrackedLink>
+        )}
+        vertical
+        horizontal
+        type="header"
+      />
     );
   }
 
   return (
-    <div
-      className="timeline__header line-segment  line-segment--header line-segment--horizontal line-segment--vertical"
-      data-line-v="work-small-after-title"
-      data-line-v-class="line-segment__line--small-separator-header"
-      data-line-h="work-horizontal-after-title"
-      data-line-h-class="line-segment__line--header-h"
-    >
+    <LineSegment className="timeline__header" type="header" vertical horizontal>
       {body}
-    </div>
+    </LineSegment>
   );
 };
 

@@ -8,16 +8,11 @@ const SectionHero = ({ title, body, modifier, imageObject, imageAlt }) => {
   const modifierClass = !!modifier.length && `section-hero--${modifier}`;
 
   return (
-    <div
-      className={classNames(
-        'section-hero js-animate-trigger-section-hero-background',
-        modifierClass
-      )}
-    >
+    <div className={classNames('section-hero', modifierClass)}>
       <div className="section-hero__inner">
         <div className="container container--thin">
-          <div className="section-hero__content-wrapper js-animate-trigger-section-hero-content">
-            <div className="section-hero__content js-animate-section-hero-content">
+          <div className="section-hero__content-wrapper">
+            <div className="section-hero__content">
               <h2 className="section-hero__title">{title}</h2>
               <TrackedHtmlContent className="section-hero__body" body={body} />
             </div>

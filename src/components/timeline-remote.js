@@ -7,7 +7,7 @@ import TimelineModules from './timeline-modules';
 
 const TimelineRemote = ({ period, title, modules }) => {
   return (
-    <TimelineMajorPeriod title={period} modifier="major-change">
+    <TimelineMajorPeriod title={period} titleModifier="major-change">
       <TimelineSegment>
         <TimelineHeader title={title} />
         <TimelineModules modules={modules} />

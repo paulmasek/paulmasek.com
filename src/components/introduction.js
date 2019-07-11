@@ -24,7 +24,7 @@ const Introduction = ({
 
   return (
     <section
-      className={classNames('introduction js-introduction', {
+      className={classNames('introduction', {
         'introduction--background-loaded': imageLoaded,
       })}
       id={id}
@@ -48,7 +48,7 @@ const Introduction = ({
           }}
         >
           <div className="introduction__content-wrapper">
-            <div className="introduction__content js-animate-introduction-content">
+            <div className="introduction__content">
               <div className="introduction__header">
                 <h1 className="introduction__heading">
                   <span className="introduction__heading-name">{name}</span>

@@ -2,15 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const TimelineMajorPeriod = ({ className, modifier, title, children }) => {
-  const modifierClass = !!modifier.length && `timeline__segment--${modifier}`;
+const TimelineMajorPeriod = ({
+  titleClass,
+  titleModifier,
+  title,
+  children,
+}) => {
+  const modifierClass =
+    !!titleModifier.length && `timeline__segment--${titleModifier}`;
 
   return (
     <div className="timeline__major-period">
       <strong
         className={classNames(
-          'timeline__period-title timeline__period-title-content js-animate-date-title',
-          className,
+          'timeline__period-title timeline__period-title-content',
+          titleClass,
           modifierClass
         )}
       >
@@ -22,15 +28,15 @@ const TimelineMajorPeriod = ({ className, modifier, title, children }) => {
 };
 
 TimelineMajorPeriod.propTypes = {
-  className: PropTypes.string,
-  modifier: PropTypes.string,
+  titleClass: PropTypes.string,
+  titleModifier: PropTypes.string,
   title: PropTypes.string.isRequired,
   children: PropTypes.node,
 };
 
 TimelineMajorPeriod.defaultProps = {
-  className: '',
-  modifier: '',
+  titleClass: '',
+  titleModifier: '',
   children: null,
 };
 

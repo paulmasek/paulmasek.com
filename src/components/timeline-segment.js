@@ -1,21 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import LineSegment from './line-segment';
 
 const TimelineSegment = ({ modifier, children }) => {
   const modifierClass = !!modifier.length && `timeline__segment--${modifier}`;
 
   return (
-    <div
-      className={classNames(
-        'timeline__segment line-segment line-segment--vertical line-segment--medium-separator',
-        modifierClass
-      )}
-      data-line-v="work-after-modules"
-      data-line-v-class="line-segment__line--medium-separator"
+    <LineSegment
+      className={classNames('timeline__segment', modifierClass)}
+      type="medium-separator"
+      vertical
     >
       {children}
-    </div>
+    </LineSegment>
   );
 };
 

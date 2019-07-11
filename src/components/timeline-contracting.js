@@ -5,33 +5,41 @@ import TimelineMajorPeriod from './timeline-major-period';
 import TimelineSegment from './timeline-segment';
 import TimelineHeader from './timeline-header';
 import TimelineModules from './timeline-modules';
+import LineSegment from './line-segment';
 
 const TimelineContracting = ({ contracts }) => {
   return contracts.map(({ yearStarting, contracts: roles }) => (
-    <TimelineMajorPeriod
-      title={yearStarting}
-      className="line-segment line-segment--period-title line-segment--vertical"
+    <LineSegment
       key={uniqid()}
-    >
-      {roles.map(({ slug, company, url, logoTitle, logo, modules }) => (
-        <TimelineSegment modifier={slug} key={uniqid()}>
-          <TimelineHeader
-            title={company}
-            url={url}
-            isLogoTitle={logoTitle}
-            clickEvent="Company logo link click"
-            clickEventValue={company}
-          >
-            <img
-              alt={`${company} logo`}
-              className="timeline__contracting-logo js-animate-logo"
-              src={logo.src.publicURL}
-            />
-          </TimelineHeader>
-          <TimelineModules modules={modules} />
-        </TimelineSegment>
-      ))}
-    </TimelineMajorPeriod>
+      modifier="period-title"
+      vertical
+      render={(className, props) => (
+        <TimelineMajorPeriod
+          title={yearStarting}
+          titleClass={className}
+          {...props}
+        >
+          {roles.map(({ slug, company, url, logoTitle, logo, modules }) => (
+            <TimelineSegment modifier={slug} key={uniqid()}>
+              <TimelineHeader
+                title={company}
+                url={url}
+                isLogoTitle={logoTitle}
+                clickEvent="Company logo link click"
+                clickEventValue={company}
+              >
+                <img
+                  alt={`${company} logo`}
+                  className="timeline__contracting-logo"
+                  src={logo.src.publicURL}
+                />
+              </TimelineHeader>
+              <TimelineModules modules={modules} />
+            </TimelineSegment>
+          ))}
+        </TimelineMajorPeriod>
+      )}
+    />
   ));
 };
 

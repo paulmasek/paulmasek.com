@@ -16,7 +16,7 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
   return (
     <>
       <header
-        className={classNames('main-header js-header', {
+        className={classNames('main-header', {
           'main-header--navigation-active': primaryNavigationOpen,
         })}
       >
@@ -51,7 +51,7 @@ const Header = ({ navigationItems, socialMediaLinks }) => {
           />
           <button
             className={classNames(
-              'primary-navigation-show-hide hamburger hamburger--squeeze js-trigger-primary-navigation',
+              'primary-navigation-show-hide hamburger hamburger--squeeze',
               {
                 'is-active': primaryNavigationOpen,
               }

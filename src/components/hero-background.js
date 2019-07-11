@@ -18,7 +18,7 @@ const HeroBackground = ({
   return (
     <div className={classNames('hero-background', className, modifierClass)}>
       <Img
-        className="hero-background__image js-animate-section-hero-background"
+        className="hero-background__image"
         sizes={imageSizes}
         alt={alt}
         onLoad={onLoaded}
