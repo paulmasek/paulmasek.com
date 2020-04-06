@@ -180,23 +180,31 @@ export const query = graphql`
               module
               noBorder
               data {
-                body
-                name
-                role
-                profilePic {
-                  src {
-                    publicURL
-                  }
-                  alt
-                }
-                companies {
-                  slug
+                ... on TimelineQuote {
+                  body
+                  company
                   name
-                  url
-                  logo {
+                  role
+                  profilePic {
                     alt
                     src {
                       publicURL
+                    }
+                  }
+                }
+                ... on TimelineContent {
+                  body
+                }
+                ... on TimelineCompanyGrid {
+                  companies {
+                    url
+                    slug
+                    name
+                    logo {
+                      alt
+                      src {
+                        publicURL
+                      }
                     }
                   }
                 }
@@ -219,14 +227,20 @@ export const query = graphql`
               modules {
                 module
                 data {
-                  body
-                  name
-                  role
-                  profilePic {
-                    src {
-                      publicURL
+                  ... on TimelineQuote {
+                    body
+                    company
+                    name
+                    role
+                    profilePic {
+                      alt
+                      src {
+                        publicURL
+                      }
                     }
-                    alt
+                  }
+                  ... on TimelineContent {
+                    body
                   }
                 }
               }
