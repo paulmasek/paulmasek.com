@@ -16,6 +16,23 @@
           "yearStarting": "2019",
           "contracts": [
             {
+              "slug": "rufus-leonard",
+              "company": "Rufus Leonard",
+              "url": "https://www.rufusleonard.com",
+              "logo": {
+                "src": "../../images/content/rufus-leonard-logo.png",
+                "alt": ""
+              },
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Worked on a large React and Redux web application as part of a <br/>team of 10+ engineers.</p><p>Responsible for the Redux and application architecture. Used the latest React techniques, such as hooks and suspense. Wrote unit tests via Jest and Enzyme. Pulled in content via a headless CMS (Episerver).</p><p>Mentoring and code reviews also played a huge part in this role.</p>"
+                  }
+                }
+              ]
+            },
+            {
               "slug": "liminal-pages",
               "company": "Liminal Pages",
               "url": "https://liminalpages.com",
