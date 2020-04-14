@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const withNetlifyForm = Component => {
-  const withNetlify = ({ name, ...rest }) => {
+  const withNetlify = ({ name, botFieldName, ...rest }) => {
     return (
       <Component
         name={name}
         action={`/${name}`}
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        data-netlify-honeypot={botFieldName}
+        botFieldName={botFieldName}
         {...rest}
       />
     );
@@ -16,6 +17,11 @@ const withNetlifyForm = Component => {
 
   withNetlify.propTypes = {
     name: PropTypes.string.isRequired,
+    botFieldName: PropTypes.string,
+  };
+
+  withNetlify.defaultProps = {
+    botFieldName: 'bot-field',
   };
 
   return withNetlify;
