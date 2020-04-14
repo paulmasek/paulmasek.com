@@ -13,6 +13,29 @@
       "startTitle": "Started Freelancing! 🎉",
       "contracting": [
         {
+          "yearStarting": "2020",
+          "contracts": [
+            {
+              "slug": "zone",
+              "company": "Zone",
+              "logo": {
+                "src": "../../images/content/zone-logo.png",
+                "alt": ""
+              },
+              "url": "https://www.zonedigital.com/",
+              "logoTitle": false,
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Worked on a React and Redux web application as part of a<br/> large agile team for a financial services client.</p><p>Responsible for building out new features and fixing often complex defects from earlier iterations of the project. Used styled-components with Tailwind CSS<br/> and Hooks with Reselect.</p><p>Tested with Jest to meet a high test coverage requirement and<br/> contributed to code reviews.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "yearStarting": "2019",
           "contracts": [
             {
@@ -140,11 +163,11 @@
               "slug": "zone",
               "company": "Zone",
               "logo": {
-                "src": "../../images/content/zone-logo.svg",
+                "src": "../../images/content/zone-logo.png",
                 "alt": ""
               },
               "url": "https://www.zonedigital.com/",
-              "logoTitle": true,
+              "logoTitle": false,
               "modules": [
                 {
                   "module": "timelineContent",
@@ -275,11 +298,11 @@
               "slug": "zone",
               "company": "Zone",
               "logo": {
-                "src": "../../images/content/zone-logo.svg",
+                "src": "../../images/content/zone-logo.png",
                 "alt": ""
               },
               "url": "https://www.zonedigital.com/",
-              "logoTitle": true,
+              "logoTitle": false,
               "modules": [
                 {
                   "module": "timelineContent",
