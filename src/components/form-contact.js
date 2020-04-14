@@ -40,6 +40,7 @@ const ContactForm = ({
 }) => {
   return (
     <NetlifyForm
+      botFieldName="pm-bot-field"
       method="post"
       className="form-contact"
       name={formName}
