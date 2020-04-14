@@ -13,7 +13,7 @@
       {
         "title": "React",
         "subTitle": null,
-        "body": "<p>Standalone or with Redux. Gatsby-powered static sites</p>"
+        "body": "<p>Standalone or with Redux. Gatsby-powered static sites.</p>"
       },
       {
         "title": "Vue.js",
@@ -26,11 +26,10 @@
         "body": "<p>Performant, linted and progressively enhanced wherever possible</p>"
       },
       {
-        "title": "CSS / SASS",
+        "title": "CSS",
         "subTitle": null,
-        "body": "<p>The latest techniques, cross-browser & device, maintainable & reusable with BEM</p>"
+        "body": "<p>SASS with BEM / styled-components / Tailwind CSS.<br/>The latest techniques - cross-browser & device, maintainable and reusable</p>"
       },
-
       {
         "title": "HTML",
         "subTitle": null,
@@ -53,8 +52,16 @@
     "title": "Workflow",
     "skills": [
       {
+        "title": "Processes",
+        "body": "<p>Testing, code reviews, Gitflow</p>"
+      },
+      {
         "title": "Version Control",
-        "body": "<p>Git, SVN & processes like Gitflow</p>"
+        "body": "<p>Git, SVN</p>"
+      },
+      {
+        "title": "Code Quality",
+        "body": "<p>ESlint, stylelint</p>"
       },
       {
         "title": "Auomation",
@@ -62,7 +69,7 @@
       },
       {
         "title": "Project Management ",
-        "body": "<p>JIRA & Trello, etc.</p>"
+        "body": "<p>JIRA, Trello, etc.</p>"
       }
     ]
   },
@@ -76,10 +83,6 @@
       {
         "name": "photoshop",
         "title": "Photoshop"
-      },
-      {
-        "name": "illustrator",
-        "title": "Illustrator"
       }
     ]
   }
