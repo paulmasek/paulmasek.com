@@ -30,6 +30,18 @@
                   "data": {
                     "body": "<p>Worked on a React and Redux web application as part of a<br/> large agile team for a financial services client.</p><p>Responsible for building out new features and fixing often complex defects from earlier iterations of the project. Used styled-components with Tailwind CSS<br/> and Hooks with Reselect.</p><p>Tested with Jest to meet a high test coverage requirement and<br/> contributed to code reviews.</p>"
                   }
+                },
+                {
+                  "module": "timelineQuote",
+                  "data": {
+                    "name": "Deepak Nayak",
+                    "role": "Scrum Master",
+                    "profilePic": {
+                      "src": "../../images/content/deepak-nayak.jpg",
+                      "alt": ""
+                    },
+                    "body": "<p>I had the opportunity to work with Paul briefly, it's been a great pleasure to work with an expert like him. Paul is a specialist front end developer, brings immense knowledge and speed to the projects.</p><p>He integrated with the team seamlessly and was productive from<br/> day 1. He is very easy to work with and a complete team man. Very vocal during the team meetings and always looking to add value. Paul will be a great asset to any team and happy to recommend him</p>"
+                  }
                 }
               ]
             }
