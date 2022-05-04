@@ -46,7 +46,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-string-replace": "^1.1.0",
-    "react-waypoint": "^9.0.2",
+    "react-waypoint": "^10.1.0",
     "scroll-to-element": "^2.0.3",
     "uniqid": "^5.4.0",
     "yup": "^0.32.11"
