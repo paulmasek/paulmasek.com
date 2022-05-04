@@ -1,8 +1,10 @@
+@use "sass:math";
+
 .icon {
   display: block;
   height: 0;
   overflow: hidden;
-  padding-bottom: percentage(24 / 24);
+  padding-bottom: percentage(math.div(24, 24));
   position: relative;
 
   &__el {

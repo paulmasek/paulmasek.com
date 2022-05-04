@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .about {
   text-align: center;
 
@@ -13,7 +15,7 @@
     max-width: rem(200px);
     min-width: rem(100px);
     overflow: hidden;
-    width: percentage(120 / (320 - 24 * 2));
+    width: percentage(math.div(120, 320 - 24 * 2));
 
     picture,
     img {
