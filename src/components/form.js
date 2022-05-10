@@ -42,7 +42,8 @@ const Form = ({
           setSubmitting(false);
         });
     }}
-    render={({
+  >
+    {({
       isSubmitting,
       errors,
       touched,
@@ -103,7 +104,7 @@ const Form = ({
         </FormikForm>
       );
     }}
-  />
+  </Formik>
 );
 
 Form.propTypes = {
