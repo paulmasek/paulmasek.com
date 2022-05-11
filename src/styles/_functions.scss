@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @function rem($pixels, $context: $base-size) {
-  @return #{$pixels/$context}rem;
+  @return #{math.div($pixels, $context)}rem;
 }

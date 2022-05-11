@@ -79,9 +79,7 @@ export const query = graphql`
         alt
         src {
           childImageSharp {
-            sizes(maxWidth: 1440) {
-              ...GatsbyImageSharpSizes
-            }
+            gatsbyImageData(width: 1440)
           }
         }
       }
@@ -94,9 +92,7 @@ export const query = graphql`
         alt
         src {
           childImageSharp {
-            sizes(maxWidth: 200) {
-              ...GatsbyImageSharpSizes
-            }
+            gatsbyImageData(width: 200)
           }
         }
       }
@@ -109,9 +105,7 @@ export const query = graphql`
           alt
           src {
             childImageSharp {
-              sizes(maxWidth: 1440) {
-                ...GatsbyImageSharpSizes
-              }
+              gatsbyImageData(width: 1440)
             }
           }
         }
@@ -146,9 +140,7 @@ export const query = graphql`
           alt
           src {
             childImageSharp {
-              sizes(maxWidth: 1440) {
-                ...GatsbyImageSharpSizes
-              }
+              gatsbyImageData(width: 1440)
             }
           }
         }
@@ -257,9 +249,7 @@ export const query = graphql`
           alt
           src {
             childImageSharp {
-              sizes(maxWidth: 1440) {
-                ...GatsbyImageSharpSizes
-              }
+              gatsbyImageData(width: 1440)
             }
           }
         }

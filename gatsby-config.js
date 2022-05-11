@@ -7,6 +7,7 @@ module.exports = {
     author: `@paulmasek`,
   },
   plugins: [
+    'gatsby-plugin-image',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -51,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: ['URL'],
+        allowList: ['URL'],
       },
     },
     {
