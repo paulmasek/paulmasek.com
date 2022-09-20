@@ -32,10 +32,13 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       },
     }),
     schema.buildObjectType({
-      name: 'Image',
+      name: 'ImageObj',
       fields: {
         alt: 'String',
-        src: 'File',
+        src: {
+          type: 'File',
+          extensions: { fileByRelativePath: {} },
+        },
       },
     }),
     schema.buildObjectType({
@@ -50,7 +53,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       name: 'Company',
       fields: {
         logo: {
-          type: 'Image',
+          type: 'ImageObj',
         },
         name: 'String',
         slug: 'String',
@@ -61,7 +64,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       name: 'Contract',
       fields: {
         logo: {
-          type: 'Image',
+          type: 'ImageObj',
         },
         name: 'String',
         slug: 'String',
@@ -82,7 +85,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         company: 'String',
         name: 'String',
         profilePic: {
-          type: 'Image',
+          type: 'ImageObj',
         },
         role: 'String',
         body: 'String',
@@ -126,7 +129,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         company: 'String',
         introduction: 'String',
         logo: {
-          type: 'Image',
+          type: 'ImageObj',
         },
         period: 'String',
         role: 'String',

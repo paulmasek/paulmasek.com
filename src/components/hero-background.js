@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Img from 'gatsby-image';
-import getFluidGraphQlImage from '../utils/get-fluid-graphql-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const HeroBackground = ({
   className,
@@ -13,13 +12,13 @@ const HeroBackground = ({
   onLoaded,
 }) => {
   const modifierClass = !!modifier.length && `hero-background--${modifier}`;
-  const imageSizes = getFluidGraphQlImage(imageObj);
+  const image = getImage(imageObj);
 
   return (
     <div className={classNames('hero-background', className, modifierClass)}>
-      <Img
+      <GatsbyImage
         className="hero-background__image"
-        sizes={imageSizes}
+        image={image}
         alt={alt}
         onLoad={onLoaded}
         loading={loading}

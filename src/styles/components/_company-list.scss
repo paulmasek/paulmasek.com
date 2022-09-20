@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .company-list {
   margin-bottom: rem(60px);
 
@@ -37,19 +39,19 @@
     }
 
     &--borne .company-list__image {
-      width: percentage(100 / 157.5);
+      width: percentage(math.div(100, 157.5));
     }
 
     &--rubber-cheese .company-list__image {
-      width: percentage(100 / 157.5);
+      width: percentage(math.div(100, 157.5));
     }
 
     &--studioaura .company-list__image {
-      width: percentage(118 / 157.5);
+      width: percentage(math.div(118, 157.5));
     }
 
     &--spork .company-list__image {
-      width: percentage(88 / 157.5);
+      width: percentage(math.div(88, 157.5));
     }
   }
 

@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
-import getFluidGraphQlImage from '../utils/get-fluid-graphql-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import SectionAnchor from './section-anchor';
 import TrackedHtmlContent from './tracked-html-content';
 import LineSegment from './line-segment';
 
 const About = ({ body, id, profilePicImage, profilePicAlt }) => {
-  const imageSizes = getFluidGraphQlImage(profilePicImage);
+  const imageObj = getImage(profilePicImage);
 
   return (
     <section className="section about">
@@ -17,11 +16,11 @@ const About = ({ body, id, profilePicImage, profilePicAlt }) => {
         vertical
       >
         <LineSegment type="header" horizontal vertical>
-          <Img
+          <GatsbyImage
             className="about__profile-pic"
             src="profile-pic"
             alt={profilePicAlt}
-            sizes={imageSizes}
+            image={imageObj}
           />
         </LineSegment>
         <div>
