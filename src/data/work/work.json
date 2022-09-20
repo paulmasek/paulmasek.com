@@ -13,7 +13,30 @@
       "startTitle": "Started Freelancing! 🎉",
       "contracting": [
         {
-          "yearStarting": "2020",
+          "yearStarting": "Sep 2020 - Mar 2022",
+          "contracts": [
+            {
+              "slug": "fundsmith-llp",
+              "company": "Fundsmith LLP",
+              "logo": {
+                "src": "../../images/content/fundsmith-llp-logo.svg",
+                "alt": ""
+              },
+              "url": "https://www.fundsmith.co.uk",
+              "logoTitle": true,
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Worked as the primary UI developer building a scaleable and themeable responsive front-end, including a series of complex Vue.js flows integrated with a GraphQL API.</p><p>Implemented and documented a front-end workflow with linting, Prettier and various other tools integrated with Vue CLI. Wrote Cypress tests.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "yearStarting": "Jan 2020 - Apr 2020",
           "contracts": [
             {
               "slug": "zone",
@@ -28,7 +51,7 @@
                 {
                   "module": "timelineContent",
                   "data": {
-                    "body": "<p>Worked on a React and Redux web application as part of a<br/> large agile team for a financial services client.</p><p>Responsible for building out new features and fixing often complex defects from earlier iterations of the project. Used styled-components with Tailwind CSS<br/> and Hooks with Reselect.</p><p>Tested with Jest to meet a high test coverage requirement and<br/> contributed to code reviews.</p>"
+                    "body": "<p>Worked on a React and Redux web application as part of a<br/> large agile team for a financial services client.</p><p>Responsible for building out new features and fixing often complex defects from earlier iterations of the project. Used styled-components with Tailwind CSS<br/> and Hooks with Reselect.</p><p>Tested with Jest, meeting a high test coverage requirement and,<br/> contributed to code reviews.</p>"
                   }
                 },
                 {
