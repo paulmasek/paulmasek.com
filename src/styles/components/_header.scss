@@ -76,6 +76,7 @@
     @include media('>big-phone') {
       position: relative;
       right: rem(-6px);
+      top: rem(-2px);
     }
 
     path {
