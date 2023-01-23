@@ -35,7 +35,6 @@
         "subTitle": null,
         "body": "<p>Accessible, semantic & SEO friendly</p>"
       },
-
       {
         "title": "Templating",
         "subTitle": "Handlebars / Twig",
@@ -68,7 +67,7 @@
         "body": "<p>Webpack, Gulp, Yarn, etc.</p>"
       },
       {
-        "title": "Project Management ",
+        "title": "Project Management",
         "body": "<p>JIRA, Trello, etc.</p>"
       }
     ]
@@ -81,8 +80,8 @@
         "title": "Sketch"
       },
       {
-        "name": "photoshop",
-        "title": "Photoshop"
+        "name": "figma",
+        "title": "Figma"
       }
     ]
   }

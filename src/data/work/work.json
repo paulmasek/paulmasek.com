@@ -13,6 +13,28 @@
       "startTitle": "Started Freelancing! 🎉",
       "contracting": [
         {
+          "yearStarting": "Nov 2022 - Jan 2023",
+          "contracts": [
+            {
+              "slug": "matter-of-form",
+              "company": "Matter Of Form",
+              "url": "https://matterofform.com",
+              "logo": {
+                "src": "../../images/content/matter-of-form-logo.png",
+                "alt": ""
+              },
+              "modules": [
+                {
+                  "module": "timelineContent",
+                  "data": {
+                    "body": "<p>Helped develop a Headless CMS powered Vue.js with Nuxt.js brochure website. Tailwind CSS used throughout. GreenSock GSAP utilised for complex animations.</p>"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "yearStarting": "Sep 2020 - Mar 2022",
           "contracts": [
             {
