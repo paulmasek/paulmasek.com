@@ -5,13 +5,11 @@ import uniqid from 'uniqid';
 
 import Github from '../images/icons/github.svg';
 import LinkedIn from '../images/icons/linkedin.svg';
-import Twitter from '../images/icons/twitter.svg';
 import withEventTracked from './with-event-tracked';
 
 const EventTrackedLink = withEventTracked('a');
 
 const icons = {
-  twitter: Twitter,
   linkedin: LinkedIn,
   github: Github,
 };
